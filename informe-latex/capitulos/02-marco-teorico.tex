@@ -1,4 +1,171 @@
 % Capítulo 2: Marco Teórico
 % Propósito: Presentar las bases teóricas, conceptos clave, antecedentes de investigación y el estado del arte que fundamentan el proyecto.
 
-\section{Marco Teórico}
+
+\section{Marco Teórico}  
+
+\section{Sistemas digitales de reporte de incidencias ciudadanas}
+\subsection{Concepto y características}
+
+La interacción entre los ciudadanos y las instituciones públicas puede originarse cuando una persona identifica una necesidad o problemática en su entorno y la comunica a la entidad responsable de atenderla. En este contexto, los sistemas digitales de reporte ciudadano constituyen mecanismos tecnológicos mediante los cuales las necesidades identificadas por la población pueden transformarse en solicitudes registradas y gestionadas por una institución. Un ejemplo consolidado de este modelo son los sistemas 311 utilizados en distintas ciudades de Estados Unidos. \cite{cook2024potholes} explican que estos sistemas, creados originalmente para reducir las llamadas no urgentes dirigidas al 911, evolucionaron hasta convertirse en puntos de contacto para múltiples servicios municipales, permitiendo reportar problemas relacionados con infraestructura, saneamiento u otros servicios públicos.
+
+Una característica recurrente de estas soluciones es la centralización y estructuración de la información. En el sistema desarrollado por \cite{moreno2026diseno} para la gestión de PQRSD de la Secretaría de Tránsito y Transporte de Girardot, la aplicación fue planteada para centralizar las solicitudes y gestionar de forma integrada actividades como el registro, consulta, asignación, respuesta y seguimiento. La solución permite además conservar datos como número de radicado, fecha, tipo de solicitud, datos del ciudadano, estado y funcionario responsable, favoreciendo la organización y trazabilidad de los casos. De esta forma, la digitalización no consiste únicamente en sustituir el papel por un formulario electrónico, sino en mantener la información asociada a cada solicitud dentro de un flujo estructurado de gestión.
+
+La trazabilidad y el seguimiento constituyen otra característica relevante de los sistemas de reporte ciudadano, ya que permiten conservar información sobre una incidencia durante las diferentes etapas de su atención. Esta función adquiere especial importancia en el contexto municipal, donde un reporte puede requerir la intervención de distintas áreas antes de alcanzar su resolución. El sistema desarrollado por \cite{trejo2019sistema} para el municipio de Othón P. Blanco se orienta precisamente al reporte y seguimiento de deficiencias de servicios públicos, evidenciando la necesidad de vincular la recepción de la incidencia con mecanismos que permitan mantener un control sobre su evolución durante el proceso de atención.
+
+Los sistemas digitales también pueden enriquecer el reporte mediante información complementaria sobre la incidencia. \cite{parrales2025desarrollo}, por ejemplo, desarrolló una plataforma para el reporte de daños en infraestructura urbana que incorpora geolocalización, mapas interactivos y validación automatizada de imágenes, además de mecanismos de autenticación, priorización y notificación. Estas funcionalidades muestran que un reporte digital puede integrar datos adicionales a la descripción textual, como ubicación y evidencia visual, con el propósito de proporcionar mayor información sobre la situación reportada.
+
+Finalmente, la información generada mediante estos sistemas puede adquirir valor más allá de la resolución individual de cada solicitud. \cite{hubert2021herramientas} señala que la expansión de las tecnologías digitales ha creado nuevos canales para que los ciudadanos expresen necesidades, opiniones y problemáticas, y los datos resultantes pueden utilizarse en ámbitos que abarcan desde el mantenimiento de servicios públicos hasta procesos de toma de decisiones gubernamentales. De manera similar, los registros 311 contienen información sobre el momento y ubicación de las solicitudes y, frecuentemente, sobre la respuesta de la administración, permitiendo analizar de manera continua la demanda ciudadana de servicios \parencite{cook2024potholes}.
+
+A partir de las características identificadas en estas investigaciones, para efectos de la presente investigación se puede entender un sistema digital de reporte de incidencias ciudadanas como una plataforma tecnológica que permite registrar de manera estructurada situaciones o necesidades identificadas por los ciudadanos, centralizar la información generada y facilitar su canalización, consulta y seguimiento por parte de la institución responsable. Dependiendo de su alcance, estos sistemas pueden incorporar características complementarias como evidencia fotográfica, geolocalización, notificaciones, clasificación y generación de información histórica para apoyar la gestión institucional.
+
+\subsection{Componentes funcionales}
+
+Los sistemas digitales de reporte de incidencias ciudadanas están conformados por distintos componentes funcionales que permiten gestionar el ciclo de una solicitud desde su registro hasta la etapa de atención o cierre. La literatura revisada muestra que estos componentes pueden variar según el ámbito de aplicación y las necesidades de cada institución; sin embargo, existen funciones que se repiten en diferentes soluciones, principalmente aquellas relacionadas con el registro estructurado del reporte, su identificación, clasificación, canalización, seguimiento y comunicación con el ciudadano.
+
+Uno de los componentes fundamentales es el registro digital de la incidencia o solicitud. Este constituye el punto de entrada de la información al sistema y permite transformar una necesidad identificada por el ciudadano en un registro que puede ser administrado por la institución. En la propuesta “Mi Queja”, desarrollada por \cite{murillo2025aplicacion}, el flujo inicia cuando el ciudadano accede mediante una plataforma web o móvil para registrar su queja; posteriormente, el sistema genera un número de radicado que permite identificar la solicitud y utilizarlo para su seguimiento.
+
+El registro puede enriquecerse mediante datos complementarios que describen con mayor precisión la situación reportada. \cite{parrales2025desarrollo}, en su sistema orientado al reporte de daños en infraestructura urbana, incorpora geolocalización, mapas interactivos y validación automatizada de imágenes mediante Google Cloud Vision. De forma similar, el prototipo desarrollado para EPAGAL por \cite{rodriguezdesarrollo} contempla que los ciudadanos registren incidencias asociadas a coordenadas geográficas y un tipo determinado, utilizando información espacial para validar la zona donde se origina el reporte. Estos casos muestran que el registro de una incidencia puede incluir no solo una descripción textual, sino también ubicación, categoría y evidencia que facilite su posterior análisis.
+
+Una vez registrada la solicitud, otro componente recurrente es la clasificación y canalización hacia los responsables de su atención. En la aplicación “Mi Queja”, los funcionarios municipales reciben los casos registrados, los clasifican y gestionan dentro de la plataforma, mientras que la solución contempla integración con la administración municipal y otras entidades responsables de su respuesta. \cite{murillo2025aplicacion} plantea así un flujo donde la recepción ciudadana se conecta directamente con la gestión institucional de la solicitud.
+
+El seguimiento y manejo de estados constituye otro componente relevante para mantener la trazabilidad. Los registros digitales permiten conocer la situación de una solicitud a medida que avanza por el proceso institucional. En los sistemas 311 analizados por \cite{cook2024potholes}, la información generada suele contener datos sobre la respuesta proporcionada por la administración y, en casos como Houston, el ciudadano puede consultar el estado de la solicitud realizada. Asimismo, en el estudio de \cite{moreno2026diseno}, los ciudadanos valoraron especialmente la posibilidad de registrar solicitudes y consultar su estado, junto con funciones como descarga de respuestas, acceso al historial y recepción de notificaciones.
+
+Relacionado con el seguimiento se encuentra el componente de comunicación y notificación al ciudadano. Un sistema de reporte no finaliza necesariamente cuando la institución recibe la solicitud, sino que requiere mecanismos que permitan comunicar al ciudadano la evolución o resultado de su solicitud. La propuesta “Mi Queja” desarrollado por \cite{murillo2025aplicacion} incorpora notificaciones automáticas y seguimiento de las solicitudes, permitiendo mantener una interacción posterior al registro inicial.
+
+Desde la perspectiva institucional, estos sistemas suelen incorporar un módulo administrativo que facilita la gestión de las incidencias recibidas. En el prototipo para EPAGAL por \cite{rodriguezdesarrollo} se distinguen actores con responsabilidades diferentes: el ciudadano registra incidencias, el administrador valida los reportes, gestiona operadores y asigna rutas, mientras que los conductores consultan los recorridos asignados y registran la atención de los puntos correspondientes. El proyecto incorpora además un panel web para seguimiento institucional y monitoreo de las operaciones.
+
+Como etapa posterior a la gestión operativa, los registros acumulados pueden utilizarse para la generación de información histórica y análisis sobre las problemáticas comunicadas por la ciudadanía. \cite{hubert2021herramientas} desarrolla herramientas orientadas específicamente al procesamiento, análisis y visualización de peticiones, quejas y reclamos ciudadanos, utilizando técnicas de agrupamiento y representación visual de la información. Este tipo de funciones permite que los datos generados inicialmente para atender casos individuales puedan ser reutilizados posteriormente para identificar tendencias, concentraciones de solicitudes y elementos relevantes para la toma de decisiones institucionales.
+
+En conjunto, las investigaciones revisadas muestran que los sistemas digitales de reporte ciudadano tienden a estructurarse alrededor de un flujo que comprende el registro de la incidencia, la incorporación de información descriptiva, su clasificación y canalización, el seguimiento durante la atención y la comunicación de resultados al ciudadano. A estas funciones se pueden añadir componentes específicos según el ámbito de aplicación, como geolocalización, evidencia fotográfica, paneles administrativos o herramientas de análisis histórico.
+
+\subsection{Evolución de los mecanismos de atención ciudadana}
+
+Los mecanismos utilizados por las instituciones públicas para recibir y gestionar solicitudes ciudadanas han experimentado una transformación progresiva asociada al desarrollo de las tecnologías de información y comunicación. En los modelos tradicionales, la atención puede depender de medios presenciales y soportes físicos. Un ejemplo se observa en el municipio del Litoral del San Juan, donde \textcite{murillo2025aplicacion} identifican el uso de un buzón físico y procedimientos en papel para gestionar quejas ciudadanas, situación especialmente restrictiva para comunidades geográficamente dispersas que deben desplazarse hasta la administración municipal.
+
+Esta transición no se ha producido necesariamente de manera inmediata desde un modelo completamente manual hacia plataformas digitales integradas. En algunos casos se observa una etapa intermedia de digitalización parcial, donde determinadas actividades son informatizadas mientras otras continúan dependiendo de procedimientos manuales. Un ejemplo de esta situación se encuentra en la Secretaría de Tránsito y Transporte de Girardot, donde \textcite{moreno2026diseno} identificaron que las solicitudes PQRSD eran registradas mediante un sistema desarrollado en Microsoft Access, mientras que actividades posteriores como la asignación, respuesta y archivo continuaban realizándose manualmente. El mismo estudio describe que este esquema permitía almacenar los datos iniciales de la solicitud, pero no proporcionaba funcionalidades suficientes para mantener su trazabilidad durante todo el proceso.
+
+La evolución hacia plataformas digitales integradas busca superar esta fragmentación incorporando diferentes etapas del proceso dentro de un mismo entorno. La propuesta “Mi Queja” ejemplifica esta transición mediante una solución web y móvil que integra el registro de solicitudes, generación de radicado, seguimiento, notificaciones automáticas y un tablero de control para la administración municipal. \textcite{murillo2025aplicacion} De esta manera, la digitalización deja de limitarse al almacenamiento de información y comienza a abarcar la interacción completa entre el ciudadano y la entidad responsable.
+
+Los sistemas 311 constituyen otro ejemplo de esta evolución. Estos mecanismos surgieron inicialmente como una alternativa telefónica para que los residentes pudieran comunicar solicitudes no urgentes a los gobiernos locales. Con el tiempo, el modelo se amplió y numerosas ciudades incorporaron sitios web y aplicaciones móviles como canales adicionales para recibir reportes. \textcite{cook2024potholes} señalan que, después de presentar una solicitud 311, la información puede remitirse al departamento correspondiente para su atención o seguimiento, mientras que los registros acumulados también pueden ser utilizados por las administraciones para evaluar servicios y apoyar decisiones relacionadas con su prestación.
+
+Esta evolución refleja también un cambio desde modelos asociados a canales limitados hacia esquemas en los que la interacción ciudadana puede producirse mediante diferentes medios digitales. \cite{hubert2021herramientas} señala que la expansión de tecnologías como la banda ancha y los dispositivos móviles ha generado nuevos espacios para que los ciudadanos comuniquen opiniones, conocimientos y problemáticas a las instituciones. Esta diversificación reduce la dependencia exclusiva de la presencialidad y permite que la información ciudadana pueda originarse desde diferentes canales digitales.
+
+El desarrollo de dispositivos móviles ha extendido aún más estas posibilidades. En el prototipo desarrollado para EPAGAL, \cite{rodriguezdesarrollo} aborda la participación ciudadana mediante M-Government, planteando el uso de dispositivos móviles como medios para facilitar el acceso a servicios públicos. El trabajo aborda además el concepto de crowdsensing participativo, mediante el cual los ciudadanos utilizan capacidades del dispositivo, como GPS y cámara, para reportar incidencias desde su ubicación. De esta manera, la evolución tecnológica no solamente amplía los canales disponibles, sino también la cantidad y naturaleza de los datos que pueden incorporarse a un reporte.
+
+Paralelamente, la transformación de la atención ciudadana también ha estado vinculada con una modificación en el enfoque de prestación de los servicios públicos. \cite{fariastendencias} señalan que las iniciativas de modernización de servicios pueden analizarse a partir de elementos como la eficiencia, transparencia, efectividad y orientación hacia las necesidades y expectativas de los ciudadanos. Los autores advierten, sin embargo, que no existe una solución tecnológica universal, ya que las características institucionales, económicas y sociales de cada contexto condicionan la forma en que estas transformaciones deben implementarse.
+
+En consecuencia, la evolución de los mecanismos de atención ciudadana puede entenderse como un proceso gradual que avanza desde procedimientos presenciales y registros físicos, hacia esquemas de digitalización parcial, y posteriormente hacia plataformas digitales integradas y multicanal. En estas últimas, el ciudadano puede registrar solicitudes de manera remota, consultar su evolución e incorporar datos adicionales, mientras que la institución puede centralizar la información, canalizar los casos y conservar registros históricos. Este proceso representa no solamente un cambio en el medio utilizado para recibir las solicitudes, sino una transformación en la forma en que la información ciudadana es registrada, gestionada y posteriormente aprovechada dentro de las instituciones públicas.
+
+\section{Gobierno electrónico y participación ciudadana}
+
+\textbf{Gobierno electrónico}
+Gobierno electrónico se describe como un proceso de transformación tecnológica e innovación organizativa en las Administraciones Públicas.
+consiste en la utilización de herramientas digitales y plataformas en línea para que los gobiernos proporcionen servicios, interactúen con los ciudadanos y optimicen la gestión pública. Su objetivo principal es mejorar la eficiencia administrativa, aumentar la transparencia y fomentar la participación ciudadana en la toma de decisiones.
+Entre algunos rasgos del Gobierno electrónico están:
+centrarse en mejorar el rendimiento operativo de los procesos, permitiendo la tramitación integral de procedimientos administrativos por medios electrónicos (gestión de trámites electrónicos) incentivar la participación ciudadana(\cite{garcia2024modelo}).
+
+\textbf{Participación ciudadana digital}
+La fuente (\cite{abad2026participacion}) aborda la participación ciudadana como un componente esencial e indispensable del gobierno electrónico y la gobernanza digital, argumentando que la tecnología por sí sola carece de impacto democrático si no facilita una interacción directa, transparente e inclusiva entre la ciudadanía y las instituciones públicas.
+A través de su revisión sistemática, fundamenta que
+La participación ciudadana mediante plataformas digitales permite a la población intervenir de forma activa en la formulación, ejecución y evaluación de políticas públicas y control social, fortaleciendo la legitimidad institucional.
+destaca que el gobierno electrónico supera el enfoque tradicional en agilización de trámites o prestación de servicios.
+Además, que la integración efectiva de herramientas participativas digitales promueve un gobierno más abierto, incrementando transparencia en las organizaciones, contribuyendo a una mejora en la comunicación entre el Estado y la sociedad civil.
+También se hace mención de condiciones necesarias para que la participación ciudadana sea efectiva:
+La participación no debe ser meramente simbólica, para que funcione como un pilar sostenible del gobierno electrónico, es indispensable acompañarla de políticas públicas que aborden la brecha digital, promuevan la alfabetización tecnológica y fortalezcan la confianza hacia la institución. 
+
+\textbf{Interacción ciudadano–municipalidad}
+Según(\cite{salazar2026participacion}), la interacción constante entre los ciudadanos y las municipalidades impulsa la mejora de la gestión pública local(municipalidad) a través de varios mecanismos fundamentales:
+Mejora en la calidad, legitimidad y eficacia de las decisiones: Al involucrar a la ciudadanía en la toma de decisiones, las municipalidades logran responder mejor a las necesidades reales de la comunidad, lo que aumenta la eficacia de las intervenciones locales y refuerza la legitimidad de las instituciones municipales.
+Coproducción de servicios públicos. Se concibe al ciudadano como un coproductor activo de las decisiones y de los servicios públicos, trabajando en red junto a la administración local.
+Presupuesto participativo: Constituye uno de los mecanismos más estudiados para democratizar la asignación de recursos públicos, permitiendo que la población incida de forma directa en las prioridades de inversión del municipio.
+E-participación y gobernanza digital: La integración de herramientas de gobierno electrónico, plataformas digitales y redes sociales agiliza la comunicación, reduciendo barreras de acceso para la consulta y el involucrado en la planificación urbana y la gestión diaria.
+
+\section{Desarrollo y diseño de plataformas web}
+
+→ Arquitecturas de aplicaciones web
+
+En el desarrollo y diseño de plataformas web esta presente la arquitectura que estas llevan, pero ¿Qué es?
+La arquitectura de aplicaciones web no es más que la estructura que debe de llevar el sistema de software en la que abarca los componentes y tecnologías que ayudaran a la fácil interacción entre usuarios y servidores.
+La arquitectura se encarga de la comunicación entre las piezas del sistema asignando roles y aplicando la lógica del negocio (operaciones requeridas para el funcionamiento del agente en cuestión) velando siempre por un desarrollo abierto a mejoras (escalabilidad y mantenibilidad)(\cite{guachamin2024desarrollo}).
+
+
+→ Escalabilidad, mantenibilidad y seguridad.
+Escalabilidad: hace referencia a la capacidad de un sistema para atender de manera eficiente un volumen creciente de usuarios, datos y funcionalidades, permitiendo que la estructura crezca sin comprometer su rendimiento ni su estabilidad. Este atributo se ve favorecido por arquitecturas multicapa y RESTful, las cuales permiten la evolución La independiente de los componentes y una distribución eficiente de los recursos(\cite{clavijo2026aplicacion}).
+
+
+Mantenibilidad: es un atributo central de la calidad del software que determina la facilidad con la que un sistema puede ser modificado, corregido o ampliado sin comprometer su estabilidad estructural.
+además, este atributo se relaciona directamente con aspectos internos del código fuente como el modularidad, el desacoplamiento y la estructura, los cuales previenen la acumulación de deuda técnica y facilitan el mantenimiento a largo plazo(\cite{clavijo2026aplicacion}).
+
+
+Seguridad: atributo no funcional, que se fortalece al separar las responsabilidades en capas para centralizar las validaciones y políticas de control de acceso en módulos específicos del backend, al delegar la gestión de identidad mediante autenticación basada en tokens, y al verificar mediante análisis estático que la estructura permanezca libre de vulnerabilidades y puntos calientes de riesgo(\cite{clavijo2026aplicacion}).
+
+→ Usabilidad y UI/UX
+La usabilidad es un atributo de calidad necesario en la creación de software además de ser un requerimiento no funcional que establece cualidades generales, esta se logra evaluar a través de pruebas en el sistema que buscan garantizar que la interfaz sea:
+Perceptible: La información y los componentes de la interfaz deben presentarse de manera que los usuarios puedan percibirlos adecuadamente.
+Operable: La navegación, los controles y los componentes interactivos deben ser manejables y utilizables por cualquier persona
+Comprensible: La interfaz y su funcionamiento deben ser claros, predecibles y fáciles de entender
+Robusta: El sistema debe ser compatible con diversos agentes de usuario, incluyendo tecnologías de asistencia.
+para cualquier usuario.
+Para lograrlo se recomienda realizar múltiples pruebas como integrar en el testeo a personas con distintas discapacidades para prevenir barreras de interacción como:
+Navegación confusa o deficiente: Estructuras de menú desordenadas, menús desplegables inaccesibles mediante el teclado o falta de un indicador visual de enfoque para saber qué elemento está seleccionado.
+Falta de texto alternativo: Íconos, botones o imágenes informativas que no contienen descripciones en texto, impidiendo que los lectores de pantalla transmitan su contenido a personas con discapacidad visual.
+Formularios mal etiquetados: Campos de entrada de datos que carecen de etiquetas descriptivas o asociadas, haciendo confuso entender qué información se debe ingresar.
+Bajo contraste de color: Insuficiente diferencia de color entre el texto y el fondo o en botones de acción, dificultando la lectura para personas con baja visión o daltonismo(\cite{bello2025integracion}).
+
+Interfaz de Usuario (UI)
+La UI es la parte visual y funcional con la que el usuario interactúa (botones, menús, formularios y su disposición), cuyo fin es facilitar la navegación y la ejecución de tareas de manera agradable y sencilla. corresponde al componente visible y manipulable formado por la organización modular, la tipografía, los bloques laterales, la jerarquización de actividades y la coherencia visual(\cite{guaman2026moodle}).
+
+Experiencia de Usuario (UX)
+La UX abarca el conjunto de percepciones, emociones, facilidad de uso, eficiencia, satisfacción y accesibilidad que experimenta una persona al interactuar con un sistema digital, enfocándose en comprender sus necesidades para crear productos intuitivos y atractivos(\cite{guaman2026moodle}). 
+
+→ Accesibilidad web
+
+La accesibilidad web representa un componente esencial para la inclusión digital, cuyo objetivo es garantizar el acceso equitativo a las plataformas y entornos digitales para todas las personas, especialmente aquellas con discapacidad visual que enfrentan barreras para navegar, interpretar contenido y acceder a la información en línea.
+En la práctica, la accesibilidad web implica solucionar deficiencias de diseño e implementación como: falta de alternativas textuales, el bajo contraste de colores, y etiquetas poco descriptivas.
+La accesibilidad web busca reducir la sobrecarga cognitiva, mejorar la usabilidad y garantizar la autonomía del usuario (usar el sistema sin necesidad de ayuda)(\cite{alvarez2026implementacion}). 
+  
+\section{Sistemas de Información Geográfica y visualización espacial}             
+\subsection{SIG y Web GIS}
+Un Sistema de Información Geográfica (SIG o GIS, en su acrónimo inglés) es una integración organizada de hardware, software, datos geográficos y personal, diseñada para capturar, almacenar, manejar, analizar, modelar y representar en todas sus formas la información geográficamente referenciada con el fin de resolver problemas complejos de planificación y gestión. También puede definirse como un modelo de una parte de la realidad referido a un sistema de coordenadas terrestre y construido para satisfacer unas necesidades concretas de información. 
+
+El SIG funciona como una base de datos con información geográfica (datos alfanuméricos) que se encuentra asociada por un identificador común a los objetos gráficos de un mapa digital. De esta forma, señalando un objeto se conocen sus atributos e, inversamente, preguntando por un registro de la base de datos se puede saber su localización en la cartografía. \cite{sastre2010sistemas} 
+
+En cambio un Web GIS es un tipo de sistema de información distribuida, que comprende por lo menos un servidor y un cliente, en donde el servidor es un servidor SIG y el cliente es un navegador web, aplicación de escritorio o aplicación móvil. En su forma más simple SIG web se puede definir como cualquier SIG que utiliza tecnología web para la comunicación entre un servidor y un cliente. \cite{vicente2016implementacion}
+
+Bajo este marco, el presente proyecto implementa una arquitectura Web GIS orientada a la gestión y visualización de incidencias en la Alcaldía Municipal de Rivas. 
+
+\subsection{Información geográfica }
+Históricamente, la representación del espacio y del entorno se ha llevado a cabo mediante la cartografía tradicional en papel para organizar y gestionar el territorio. En la actualidad, esta representación evoluciona hacia la información geográfica, la cual comprende el conjunto de datos digitales referenciados espacialmente que alimentan los sistemas modernos.\cite{lloret2008introduccion} 
+
+En el contexto de este proyecto para la Alcaldía Municipal de Rivas, la información geográfica representa el insumo base (como las coordenadas, calles, barrios y polígonos) que permite digitalizar los elementos urbanos para que la plataforma WebGIS pueda procesarlos y mostrarlos de forma interactiva a la ciudadanía.
+
+\subsection{Geolocalización de incidencias }
+La Geolocalización es un término relativamente nuevo, que se ha venido abriendo espacio desde mediados del año 2009 y que hace referencia al conocimiento de la ubicación geográfica de lugares, objetos o personas mediante el incesante uso de ciertas herramientas tecnológicas, tales como, Internet, navegadores, satélites, telefonía móvil, PDA, tablets, etc. Es por ello, que la llegada de de la Geolocalización es un tema a tratar en la actualidad, como tecnología que se basa en los Sistemas de Información Geográfica, y que permite entre otras cosas informar a los usuarios de cual es su situación con respecto a, la de los demás, y a su vez asociarla a lugares del mundo real.  
+
+En el contexto de la plataforma WebGIS desarrollada para la Alcaldía Municipal de Rivas, la geolocalización cumple el rol fundamental de permitir que los ciudadanos marquen el punto exacto donde ocurre un problema urbano (como un bache o un fallo en el alumbrado), facilitando que las autoridades ubiquen visualmente el lugar y envíen a las cuadrillas operativas de manera directa. \cite{florez2012tendencias}
+
+\subsection{Mapas de calor }
+Los mapas de calor son representaciones gráficas que visualizan la densidad o intensidad de un fenómeno sobre un área geográfica mediante gradientes de color. Se utilizan en análisis espacial para identificar zonas de concentración o patrones en los datos georreferenciados 
+
+En el ámbito de los sistemas de información geográfica, se distinguen principalmente los siguientes enfoques: 
+
+Densidad de puntos: Representa la concentración de eventos o ubicaciones específicas (por ejemplo, reportes de baches o fallas en el alumbrado) en un área dada. 
+
+Interpolación: Calcula valores estimados para áreas no muestreadas usando datos conocidos, produciendo superficies continuas que reflejan la distribución espacial de los fenómenos. 
+
+Mapas de calor de kernel (Kernel Density Estimation - KDE): Método estadístico para estimar la densidad de eventos en el espacio, suavizando la distribución para identificar zonas de alta concentración u hotspots. 
+
+Estas técnicas permiten detectar áreas críticas de acumulación de problemas, fundamentales para la toma de decisiones y la priorización de recursos operativos.\cite{bernalanalisis} En el contexto de la plataforma WebGIS desarrollada para la Alcaldía Municipal de Rivas, el mapa de calor permite a las autoridades visualizar de forma inmediata los sectores del municipio que concentran el mayor volumen de incidencias ciudadanas.
+
+\section{Gestión y análisis de incidencias}
+
+\subsection{Clasificación y priorización de reportes}
+La clasificación de las incidencias consiste en el proceso de tipificar y agrupar los reportes ciudadanos según su naturaleza y el componente de la infraestructura municipal afectada (tales como daños viales, fallas en el alumbrado público o problemas en servicios básicos). Por su parte, la priorización establece niveles de criticidad como crítico, alto, medio y bajo, en función del impacto potencial, la severidad del evento y su repercusión directa en la comunidad. Esta jerarquización permite determinar el orden de intervención y los tiempos de atención estimados para optimizar los recursos operativos y presupuestarios de la administración local. \cite{parraestrategia}
+
+\subsection{Seguimiento y registro histórico }
+El seguimiento garantiza el monitoreo del ciclo de vida de cada reporte ciudadano desde su recepción y ubicación espacial en el sistema WebGIS hasta su resolución definitiva, asegurando una trazabilidad completa de las acciones ejecutadas por el personal encargado. Asimismo, el registro histórico almacena de forma permanente los datos de las transacciones y coordenadas para futuras auditorías, análisis de patrones espaciales o evaluación de tendencias en el territorio. \cite{parraestrategia}
+
+\subsection{Apoyo a la toma de decisiones }
+La consolidación de métricas, indicadores y visualizaciones cartográficas derivados de la atención de incidencias funge como un soporte estratégico para los administradores y directivos locales. Esto facilita la evaluación del rendimiento operativo del personal y la planificación informada de intervenciones de mantenimiento y mejora en el municipio. \cite{parraestrategia}
+
