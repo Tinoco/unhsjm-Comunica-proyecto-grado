@@ -1,14 +1,13 @@
 % Capítulo 2: Marco Teórico
 % Propósito: Presentar las bases teóricas, conceptos clave, antecedentes de investigación y el estado del arte que fundamentan el proyecto.
-
-
 \section{Marco Teórico}  
 
 \section{Sistemas digitales de reporte de incidencias ciudadanas}
+
 \subsection{Concepto y características}
 
 La interacción entre los ciudadanos y las instituciones públicas puede originarse cuando una persona identifica una necesidad o problemática en su entorno y la comunica a la entidad responsable de atenderla. En este contexto, los sistemas digitales de reporte ciudadano constituyen mecanismos tecnológicos mediante los cuales las necesidades identificadas por la población pueden transformarse en solicitudes registradas y gestionadas por una institución. Un ejemplo consolidado de este modelo son los sistemas 311 utilizados en distintas ciudades de Estados Unidos. \cite{cook2024potholes} explican que estos sistemas, creados originalmente para reducir las llamadas no urgentes dirigidas al 911, evolucionaron hasta convertirse en puntos de contacto para múltiples servicios municipales, permitiendo reportar problemas relacionados con infraestructura, saneamiento u otros servicios públicos.
-
+	
 Una característica recurrente de estas soluciones es la centralización y estructuración de la información. En el sistema desarrollado por \cite{moreno2026diseno} para la gestión de PQRSD de la Secretaría de Tránsito y Transporte de Girardot, la aplicación fue planteada para centralizar las solicitudes y gestionar de forma integrada actividades como el registro, consulta, asignación, respuesta y seguimiento. La solución permite además conservar datos como número de radicado, fecha, tipo de solicitud, datos del ciudadano, estado y funcionario responsable, favoreciendo la organización y trazabilidad de los casos. De esta forma, la digitalización no consiste únicamente en sustituir el papel por un formulario electrónico, sino en mantener la información asociada a cada solicitud dentro de un flujo estructurado de gestión.
 
 La trazabilidad y el seguimiento constituyen otra característica relevante de los sistemas de reporte ciudadano, ya que permiten conservar información sobre una incidencia durante las diferentes etapas de su atención. Esta función adquiere especial importancia en el contexto municipal, donde un reporte puede requerir la intervención de distintas áreas antes de alcanzar su resolución. El sistema desarrollado por \cite{trejo2019sistema} para el municipio de Othón P. Blanco se orienta precisamente al reporte y seguimiento de deficiencias de servicios públicos, evidenciando la necesidad de vincular la recepción de la incidencia con mecanismos que permitan mantener un control sobre su evolución durante el proceso de atención.
@@ -59,13 +58,14 @@ En consecuencia, la evolución de los mecanismos de atención ciudadana puede en
 
 \section{Gobierno electrónico y participación ciudadana}
 
-\textbf{Gobierno electrónico}
+\subsection{Gobierno electrónico}
 Gobierno electrónico se describe como un proceso de transformación tecnológica e innovación organizativa en las Administraciones Públicas.
 consiste en la utilización de herramientas digitales y plataformas en línea para que los gobiernos proporcionen servicios, interactúen con los ciudadanos y optimicen la gestión pública. Su objetivo principal es mejorar la eficiencia administrativa, aumentar la transparencia y fomentar la participación ciudadana en la toma de decisiones.
 Entre algunos rasgos del Gobierno electrónico están:
 centrarse en mejorar el rendimiento operativo de los procesos, permitiendo la tramitación integral de procedimientos administrativos por medios electrónicos (gestión de trámites electrónicos) incentivar la participación ciudadana(\cite{garcia2024modelo}).
 
-\textbf{Participación ciudadana digital}
+\subsection{Participación ciudadana digital}
+	
 La fuente (\cite{abad2026participacion}) aborda la participación ciudadana como un componente esencial e indispensable del gobierno electrónico y la gobernanza digital, argumentando que la tecnología por sí sola carece de impacto democrático si no facilita una interacción directa, transparente e inclusiva entre la ciudadanía y las instituciones públicas.
 A través de su revisión sistemática, fundamenta que
 La participación ciudadana mediante plataformas digitales permite a la población intervenir de forma activa en la formulación, ejecución y evaluación de políticas públicas y control social, fortaleciendo la legitimidad institucional.
@@ -74,7 +74,8 @@ Además, que la integración efectiva de herramientas participativas digitales p
 También se hace mención de condiciones necesarias para que la participación ciudadana sea efectiva:
 La participación no debe ser meramente simbólica, para que funcione como un pilar sostenible del gobierno electrónico, es indispensable acompañarla de políticas públicas que aborden la brecha digital, promuevan la alfabetización tecnológica y fortalezcan la confianza hacia la institución. 
 
-\textbf{Interacción ciudadano–municipalidad}
+\subsection{Interacción ciudadano–municipalidad}
+
 Según(\cite{salazar2026participacion}), la interacción constante entre los ciudadanos y las municipalidades impulsa la mejora de la gestión pública local(municipalidad) a través de varios mecanismos fundamentales:
 Mejora en la calidad, legitimidad y eficacia de las decisiones: Al involucrar a la ciudadanía en la toma de decisiones, las municipalidades logran responder mejor a las necesidades reales de la comunidad, lo que aumenta la eficacia de las intervenciones locales y refuerza la legitimidad de las instituciones municipales.
 Coproducción de servicios públicos. Se concibe al ciudadano como un coproductor activo de las decisiones y de los servicios públicos, trabajando en red junto a la administración local.
@@ -83,14 +84,14 @@ E-participación y gobernanza digital: La integración de herramientas de gobier
 
 \section{Desarrollo y diseño de plataformas web}
 
-→ Arquitecturas de aplicaciones web
+\subsection{Arquitecturas de aplicaciones web}
 
 En el desarrollo y diseño de plataformas web esta presente la arquitectura que estas llevan, pero ¿Qué es?
 La arquitectura de aplicaciones web no es más que la estructura que debe de llevar el sistema de software en la que abarca los componentes y tecnologías que ayudaran a la fácil interacción entre usuarios y servidores.
 La arquitectura se encarga de la comunicación entre las piezas del sistema asignando roles y aplicando la lógica del negocio (operaciones requeridas para el funcionamiento del agente en cuestión) velando siempre por un desarrollo abierto a mejoras (escalabilidad y mantenibilidad)(\cite{guachamin2024desarrollo}).
 
 
-→ Escalabilidad, mantenibilidad y seguridad.
+\subsection{Escalabilidad, mantenibilidad y seguridad}
 Escalabilidad: hace referencia a la capacidad de un sistema para atender de manera eficiente un volumen creciente de usuarios, datos y funcionalidades, permitiendo que la estructura crezca sin comprometer su rendimiento ni su estabilidad. Este atributo se ve favorecido por arquitecturas multicapa y RESTful, las cuales permiten la evolución La independiente de los componentes y una distribución eficiente de los recursos(\cite{clavijo2026aplicacion}).
 
 
@@ -100,7 +101,8 @@ además, este atributo se relaciona directamente con aspectos internos del códi
 
 Seguridad: atributo no funcional, que se fortalece al separar las responsabilidades en capas para centralizar las validaciones y políticas de control de acceso en módulos específicos del backend, al delegar la gestión de identidad mediante autenticación basada en tokens, y al verificar mediante análisis estático que la estructura permanezca libre de vulnerabilidades y puntos calientes de riesgo(\cite{clavijo2026aplicacion}).
 
-→ Usabilidad y UI/UX
+\subsection{Usabilidad y UI/UX}
+
 La usabilidad es un atributo de calidad necesario en la creación de software además de ser un requerimiento no funcional que establece cualidades generales, esta se logra evaluar a través de pruebas en el sistema que buscan garantizar que la interfaz sea:
 Perceptible: La información y los componentes de la interfaz deben presentarse de manera que los usuarios puedan percibirlos adecuadamente.
 Operable: La navegación, los controles y los componentes interactivos deben ser manejables y utilizables por cualquier persona
@@ -119,13 +121,14 @@ La UI es la parte visual y funcional con la que el usuario interactúa (botones,
 Experiencia de Usuario (UX)
 La UX abarca el conjunto de percepciones, emociones, facilidad de uso, eficiencia, satisfacción y accesibilidad que experimenta una persona al interactuar con un sistema digital, enfocándose en comprender sus necesidades para crear productos intuitivos y atractivos(\cite{guaman2026moodle}). 
 
-→ Accesibilidad web
+\subsection{Accesibilidad web}
 
 La accesibilidad web representa un componente esencial para la inclusión digital, cuyo objetivo es garantizar el acceso equitativo a las plataformas y entornos digitales para todas las personas, especialmente aquellas con discapacidad visual que enfrentan barreras para navegar, interpretar contenido y acceder a la información en línea.
 En la práctica, la accesibilidad web implica solucionar deficiencias de diseño e implementación como: falta de alternativas textuales, el bajo contraste de colores, y etiquetas poco descriptivas.
 La accesibilidad web busca reducir la sobrecarga cognitiva, mejorar la usabilidad y garantizar la autonomía del usuario (usar el sistema sin necesidad de ayuda)(\cite{alvarez2026implementacion}). 
-  
-\section{Sistemas de Información Geográfica y visualización espacial}             
+
+\section{Sistemas de Información Geográfica y visualización espacial}
+
 \subsection{SIG y Web GIS}
 Un Sistema de Información Geográfica (SIG o GIS, en su acrónimo inglés) es una integración organizada de hardware, software, datos geográficos y personal, diseñada para capturar, almacenar, manejar, analizar, modelar y representar en todas sus formas la información geográficamente referenciada con el fin de resolver problemas complejos de planificación y gestión. También puede definirse como un modelo de una parte de la realidad referido a un sistema de coordenadas terrestre y construido para satisfacer unas necesidades concretas de información. 
 
