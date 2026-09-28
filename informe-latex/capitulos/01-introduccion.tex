@@ -77,10 +77,36 @@ Esta investigación aporta un catálogo estructurado de requerimientos funcional
 % Revisar la de la carta
 
 \section{Alcance}
-El alcance de la presente investigación se define metodológicamente como descriptivo y propositivo \cite{demexico}, enfocado en el diseño, desarrollo preliminar y validación de una solución informática aplicada al ámbito municipal. Por un lado, desde la parte técnica y descriptiva, el estudio detalla la arquitectura del software, el modelado de bases de datos, los componentes de geolocalización (WebGIS) y los requerimientos funcionales de la plataforma web. Por otro lado, en su dimensión propositiva, el proyecto parte de la creación autónoma de un prototipo funcional para orientar la interacción con la Alcaldía Municipal hacia una fase de validación de campo, pruebas de usabilidad y aceptación. Esto garantiza su adaptabilidad operativa de cara a su implementación y defensa, programada para el primer semestre del año 2027. 
+Comunica se pensó para ser una plataforma web que ayude a la mejora de comunicación entre los ciudadanos y la alcaldía de Rivas para el levantamiento, clasificación y revisión de incidencias que pueda presentar la población. 
+
+Registros de usuarios: El usuario se registrará en el sistema para la realización del levantamiento de incidencias. 
+
+
+Realización de levantamiento de una incidencia: Interfaz amigable la cual permitirá hacer su levantamiento de incidencia con mucha facilidad, se podrá colocar una pequeña descripción, evidencia fotográfica, y recopilación de ubicación exacta.  
+
+
+Transparencia con el ciudadano: El ciudadano podrá ver cómo va el proceso de su resolución al problema del cual realizo levantamiento.  
+
+
+División de apartado según el rol: El usuario cuneta con su propio apartado en el cual pdora ver su historial de incidencias. 
+
+
+
+Gestión administrativa: Panel administrativo que cuenta con un dashboard en el cual se muestra total de reportes.  así mismo la administración cuenta con poder de bloquear permanentemente o temporalmente a usuarios que hagan mal uso de la plataforma. 
+
+
+Mapa geográfico: Cuenta con un mapa donde se representarán los reportes en donde se observan representadas las áreas con mayor reporte de incidencias.
 
 \section{Limitaciones}
-El desarrollo e implementación de la presente investigación presenta ciertas limitaciones de carácter temporal, institucional y técnico. En primer lugar, en el ámbito temporal, el proyecto se encuentra acotado por el calendario académico de la carrera, estableciendo su defensa para el primer semestre de 2027, lo que delimita los tiempos de desarrollo y evolución del software. En segundo lugar, en el aspecto institucional y de campo, la fase de pruebas y validación del sistema está sujeta a la disponibilidad y a los tiempos de gestión administrativa de la Alcaldía Municipal de Rivas. Finalmente, en el aspecto técnico y operativo, la plataforma está limitada temporalmente por el uso de componentes y servicios cartográficos gratuitos de terceros, los cuales están sujetos a restricciones de cuotas de uso y a la disponibilidad del proveedor externo, lo que podría condicionar el rendimiento del componente WebGIS ante un alto volumen de peticiones simultáneas. 
+El tipo de limitaciones que se llegan a tener son debido al alcance temporal y técnico del proyecto académico	 
+
+El rango geográfico por el momento solo está enfocado en Rivas 
+
+Para este estudio solo está decantada una aplicación web responsiva y no una app Mobile nativa 
+
+Al ser un proyecto académico el uso de servicios gratuitos es una limitante 
+
+Las funciones de la administración son manuales y se necesita que esté presente un miembro del equipo para gestionarlo 
 
 \section{Viabilidad del Proyecto}
 En esta sección se evaluara la viabilidad del sistema propuesto para la alcaldía municipal a partir de las cuatro dimensiones fundamentales: económica, técnica, operativa y legal. La definición de cada una de ellas ayudara a respaldar la capacidad de poder ejecutar, mantener y escalar el sistema con el fin de volverlo una solución efectiva.
@@ -194,3 +220,10 @@ El diseño de la interfaz fue creado con colores amigables a la vista e intuitiv
 \textbf{• Uso del registro histórico para análisis y planificación:} La plataforma integra la función de Historial del Ciudadano para consultar reportes previos y un dashboard de datos estadísticos que apoya el análisis y la planificación pública.\\
 \textbf{• Indicadores de eficiencia (tiempo de respuesta, número de incidencias atendidas):} El sistema "Comunica" podrá evaluar la eficiencia debido los tiempos de respuesta según datos como fechas de creación y fecha de solución, así como el estado del reporte para contabilizar los casos gestionados. Toda esta información se consolida en un dashboard estadístico institucional en la aplicación web administrativa, lo que permite a las autoridades visualizar en tiempo real el volumen de incidencias atendidas y darles seguimiento.
 \subsection{Viabilidad Legal}
+El desarrollo e implementación de la plataforma municipal se ajusta de manera estricta al marco jurídico y normativo de la República de Nicaragua. 
+
+Desde la perspectiva constitucional, el proyecto respeta las garantías ciudadanas establecidas en el Artículo 27 de la Constitución Política, salvaguardando la seguridad (Inciso 2), la vida privada de los usuarios (Inciso 5) y su derecho a conocer la información registrada en entidades públicas o privadas (Inciso 7). Asimismo, la arquitectura del software se alinea con los mecanismos de protección de entornos digitales y bases de datos contemplados en el Artículo 176 (Recurso de Hábeas Data), el cual tutela el manejo transparente y seguro de los datos personales.  
+
+En concordancia con lo anterior, y tomando en cuenta la Ley de Protección de Datos Personales (Ley No. 787), aprobada el 21 de marzo de 2012 y publicada en La Gaceta, Diario Oficial No. 61 del 29 de marzo del mismo año, la plataforma cumple cabalmente con dicha normativa. Dado que el software recolecta únicamente los datos de identificación personal necesarios para el reporte de incidencias específicamente nombre completo, número de cédula, fecha de nacimiento y dirección, su funcionamiento se rige bajo los principios de licitud y proporcionalidad consagrados en los Artículos 1 y 5 de dicha ley, asegurando que sean los estrictamente indispensables para la gestión y trazabilidad de los reportes ciudadanos.  
+
+Finalmente, en estricto cumplimiento de los Artículos 9 y 11 de la Ley No. 787, la plataforma incorpora mecanismos tecnológicos de autenticación, control de accesos y cifrado, garantizando la confidencialidad e integridad de la base de datos municipal y previniendo accesos no autorizados o alteraciones de la información recopilada. 
