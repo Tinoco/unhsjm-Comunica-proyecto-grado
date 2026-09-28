@@ -79,34 +79,28 @@ Esta investigación aporta un catálogo estructurado de requerimientos funcional
 \section{Alcance}
 Comunica se pensó para ser una plataforma web que ayude a la mejora de comunicación entre los ciudadanos y la alcaldía de Rivas para el levantamiento, clasificación y revisión de incidencias que pueda presentar la población. 
 
-Registros de usuarios: El usuario se registrará en el sistema para la realización del levantamiento de incidencias. 
-
-
-Realización de levantamiento de una incidencia: Interfaz amigable la cual permitirá hacer su levantamiento de incidencia con mucha facilidad, se podrá colocar una pequeña descripción, evidencia fotográfica, y recopilación de ubicación exacta.  
-
-
-Transparencia con el ciudadano: El ciudadano podrá ver cómo va el proceso de su resolución al problema del cual realizo levantamiento.  
-
-
-División de apartado según el rol: El usuario cuneta con su propio apartado en el cual pdora ver su historial de incidencias. 
-
-
-
-Gestión administrativa: Panel administrativo que cuenta con un dashboard en el cual se muestra total de reportes.  así mismo la administración cuenta con poder de bloquear permanentemente o temporalmente a usuarios que hagan mal uso de la plataforma. 
-
-
-Mapa geográfico: Cuenta con un mapa donde se representarán los reportes en donde se observan representadas las áreas con mayor reporte de incidencias.
+\begin{itemize}
+	\item Registros de usuarios: El usuario se registrará en el sistema para la realización del levantamiento de incidencias. 
+	
+	\item Realización de levantamiento de una incidencia: Interfaz amigable la cual permitirá hacer su levantamiento de incidencia con mucha facilidad, se podrá colocar una pequeña descripción, evidencia fotográfica, y recopilación de ubicación exacta.  
+	
+	\item Transparencia con el ciudadano: El ciudadano podrá ver cómo va el proceso de su resolución al problema del cual realizo levantamiento.  
+	
+	\item División de apartado según el rol: El usuario cuneta con su propio apartado en el cual pdora ver su historial de incidencias. 
+	
+	\item Gestión administrativa: Panel administrativo que cuenta con un dashboard en el cual se muestra total de reportes.  así mismo la administración cuenta con poder de bloquear permanentemente o temporalmente a usuarios que hagan mal uso de la plataforma. 
+	
+	\item Mapa geográfico: Cuenta con un mapa donde se representarán los reportes en donde se observan representadas las áreas con mayor reporte de incidencias.
+\end{itemize}
 
 \section{Limitaciones}
-El tipo de limitaciones que se llegan a tener son debido al alcance temporal y técnico del proyecto académico	 
-
-El rango geográfico por el momento solo está enfocado en Rivas 
-
-Para este estudio solo está decantada una aplicación web responsiva y no una app Mobile nativa 
-
-Al ser un proyecto académico el uso de servicios gratuitos es una limitante 
-
-Las funciones de la administración son manuales y se necesita que esté presente un miembro del equipo para gestionarlo 
+El tipo de limitaciones que se llegan a tener son debido al alcance temporal y técnico del proyecto académico, son los siguientes:
+\begin{itemize}
+	\item El rango geográfico por el momento solo está enfocado en Rivas.
+	\item Para este estudio solo está decantada una aplicación web responsiva y no una app Mobile nativa.
+	\item Al ser un proyecto académico el uso de servicios gratuitos es una limitante.
+	\item Las funciones de la administración son manuales y se necesita que esté presente un miembro del equipo para gestionarlo
+\end{itemize}
 
 \section{Viabilidad del Proyecto}
 En esta sección se evaluara la viabilidad del sistema propuesto para la alcaldía municipal a partir de las cuatro dimensiones fundamentales: económica, técnica, operativa y legal. La definición de cada una de ellas ayudara a respaldar la capacidad de poder ejecutar, mantener y escalar el sistema con el fin de volverlo una solución efectiva.
@@ -126,19 +120,111 @@ En esta sección se evaluara la viabilidad del sistema propuesto para la alcald�
 	Incluye el alojamiento del sistema, bases de datos, servicios en la nube y demás recursos técnicos indispensables para el desarrollo, despliegue y prueba de la aplicación web.
 	
 	\textbf{Gastos operativos básicos:}
-	son los servicios básicos como la electricidad y internet utilizado en los 3 meses (65 días sin contar fines de semana) de desarrollo.
+	Se muestran los servicios operativos mas comunes durante el desarrollo, como la electricidad y internet utilizado en los 3 meses (65 días sin contar fines de semana) de desarrollo.
 	
-	% Tabla
-	\begin{tabular} {|c|c|c|c|}
-		Categoría & Elemento & Costo estimado en C\$ & Comentarios \\ \hline
-		Talento humano & ejem  & eemplo & ejemplo
-	\end{tabular}
+	% Tabla de costos de desarrollo
+	\begin{table}[htbp]
+		\centering
+		\caption{Costos estimados de desarrollo del sistema}
+		\label{tab:costos_desarrollo}
+		\begin{tabularx}{\textwidth}{X X X X}
+			\toprule
+			\textbf{Categoría} & \textbf{Elemento} & \textbf{Costo estimado} & \textbf{Explicación} \\ 
+			\midrule
+			
+			\textbf{Talento Humano} & Desarrollador backend & C\$ 38,471 & Salario estimado de C\$620 por día. \\ 
+			
+			\addlinespace
+			
+			& Desarrollador frontend & C\$ 38,471 & Salario estimado de C\$620 por día. \\ 
+			
+			\addlinespace
+			
+			& Diseñador / PM & C\$ 33,976 & Salario estimado de C\$548 por día. \\ 
+			
+			\addlinespace
+			\midrule
+			
+			\textbf{Servicios e infraestructura} & 
+			Leaflet \newline
+			Render \newline
+			Netlify \newline
+			DBeaver \newline
+			Visual Studio Code \newline
+			GitHub \newline
+			Cloudinary & C\$ 0 & Durante el desarrollo se emplearán los planes gratuitos disponibles para estos servicios y herramientas. \\ 
+			
+			\addlinespace
+			\midrule
+			
+			\textbf{Gastos operativos} & 
+			Electricidad & C\$ 761.23 & El consumo estimado de tres computadoras durante el período de desarrollo es de 129.6 kWh. \\ 
+			
+			\addlinespace
+			
+			& Internet & C\$ 2,100 & Servicio de Internet de 60 Mbps mediante fibra óptica durante el período de desarrollo. \\ 
+			
+			\addlinespace
+			\midrule
+			
+			\textbf{Total} & 
+			& \textbf{C\$ 113,779.23} & Equivalente aproximado en dólares: \$3,117.24. \\ 
+			
+			\bottomrule
+		\end{tabularx}
+	\end{table}
 	
 	\item Costos de operación y mantenimiento
-	\item Estrategia de difusión y adopción
-	\item Identificación y cuantificación de beneficios económicos
-	\item Evaluación económica: VAN, TIR y PRI
-	\item Fuentes de financiamiento
+	El proyecto fue pensado como una herramienta de uso con alta duración. en la siguiente tabla están definidos los costos de producción para mantener el sistema activo.
+	% Tabla de costos de producción y mantenimiento
+	\begin{table}[htbp]
+		\centering
+		\caption{Costos de producción y mantenimiento del sistema}
+		\label{tab:costos_produccion_mantenimiento}
+		\begin{tabularx}{\textwidth}{X X X X}
+			\toprule
+			\textbf{Recurso} & 
+			\textbf{Proveedor} & 
+			\textbf{Costo mensual (dólares)} & 
+			\textbf{Costo anual (dólares)} \\ 
+			\midrule
+			
+			Host de API & 
+			Render & 
+			\$25 & 
+			\$300 \\ 
+			
+			\addlinespace
+			
+			Base de datos & 
+			Render & 
+			Incluido en el servicio & 
+			Incluido en el servicio \\ 
+			
+			\addlinespace
+			\midrule
+			
+			Host de la plataforma & Netlify & \$20 & \$240 \\ 
+			
+			\addlinespace
+			\midrule
+			
+			Dominio & NameCheap & -- & \$6.79 \\ 
+			
+			\addlinespace
+			\midrule
+			
+			SSL & Cloudflare & \$20 & \$240 \\ 
+			
+			\addlinespace
+			\midrule
+			
+			Almacenamiento de imágenes & Cloudinary & -- & \$99 \\ 
+			
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+	
 	
 \end{enumerate}
 
