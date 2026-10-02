@@ -1,4 +1,5 @@
 \documentclass[stu, floatsintext, 12pt, spanish]{apa7}
+\usepackage{tabularx}
 {\tiny }
 % ==========================================
 % Paquetes de Idioma, Codificación y Fuentes
@@ -13,6 +14,8 @@
 \usepackage{graphicx}
 \graphicspath{{figuras/}} % Búsqueda automática en la carpeta figuras/
 \usepackage{hyperref}
+\usepackage{tabularx} % Necesario para columnas de ancho automático tablas
+\usepackage{booktabs} % Para líneas horizontales profesionales estilo APA tablas
 
 % ==========================================
 % Configuración Bibliográfica (APA 7 - BibLaTeX + Biber)
@@ -67,6 +70,7 @@
 
 % Tabla de Contenidos / Índice
 \tableofcontents
+\listoftables
 \newpage
 
 % ==========================================
