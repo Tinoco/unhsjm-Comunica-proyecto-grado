@@ -6,6 +6,21 @@
 \RequirePackage{etoolbox}
 \RequirePackage{setspace}
 \RequirePackage{indentfirst}
+\RequirePackage{ragged2e}%justificado
+\RequirePackage{indentfirst}%sangria
+
+% Fuerza a que el comando estándar de alineación izquierda se comporte como justificado
+\let\raggedright\justifying
+\let\FlushLeft\justifying
+% Asegura que el documento inicie completamente justificado
+\AtBeginDocument{\justifying}
+
+
+% Obliga a LaTeX a fijar la sangría justo cuando empiece el documento
+\AtBeginDocument{
+	\setlength{\parindent}{1.27cm}
+}
+
 
 % ==========================================
 % Comandos de Configuración Institucional
