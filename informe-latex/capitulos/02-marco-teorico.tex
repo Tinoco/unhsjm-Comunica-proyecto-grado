@@ -56,32 +56,45 @@ Paralelamente, la transformación de la atención ciudadana también ha estado v
 
 En consecuencia, la evolución de los mecanismos de atención ciudadana puede entenderse como un proceso gradual que avanza desde procedimientos presenciales y registros físicos, hacia esquemas de digitalización parcial, y posteriormente hacia plataformas digitales integradas y multicanal. En estas últimas, el ciudadano puede registrar solicitudes de manera remota, consultar su evolución e incorporar datos adicionales, mientras que la institución puede centralizar la información, canalizar los casos y conservar registros históricos. Este proceso representa no solamente un cambio en el medio utilizado para recibir las solicitudes, sino una transformación en la forma en que la información ciudadana es registrada, gestionada y posteriormente aprovechada dentro de las instituciones públicas.
 
-\section{Gobierno electrónico y participación ciudadana}
 
-\subsection{Gobierno electrónico}
-Gobierno electrónico se describe como un proceso de transformación tecnológica e innovación organizativa en las Administraciones Públicas.
-consiste en la utilización de herramientas digitales y plataformas en línea para que los gobiernos proporcionen servicios, interactúen con los ciudadanos y optimicen la gestión pública. Su objetivo principal es mejorar la eficiencia administrativa, aumentar la transparencia y fomentar la participación ciudadana en la toma de decisiones.
-Entre algunos rasgos del Gobierno electrónico están:
-centrarse en mejorar el rendimiento operativo de los procesos, permitiendo la tramitación integral de procedimientos administrativos por medios electrónicos (gestión de trámites electrónicos) incentivar la participación ciudadana(\cite{garcia2024modelo}).
+\section{HelpDesk e ITIL 4.0}
 
-\subsection{Participación ciudadana digital}
-	
-La fuente (\cite{abad2026participacion}) aborda la participación ciudadana como un componente esencial e indispensable del gobierno electrónico y la gobernanza digital, argumentando que la tecnología por sí sola carece de impacto democrático si no facilita una interacción directa, transparente e inclusiva entre la ciudadanía y las instituciones públicas.
-A través de su revisión sistemática, fundamenta que
-La participación ciudadana mediante plataformas digitales permite a la población intervenir de forma activa en la formulación, ejecución y evaluación de políticas públicas y control social, fortaleciendo la legitimidad institucional.
-destaca que el gobierno electrónico supera el enfoque tradicional en agilización de trámites o prestación de servicios.
-Además, que la integración efectiva de herramientas participativas digitales promueve un gobierno más abierto, incrementando transparencia en las organizaciones, contribuyendo a una mejora en la comunicación entre el Estado y la sociedad civil.
-También se hace mención de condiciones necesarias para que la participación ciudadana sea efectiva:
-La participación no debe ser meramente simbólica, para que funcione como un pilar sostenible del gobierno electrónico, es indispensable acompañarla de políticas públicas que aborden la brecha digital, promuevan la alfabetización tecnológica y fortalezcan la confianza hacia la institución. 
+\subsection{Definición y función de Helpdesk}
+HelpDesk es un término usado para referirse a un servicio que ofrece información y soporte técnico a usuarios de una empresa.
+El objetivo principal es atender solicitudes o incidencias ya sean internas o externas relacionadas a tecnologías de Información. 
+El HelpDesk funciona como un intermediario entre el usuario y el equipo técnico el cual se enfoca a la resolución de las problemáticas que se presentan.
+El termino HelpDesk puede ser utilizado en diferentes ámbitos no es propio del área de informática. Como tal se refiere al servicio de atención al cliente con el objetivo de resolver problemas de usuarios para el beneficio de ambas partes.
 
-\subsection{Interacción ciudadano–municipalidad}
+Funcionamiento: los helpDesk proveen a los usuarios la ayuda que necesitan para la resolución de sus problemáticas. Estas problemáticas son recepcionadas y gestionadas por medio de un software el cual permite crear un tikets o incidente. Además, el sistema realiza acciones como seguimiento y priorización de los casos según su nivel de urgencia. Gracias a esto el usuario y la entidad pueden comunicarse por medio de distintos medios dependiendo del servicio que provee (\cite{murillo2022propuesta}).
 
-Según(\cite{salazar2026participacion}), la interacción constante entre los ciudadanos y las municipalidades impulsa la mejora de la gestión pública local(municipalidad) a través de varios mecanismos fundamentales:
-Mejora en la calidad, legitimidad y eficacia de las decisiones: Al involucrar a la ciudadanía en la toma de decisiones, las municipalidades logran responder mejor a las necesidades reales de la comunidad, lo que aumenta la eficacia de las intervenciones locales y refuerza la legitimidad de las instituciones municipales.
-Coproducción de servicios públicos. Se concibe al ciudadano como un coproductor activo de las decisiones y de los servicios públicos, trabajando en red junto a la administración local.
-Presupuesto participativo: Constituye uno de los mecanismos más estudiados para democratizar la asignación de recursos públicos, permitiendo que la población incida de forma directa en las prioridades de inversión del municipio.
-E-participación y gobernanza digital: La integración de herramientas de gobierno electrónico, plataformas digitales y redes sociales agiliza la comunicación, reduciendo barreras de acceso para la consulta y el involucrado en la planificación urbana y la gestión diaria.
 
+\subsection{ITIL 4.0}
+
+En términos sencillos, ITIL 4 es un "manual de instrucciones comprobado" que usan las organizaciones para evitar el caos al momento de ofrecer soporte o entregar un servicio.
+En lugar de que un equipo de trabajo invente desde cero cómo atender las quejas de los usuarios ITIL 4 les entrega las pautas a seguir para una mejor organización ejemplo:
+El Recibimiento en la Mesa de Ayuda: Te dice exactamente cómo debes recibir un reporte, cómo clasificarlo(\cite{miller2022itil4}).
+
+
+\subsection{Gestión de Incidencias bajo el Enfoque ITIL 4.0 }
+
+Según(\cite{torres2025aplicativo}) la secuencia de pasos operativos para estructurar la atención de fallas, abarcando desde la notificación inicial por parte del usuario hasta la confirmación y cierre del servicio son:
+
+1. Detección y Canalización del Reporte
+Recepción centralizada: Las solicitudes e interrupciones del servicio se canalizan por distintos medios o a través de una web (mesa de ayuda), reduciendo la dependencia de reportes informales vía telefónica o presencial.
+Captura estructurada de datos: Al momento de la detección, se realiza el ingreso formal del evento registrando fecha, hora, usuario solicitante, área afectada y una descripción detallada del problema.
+2. Clasificación y Jerarquización Operativa
+Categorización del servicio: Se asigna el tipo de servicio correspondiente dentro del sistema, lo que permite filtrar la solicitud y facilitar su posterior enrutamiento al equipo encargado.
+Priorización por matriz de atención: La urgencia de respuesta se determina evaluando conjuntamente el impacto de la urgencia de esa manera se determina la (rapidez requerida para la solución), asegurando que los eventos críticos reciban asignación prioritaria de recursos.
+3. Diagnóstico y Atención por Niveles de Soporte
+Atención (Mesa de Ayuda): La primera escala de soporte asume la evaluación inicial y resolución de incidencias comunes de baja complejidad técnica (como gestión de contraseñas, conectividad de red, configuración de cuentas o fallos básicos de software).
+Escalamiento especializado: Si el requerimiento demanda competencias más avanzadas o intervención directa en la infraestructura, el ticket se transfiere a los departamentos o especialistas de segundo nivel.
+4. Resolución, Pruebas y Medición
+Ejecución y pruebas de funcionamiento: Tras identificar la solución, se aplican los arreglos necesarios y se ejecutan pruebas de verificación obligatorias para constatar que el servicio funciona según los parámetros acordados.
+Control del tiempo de atención: Se registra el tiempo total transcurrido desde la apertura hasta la corrección efectiva con el fin de evaluar la eficiencia operativa.
+5. Verificación de Conformidad y Cierre Definitivo
+Validación con el usuario: El incidente no se da por concluido hasta confirmar que la falla fue subsanada satisfactoriamente y contar con el visto bueno del usuario afectado.
+
+ 
 \section{Desarrollo y diseño de plataformas web}
 
 \subsection{Arquitecturas de aplicaciones web}
