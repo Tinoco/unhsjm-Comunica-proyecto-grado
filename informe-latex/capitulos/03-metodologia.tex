@@ -3,3 +3,165 @@
 \section{Marco Metodológico}
 
 \section{Cronograma de actividades}
+
+En esta sección se representan las actividades realizadas para la redacción de la investigación y desarrollo del proyecto de software, representado con diagramas de Grantt.
+
+% Diagramas 
+\begin{figure}[htbp]
+	\centering
+	\begin{ganttchart}[
+		hgrid,
+		vgrid,
+		x unit=1.65cm,
+		y unit title=0.65cm,
+		y unit chart=0.75cm,
+		title height=1,
+		bar height=0.45,
+		group height=0.35,
+		group top shift=0.32,
+		bar top shift=0.28,
+		title label font=\small\bfseries,
+		bar label font=\small,
+		group label font=\small\bfseries,
+		bar label node/.append style={
+			text width=5cm,
+			align=left
+		},
+		group label node/.append style={
+			text width=5cm,
+			align=left
+		},
+		group/.append style={
+			fill=gray!55,
+			draw=gray!70
+		},
+		bar/.append style={
+			fill=blue!25,
+			draw=blue!60
+		}
+		]{1}{8}
+		
+		% Encabezado: semanas
+		\gantttitle{S1}{1}
+		\gantttitle{S2}{1}
+		\gantttitle{S3}{1}
+		\gantttitle{S4}{1}
+		\gantttitle{S5}{1}
+		\gantttitle{S6}{1}
+		\gantttitle{S7}{1} 
+		\gantttitle{S8}{1} \\
+		
+		% Encabezado: fechas
+		\gantttitle{27/07}{1}
+		\gantttitle{03/08}{1}
+		\gantttitle{10/08}{1}
+		\gantttitle{17/08}{1}
+		\gantttitle{24/08}{1} 
+		\gantttitle{31/08}{1} 
+		\gantttitle{07/09}{1} 
+		\gantttitle{14/09}{1} \\
+		
+		% Grupo principal
+		
+		% Actividades
+		\ganttbar{Planteamiento del problema}
+		{1}{1} \\
+		
+		\ganttbar{Delimitación del problema}
+		{1}{1} \\
+		
+		\ganttbar{Declaración de objetivos}
+		{1}{2} \\
+		
+		\ganttbar{Formulación de justificación}
+		{2}{3} \\
+		
+		\ganttbar{Definición del alcance y limitaciones}
+		{3}{3} \\
+		
+		\ganttbar{Búsqueda de antecedentes}
+		{4}{4} \\
+		
+		\ganttbar{Revisión Bibliográfica}
+		{4}{7} \\
+		
+		\ganttbar{Desarrollo del Marco teórico}
+		{7}{8} \\
+		
+	\end{ganttchart}
+	
+	\caption{Cronograma actividades del proyecto (Semana 1 - 8)}
+	\label{fig:cronograma_act1}
+\end{figure} 
+
+\begin{figure}[htbp]
+	\centering
+	\begin{ganttchart}[
+		hgrid,
+		vgrid,
+		x unit=1.65cm,
+		y unit title=0.65cm,
+		y unit chart=0.75cm,
+		title height=1,
+		bar height=0.45,
+		group height=0.35,
+		group top shift=0.32,
+		bar top shift=0.28,
+		title label font=\small\bfseries,
+		bar label font=\small,
+		group label font=\small\bfseries,
+		bar label node/.append style={
+			text width=5cm,
+			align=left
+		},
+		group label node/.append style={
+			text width=5cm,
+			align=left
+		},
+		group/.append style={
+			fill=gray!55,
+			draw=gray!70
+		},
+		bar/.append style={
+			fill=blue!25,
+			draw=blue!60
+		}
+		]{1}{8}
+		
+		% Encabezado: semanas
+		\gantttitle{S9}{1}
+		\gantttitle{S10}{1}
+		\gantttitle{S11}{1} 
+		\gantttitle{S12}{1}
+		\gantttitle{S13}{1}
+		\gantttitle{S14}{1}
+		\gantttitle{S15}{1}
+		\gantttitle{S16}{1}\\
+		
+		% Encabezado: fechas 
+		\gantttitle{21/09}{1}
+		\gantttitle{28/09}{1}
+		\gantttitle{05/10}{1}
+		\gantttitle{12/10}{1}
+		\gantttitle{19/10}{1}
+		\gantttitle{26/10}{1}
+		\gantttitle{02/11}{1}
+		\gantttitle{09/11}{1}\\
+		
+		% Grupo principal
+		
+		% Actividades
+		\ganttbar{Desarrollo del Marco teórico}
+		{1}{1} \\		
+		
+		\ganttbar{Análisis de factibilidad}
+		{2}{2} \\
+		
+		\ganttbar{Desarrollo del Marco Metodológico}
+		{3}{4} \\
+		
+	\end{ganttchart}
+	
+	\caption{Cronograma actividades del proyecto (Semana 9 - 16)}
+	\label{fig:cronograma_act2}
+\end{figure}
