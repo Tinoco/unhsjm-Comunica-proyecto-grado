@@ -1,7 +1,79 @@
 % Capítulo 3: Metodología
 % Propósito: Detallar el enfoque metodológico, diseño de investigación, técnicas e instrumentos de recolección de información y la metodología de desarrollo de software seleccionada.
 \section{Marco Metodológico}
+\subsection{Arquitectura Metodológica e Integración de Enfoques}
+Durante el desarrollo de la presente investigación, se busco adoptar una arquitectura metodológica organizada en tres niveles complementarios, con el objetivo de articular el proceso de investigación científica, la construcción del sustento teórico y el desarrollo técnico de la solución propuesta. Esta estructura permite establecer una relación coherente entre la identificación del problema, el análisis del conocimiento existente y la construcción del artefacto tecnológico, Los niveles se mostraran continuación:
 
+
+\subsection{Nivel Macro}
+Para operacionalizar el enfoque DSR se adopta la Design Science Research Methodology (DSRM) propuesta por \cite{peffers2007design}, la cual organiza el proceso de investigación en seis fases:
+\begin{enumerate}
+	\item Identificación del problema y motivación
+	\item Definición de los objetivos de la solución
+	\item Diseño y desarrollo
+	\item Demostración
+	\item Evaluación
+	\item Comunicación
+\end{enumerate} 
+Estas actividades permiten vincular de forma sistemática la problemática estudiada con la construcción del artefacto y su posterior valoración. En el ámbito de los sistemas de información, DSR se orienta a la creación y evaluación de artefactos capaces de ampliar o mejorar las capacidades humanas y organizacionales, generando conocimiento a partir de su construcción y aplicación \parencite{hevner2004design}.
+
+En este proyecto, el artefacto principal corresponde a una plataforma web para el registro, almacenamiento, clasificación y seguimiento de reportes de incidencias, concebida como una solución abierta y adaptable a diferentes contextos institucionales o empresariales. La plataforma busca transformar los procesos de recepción y gestión de reportes en un flujo digital, centralizado y rastreable, incorporando además evidencia fotográfica, ubicación geográfica, actualización de estados, métricas y visualización espacial.
+
+Asimismo, \textcite{de2021design} plantea que DSR comprende conceptos, actividades y técnicas vinculadas con las distintas fases de desarrollo de una investigación basada en artefactos, incluyendo tanto su construcción como la producción de conocimiento derivada del proceso de diseño. Esto permite considerar que la contribución de la investigación no se limita al sistema desarrollado, sino que también abarca las decisiones, modelos y procedimientos utilizados para construirlo.
+Tipología del artefacto
+
+De acuerdo con la clasificación utilizada en DSR, el resultado principal del proyecto puede considerarse una instanciación, al materializarse en una plataforma web funcional. Sin embargo, durante su construcción también se generan otros artefactos asociados al proceso de diseño, tales como constructos, modelos y métodos \parencite{hevner2004design}.
+
+% Agregar un diagrama para representar ciclo Metodológico DSRM (Peffers et al., 2007) y puntos de acoplamiento de SMS y Agile.
+
+
+% Representación de las fases
+\begin{table}[htbp]
+	\centering
+	\caption{Aplicación del ciclo DSRM al proyecto}
+	\label{tab:aplicacion_dsrm}
+	\begin{tabularx}{\textwidth}{X X}
+		\toprule
+		\textbf{Fase DSRM} &
+		\textbf{Aplicación en el proyecto} \\
+		\midrule
+		
+		1. Identificación del problema y motivación &
+		Se analiza la problemática asociada a los procesos de registro, clasificación y seguimiento de reportes de incidencias, considerando aspectos como la dispersión de información, falta de trazabilidad, dependencia de mecanismos no integrados y dificultades para aprovechar los datos históricos. En esta fase se incorpora el estudio de mapeo sistemático (SMS) como apoyo para identificar antecedentes y soluciones existentes. \\
+		
+		\addlinespace
+		\midrule
+		
+		2. Definición de los objetivos de la solución &
+		Se establecen las capacidades que debe poseer la plataforma, dentro de estas funcionalidades se encuentra el registro digital de incidencias, almacenamiento, clasificación, seguimiento, evidencia fotográfica, ubicación geográfica, actualización de estados, métricas y administración de reportes. \\
+		
+		\addlinespace
+		\midrule
+		
+		3. Diseño y desarrollo &
+		Se diseña el modelo de datos, la arquitectura, las interfaces y los módulos funcionales de la plataforma. En esta etapa se construye el artefacto y se integran Scrum y Extreme Programming (XP) como metodologías del nivel táctico para organizar y ejecutar el desarrollo del software. \\
+		
+		\addlinespace
+		\midrule
+		
+		4. Demostración &
+		Se verifica el funcionamiento del artefacto mediante escenarios de uso representativos, comprobando que un usuario pueda registrar una incidencia y que posteriormente esta pueda ser consultada, clasificada, actualizada y gestionada desde la plataforma. \\
+		
+		\addlinespace
+		\midrule
+		
+		5. Evaluación &
+		Se analiza el cumplimiento de los requerimientos mediante las pruebas definidas para el proyecto, considerando aspectos como funcionalidad, usabilidad, seguridad y comportamiento general de la plataforma. También se evalúa la representación de la información geográfica, el seguimiento mediante estados y el funcionamiento de los módulos administrativos. \\
+		
+		\addlinespace
+		\midrule
+		
+		6. Comunicación &
+		Se documentan el proceso de investigación, el diseño del artefacto, las decisiones técnicas y los resultados obtenidos. \\
+		
+		\bottomrule
+	\end{tabularx}
+\end{table}
 
 \newpage
 \begin{figure}[p]

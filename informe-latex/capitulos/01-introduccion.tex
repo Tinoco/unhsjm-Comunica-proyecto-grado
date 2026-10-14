@@ -8,9 +8,6 @@
 \section{Planteamiento del proyecto}
 Actualmente, la gestión que tienen los reportes de incidencias comunitarias en la Alcaldía Municipal de Rivas presenta limitaciones relacionadas con la ausencia de un canal digital centralizado que permita a los ciudadanos del municipio integrar su recepción, organización y seguimiento. La utilización de diferentes medios para comunicar las problemáticas de la comunidad puede ocasionar que la información se encuentre fragmentada y que no exista una estructura uniforme para registrar los datos asociados a cada incidencia. Asimismo, se presentan limitaciones para incorporar desde el momento del reporte información complementaria, como la ubicación geográfica y evidencia fotográfica, elementos que pueden facilitar la identificación y posterior atención de las incidencias comunicadas por los ciudadanos.
 
-
-
-
 Estas condiciones dificultan la gestión de las incidencias durante las distintas etapas de su atención. Al no disponer de un mecanismo centralizado que concentre la información de cada reporte, pueden presentarse dificultades para mantener un seguimiento continuo y uniforme de los casos, así como para conocer con claridad su estado durante el proceso de atención. Esto puede contribuir a prolongar los tiempos necesarios para canalizar las incidencias hacia las áreas correspondientes y dificulta mantener un registro organizado de las acciones realizadas sobre cada caso.
 
 Esta situación afecta tanto a los ciudadanos que realizan reportes de incidencias comunitarias como al personal municipal encargado de gestionarlos. Desde la perspectiva ciudadana, las limitaciones en el seguimiento dificultan conocer si una incidencia ha sido recibida, se encuentra en proceso de atención o ha sido resuelta, reduciendo la retroalimentación disponible durante el proceso. Por otra parte, para el personal de la alcaldía, la información dispersa y poco estructurada dificulta las tareas de consulta, clasificación y seguimiento de los reportes, especialmente cuando se requiere revisar información correspondiente a incidencias registradas con anterioridad.
@@ -23,37 +20,19 @@ Ante esta problemática, se plantea el diseño y desarrollo de una plataforma we
 
 \textbf{Objetivo General}
 
-Diseñar una plataforma web para la gestión de reportes de incidencias comunitarias 
-para la alcaldía del municipio de Rivas, Nicaragua, con el propósito de optimizar los 
-procesos de respuesta y recepción de peticiones ciudadanas en digital.
+Desarrollo de una plataforma web para el registro, almacenamiento, clasificación y seguimiento de reportes de incidencias con el propósito de optimizar los procesos de respuesta y recepción de peticiones por medio digital.
 
 \textbf{Objetivos Específicos}
 \begin{itemize}
-	\item Analizar los requerimientos funcionales y no funcionales del sistema, 
-	diagnosticando el proceso actual y las principales deficiencias en los canales de 
-	comunicación entre los ciudadanos y la alcaldía municipal.
-	
-	\item Diseñar la arquitectura del software, el modelo de base de datos y las interfaces 
-	de usuario, estructurando una plataforma que permita el registro de incidencias 
-	con evidencias fotográfica y ubicación geográfica de manera digital.
-	
-	\item Desarrollar los módulos funcionales de la aplicación, incluyendo un panel de 
-	administración que provea métricas y actualización de estados para elevar la 
-	transparencia y eficiencia en la atención de incidencias.
-	
-	\item Realizar pruebas funcionales, de usabilidad y de seguridad en el sistema para 
-	garantizar su correcto desempeño y validar el cumplimiento de los 
-	requerimientos establecidos.
-	
-	\item Elaborar la documentación técnica y los manuales de usuario de la plataforma, 
-	creando una guía clara que sirva de base para la capacitación del personal y la 
-	comunidad.
+	\item Analizar y definir los requerimientos funcionales y no funcionales de una plataforma para la gestión digital de reportes de incidencias. 
+	\item Diseñar el modelo de base de datos y las interfaces de usuario, estructurando una plataforma que permita el registro de incidencias con evidencias fotográfica y ubicación geográfica de manera digital. 
+	\item Desarrollar los módulos funcionales de la plataforma, incluyendo un panel de administración que provea métricas y actualización de estados para elevar la transparencia y eficiencia en la atención de incidencias. 
 \end{itemize}
 
 \section{Antecedentes}
 
-A nivel global, la adopción de herramientas tecnológicas ha mejorado la gestión pública y la resolución de problemáticas locales, agilizando procesos con precisión. En este contexto, la sistematización del registro y seguimiento de incidencias comunitarias en [Nombre de tu ciudad/municipio] representa una oportunidad para mejorar la atención ciudadana y la comunicación digital entre ciudadanos e institución. A continuación, se presentan investigaciones previas que fundamentan el desarrollo de este trabajo.
-Ámbito Internacional:
+A nivel global, la adopción de herramientas tecnológicas ha mejorado la gestión pública y privada con la resolución de problemáticas, agilizando procesos con precisión. En este contexto, la sistematización del registro y seguimiento de incidencias representa una oportunidad para mejorar la atención y la comunicación digital entre usuarios y entidad. A continuación, se presentan investigaciones previas que fundamentan el desarrollo de este trabajo.
+\textbf{Ámbito Internacional}
 En el ámbito internacional(\cite{parrales2025desarrollo}) desarrolló la investigación titulada “Desarrollo de un sistema web para el reporte de daños en la infraestructura urbana de la parroquia Anconcito integrando Google Cloud Vision API”, presentada en la Universidad Estatal Península de Santa Elena (Ecuador). 
 El estudio abordó las deficiencias en la gestión y atención de fallas urbanas en el barrio Luis Celleri.
 Para mitigar esta problemática, el autor diseñó e implementó una plataforma web responsiva bajo una arquitectura cliente-servidor, empleando Angular en el frontend, Laravel en el backend y MySQL como base de datos.
@@ -63,7 +42,7 @@ Según esta investigación la Implementación del sistema digital con geolocaliz
 
 Reducción del tiempo en la creación de reporte: El 86.7\% de los usuarios completó sus reportes en menos de diez minutos, lo que representa una reducción del 89\% en el tiempo necesario en comparación con los métodos tradicionales. 
 Eliminación de barreras del sistema tradicional: La plataforma eliminó la necesidad de realizar desplazamientos físicos (identificado como una traba prioritaria por el 60\% de los participantes) y redujo el papeleo excesivo (señalado por el 53.3\%).
- 
+
 Este trabajo aporta a la presente investigación un precedente del uso de coordenadas geográficas en plataformas de monitoreo ciudadano, sirviendo de referencia en nuestro proyecto. Además, el conocimiento de funcionalidades tales como: herramientas de geolocalización, mapas interactivos y que la implementación de estados de seguimiento en los reportes es crucial en la bidireccionalidad confiable entre las autoridades locales y la ciudadanía fomentando un modelo de gestión colaborativa.
 
 En el Municipio de Othón P. Blanco, en el estado de Quintana Roo, México se diseñó e implemento una plataforma que sustituyo al antiguo sistema de atención formado únicamente por llamadas telefónicas. " 072 Reportes”(\cite{trejo2019sistema}) surgió
@@ -78,19 +57,23 @@ La implementación de este sistema app y web aporto al municipio la modernizaci�
 Esta investigación aporta un catálogo estructurado de requerimientos funcionales y el diseño de diagramas entidad-relación para bases de datos los cuales serán útiles al reconocer la estructura que llevan este tipo de sistemas.
 
 \section{Justificación}
-% Revisar la de la carta
+El presente proyecto propone el diseño y desarrollo de una plataforma web especializada para la gestión de incidencias reportadas, orientada a digitalizar y sistematizar el proceso de recepción de reportes y atención institucional o empresarial. La propuesta permitirá que los usuarios puedan enviar sus problemáticas mediante un medio digital, proporcionando información estructurada como ubicación geográfica, descripción y evidencia fotográfica. De esta manera, se busca transformar el proceso tradicional en un flujo de información digital, centralizado y rastreable, en el que los datos puedan ser registrados desde su origen bajo una estructura uniforme y posteriormente gestionados por el personal asignado de la entidad correspondiente.
+
+Uno de los principales elementos diferenciadores de la propuesta será la incorporación de un componente de visualización geográfica que permitirá representar las incidencias directamente sobre un mapa interactivo. Además de mostrar la ubicación individual de los reportes, el sistema podrá identificar zonas donde exista una mayor concentración de incidencias mediante agrupaciones o áreas de influencia representadas visualmente por cambios de intensidad de color. A medida que aumente la cantidad de reportes en determinados sectores, el sistema podrá generar una mayor concentración visual sobre dichas áreas, permitiendo identificar de forma rápida los puntos que presentan una mayor recurrencia de situaciones reportadas. Esta funcionalidad busca convertir los datos recopilados en información visualmente comprensible y útil para la gestión administrativa de cualquier institución o empresa receptora. La centralización de estos datos también permitirá construir un registro histórico de las incidencias, facilitando su consulta, clasificación y seguimiento a lo largo del tiempo.
+
+La información acumulada podrá servir como base para identificar patrones de comportamiento, áreas con mayor recurrencia de incidencias de determinados problemas, tipos de incidencias más frecuentes y zonas que requieren una atención prioritaria. De esta manera, la plataforma no se limitará únicamente a recibir y almacenar reportes, sino que podrá constituirse como una herramienta de apoyo para la toma de decisiones, permitiendo que los administradores dispongan de información organizada y representada geográficamente para orientar de manera más eficiente la planificación y priorización de la respuesta por parte de la entidad. 
 
 \section{Alcance}
-Comunica se pensó para ser una plataforma web que ayude a la mejora de comunicación entre los ciudadanos y la alcaldía de Rivas para el levantamiento, clasificación y revisión de incidencias que pueda presentar la población. 
+Comunica se pensó para ser una plataforma web que ayude a la mejora de comunicación entre los usuarios y la entidad responsable para el levantamiento, clasificación y revisión de incidencias que se puedan presentar en el área del servicio. 
 
 \begin{itemize}
 	\item Registros de usuarios: El usuario se registrará en el sistema para la realización del levantamiento de incidencias. 
 	
 	\item Realización de levantamiento de una incidencia: Interfaz amigable la cual permitirá hacer su levantamiento de incidencia con mucha facilidad, se podrá colocar una pequeña descripción, evidencia fotográfica, y recopilación de ubicación exacta.  
 	
-	\item Transparencia con el ciudadano: El ciudadano podrá ver cómo va el proceso de su resolución al problema del cual realizo levantamiento.  
+	\item Transparencia con el usuario: El usuario podrá ver cómo va el proceso de su resolución al problema del cual realizo levantamiento.  
 	
-	\item División de apartado según el rol: El usuario cuneta con su propio apartado en el cual pdora ver su historial de incidencias. 
+	\item División de apartado según el rol: El usuario cuenta con su propio apartado en el cual podrá ver su historial de incidencias. 
 	
 	\item Gestión administrativa: Panel administrativo que cuenta con un dashboard en el cual se muestra total de reportes.  así mismo la administración cuenta con poder de bloquear permanentemente o temporalmente a usuarios que hagan mal uso de la plataforma. 
 	
@@ -107,7 +90,7 @@ El tipo de limitaciones que se llegan a tener son debido al alcance temporal y t
 \end{itemize}
 
 \section{Viabilidad del Proyecto}
-En esta sección se evaluara la viabilidad del sistema propuesto para la alcaldía municipal a partir de las cuatro dimensiones fundamentales: económica, técnica, operativa y legal. La definición de cada una de ellas ayudara a respaldar la capacidad de poder ejecutar, mantener y escalar el sistema con el fin de volverlo una solución efectiva.
+En esta sección se evaluara la viabilidad del sistema propuesto a partir de las cuatro dimensiones fundamentales: económica, técnica, operativa y legal. La definición de cada una de ellas ayudara a respaldar la capacidad de poder ejecutar, mantener y escalar el sistema con el fin de volverlo una solución efectiva.
 \subsection{Viabilidad Económica}
 \begin{enumerate}
 	\item \textbf{Costos de desarrollo}
