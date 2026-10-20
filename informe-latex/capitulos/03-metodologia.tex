@@ -1,7 +1,7 @@
 % Capítulo 3: Metodología
 % Propósito: Detallar el enfoque metodológico, diseño de investigación, técnicas e instrumentos de recolección de información y la metodología de desarrollo de software seleccionada.
 
-<<<<<<< HEAD
+
 
 \section{Metodología}
 
@@ -83,4 +83,60 @@ La implementación de Kanban en este proyecto garantizará la entrega continua d
 \textbf{Flujo Continuo y Validación:} A diferencia de los enfoques tradicionales, las pruebas no se harán al final del proyecto. Cada tarea que pase de la columna "En Desarrollo" a "En Pruebas" será sometida a evaluaciones de usabilidad y funcionalidad. Una vez que la tarea cumpla con los criterios de aceptación, se moverá a "Completado", permitiendo que el software crezca de forma organizada y estable.
 
 
->>>>>>> origin
+\begin{table}[htbp]
+	\centering
+	\caption{Matriz de trazabilidad e indicadores de evaluación (Parte I)}
+	\label{tab:matriz_trazabilidad_1}
+	\begin{tabularx}{\textwidth}{>{\hsize=0.22\hsize}X >{\hsize=0.28\hsize}X >{\hsize=0.22\hsize}X >{\hsize=0.28\hsize}X}
+		\toprule
+		\textbf{Meta-requisito (Fase 2)} & \textbf{Meta-diseño (Fase 3)} & \textbf{Historia / Sprint} & \textbf{Indicador de evaluación (Fase 5)} \\
+		\midrule
+		
+		\textbf{MR-01:} Registrar solicitudes de soporte indicando categoría, prioridad y descripción detallada de la incidencia. & 
+		\textbf{MD-01:} Arquitectura base en Angular (Frontend) y Node.js / Express (Backend) con formularios reactivos y validaciones. & 
+		US-01 / Sprint 1 & 
+		Porcentaje de formularios validados correctamente sin errores de esquema (meta: 100\%). \\
+		\addlinespace[0.5em]
+		
+		\textbf{MR-02:} Permitir adjuntar evidencia fotográfica (JPG/PNG) para documentar visualmente el problema reportado. & 
+		\textbf{MD-02:} Módulo de carga y gestión de archivos adjuntos con control de tamaño y almacenamiento optimizado. & 
+		US-02 / Sprint 2 & 
+		Porcentaje de imágenes almacenadas y visualizadas correctamente en las pruebas (meta: 100\%). \\
+		\addlinespace[0.5em]
+		
+		\textbf{MR-03:} Consultar en tiempo real el historial de reportes y el estado actual de la atención de los casos. & 
+		\textbf{MD-03:} Vistas de consulta de historial con listados cronológicos y actualización de estados en tiempo real. & 
+		US-03 / Sprint 3 & 
+		Tiempo de respuesta en la consulta de listados menor a 2 segundos en pruebas de carga. \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\vspace{0.5cm}
+
+\section{Matriz de trazabilidad e indicadores de evaluación}
+Se establece una matriz de trazabilidad que conecta cada necesidad o meta-requisito de la solución con la decisión de diseño que la resuelve, la unidad de desarrollo (historias de usuario y sprints) que la construye y el indicador cuantitativo o cualitativo con el que se evaluará su cumplimiento. Las Tablas 5 y 6 presentan dicha correspondencia de manera fraccionada para su análisis detallado.
+
+\begin{table}[htbp]
+	\centering
+	\caption{Matriz de trazabilidad e indicadores de evaluación (Parte II)}
+	\label{tab:matriz_trazabilidad_2}
+	\begin{tabularx}{\textwidth}{>{\hsize=0.22\hsize}X >{\hsize=0.28\hsize}X >{\hsize=0.22\hsize}X >{\hsize=0.28\hsize}X}
+		\toprule
+		\textbf{Meta-requisito (Fase 2)} & \textbf{Meta-diseño (Fase 3)} & \textbf{Historia / Sprint} & \textbf{Indicador de evaluación (Fase 5)} \\
+		\midrule
+		
+		\textbf{MR-04:} Proveer un panel operativo para que el personal de soporte filtre, asigne y actualice tickets. & 
+		\textbf{MD-04:} Panel de operador y soporte con filtros avanzados por categoría, prioridad, estado y registro de notas internas. & 
+		US-04 / Sprint 3 & 
+		Porcentaje de incidencias gestionadas y actualizadas exitosamente en pruebas funcionales. \\
+		\addlinespace[0.5em]
+		
+		\textbf{MR-05:} Visualizar métricas de rendimiento, volumen de tickets y tiempos de resolución institucionales. & 
+		\textbf{MD-05:} Paneles administrativos e integración con indicadores de tiempo de respuesta y resolución con gráficos estadísticos. & 
+		US-05 / Sprint 4 & 
+		Diferencia entre los cálculos de tiempo del sistema y los valores reales esperados (meta: 0). \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
