@@ -118,4 +118,83 @@ Semana 12: Pruebas integrales y validación.
 Se realizarán pruebas de integración, seguridad, usabilidad y funcionamiento general del sistema, verificando los principales flujos de uso y corrigiendo los problemas detectados.
 
 Semana 13: Optimización, documentación y entrega.
-Se realizarán los ajustes finales, documentación técnica, manuales de usuario, preparación del despliegue y presentación de la versión final.
+Se realizarán los ajustes finales, documentación técnica, manuales de usuario, preparación del despliegue y presentación de la versión final.\newline
+
+
+
+9.3. Nivel Diagnóstico: Estudio de Mapeo Sistemático (SMS - Petersen et al.)\newline
+
+Antes de iniciar con el desarrollo de nuestro sistema para la creación categorización y seguimiento hasta la resolución de incidencias. Se opto por utilizar una guía de Estudios de Mapeo sistemático {} la cual nos permitió clasificar, agrupar y mapear el estado del arte con respecto a la resolución de problemáticas de comunicación entre entidades que ofertan algún servicio y usuarios que les remiten sus incidencias con el fin de que sean resueltas.\newline
+
+Aplicando los pasos de la guía {} nos condujo a la creación de Preguntas de investigación con el objetivo de establecer los alcances del estudio y estructurar la construcción de cadenas de búsqueda que serán creadas posteriormente.\newline
+
+-	¿Qué soluciones Digitales se han aplicado para la resolución de este tipo de problemáticas?\newline
+
+-	¿Cuáles son las funcionalidades que se han incorporado en esas soluciones para suplir la necesidad?\newline
+
+-	¿Qué funcionalidades se adaptan mejor al contexto de nuestro proyecto?\newline
+
+-	¿Cuáles son las funcionalidades que faltan para la resolución de la necesidad especifica en nuestro contexto?\newline
+
+Para la continuidad del Estudio de mapeo Sistemático se realizaron cadenas de búsqueda con el fin de encontrar estudios, artículos y publicaciones relevantes que nos permitan encontrar respuestas para nuestras preguntas.\newline
+
+Para la construcción de las cadenas se utilizan palabras claves en combinación de operadores booleanos como OR y AND en nuestro caso:\newline
+
+("sistema de reportes" OR "sistema de incidencias ciudadanas" OR "sistema de quejas ") AND (municipalidad)
+("plataforma web" OR "sistema de información" OR ("incidencias " OR "participación ciudadana" OR "gestión municipal") AND ("Nicaragua")\newline
+
+Se continuo con el filtrado de información útil para nuestra causa aplicando inclusión o exclusión.\newline
+
+La cual tubo distintas fases comenzando con la elección de criterios de inclusión en nuestro caso fueron Plataforma web que resolvieran incidencias en distintos ámbitos. Información que fue validada a través de Títulos, lectura de resúmenes y año de publicación (del 2022 en adelante) lo que dio como consecuencia el encuentro de los siguientes sistemas:\newline
+
+1-	SISTEMA INTEGRAL PARA EL REPORTE Y SEGUIMIENTO DE DEFICIENCIAS DEL SERVICIO PÚBLICO DEL MUNICIPIO DE OTHÓN P. BLANCO, QUINTANA ROO (072 REPORTES)\newline
+
+2-	Desarrollo de un sistema web para el reporte de daños en la infraestructura urbana de la parroquia Anconcito integrando Google Cloud Vision API\newline
+
+3-	Sistema help desk para la gestión de incidencias de la municipalidad distrital de San Juan Bautista (mdsjb)\newline
+
+4-	Aplicación de un sistema web Help Desk basado en ITIL para el registro y control de requerimientos e incidencias al personal de la Corte Superior de Justicia de Apurímac, año 2020 - 2023
+Siguiendo la metodología de Petersen et al., la clasificación de la literatura se fundamenta en un esquema bidimensional para analizar tanto el aporte técnico como el rigor científico de los antecedentes:\newline
+
+Para la categorización de los estudios primarios seleccionados, se adoptó un esquema de clasificación de dos facetas. La primera faceta evalúa el Tipo de Contribución (qué tipo de artefacto o solución se propone), mientras que la segunda evalúa el Tipo de Investigación (el enfoque científico utilizado para validar o evaluar dicha solución, según la taxonomía de Wieringa et al.).\newline
+
+Tipo de Contribución ( Contribution Type )
+El orden de número se vincula con el orden de la etapa anterior:
+1-	Tipo de Contribución: Herramienta ( Tool ). Desarrolla una plataforma e-Gobierno compuesta por dos módulos software: un sistema de administración web para la intranet del ayuntamiento y una aplicación móvil nativa en Android para la ciudadanía.\newline
+
+2-	Tipo de Contribución: Herramienta ( Tool ) (con integración de método/algoritmo de IA). Diseña y desarrolla una plataforma web responsiva con geolocalización y mapas para reporte de infraestructura dañada, integrando la API de Google Cloud Vision para la validación automática de fotografías\newline
+
+3-	 Tipo de Contribución: Herramienta ( Tool ). Desarrolla un sistema de software Help Desk en Visual Studio .NET y SQL Server siguiendo la metodología RUP, notación UML y buenas prácticas de ITIL2].\newline
+
+4-	Tipo de Contribución: Herramienta ( Tool ). Desarrolla y adapta un sistema web Help Desk basado en el software libre GLPI v.10 configurado bajo las recomendaciones de ITIL v \newline
+
+
+Basandose en la taxonomia de Wieringa las definiciones de tipos de investigaciones que se van a mencionar son las siguientes:
+Validation Research: Corresponde a estudios donde las técnicas o herramientas investigadas son novedosas y todavía no han sido implementadas en la práctica real.\newline
+
+Evaluation Research: Corresponde a estudios donde las técnicas o herramientas ya han sido implementadas en la práctica real y se lleva a cabo una evaluación formal de dicha aplicación.\newline
+
+
+
+Según su tipo de investigación:\newline
+
+1-	Tipo de Investigación: Investigación de Validación ( Validation Research ). Comprende la fase de análisis de requerimientos, diseño modular (MVC) y realización de pruebas funcionales para sustituir el sistema previo (072 Ayuntatel), demostrando la operatividad técnica del flujo de recepción y seguimiento de reportes.\newline
+
+2-	Tipo de Investigación: Investigación de Validación ( Validation Research ). La solución se prueba dentro de un entorno controlado mediante un estudio piloto con 15 colaboradores (10 residentes y 5 líderes comunitarios) del barrio Luis Celleri. En esta fase se efectúan pruebas de usabilidad y de percepción de tiempos, pero sin estar integrado todavía a los sistemas informáticos formales del GAD municipal.\newline
+
+3-	Tipo de Investigación: Investigación de Validación ( Validation Research ). Se centra en el levantamiento de requisitos, modelado de procesos e implantación del sistema en el servidor de la Oficina de Informática y Telecomunicaciones de la Municipalidad de San Juan Bautista. Mide la usabilidad esperada del prototipo mediante la escala estandarizada SUS (System Usability Scale)\newline
+
+4-	Tipo de Investigación: Investigación de Evaluación ( Evaluation Research ). El estudio implementa la solución en una organización real (Corte Superior de Apurímac) y evalúa su impacto en producción mediante un diseño pre-experimental. Compara el estado inicial sin el sistema (registros en Excel de 2020-2021) frente al estado final (reportes exportados del sistema entre 2022-2023), demostrando una reducción en el tiempo promedio de atención (de 62 a 15 minutos) y aplicando la prueba estadística t-Student junto con encuestas de satisfacción de interfaz (QUIS)\newline
+
+Para cerrar con el SMS la identificaion de nichos no explorados se concluye que entre la búsqueda que se realizo la frecuencia de estudios se inclinan hacia Validation Research de los cuales 3 de este tipo fueron encontrados y 1 sobre Evaluation Research. 
+El mapeo sistemático revela cosas claras sobre el estado del arte en la resolución de incidencias entre usuarios y entidades de servicio, resaltando áreas que aún no han sido investigadas y es que:\newline
+
+Se encuentra los escases sobre el cómo la vista del estado de los reportes y la forma en que las entidades dan a conocer los motivos de su tardanza en su solución de las incidencias generan un impacto significativo en como son evaluadas por sus usuarios.
+Además, se encontró una Ausencia absoluta de antecedentes documentados en el contexto nacional: Al aplicar distintas cadenas de búsqueda los resultados arrojaron cero estudios o publicaciones científicas dentro de los criterios de inclusión. Esto evidencia un vacío total de literatura académica documentada sobre la implementación, validación o evaluación de plataformas de gestión de incidencias generales o institucionales desarrolladas específicamente en el contexto tecnológico de Nicaragua.\newline
+
+
+La ejecución de este Estudio de Mapeo Sistemático responde a las preguntas de investigación iniciales, determinando que las soluciones digitales aplicadas suelen ser plataformas web con módulos móviles, incorporando geolocalización, seguimiento de tickets, evidencia fotográfica y en casos aislados, validación por IA o marcos de trabajo ITIL.\newline
+
+Si bien estas funcionalidades suplen las necesidades de reporte, el mapa visual destaca brechas significativas: las soluciones existentes raramente trascienden la fase de validación técnica para medir su impacto operativo real. De manera aún más crítica, el mapeo confirma la inexistencia de investigaciones previas sobre este tipo de soluciones tecnológicas en Nicaragua.
+En este sentido, el desarrollo de la plataforma web Comunica encuentra su justificación científica y técnica. El proyecto no solo se inserta en la tendencia de aportar herramientas con reportes estructurados, sino que lo hace abordando un nicho geográfico inexplorado. El desarrollo de la plataforma en la ciudad de Rivas aportará el primer precedente evaluable en el contexto nicaragüense, cubriendo el vacío identificado en el estado del arte y sentando las bases para futuras investigaciones de evaluación en la región.
+
