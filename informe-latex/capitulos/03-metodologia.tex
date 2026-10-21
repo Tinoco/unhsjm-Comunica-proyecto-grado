@@ -1,200 +1,377 @@
 % Capítulo 3: Metodología
 % Propósito: Detallar el enfoque metodológico, diseño de investigación, técnicas e instrumentos de recolección de información y la metodología de desarrollo de software seleccionada.
 \section{Marco Metodológico}
+\subsection{Arquitectura Metodológica e Integración de Enfoques}
+Durante el desarrollo de la presente investigación, se busco adoptar una arquitectura metodológica organizada en tres niveles complementarios, con el objetivo de articular el proceso de investigación científica, la construcción del sustento teórico y el desarrollo técnico de la solución propuesta. Esta estructura permite establecer una relación coherente entre la identificación del problema, el análisis del conocimiento existente y la construcción del artefacto tecnológico, Los niveles se mostraran continuación:
 
-\section{Metodología de Investigación}
+\subsection{Nivel Macro}
+Para operacionalizar el enfoque DSR se adopta la Design Science Research Methodology (DSRM) propuesta por \cite{peffers2007design}, la cual organiza el proceso de investigación en seis fases:
+\begin{enumerate}
+	\item Identificación del problema y motivación
+	\item Definición de los objetivos de la solución
+	\item Diseño y desarrollo
+	\item Demostración
+	\item Evaluación
+	\item Comunicación
+\end{enumerate} 
+Estas actividades permiten vincular de forma sistemática la problemática estudiada con la construcción del artefacto y su posterior valoración. En el ámbito de los sistemas de información, DSR se orienta a la creación y evaluación de artefactos capaces de ampliar o mejorar las capacidades humanas y organizacionales, generando conocimiento a partir de su construcción y aplicación \parencite{hevner2004design}.
 
-Acá se describe de manera detallada los procedimientos, métodos y técnicas metodológicas que orientaron la ejecución de la investigación. Su propósito fundamental es respaldar el cumplimiento del primer objetivo específico del proyecto, enfocado en diagnosticar el proceso actual y las principales deficiencias en los canales de comunicación y recepción de peticiones entre los ciudadanos y la Alcaldía Municipal de Rivas.
+En este proyecto, el artefacto principal corresponde a una plataforma web para el registro, almacenamiento, clasificación y seguimiento de reportes de incidencias, concebida como una solución abierta y adaptable a diferentes contextos institucionales o empresariales. La plataforma busca transformar los procesos de recepción y gestión de reportes en un flujo digital, centralizado y rastreable, incorporando además evidencia fotográfica, ubicación geográfica, actualización de estados, métricas y visualización espacial.
 
-\section{Enfoque de la Investigación}
-El trabajo se desarrolla bajo un enfoque cuantitativo. Este enfoque resulta el más adecuado porque permite recolectar, procesar y analizar datos numéricos para medir de forma objetiva la realidad de la comunicación ciudadana, facilitando la cuantificación de las opiniones de los habitantes y la necesidad real de la plataforma web.
+Asimismo, \textcite{de2021design} plantea que DSR comprende conceptos, actividades y técnicas vinculadas con las distintas fases de desarrollo de una investigación basada en artefactos, incluyendo tanto su construcción como la producción de conocimiento derivada del proceso de diseño. Esto permite considerar que la contribución de la investigación no se limita al sistema desarrollado, sino que también abarca las decisiones, modelos y procedimientos utilizados para construirlo.
+Tipología del artefacto
 
-\section{Tipo de Estudio}
-El estudio adoptó un carácter descriptivo y transversal:
-\begin{itemize}
-	\item \textbf{Descriptivo:} Permite detallar y examinar las características, propiedades y funcionamiento de los mecanismos actuales de recepción de datos, la frecuencia de las reuniones de barrio y los canales de comunicación vigentes.
-	\item \textbf{Transversal:} La recolección de los datos de la población se realizará en un periodo único, analizando la situación en un momento determinado.
-\end{itemize}
+De acuerdo con la clasificación utilizada en DSR, el resultado principal del proyecto puede considerarse una instanciación, al materializarse en una plataforma web funcional. Sin embargo, durante su construcción también se generan otros artefactos asociados al proceso de diseño, tales como constructos, modelos y métodos \parencite{hevner2004design}.
 
-\section{Población y Muestra}
-Para llevar a cabo el diagnóstico de los canales de comunicación y la recepción de solicitudes, es necesario delimitar el grupo de estudio. La población está constituida por los habitantes del municipio de Rivas que hacen uso o demandan los servicios de atención ciudadana y reporte de incidencias ante la alcaldía municipal. 
+% Agregar un diagrama para representar ciclo Metodológico DSRM (Peffers et al., 2007) y puntos de acoplamiento de SMS y Agile.
 
-A partir de este universo, y para optimizar el proceso de recolección de datos, se trabajará con una muestra representativa de la ciudadanía. Para su selección se empleará el muestreo aleatorio simple, un método práctico que garantiza que cualquier habitante tenga la misma oportunidad de ser elegido, asegurando que los datos obtenidos reflejen fielmente la situación de la comunidad y sirvan de base sólida para el análisis del sistema.
 
-\section{Operacionalización de Variables}
-Para mantener la congruencia directa con el diagnóstico de los requerimientos y el análisis de los canales de comunicación actuales, se presenta la siguiente matriz de operacionalización de variables:
-
+% Representación de las fases
 \begin{table}[htbp]
 	\centering
-	\caption{Matriz de operacionalización de variables de la investigación}
-	\label{tab:operacionalizacion_variables}
-	\begin{tabularx}{\textwidth}{X X X X}
+	\caption{Aplicación del ciclo DSRM al proyecto}
+	\label{tab:aplicacion_dsrm}
+	\begin{tabularx}{\textwidth}{X X}
 		\toprule
-		\textbf{Variables} & \textbf{Criterio de Evaluación} & \textbf{Indicadores Medibles} & \textbf{Preguntas de la Encuesta} \\ 
+		\textbf{Fase DSRM} &
+		\textbf{Aplicación en el proyecto} \\
 		\midrule
-		\textbf{Variable 1} \newline \textit{(Independiente):} \vspace{0.2em} \newline
-		Mecanismos de comunicación y participación ciudadana actuales. & 
-		Eficacia de los canales tradicionales de vinculación y recepción de datos entre la alcaldía y los habitantes del municipio. & 
-		• Porcentaje (\%) de la población que participa o es convocada a las reuniones de barrio. \vspace{0.3em} \newline
-		• Frecuencia numérica de utilización de los canales actuales de reporte y comunicación institucional. \vspace{0.3em} \newline
-		• Tiempo promedio de duración de las reuniones comunitarias. \vspace{0.3em} \newline
-		• Principales razones o motivos por los que no se puede asistir a las convocatorias de barrio. & 
-		1. ¿Cómo califica la comunicación actual de la alcaldía? \vspace{0.3em} \newline
-		2. ¿Con qué frecuencia se le convoca a reuniones de barrio? \vspace{0.3em} \newline
-		3. ¿Cuánto tiempo promedio suele durar una de estas reuniones a las que asiste? \vspace{0.3em} \newline
-		4. Si no puede asistir a las reuniones de barrio, ¿cuáles son las principales razones? \\ 
+		
+		1. Identificación del problema y motivación &
+		Se analiza la problemática asociada a los procesos de registro, clasificación y seguimiento de reportes de incidencias, considerando aspectos como la dispersión de información, falta de trazabilidad, dependencia de mecanismos no integrados y dificultades para aprovechar los datos históricos. En esta fase se incorpora el estudio de mapeo sistemático (SMS) como apoyo para identificar antecedentes y soluciones existentes. \\
+		
 		\addlinespace
 		\midrule
-		\textbf{Variable 2} \newline \textit{(Dependiente):} \vspace{0.2em} \newline
-		Necesidad de optimización en la gestión de incidencias municipales. & 
-		Demanda social de nuevos canales tecnológicos e interactivos para mejorar la solución de problemas. & 
-		• Grado de insatisfacción cuantitativa con los métodos tradicionales de recepción de solicitudes. \vspace{0.3em} \newline
-		• Porcentaje de habitantes que consideran necesario un sistema digital centralizado para la gestión de reportes. & 
-		5. ¿Qué tan satisfecho está con los métodos actuales para reportar incidencias? \vspace{0.3em} \newline
-		6. ¿Considera necesario un sistema digital para dar seguimiento a sus reportes? \\ 
+		
+		2. Definición de los objetivos de la solución &
+		Se establecen las capacidades que debe poseer la plataforma, dentro de estas funcionalidades se encuentra el registro digital de incidencias, almacenamiento, clasificación, seguimiento, evidencia fotográfica, ubicación geográfica, actualización de estados, métricas y administración de reportes. \\
+		
+		\addlinespace
+		\midrule
+		
+		3. Diseño y desarrollo &
+		Se diseña el modelo de datos, la arquitectura, las interfaces y los módulos funcionales de la plataforma. En esta etapa se construye el artefacto y se integran Scrum y Extreme Programming (XP) como metodologías del nivel táctico para organizar y ejecutar el desarrollo del software. \\
+		
+		\addlinespace
+		\midrule
+		
+		4. Demostración &
+		Se verifica el funcionamiento del artefacto mediante escenarios de uso representativos, comprobando que un usuario pueda registrar una incidencia y que posteriormente esta pueda ser consultada, clasificada, actualizada y gestionada desde la plataforma. \\
+		
+		\addlinespace
+		\midrule
+		
+		5. Evaluación &
+		Se analiza el cumplimiento de los requerimientos mediante las pruebas definidas para el proyecto, considerando aspectos como funcionalidad, usabilidad, seguridad y comportamiento general de la plataforma. También se evalúa la representación de la información geográfica, el seguimiento mediante estados y el funcionamiento de los módulos administrativos. \\
+		
+		\addlinespace
+		\midrule
+		
+		6. Comunicación &
+		Se documentan el proceso de investigación, el diseño del artefacto, las decisiones técnicas y los resultados obtenidos. \\
+		
 		\bottomrule
 	\end{tabularx}
 \end{table}
 
 \newpage
+\subsection{Nivel Diagnóstico}
+Antes de iniciar con el desarrollo de nuestro sistema para la creación categorización y seguimiento hasta la resolución de incidencias. Se opto por utilizar una guía de Estudios de Mapeo sistemático \cite{petersen2008systematic} la cual nos permitió clasificar, agrupar y mapear el estado del arte con respecto a la resolución de problemáticas de comunicación entre entidades que ofertan algún servicio y usuarios que les remiten sus incidencias con el fin de que sean resueltas.\newline 
 
-\section{Técnicas e Instrumentos de Recolección de Datos}
-Como técnica principal se empleará la encuesta. El instrumento consistirá en un cuestionario estructurado con preguntas orientadas a medir directamente los aspectos evaluados en el diagnóstico inicial del proyecto, tales como:
-\begin{itemize}
-	\item Las limitaciones de los métodos tradicionales en la recepción de reportes de incidencias en la alcaldía.
-	\item La frecuencia y asistencia a las reuniones comunitarias de barrio.
-	\item La aceptación y necesidad de incorporar herramientas digitales para la gestión municipal.
-\end{itemize}
+Aplicando los pasos de la guía \cite{petersen2008systematic} nos condujo a la creación de Preguntas de investigación con el objetivo de establecer los alcances del estudio y estructurar la construcción de cadenas de búsqueda que serán creadas posteriormente. 
 
-\section{Validación del Instrumento}
-Para asegurar que el cuestionario sea claro y cumpla con su propósito, las preguntas serán revisadas de manera interna con el tutor o docentes, con el fin de verificar que las interrogantes se entiendan bien y guarden relación directa con los objetivos del proyecto antes de aplicarlas a los ciudadanos.
+-	¿Qué soluciones Digitales se han aplicado para la resolución de este tipo de problemáticas?
 
-\subsection{Metodología de Desarrollo de Software}
-Para el diseño y desarrollo de la plataforma web de levantamiento y gestión de incidencias “Comunica”, se utilizará la metodología ágil Kanban. 
+-	¿Cuáles son las funcionalidades que se han incorporado en esas soluciones para suplir la necesidad?
 
-La metodología ágil Kanban es un marco de gestión basado en tarjetas visuales que actúa como un "otorgador de permisos" para optimizar la eficiencia, la previsibilidad y la entrega continua de valor en el desarrollo del sistema ( \cite{beuses2025metodologias})
+-	¿Qué funcionalidades se adaptan mejor al contexto de nuestro proyecto?
 
-Esta elección se fundamenta en la capacidad de Kanban para gestionar el trabajo de manera fluida y continua. permitiendo al equipo de desarrollo adaptarse ante los requerimientos de la plataforma sin la rigidez de los ciclos de tiempo fijos de otras metodologías.
+-	¿Cuáles son las funcionalidades que faltan para la resolución de la necesidad especifica en nuestro contexto?
 
-La implementación de Kanban en este proyecto garantizará la entrega continua de valor en el desarrollo del sistema, siguiendo las estas prácticas:
+Para la continuidad del Estudio de mapeo Sistemático se realizaron cadenas de búsqueda con el fin de encontrar estudios, artículos y publicaciones relevantes que nos permitan encontrar respuestas para nuestras preguntas.
 
-\textbf{Visualización del Flujo de Trabajo (Tablero Kanban):} Todo el ciclo de vida del desarrollo se mapeará visualmente en un tablero dividido en columnas que representan los estados de cada requerimiento. Esto permitirá tener un control absoluto sobre el progreso de cada módulo(funcionalidades).
+Para la construcción de las cadenas se utilizan palabras claves en combinación de operadores booleanos como OR y AND en nuestro caso:
 
-\textbf{Gestión del Backlog:} A partir del levantamiento de requerimientos y el diagnóstico inicial con la Alcaldía de Rivas, se construirá una lista priorizada de funcionalidades. Las tareas determinadas como criticas tendrán mayor prioridad en el flujo de trabajo.
+("sistema de reportes" OR "sistema de incidencias ciudadanas" OR "sistema de quejas ") AND (municipalidad) 
 
-\textbf{Límites de Trabajo en Progreso:} Se establecerá un límite máximo de tareas en la fase de desarrollo. Esto con el fin que equipo finalice por completo una funcionalidad y validar su correcto funcionamiento antes de iniciar la programación de un nuevo módulo (funcionalidad), asegurando un progreso sólido.
+("plataforma web" OR "sistema de información" OR ("incidencias " OR "participación ciudadana" OR "gestión municipal") AND ("Nicaragua")
 
-\textbf{Flujo Continuo y Validación:} A diferencia de los enfoques tradicionales, las pruebas no se harán al final del proyecto. Cada tarea que pase de la columna "En Desarrollo" a "En Pruebas" será sometida a evaluaciones de usabilidad y funcionalidad. Una vez que la tarea cumpla con los criterios de aceptación, se moverá a "Completado", permitiendo que el software crezca de forma organizada y estable.
+Se continuo con el filtrado de información útil para nuestra causa aplicando inclusión o exclusión.
 
-\section{Cronograma de actividades}
-El siguiente cronograma organiza el desarrollo del sistema durante un período de 13 semanas, equivalentes a 65 días hábiles. Las primeras dos semanas estarán destinadas al levantamiento de requerimientos, planificación y preparación técnica del proyecto. Posteriormente, la ejecución de las actividades se gestionará mediante Kanban, permitiendo que cada funcionalidad avance de forma continua a través de los estados definidos en el tablero, respetando los límites de trabajo en progreso y los criterios de validación antes de considerarse completada.
+La cual tubo distintas fases comenzando con la elección de criterios de inclusión en nuestro caso fueron Plataforma web que resolvieran incidencias en distintos ámbitos. Información que fue validada a través de Títulos, lectura de resúmenes y año de publicación (del 2022 en adelante) lo que dio como consecuencia el encuentro de los siguientes sistemas:\newline 
 
-Fase 1: Planificación y preparación del proyecto (Semanas 1–2)
-Semana 1: Levantamiento y análisis de requerimientos.
-Se realizará el diagnóstico inicial del proceso de gestión de incidencias en la Alcaldía Municipal de Rivas, identificando las necesidades de los ciudadanos y del personal encargado de administrar los reportes. A partir de esta información se definirán y documentarán los requerimientos funcionales y no funcionales de la plataforma.
+1-	SISTEMA INTEGRAL PARA EL REPORTE Y SEGUIMIENTO DE DEFICIENCIAS DEL SERVICIO PÚBLICO DEL MUNICIPIO DE OTHÓN P. BLANCO, QUINTANA ROO (072 REPORTES)\newline 
 
-Semana 2: Planificación técnica y organización del trabajo.
-Se priorizarán los requerimientos identificados y se descompondrán en tareas para su gestión mediante Kanban. Durante esta semana se configurará el tablero de trabajo, se establecerán los estados de las tareas y los límites de trabajo en progreso. Asimismo, se definirá la arquitectura inicial del sistema, el modelo de datos y se prepararán los entornos de desarrollo utilizando Angular, Node.js y PostgreSQL.
+2-	Desarrollo de un sistema web para el reporte de daños en la infraestructura urbana de la parroquia Anconcito integrando Google Cloud Vision API\newline 
 
-Fase 2: Desarrollo de funcionalidades base (Semanas 3–6)
-Semanas 3–4: Gestión de usuarios, roles y autenticación.
-Se desarrollarán las funcionalidades relacionadas con registro e inicio de sesión, gestión de roles y permisos, autenticación mediante tokens y validaciones de seguridad. El trabajo incluirá backend, frontend y pruebas de las funcionalidades desarrolladas.
+3-	Sistema help desk para la gestión de incidencias de la municipalidad distrital de San Juan Bautista (mdsjb)\newline 
 
-Semanas 5–6: Registro de incidencias comunitarias.
-Se desarrollará el módulo de registro de incidencias, incluyendo descripción, categoría, ubicación geográfica, evidencia fotográfica y las validaciones necesarias para garantizar la integridad de la información.
+4-	Aplicación de un sistema web Help Desk basado en ITIL para el registro y control de requerimientos e incidencias al personal de la Corte Superior de Justicia de Apurímac, año 2020 - 2023 
 
-Fase 3: Funcionalidades ciudadanas y administrativas (Semanas 7–9)
-Semana 7: Seguimiento de incidencias por parte del ciudadano.
-Se implementará la consulta del historial de reportes, visualización detallada y seguimiento del estado de cada incidencia.
+Siguiendo la metodología de Petersen et al., la clasificación de la literatura se fundamenta en un esquema bidimensional para analizar tanto el aporte técnico como el rigor científico de los antecedentes:\newline 
 
-Semanas 8–9: Gestión administrativa de incidencias.
-Se desarrollará el panel destinado al personal municipal, incluyendo consulta, filtrado, asignación, actualización de estados e historial de cambios de los reportes.
+Para la categorización de los estudios primarios seleccionados, se adoptó un esquema de clasificación de dos facetas. La primera faceta evalúa el Tipo de Contribución (qué tipo de artefacto o solución se propone), mientras que la segunda evalúa el Tipo de Investigación (el enfoque científico utilizado para validar o evaluar dicha solución, según la taxonomía de \cite{petersen2008systematic}).\newline 
 
-Fase 4: Visualización, validación y cierre (Semanas 10–13)
-Semanas 10–11: Visualización territorial y métricas.
-Se implementarán los mapas para representar incidencias geográficamente, mecanismos para identificar concentraciones de reportes y métricas básicas para apoyar la gestión municipal.
+Tipo de Contribución ( Contribution Type ) 
 
-Semana 12: Pruebas integrales y validación.
-Se realizarán pruebas de integración, seguridad, usabilidad y funcionamiento general del sistema, verificando los principales flujos de uso y corrigiendo los problemas detectados.
+El orden de número se vincula con el orden de la etapa anterior: 
 
-Semana 13: Optimización, documentación y entrega.
-Se realizarán los ajustes finales, documentación técnica, manuales de usuario, preparación del despliegue y presentación de la versión final.\newline
+1-	Tipo de Contribución: Herramienta ( Tool ). Desarrolla una plataforma e-Gobierno compuesta por dos módulos software: un sistema de administración web para la intranet del ayuntamiento y una aplicación móvil nativa en Android para la ciudadanía.\newline 
 
+2-	Tipo de Contribución: Herramienta ( Tool ) (con integración de método/algoritmo de IA). Diseña y desarrolla una plataforma web responsiva con geolocalización y mapas para reporte de infraestructura dañada, integrando la API de Google Cloud Vision para la validación automática de fotografías\newline 
 
+3-	 Tipo de Contribución: Herramienta ( Tool ). Desarrolla un sistema de software Help Desk en Visual Studio .NET y SQL Server siguiendo la metodología RUP, notación UML y buenas prácticas de ITIL2].\newline 
 
-9.3. Nivel Diagnóstico: Estudio de Mapeo Sistemático (SMS - Petersen et al.)\newline
+4-	Tipo de Contribución: Herramienta ( Tool ). Desarrolla y adapta un sistema web Help Desk basado en el software libre GLPI v.10 configurado bajo las recomendaciones de ITIL v \newline 
 
-Antes de iniciar con el desarrollo de nuestro sistema para la creación categorización y seguimiento hasta la resolución de incidencias. Se opto por utilizar una guía de Estudios de Mapeo sistemático {} la cual nos permitió clasificar, agrupar y mapear el estado del arte con respecto a la resolución de problemáticas de comunicación entre entidades que ofertan algún servicio y usuarios que les remiten sus incidencias con el fin de que sean resueltas.\newline
+Basandose en la taxonomia de Wieringa las definiciones de tipos de investigaciones que se van a mencionar son las siguientes: 
 
-Aplicando los pasos de la guía {} nos condujo a la creación de Preguntas de investigación con el objetivo de establecer los alcances del estudio y estructurar la construcción de cadenas de búsqueda que serán creadas posteriormente.\newline
+Validation Research: Corresponde a estudios donde las técnicas o herramientas investigadas son novedosas y todavía no han sido implementadas en la práctica real.\newline 
 
--	¿Qué soluciones Digitales se han aplicado para la resolución de este tipo de problemáticas?\newline
+Evaluation Research: Corresponde a estudios donde las técnicas o herramientas ya han sido implementadas en la práctica real y se lleva a cabo una evaluación formal de dicha aplicación.\newline 
 
--	¿Cuáles son las funcionalidades que se han incorporado en esas soluciones para suplir la necesidad?\newline
+Según su tipo de investigación:\newline 
 
--	¿Qué funcionalidades se adaptan mejor al contexto de nuestro proyecto?\newline
+1-	Tipo de Investigación: Investigación de Validación ( Validation Research ). Comprende la fase de análisis de requerimientos, diseño modular (MVC) y realización de pruebas funcionales para sustituir el sistema previo (072 Ayuntatel), demostrando la operatividad técnica del flujo de recepción y seguimiento de reportes.\newline 
 
--	¿Cuáles son las funcionalidades que faltan para la resolución de la necesidad especifica en nuestro contexto?\newline
+2-	Tipo de Investigación: Investigación de Validación ( Validation Research ). La solución se prueba dentro de un entorno controlado mediante un estudio piloto con 15 colaboradores (10 residentes y 5 líderes comunitarios) del barrio Luis Celleri. En esta fase se efectúan pruebas de usabilidad y de percepción de tiempos, pero sin estar integrado todavía a los sistemas informáticos formales del GAD municipal.\newline 
 
-Para la continuidad del Estudio de mapeo Sistemático se realizaron cadenas de búsqueda con el fin de encontrar estudios, artículos y publicaciones relevantes que nos permitan encontrar respuestas para nuestras preguntas.\newline
+3-	Tipo de Investigación: Investigación de Validación ( Validation Research ). Se centra en el levantamiento de requisitos, modelado de procesos e implantación del sistema en el servidor de la Oficina de Informática y Telecomunicaciones de la Municipalidad de San Juan Bautista. Mide la usabilidad esperada del prototipo mediante la escala estandarizada SUS (System Usability Scale)\newline 
 
-Para la construcción de las cadenas se utilizan palabras claves en combinación de operadores booleanos como OR y AND en nuestro caso:\newline
+4-	Tipo de Investigación: Investigación de Evaluación ( Evaluation Research ). El estudio implementa la solución en una organización real (Corte Superior de Apurímac) y evalúa su impacto en producción mediante un diseño pre-experimental. Compara el estado inicial sin el sistema (registros en Excel de 2020-2021) frente al estado final (reportes exportados del sistema entre 2022-2023), demostrando una reducción en el tiempo promedio de atención (de 62 a 15 minutos) y aplicando la prueba estadística t-Student junto con encuestas de satisfacción de interfaz (QUIS)\newline 
 
-("sistema de reportes" OR "sistema de incidencias ciudadanas" OR "sistema de quejas ") AND (municipalidad)
-("plataforma web" OR "sistema de información" OR ("incidencias " OR "participación ciudadana" OR "gestión municipal") AND ("Nicaragua")\newline
+Para cerrar con el SMS la identificaion de nichos no explorados se concluye que entre la búsqueda que se realizo la frecuencia de estudios se inclinan hacia Validation Research de los cuales 3 de este tipo fueron encontrados y 1 sobre Evaluation Research.  
 
-Se continuo con el filtrado de información útil para nuestra causa aplicando inclusión o exclusión.\newline
+El mapeo sistemático revela cosas claras sobre el estado del arte en la resolución de incidencias entre usuarios y entidades de servicio, resaltando áreas que aún no han sido investigadas y es que:
 
-La cual tubo distintas fases comenzando con la elección de criterios de inclusión en nuestro caso fueron Plataforma web que resolvieran incidencias en distintos ámbitos. Información que fue validada a través de Títulos, lectura de resúmenes y año de publicación (del 2022 en adelante) lo que dio como consecuencia el encuentro de los siguientes sistemas:\newline
+Se encuentra los escases sobre el cómo la vista del estado de los reportes y la forma en que las entidades dan a conocer los motivos de su tardanza en su solución de las incidencias generan un impacto significativo en como son evaluadas por sus usuarios. 
 
-1-	SISTEMA INTEGRAL PARA EL REPORTE Y SEGUIMIENTO DE DEFICIENCIAS DEL SERVICIO PÚBLICO DEL MUNICIPIO DE OTHÓN P. BLANCO, QUINTANA ROO (072 REPORTES)\newline
+Además, se encontró una Ausencia absoluta de antecedentes documentados en el contexto nacional: Al aplicar distintas cadenas de búsqueda los resultados arrojaron cero estudios o publicaciones científicas dentro de los criterios de inclusión. Esto evidencia un vacío total de literatura académica documentada sobre la implementación, validación o evaluación de plataformas de gestión de incidencias generales o institucionales desarrolladas específicamente en el contexto tecnológico de Nicaragua.
 
-2-	Desarrollo de un sistema web para el reporte de daños en la infraestructura urbana de la parroquia Anconcito integrando Google Cloud Vision API\newline
+La ejecución de este Estudio de Mapeo Sistemático responde a las preguntas de investigación iniciales, determinando que las soluciones digitales aplicadas suelen ser plataformas web con módulos móviles, incorporando geolocalización, seguimiento de tickets, evidencia fotográfica y en casos aislados, validación por IA o marcos de trabajo ITIL.
 
-3-	Sistema help desk para la gestión de incidencias de la municipalidad distrital de San Juan Bautista (mdsjb)\newline
+Si bien estas funcionalidades suplen las necesidades de reporte, el mapa visual destaca brechas significativas: las soluciones existentes raramente trascienden la fase de validación técnica para medir su impacto operativo real. De manera aún más crítica, el mapeo confirma la inexistencia de investigaciones previas sobre este tipo de soluciones tecnológicas en Nicaragua. 
 
-4-	Aplicación de un sistema web Help Desk basado en ITIL para el registro y control de requerimientos e incidencias al personal de la Corte Superior de Justicia de Apurímac, año 2020 - 2023
-Siguiendo la metodología de Petersen et al., la clasificación de la literatura se fundamenta en un esquema bidimensional para analizar tanto el aporte técnico como el rigor científico de los antecedentes:\newline
-
-Para la categorización de los estudios primarios seleccionados, se adoptó un esquema de clasificación de dos facetas. La primera faceta evalúa el Tipo de Contribución (qué tipo de artefacto o solución se propone), mientras que la segunda evalúa el Tipo de Investigación (el enfoque científico utilizado para validar o evaluar dicha solución, según la taxonomía de Wieringa et al.).\newline
-
-Tipo de Contribución ( Contribution Type )
-El orden de número se vincula con el orden de la etapa anterior:
-1-	Tipo de Contribución: Herramienta ( Tool ). Desarrolla una plataforma e-Gobierno compuesta por dos módulos software: un sistema de administración web para la intranet del ayuntamiento y una aplicación móvil nativa en Android para la ciudadanía.\newline
-
-2-	Tipo de Contribución: Herramienta ( Tool ) (con integración de método/algoritmo de IA). Diseña y desarrolla una plataforma web responsiva con geolocalización y mapas para reporte de infraestructura dañada, integrando la API de Google Cloud Vision para la validación automática de fotografías\newline
-
-3-	 Tipo de Contribución: Herramienta ( Tool ). Desarrolla un sistema de software Help Desk en Visual Studio .NET y SQL Server siguiendo la metodología RUP, notación UML y buenas prácticas de ITIL2].\newline
-
-4-	Tipo de Contribución: Herramienta ( Tool ). Desarrolla y adapta un sistema web Help Desk basado en el software libre GLPI v.10 configurado bajo las recomendaciones de ITIL v \newline
-
-
-Basandose en la taxonomia de Wieringa las definiciones de tipos de investigaciones que se van a mencionar son las siguientes:
-Validation Research: Corresponde a estudios donde las técnicas o herramientas investigadas son novedosas y todavía no han sido implementadas en la práctica real.\newline
-
-Evaluation Research: Corresponde a estudios donde las técnicas o herramientas ya han sido implementadas en la práctica real y se lleva a cabo una evaluación formal de dicha aplicación.\newline
-
-
-
-Según su tipo de investigación:\newline
-
-1-	Tipo de Investigación: Investigación de Validación ( Validation Research ). Comprende la fase de análisis de requerimientos, diseño modular (MVC) y realización de pruebas funcionales para sustituir el sistema previo (072 Ayuntatel), demostrando la operatividad técnica del flujo de recepción y seguimiento de reportes.\newline
-
-2-	Tipo de Investigación: Investigación de Validación ( Validation Research ). La solución se prueba dentro de un entorno controlado mediante un estudio piloto con 15 colaboradores (10 residentes y 5 líderes comunitarios) del barrio Luis Celleri. En esta fase se efectúan pruebas de usabilidad y de percepción de tiempos, pero sin estar integrado todavía a los sistemas informáticos formales del GAD municipal.\newline
-
-3-	Tipo de Investigación: Investigación de Validación ( Validation Research ). Se centra en el levantamiento de requisitos, modelado de procesos e implantación del sistema en el servidor de la Oficina de Informática y Telecomunicaciones de la Municipalidad de San Juan Bautista. Mide la usabilidad esperada del prototipo mediante la escala estandarizada SUS (System Usability Scale)\newline
-
-4-	Tipo de Investigación: Investigación de Evaluación ( Evaluation Research ). El estudio implementa la solución en una organización real (Corte Superior de Apurímac) y evalúa su impacto en producción mediante un diseño pre-experimental. Compara el estado inicial sin el sistema (registros en Excel de 2020-2021) frente al estado final (reportes exportados del sistema entre 2022-2023), demostrando una reducción en el tiempo promedio de atención (de 62 a 15 minutos) y aplicando la prueba estadística t-Student junto con encuestas de satisfacción de interfaz (QUIS)\newline
-
-Para cerrar con el SMS la identificaion de nichos no explorados se concluye que entre la búsqueda que se realizo la frecuencia de estudios se inclinan hacia Validation Research de los cuales 3 de este tipo fueron encontrados y 1 sobre Evaluation Research. 
-El mapeo sistemático revela cosas claras sobre el estado del arte en la resolución de incidencias entre usuarios y entidades de servicio, resaltando áreas que aún no han sido investigadas y es que:\newline
-
-Se encuentra los escases sobre el cómo la vista del estado de los reportes y la forma en que las entidades dan a conocer los motivos de su tardanza en su solución de las incidencias generan un impacto significativo en como son evaluadas por sus usuarios.
-Además, se encontró una Ausencia absoluta de antecedentes documentados en el contexto nacional: Al aplicar distintas cadenas de búsqueda los resultados arrojaron cero estudios o publicaciones científicas dentro de los criterios de inclusión. Esto evidencia un vacío total de literatura académica documentada sobre la implementación, validación o evaluación de plataformas de gestión de incidencias generales o institucionales desarrolladas específicamente en el contexto tecnológico de Nicaragua.\newline
-
-
-La ejecución de este Estudio de Mapeo Sistemático responde a las preguntas de investigación iniciales, determinando que las soluciones digitales aplicadas suelen ser plataformas web con módulos móviles, incorporando geolocalización, seguimiento de tickets, evidencia fotográfica y en casos aislados, validación por IA o marcos de trabajo ITIL.\newline
-
-Si bien estas funcionalidades suplen las necesidades de reporte, el mapa visual destaca brechas significativas: las soluciones existentes raramente trascienden la fase de validación técnica para medir su impacto operativo real. De manera aún más crítica, el mapeo confirma la inexistencia de investigaciones previas sobre este tipo de soluciones tecnológicas en Nicaragua.
 En este sentido, el desarrollo de la plataforma web Comunica encuentra su justificación científica y técnica. El proyecto no solo se inserta en la tendencia de aportar herramientas con reportes estructurados, sino que lo hace abordando un nicho geográfico inexplorado. El desarrollo de la plataforma en la ciudad de Rivas aportará el primer precedente evaluable en el contexto nicaragüense, cubriendo el vacío identificado en el estado del arte y sentando las bases para futuras investigaciones de evaluación en la región.
 
+\section{Nivel Tactico}
+
+\section{Matriz de trazabilidad e indicadores de evaluación}
+Se establece una matriz de trazabilidad que conecta cada necesidad o meta-requisito de la solución con la decisión de diseño que la resuelve, la unidad de desarrollo (historias de usuario y sprints) que la construye y el indicador cuantitativo o cualitativo con el que se evaluará su cumplimiento. Las Tablas 5 y 6 presentan dicha correspondencia de manera fraccionada para su análisis detallado.
+
+\begin{table}[htbp]
+	\centering
+	\caption{Matriz de trazabilidad e indicadores de evaluación (Parte I)}
+	\label{tab:matriz_trazabilidad_1}
+	\begin{tabularx}{\textwidth}{>{\hsize=0.22\hsize}X >{\hsize=0.28\hsize}X >{\hsize=0.22\hsize}X >{\hsize=0.28\hsize}X}
+		\toprule
+		\textbf{Meta-requisito (Fase 2)} & \textbf{Meta-diseño (Fase 3)} & \textbf{Historia / Sprint} & \textbf{Indicador de evaluación (Fase 5)} \\
+		\midrule
+		
+		\textbf{MR-01:} Registrar solicitudes de soporte indicando categoría, prioridad y descripción detallada de la incidencia. & 
+		\textbf{MD-01:} Arquitectura base en Angular (Frontend) y Node.js / Express (Backend) con formularios reactivos y validaciones. & 
+		US-01 / Sprint 1 & 
+		Porcentaje de formularios validados correctamente sin errores de esquema (meta: 80\%). \\
+		\addlinespace[0.5em]
+		
+		\textbf{MR-02:} Permitir adjuntar evidencia fotográfica (JPG/PNG) para documentar visualmente el problema reportado. & 
+		\textbf{MD-02:} Módulo de carga y gestión de archivos adjuntos con control de tamaño y almacenamiento optimizado. & 
+		US-02 / Sprint 2 & 
+		Porcentaje de imágenes almacenadas y visualizadas correctamente en las pruebas (meta: 85\%). \\
+		\addlinespace[0.5em]
+		
+		\textbf{MR-03:} Consultar en tiempo real el historial de reportes y el estado actual de la atención de los casos. & 
+		\textbf{MD-03:} Vistas de consulta de historial con listados cronológicos y actualización de estados en tiempo real. & 
+		US-03 / Sprint 3 & 
+		Tiempo de respuesta en la consulta de listados menor a 2 segundos en pruebas de carga. \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\vspace{0.5cm}
+
+\begin{table}[htbp]
+	\centering
+	\caption{Matriz de trazabilidad e indicadores de evaluación (Parte II)}
+	\label{tab:matriz_trazabilidad_2}
+	\begin{tabularx}{\textwidth}{>{\hsize=0.22\hsize}X >{\hsize=0.28\hsize}X >{\hsize=0.22\hsize}X >{\hsize=0.28\hsize}X}
+		\toprule
+		\textbf{Meta-requisito (Fase 2)} & \textbf{Meta-diseño (Fase 3)} & \textbf{Historia / Sprint} & \textbf{Indicador de evaluación (Fase 5)} \\
+		\midrule
+		
+		\textbf{MR-04:} Proveer un panel operativo para que el personal de soporte filtre, asigne y actualice reportes. & 
+		\textbf{MD-04:} Panel de operador y soporte con filtros avanzados por categoría, prioridad, estado y registro de notas internas. & 
+		US-04 / Sprint 3 & 
+		Porcentaje de incidencias gestionadas y actualizadas exitosamente en pruebas funcionales. \\
+		\addlinespace[0.5em]
+		
+		\textbf{MR-05:} Visualizar métricas de rendimiento, volumen de reportes y tiempos de resolución de las entidades. & 
+		\textbf{MD-05:} Paneles administrativos e integración con indicadores de tiempo de respuesta y resolución con gráficos estadísticos. & 
+		US-05 / Sprint 4 & 
+		Diferencia entre los cálculos de tiempo del sistema y los valores reales esperados (meta: 0). \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+
+\newpage
+\begin{figure}[p]
+	\section{Cronograma de actividades}
+	En esta sección se representan las actividades realizadas para la redacción de la investigación y desarrollo del proyecto de software, representado con diagramas de Grantt.
+	\centering
+	\begin{ganttchart}[
+		hgrid,
+		vgrid,
+		x unit=1.65cm,
+		y unit title=0.65cm,
+		y unit chart=0.75cm,
+		title height=1,
+		bar height=0.45,
+		group height=0.35,
+		group top shift=0.32,
+		bar top shift=0.28,
+		title label font=\small\bfseries,
+		bar label font=\small,
+		group label font=\small\bfseries,
+		bar label node/.append style={
+			text width=5cm,
+			align=left
+		},
+		group label node/.append style={
+			text width=5cm,
+			align=left
+		},
+		group/.append style={
+			fill=gray!55,
+			draw=gray!70
+		},
+		bar/.append style={
+			fill=blue!25,
+			draw=blue!60
+		}
+		]{1}{8}
+		
+		% Encabezado: semanas
+		\gantttitle{S1}{1}
+		\gantttitle{S2}{1}
+		\gantttitle{S3}{1}
+		\gantttitle{S4}{1}
+		\gantttitle{S5}{1}
+		\gantttitle{S6}{1}
+		\gantttitle{S7}{1} 
+		\gantttitle{S8}{1} \\
+		
+		% Encabezado: fechas
+		\gantttitle{27/07}{1}
+		\gantttitle{03/08}{1}
+		\gantttitle{10/08}{1}
+		\gantttitle{17/08}{1}
+		\gantttitle{24/08}{1} 
+		\gantttitle{31/08}{1} 
+		\gantttitle{07/09}{1} 
+		\gantttitle{14/09}{1} \\
+		
+		% Grupo principal
+		
+		% Actividades
+		\ganttbar{Planteamiento del problema}
+		{1}{1} \\
+		
+		\ganttbar{Delimitación del problema}
+		{1}{1} \\
+		
+		\ganttbar{Declaración de objetivos}
+		{1}{2} \\
+		
+		\ganttbar{Formulación de justificación}
+		{2}{3} \\
+		
+		\ganttbar{Definición del alcance y limitaciones}
+		{3}{3} \\
+		
+		\ganttbar{Búsqueda de antecedentes}
+		{4}{4} \\
+		
+		\ganttbar{Revisión Bibliográfica}
+		{4}{7} \\
+		
+		\ganttbar{Desarrollo del Marco teórico}
+		{7}{8} \\
+		
+	\end{ganttchart}
+	
+	\caption{Cronograma actividades del proyecto (Semana 1 - 8)}
+	\label{fig:cronograma_act1}
+	
+	% pequeña separacion 
+	\vspace{0.5cm}
+
+	\begin{ganttchart}[
+		hgrid,
+		vgrid,
+		x unit=1.65cm,
+		y unit title=0.65cm,
+		y unit chart=0.75cm,
+		title height=1,
+		bar height=0.45,
+		group height=0.35,
+		group top shift=0.32,
+		bar top shift=0.28,
+		title label font=\small\bfseries,
+		bar label font=\small,
+		group label font=\small\bfseries,
+		bar label node/.append style={
+			text width=5cm,
+			align=left
+		},
+		group label node/.append style={
+			text width=5cm,
+			align=left
+		},
+		group/.append style={
+			fill=gray!55,
+			draw=gray!70
+		},
+		bar/.append style={
+			fill=blue!25,
+			draw=blue!60
+		}
+		]{1}{8}
+		
+		% Encabezado: semanas
+		\gantttitle{S9}{1}
+		\gantttitle{S10}{1}
+		\gantttitle{S11}{1} 
+		\gantttitle{S12}{1}
+		\gantttitle{S13}{1}
+		\gantttitle{S14}{1}
+		\gantttitle{S15}{1}
+		\gantttitle{S16}{1}\\
+		
+		% Encabezado: fechas 
+		\gantttitle{21/09}{1}
+		\gantttitle{28/09}{1}
+		\gantttitle{05/10}{1}
+		\gantttitle{12/10}{1}
+		\gantttitle{19/10}{1}
+		\gantttitle{26/10}{1}
+		\gantttitle{02/11}{1}
+		\gantttitle{09/11}{1}\\
+		
+		% Grupo principal
+		
+		% Actividades
+		\ganttbar{Desarrollo del Marco teórico}
+		{1}{1} \\		
+		
+		\ganttbar{Análisis de factibilidad}
+		{2}{2} \\
+		
+		\ganttbar{Desarrollo del Marco Metodológico}
+		{3}{4} \\
+		
+	\end{ganttchart}
+	
+	\caption{Cronograma actividades del proyecto (Semana 9 - 16)}
+	\label{fig:cronograma_act2}
+\end{figure}
