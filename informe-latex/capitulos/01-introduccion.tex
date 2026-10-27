@@ -27,16 +27,13 @@ Esta solución elimina fricciones(malos entendidos) al exigir desde el origen in
 
  La implementación de este tipo de herramientas reduce los tiempos de recepción y eleva la satisfacción de los usuarios\parencite{parrales2025desarrollo}. asi mismo hacen evolucionar el modelo de atención hacia un sistema verdaderamente interactivo y transparente. gracias a datos precisos y organizados visualmente, que encaminan a la entidad administradora a optimizar recursos, mejorar su comunicacion y tomar mejores decisiones, fortaleciendo así la confianza de sus usuarios.
 
-
-
-
 \clearpage
 
 \subsection{Objetivos}
 
 \subsection{Objetivo General}
 
-Desarrollo de una plataforma web para el registro, almacenamiento, clasificación y seguimiento de reportes de incidencias con el propósito de optimizar los procesos de respuesta y recepción de peticiones por medio digital.
+Desarrollo de una plataforma web para el registro, almacenamiento, clasificación y seguimiento de reportes de incidencias de los usuarios con el propósito de optimizar los procesos de respuesta y recepción de peticiones.
 
 \subsection{Objetivos Específicos}
 \begin{itemize}
@@ -81,177 +78,193 @@ Desde la perspectiva institucional, el desarrollo de Comunica se justifica por l
 
 Desde el ámbito académico y tecnológico, la investigación permitirá aplicar conocimientos relacionados con el análisis de requerimientos, el diseño de sistemas de información y el desarrollo de aplicaciones web mediante la construcción y evaluación de una solución orientada a la gestión de incidencias. Asimismo, el proyecto permitirá documentar el proceso de diseño, desarrollo y evaluación de una plataforma tecnológica contextualizada en el municipio de Rivas, cuyos resultados podrán servir como referencia para futuras investigaciones e iniciativas de digitalización de procesos de atención y seguimiento de solicitudes.
 
-\subsection{Alcance}
-Comunica se pensó para ser una plataforma web que ayude a la mejora de comunicación entre los usuarios y la entidad responsable para el levantamiento, clasificación y revisión de incidencias que se puedan presentar en el área del servicio. 
+\section{Alcance}
+Comunica se desarrollará como una plataforma web bajo el modelo SaaS, orientada a mejorar la comunicación entre el ciudadano y la entidad responsable para el levantamiento, clasificación y revisión de incidencias que se puedan presentar en el área de servicio. En esta primera etapa se contempla:
 
 \begin{itemize}
-	\item Registros de usuarios: El usuario se registrará en el sistema para la realización del levantamiento de incidencias. 
+	\item Registro de usuarios en el sistema para habilitar la gestión y el levantamiento de incidencias.
 	
-	\item Realización de levantamiento de una incidencia: Interfaz amigable la cual permitirá hacer su levantamiento de incidencia con mucha facilidad, se podrá colocar una pequeña descripción, evidencia fotográfica, y recopilación de ubicación exacta.  
+	\item Interfaz intuitiva para el reporte de incidencias con descripción breve, evidencia fotográfica y geolocalización mediante mapa interactivo.
 	
-	\item Transparencia con el usuario: El usuario podrá ver cómo va el proceso de su resolución al problema del cual realizo levantamiento.  
+	\item Seguimiento en tiempo real del estado y proceso de resolución de las incidencias reportadas.
 	
-	\item División de apartado según el rol: El usuario cuenta con su propio apartado en el cual podrá ver su historial de incidencias. 
+	\item Panel personal de historial para la consulta de todas las incidencias registradas por cada usuario.
 	
-	\item Gestión administrativa: Panel administrativo que cuenta con un dashboard en el cual se muestra total de reportes.  así mismo la administración cuenta con poder de bloquear permanentemente o temporalmente a usuarios que hagan mal uso de la plataforma. 
+	\item Módulo de administración con facultades para la suspensión temporal o el bloqueo permanente de cuentas en casos de uso indebido de la plataforma.
 	
-	\item Mapa geográfico: Cuenta con un mapa donde se representarán los reportes en donde se observan representadas las áreas con mayor reporte de incidencias.
+	\item Visualización geoespacial exclusiva para la administración, mediante un mapa interactivo de distribución y concentración de reportes.
 \end{itemize}
 
-\subsection{Limitaciones}
-El tipo de limitaciones que se llegan a tener son debido al alcance temporal y técnico del proyecto académico, son los siguientes:
+Estas funcionalidades solo son el alcance inicial de Comunica, el proyecto contempla delimitar los aspectos que quedarán fuera de esta fase. Esto resulta indispensable para mantener el desarrollo dentro de los plazos establecidos y asegurar la viabilidad técnica y académica.
+
+\section{Limitaciones}
+Como Comunica se desarrollará en el marco de este proyecto académico y se concentrará en sus funciones principales, ha sido necesario establecer algunos límites para mantener el trabajo enfocado y realizable:
+
 \begin{itemize}
-	\item El rango geográfico por el momento solo está enfocado en Rivas.
-	\item Para este estudio solo está decantada una aplicación web responsiva y no una app Mobile nativa.
-	\item Al ser un proyecto académico el uso de servicios gratuitos es una limitante.
-	\item Las funciones de la administración son manuales y se necesita que esté presente un miembro del equipo para gestionarlo
+	\item El rango geográfico de cobertura por el momento solo está enfocado en el municipio de Rivas, limitando la expansión a otras zonas por ahora.
+	
+	\item La solución se desarrollará como una aplicación web responsiva; en esta etapa no se contempla el diseño ni despliegue de una aplicación móvil nativa.
+
+	\item Las funciones de administración y mantenimiento operan de manera manual, requiriendo la presencia de un miembro del equipo para su gestión.
+	\item El envío de reportes depende de la estabilidad de la conexión a internet y de la precisión de las coordenadas del dispositivo desde donde se mande la incidencia.
+	
+	\item El servicio de almacenamiento de imágenes utilizado cuenta con restricciones en su capa gratuita, limitando la cantidad y el tamaño de las fotos por cada reporte.
+	
+	\item Las evidencias permitidas para el registro de las incidencias se limitan exclusivamente a archivos fotográficos y de video.
 \end{itemize}
 
 \subsection{Viabilidad del Proyecto}
 En esta sección se evaluara la viabilidad del sistema propuesto a partir de las cuatro dimensiones fundamentales: económica, técnica, operativa y legal. La definición de cada una de ellas ayudara a respaldar la capacidad de poder ejecutar, mantener y escalar el sistema con el fin de volverlo una solución efectiva.
+
 \subsection{Viabilidad Económica}
-\subsubsection{Costos de desarrollo}
-Para comenzar con el diseño y desarrollo del proyecto Comunica, es necesario realizar una estimación cuantitativa de la inversión inicial requerida, contemplada en tres puntos principales y los gastos operativos básicos:
+La viabilidad económica del proyecto se plantea como una estimación académica a cinco años con el propósito de evaluar la sostenibilidad financiera de la plataforma bajo un modelo de suscripción. Los montos calculados se expresan en córdobas nicaragüenses (C\$), utilizando como referencia un tipo de cambio oficial de \$36.62 por USD 1.00, establecido por el Banco Central de Nicaragua (\cite{BancoCentraldeNicaragua2026}).
 
-Costos de talento humano: Se muestra la remuneración correspondiente al equipo de desarrollo conformado por tres integrantes que se encargarán del diseño, programación y testing del sistema.
+\subsection{Inversión Inicial(Costo Desarrollo)}
+Para iniciar con el diseño, desarrollo y puesta en marcha del proyecto Comunica, se determina una estimación cuantitativa de la inversión inicial requerida, la que abarca la valoración del talento humano del equipo de desarrollo y las herramientas tecnológicas necesarias durante la fase preliminar. 
 
-Herramientas y servicios externos: Se aplican las licencias y suscripciones necesarias para herramientas de desarrollo, incluyendo bibliotecas, mapa geográfico y servicios de almacenamiento de imágenes en la nube.
+La inversión inicial se calcula en un total de C\$110,918.00 (equivalentes a aproximadamente \$3,028.54 USD). Este monto contempla la retribución estimada para el equipo de desarrollo compuesto por tres integrantes (un desarrollador backend, un desarrollador frontend y un diseñador/gestor de proyectos), se contempla que durante la etapa de construcción del sistema, herramientas como Leaflet, Render, Netlify, DBeaver, Visual Studio Code y GitHub operan bajo sus planes o niveles gratuitos disponibles, de modo que no generan un costo directo inicial de infraestructura en esta primera fase.
 
-Infraestructura tecnológica: Incluye el alojamiento del sistema, bases de datos, servicios en la nube y demás recursos técnicos indispensables para el desarrollo, despliegue y prueba de la aplicación web.
-
-\begin{table}[H]
+\begin{table}[htbp]
 	\centering
-	\caption{Costos estimados de desarrollo del sistema}
-	\label{tab:costos_desarrollo}
-	\begin{tabularx}{\textwidth}{X X X X}
+	\caption{\emph{Costos estimados de desarrollo del sistema}}
+	\label{tab:costos_desarrollo_comunica}
+	\begin{tabularx}{\textwidth}{l X c X}
 		\toprule
-		\textbf{Categoría} & \textbf{Elemento} & \textbf{Costo estimado} & \textbf{Explicación} \\ 
+		\textbf{Categoría} & \textbf{Elemento} & \textbf{Costo Estimado (C\$)} & \textbf{Explicación} \\
 		\midrule
-		
-		\textbf{Talento Humano} & Desarrollador backend & C\$ 38,471 & Salario estimado de C\$620 por día. \\ 
-		
-		\addlinespace
-		
-		& Desarrollador frontend & C\$ 38,471 & Salario estimado de C\$620 por día. \\ 
-		
-		\addlinespace
-		
-		& Diseñador / PM & C\$ 33,976 & Salario estimado de C\$548 por día. \\ 
-		
-		\addlinespace
+		Talento Humano & Desarrollador Backend & 38,471.00 & Salario estimado de C\$620 por día de desarrollo. \\
+		Talento Humano & Desarrollador Frontend & 38,471.00 & Salario estimado de C\$620 por día de desarrollo. \\
+		Talento Humano & Diseñador / Project Manager & 33,976.00 & Salario estimado de C\$548 por día de desarrollo. \\
+		Servicios e Infraestructura & Leaflet, Render, Netlify, DBeaver, VS Code, GitHub, Cloudinary & 0.00 & Durante la etapa de desarrollo se emplean los planes y capas gratuitas de estos servicios. \\
 		\midrule
-		
-		\textbf{Servicios e infraestructura} & 
-		Leaflet \newline
-		Render \newline
-		Netlify \newline
-		DBeaver \newline
-		Visual Studio Code \newline
-		GitHub \newline
-		Cloudinary & C\$ 0 & Durante el desarrollo se emplearán los planes gratuitos disponibles para estos servicios y herramientas. \\ 
-		
-		\addlinespace
-		\midrule
-		
-		\textbf{Total} & 
-		& \textbf{C\$ 110,918.00} & Equivalente aproximado en dólares: \$3,028.54. \\ 
-		
+		\textbf{Total} & — & \textbf{110,918.00} & \textbf{Equivalente aproximado a \$3,028.54 USD.} \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
 
-\subsubsection{Costos de operación, mantenimiento y modelo comercial (SaaS)}
-El proyecto fue pensado como una herramienta de uso con alta duración. Para determinar el valor comercial de la plataforma web, se adopta un modelo de suscripción mensual (SaaS) diseñado para evitar una alta inversión inicial y facilitar la adopción del sistema por parte de cualquier institución, empresa u organización interesada.
+\subsection{Costos de Operación, Mantenimiento y Modelo Comercial}
 
-Tomando como base los costos operativos mensuales de infraestructura y mantenimiento, los cuales integran los servicios fijos de Render (\$25.00), Netlify (\$20.00), Cloudflare (\$20.00) y el servicio de cartografía digital Geoapify Plan API 10 (\$59.00) por un total de \$124.00 mensuales, sumados a los gastos anuales independientes, como lo son el almacenamiento de imágenes en Cloudinary (\$99.00 anuales) y el dominio en NameCheap (\$6.79 anuales).
+Con el fin de asegurar la sostenibilidad a largo plazo y evitar una alta inversión inicial que dificulte la adopción del sistema por parte de cualquier organizacion, el proyecto ha sido concebido bajo un modelo de suscripción basado en Software como Servicio (SaaS)
 
-Para asegurar la sostenibilidad financiera del proyecto, cubrir de forma inmediata los compromisos anuales en la nube y garantizar una retribución justa por el soporte técnico y mantenimiento continuo del equipo de desarrollo, se implementa el esquema comercial detallado a continuación.
+Los costos operativos mensuales fijos para mantener la plataforma funcionando en la nube ascienden a (\$124.00 USD mensuales), los cuales comprenden el alojamiento de la API y base de datos en Render (\$25.00)(\cite{render2026}), el alojamiento de la interfaz web en Netlify (\$20.00)(\cite{netlify2026}), la seguridad y certificados SSL en Cloudflare (\$20.00)(\cite{cloudflare2026}), y el servicio de cartografía digital Geoapify Plan API 10 (\$59.00) (\cite{ geoapify2026}). Adicionalmente, se contemplan gastos anuales independientes para asegurar la operatividad continua, tales como el almacenamiento de evidencias visuales en Cloudinary \$99.00 anuales(\cite{cloudinary2026}) y la adquisición del dominio institucional en NameCheap (\$6.79 anuales)(\cite{, namecheap2026}).
 
-\begin{table}[H]
+\begin{table}[htbp]
 	\centering
-	\caption{Estructura de costos operativos y esquema comercial de la plataforma}
-	\label{tab:costos_operacion_comercial}
-	\begin{tabularx}{\textwidth}{X X X}
+	\caption{\emph{Estructura de costos operativos y esquema comercial de la plataforma}}
+	\label{tab:estructura_costos_comunica}
+	\small % Reduce ligeramente la letra para que la tabla luzca limpia y profesional
+	\renewcommand{\arraystretch}{1.3} % Añade espacio vertical entre las filas para que no se vea pegado
+	\begin{tabularx}{\textwidth}{p{3.5cm} X p{2.8cm}}
 		\toprule
-		\textbf{Componente} & \textbf{Detalle / Proveedor} & \textbf{Costo / Tarifa} \\ 
+		\textbf{Componente} & \textbf{Detalle / Proveedor} & \textbf{Costo / Tarifa} \\
 		\midrule
-		
-		\textbf{Costos Operativos Mensuales (Infraestructura)} & 
-		Render (Host de API y BD) \newline
-		Netlify (Host de la plataforma) \newline
-		Cloudflare (Seguridad SSL) \newline
-		Geoapify (Plan API 10 - Mapas) & 
-		\$25.00 / mes \newline
-		\$20.00 / mes \newline
-		\$20.00 / mes \newline
-		\$59.00 / mes \\
-		
+		Costos Operativos Mensuales (Infraestructura) & Render (\$25.00), Netlify (\$20.00), Cloudflare (\$20.00) y Geoapify (\$59.00) & \$124.00 USD / mes \\
+		\addlinespace % Espacio extra opcional entre filas clave
+		Gastos Anuales Independientes & Cloudinary (\$99.00 / año) y NameCheap (\$6.79 / año) & \$105.79 USD / año \\
 		\addlinespace
-		\midrule
-		
-		\textbf{Gastos Anuales Independientes} & 
-		Cloudinary (Almacenamiento de imágenes) \newline
-		NameCheap (Dominio institucional) & 
-		\$99.00 / año \newline
-		\$6.79 / año \\
-		
+		Esquema Comercial: Mes de Enero (Arranque) & Tarifa que cubre infraestructura del mes, totalidad de servicios anuales y ganancia inicial & \$330.00 USD \\
 		\addlinespace
-		\midrule
-		
-		\textbf{Esquema Comercial: Primer Mes (Arranque)} & 
-		Tarifa única de instalación que cubre costos operativos del mes (\$124.00), totalidad de servicios anuales (\$105.79) y genera una ganancia neta inicial de \$100.21 USD ($\approx$\$33.40 netos para cada uno de los 3 ingenieros). & 
-		\textbf{\$330.00 USD} \\
-		
-		\addlinespace
-		\midrule
-		
-		\textbf{Esquema Comercial: A partir del 2do Mes} & 
-		Cuota de suscripción recurrente para cubrir infraestructura y asegurar un flujo constante por mantenimiento, monitoreo y soporte evolutivo continuo ($\approx$\$32.00 mensuales netos para cada ingeniero). & 
-		\textbf{\$220.00 USD / mes} \\
-		
+		Esquema Comercial: A partir del 2do mes & Cuota de suscripción recurrente para cubrir infraestructura y soporte técnico continuo & \$220.00 USD / mes \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
 
-\subsubsection{Escenario de proyección financiera}
-En un escenario de proyección donde cuatro instituciones u organizaciones contraten simultáneamente la plataforma, los ingresos brutos alcanzarían los \$880.00 USD mensuales a partir del segundo mes. Al escalar el servicio, los costos operativos en la nube se multiplican de forma proporcional por cada cliente activo, sumando un total de \$496.00 USD mensuales en infraestructura (servidores y mapas de Geoapify).
+\subsection{3. Escenario de Proyección Financiera (VAN, TIR y PRI a 5 Años)}
+Para evaluar la rentabilidad del proyecto a lo largo del tiempo, se ha formulado un escenario de proyección financiera a cinco años considerando la adopción simultánea de la plataforma por parte de cuatro organizaciones.
 
-Tras cubrir estos gastos, la ganancia neta total resultante asciende a \$384.00 USD mensuales, permitiendo distribuir un flujo constante de \$128.00 USD mensuales netos para cada uno de los tres ingenieros, tal como se resume en la Tabla siguiente. Esto demuestra que el proyecto mantiene una rentabilidad atractiva y sostenible a medida que se expande en el mercado.
+Bajo el escenario ya mencionado, los ingresos brutos generados por cuatro instituciones suscritas ascienden a un total de \$880.00 USD mensuales a partir del segundo mes, lo que se traduce en flujos estables y predecibles. Al aplicar la tasa de descuento académica estándar del 12\%.
 
-\begin{table}[H]
+\begin{table}[htbp]
 	\centering
-	\caption{Proyección financiera escalada con cuatro instituciones contratantes}
-	\label{tab:proyeccion_financiera}
-	\begin{tabularx}{\textwidth}{X X X}
+	\caption{\emph{Proyección del flujo de caja a cinco años (en C\$)}}
+	\label{tab:flujo_caja_comunica}
+	\small
+	\begin{tabularx}{\textwidth}{X c c c c c c}
 		\toprule
-		\textbf{Indicador Financiero} & \textbf{Descripción del Escenario (4 Clientes)} & \textbf{Monto (USD)} \\ 
+		\textbf{Concepto} & \textbf{Año 0} & \textbf{Año 1} & \textbf{Año 2} & \textbf{Año 3} & \textbf{Año 4} & \textbf{Año 5} \\
 		\midrule
-		
-		Ingresos Brutos Mensuales & 
-		Cuatro instituciones suscritas a \$220.00 USD mensuales cada una a partir del segundo mes. & 
-		\textbf{\$880.00 / mes} \\
-		
-		\addlinespace
-		
-		Costos Operativos Proporcionales & 
-		Infraestructura en la nube escalada proporcionalmente por cada cliente activo (servidores y mapas Geoapify). & 
-		\textbf{\$496.00 / mes} \\
-		
-		\addlinespace
-		
-		Ganancia Neta Total & 
-		Excedente resultante tras cubrir los gastos operativos de infraestructura escalada. & 
-		\textbf{\$384.00 / mes} \\
-		
-		\addlinespace
-		
-		Distribución por Ingeniero (3 Integrantes) & 
-		Flujo constante neto asignado equitativamente a cada uno de los tres ingenieros desarrolladores en concepto de soporte técnico y mantenimiento evolutivo. & 
-		\textbf{\$128.00 / mes c/u} \\
-		
+		Instituciones Suscritas & 0 & 4 & 4 & 4 & 4 & 4 \\
+		Ingresos Totales (C\$) & — & 402,820 & 402,820 & 402,820 & 402,820 & 402,820 \\
+		Costos Operativos (C\$) & — & 233,458 & 233,458 & 233,458 & 233,458 & 233,458 \\
+		Inversión Inicial (C\$) & -110,918 & — & — & — & — & — \\
+		\textbf{Flujo Neto (C\$)} & \textbf{-110,918} & \textbf{169,362} & \textbf{169,362} & \textbf{169,362} & \textbf{169,362} & \textbf{169,362} \\
+		\textbf{Flujo Acumulado (C\$)} & -110,918 & 58,444 & 227,805 & 397,167 & 566,529 & 735,890 \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
+
+\vspace{1em}
+
+\begin{table}[!htbp]
+	\centering
+	\caption{\emph{Indicadores financieros del modelo (VAN, TIR y PRI)}}
+	\label{tab:indicadores_financieros_comunica}
+	\small
+	\begin{tabularx}{\textwidth}{l c c X}
+		\toprule
+		\textbf{Indicador} & \textbf{Resultado} & \textbf{Unidad} & \textbf{Descripción del Concepto} \\
+		\midrule
+		VAN (Valor Actual Neto) & 572,854.11 & C\$ & Representa el valor actual de todos los flujos futuros de caja menos la inversión inicial, descontados a una tasa del 12\%. \\
+		TIR (Tasa Interna de Retorno) & 151.16 & \% & Mide la rentabilidad intrínseca del proyecto, demostrando solidez frente a la inversión inicial requerida. \\
+		PRI (Período de Recuperación) & 0.655 & Años & Tiempo estimado (aprox. 8 meses) en que se recupera en su totalidad la inversión inicial de desarrollo. \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\subsection{Fórmulas}
+
+\subsection{Fórmulas Financieras}
+
+Para el análisis de la viabilidad económica, se definen las siguientes expresiones matemáticas estándar de evaluación financiera:
+
+\vspace{0.5em}
+
+\noindent
+\begin{minipage}{\linewidth}
+	\textbf{1.) Valor Actual Neto (VAN):}
+	\begin{equation}
+		VAN = -I_0 + \sum_{t=1}^{n} \frac{FC_t}{(1 + k)^t}
+	\end{equation}
+	\noindent \textit{Donde:}
+	\begin{itemize}
+		\item[] $I_0$ = Inversión inicial ($110,918.00\mbox{ C\$}$).
+		\item[] $FC_t$ = Flujo de caja neto en el período $t$ ($169,361.64\mbox{ C\$}$).
+		\item[] $k$ = Tasa de descuento o costo de oportunidad ($12\% = 0.12$).
+		\item[] $n$ = Horizonte de evaluación en años ($5$ años).
+	\end{itemize}
+\end{minipage}
+
+\vspace{1em}
+
+\noindent
+\begin{minipage}{\linewidth}
+	\textbf{2.) Tasa Interna de Retorno (TIR):}
+	\begin{equation}
+		0 = -I_0 + \sum_{t=1}^{n} \frac{FC_t}{(1 + TIR)^t}
+	\end{equation}
+	\noindent \textit{Donde:}
+	\begin{itemize}
+		\item[] $I_0$ = Inversión inicial ($110,918.00\mbox{ C\$}$).
+		\item[] $FC_t$ = Flujo neto constante ($169,361.64\mbox{ C\$}$).
+		\item[] $TIR$ = Tasa de rendimiento que iguala el VAN a cero ($151.16\%$).
+	\end{itemize}
+\end{minipage}
+
+\vspace{1em}
+
+\noindent
+\begin{minipage}{\linewidth}
+	\textbf{3.) Período de Recuperación de la Inversión (PRI):}
+	\begin{equation}
+		PRI = \frac{\mbox{Inversión Inicial}}{\mbox{Flujo Neto Anual Promedio}} = \frac{110,918.00}{169,361.64}
+	\end{equation}
+	\noindent \textit{Donde:}
+	\begin{itemize}
+		\item[] $\mbox{Inversión Inicial}$ = Costo total de desarrollo ($110,918.00\mbox{ C\$}$).
+		\item[] $\mbox{Flujo Neto Anual}$ = Retorno constante por año ($169,361.64\mbox{ C\$}$).
+		\item[] $\mbox{Resultado}$ = $0.655$ años ($\approx 8$ meses).
+	\end{itemize}
+\end{minipage}
 
 \subsection{Viabilidad Técnica}
  El desarrollo de la plataforma web para la gestión de incidencias “Comunica” es técnicamente viable debido a que se fundamenta en una arquitectura de software estandarizada, herramientas de código abierto de amplia adopción y servicios en la nube. La viabilidad de este modelo de Cloud Computing se respalda en investigaciones recientes que demuestran que su uso genera beneficios directos, tales como la reducción de hasta un 40 en costos operativos de infraestructura física y la garantía de una alta disponibilidad mediante el escalamiento automático de recursos bajo demanda \parencite{perez2023cloud}. El equipo investigador cuenta con los conocimientos necesarios en desarrollo Full-Stack(trabajar en Backend y Frontend) para implementar las siguientes tecnologías:
@@ -369,11 +382,16 @@ El diseño de la interfaz fue creado con colores amigables a la vista e intuitiv
 \textbf{• Indicadores de eficiencia (tiempo de respuesta, número de incidencias atendidas):} El sistema "Comunica" podrá evaluar la eficiencia debido los tiempos de respuesta según datos como fechas de creación y fecha de solución, así como el estado del reporte para contabilizar los casos gestionados. Toda esta información se consolida en un dashboard estadístico institucional en la aplicación web administrativa, lo que permite a las entidades visualizar en tiempo real el volumen de incidencias atendidas y darles seguimiento.
 
 \subsection{Viabilidad Legal}
-El desarrollo del sistema se ajusta de manera estricta al marco jurídico y normativo de la República de Nicaragua. 
 
-Desde la perspectiva constitucional, el proyecto respeta las garantías ciudadanas establecidas en el Artículo 27 de la Constitución Política, salvaguardando la seguridad (Inciso 2), la vida privada de los usuarios (Inciso 5) y su derecho a conocer la información registrada en entidades públicas o privadas (Inciso 7). Asimismo, la arquitectura del software se alinea con los mecanismos de protección de entornos digitales y bases de datos contemplados en el Artículo 176 (Recurso de Hábeas Data), el cual tutela el manejo transparente y seguro de los datos personales.  
+El desarrollo del sistema se orienta al cumplimiento del marco jurídico y normativo de la República de Nicaragua, particularmente en lo relativo a la privacidad y la protección de los datos personales de los usuarios.
 
-En concordancia con lo anterior, y tomando en cuenta la Ley de Protección de Datos Personales (Ley No. 787), aprobada el 21 de marzo de 2012 y publicada en La Gaceta, Diario Oficial No. 61 del 29 de marzo del mismo año, la plataforma cumple cabalmente con dicha normativa. Dado que el software recolecta únicamente los datos de identificación personal necesarios para el reporte de incidencias específicamente nombre completo, número de cédula, fecha de nacimiento y dirección, su funcionamiento se rige bajo los principios de Legalidad y proporcionalidad consagrados en los Artículos 1 y 5 de dicha ley, asegurando que sean los estrictamente indispensables para la gestión y trazabilidad de los reportes ciudadanos.  
+Desde la perspectiva constitucional, el proyecto toma como fundamento las garantías ciudadanas establecidas en el artículo 27 de la Constitución Política de la República de Nicaragua, específicamente el derecho a la seguridad (inciso 2), a la vida privada y a la privacidad de la familia (inciso 5), así como a conocer toda información que sobre la persona se haya registrado en entidades de naturaleza privada y pública (inciso 7). Asimismo, el artículo 41 reconoce la posibilidad de interponer el recurso de hábeas data cuando los derechos constitucionales hayan sido violados o estén en peligro de serlo, de acuerdo con la Ley de Justicia Constitucional (\cite{asamblea2026norma}).
 
-Finalmente, en estricto cumplimiento de los Artículos 9 y 11 de la Ley No. 787, la plataforma incorpora mecanismos tecnológicos de autenticación, control de accesos y cifrado, garantizando la confidencialidad e integridad de la base de datos municipal y previniendo accesos no autorizados o alteraciones de la información recopilada. 
+En concordancia con lo anterior, el proyecto toma como referencia la Ley No. 787, Ley de Protección de Datos Personales, aprobada el 21 de marzo de 2012 y publicada en La Gaceta, Diario Oficial No. 61 del 29 de marzo del mismo año. Su artículo 1 establece como objeto la protección frente al tratamiento de datos personales en ficheros públicos y privados, a fin de garantizar la privacidad personal y familiar y la autodeterminación informativa (\cite{asamblea2012ley787}).
+
+La plataforma contempla recopilar datos de identificación personal, como nombre completo, número de cédula, fecha de nacimiento y dirección. No obstante, la inclusión y obligatoriedad de cada campo deberá justificarse en función de las necesidades del registro y seguimiento de incidencias, evitando solicitar información que no resulte adecuada, proporcional y necesaria para dicha finalidad, conforme a los artículos 5 y 9 de la Ley No. 787 (\cite{asamblea2012ley787}).
+
+Asimismo, se prevé informar previamente a los usuarios sobre la finalidad del tratamiento de sus datos, la identidad del responsable y los derechos que les asisten, así como obtener su consentimiento cuando corresponda, de conformidad con los artículos 6, 7 y 9 de la Ley No. 787 (\cite{asamblea2012ley787}). 
+Finalmente, en atención a los artículos 9 y 11 de la Ley No. 787, se contempla implementar mecanismos tecnológicos de autenticación, control de accesos y cifrado, como medidas orientadas a proteger la integridad, confidencialidad y seguridad de los datos personales y a prevenir accesos, alteraciones o divulgaciones no autorizadas. La implementación y eficacia de estas medidas deberán verificarse mediante las pruebas y controles correspondientes (\cite{asamblea2012ley787}).
+
 
