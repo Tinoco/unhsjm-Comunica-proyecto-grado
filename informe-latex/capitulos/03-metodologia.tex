@@ -154,61 +154,137 @@ Si bien estas funcionalidades suplen las necesidades de reporte, el mapa visual 
 
 En este sentido, el desarrollo de la plataforma web Comunica encuentra su justificación científica y técnica. El proyecto no solo se inserta en la tendencia de aportar herramientas con reportes estructurados, sino que lo hace abordando un nicho geográfico inexplorado. El desarrollo de la plataforma en la ciudad de Rivas aportará el primer precedente evaluable en el contexto nicaragüense, cubriendo el vacío identificado en el estado del arte y sentando las bases para futuras investigaciones de evaluación en la región.
 
+\newpage
 \section{Nivel Tactico}
 
-\section{Matriz de trazabilidad e indicadores de evaluación}
-Se establece una matriz de trazabilidad que conecta cada necesidad o meta-requisito de la solución con la decisión de diseño que la resuelve, la unidad de desarrollo (historias de usuario y sprints) que la construye y el indicador cuantitativo o cualitativo con el que se evaluará su cumplimiento. Las Tablas 5 y 6 presentan dicha correspondencia de manera fraccionada para su análisis detallado.
+\subsection {Metodología (SCRUM / XP)}
+
+El desarrollo del software en la Fase 3 del marco DSRM se realiza utilizando una combinación de metodologías ágiles. Este enfoque une el marco Scrum (\cite{schwaber2020guia}), que ayuda a organizar el trabajo por entregas y ciclos cortos, con prácticas de Extreme Programming (XP) (\cite{beck2000extreme}), enfocadas en mantener una buena calidad, orden y solidez en el código del sistema.
+
+\subsection{Gestión de Producto y Sprints (SCRUM)}
+
+Para conectar las necesidades de los usuarios con el desarrollo del sistema, el trabajo se divide en periodos cortos llamados \textit{Sprints} de dos a tres semanas. Durante este proceso, los requisitos de la Fase 2 se convierten en tareas organizadas en el \textit{Product Backlog}, redactadas como Historias de Usuario con el formato básico: \textit{Como [Rol], quiero [Función], para [Beneficio]}, lo que facilita que tanto el equipo como los involucrados entiendan claramente cada función. Cada ciclo incluye reuniones prácticas como la planificación, el desarrollo de avances, la revisión del software y las retrospectivas para mejorar constantemente el trabajo en equipo (\cite{schwaber2020guia}).
+
+\subsection{Prácticas XP de Calidad Técnica}
+
+Para asegurar un buen nivel técnico y evitar acumular problemas en el código, se utilizan prácticas esenciales de Extreme Programming (\cite{beck2000extreme}). Entre ellas se encuentra el desarrollo guiado por pruebas (TDD), que consiste en escribir pequeñas pruebas automáticas antes de programar la función para asegurar que cumpla con lo esperado. También se aplica la refactorización continua, que es el hábito de limpiar y ordenar el código de forma constante para evitar duplicados y mantenerlo sencillo. Por último, se utiliza la integración automática (CI), que revisa y prueba cada nuevo cambio para garantizar que el sistema funcione de manera estable antes de cada actualización (\cite{beck2000extreme}).
+
+
+\subsection{Matriz de Trazabilidad e Indicadores de Evaluación (Sprints 1 y 2)}
+Se establece la primera sección de la matriz de trazabilidad conectando los meta-requisitos iniciales, decisiones de diseño, las unidades de desarrollo técnico y la evaluación final:
 
 \begin{table}[htbp]
 	\centering
-	\caption{Matriz de trazabilidad e indicadores de evaluación (Parte I)}
-	\label{tab:matriz_trazabilidad_1}
-	\begin{tabularx}{\textwidth}{>{\hsize=0.22\hsize}X >{\hsize=0.28\hsize}X >{\hsize=0.22\hsize}X >{\hsize=0.28\hsize}X}
+	\caption{Matriz de trazabilidad y evaluación del diseño (Parte I: Sprints 1 y 2).}
+	\label{tab:trazabilidad_parte1}
+	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+		\hline
+		\textbf{Meta-requisito (MR)} \newline \textit{(DSRM Fase 2)} & 
+		\textbf{Meta-diseño Asociado (MD)} \newline \textit{(DSRM Fase 3)} & 
+		\textbf{Historia / Sprint} \newline \textit{(SCRUM / XP)} & 
+		\textbf{Indicador de Evaluación} \newline \textit{(DSRM Fase 5)} \\ \hline
+		MR-01: Garantizar la autenticación, control de accesos y diferenciación de permisos según el perfil del usuario. & 
+		MD-01: Implementación de autenticación mediante tokens de acceso (Access Tokens), cifrado seguro y middleware guardián de roles. & 
+		HU-01, HU-02, HU-03, HU-04 \newline \textbf{Sprint 1} & 
+		Evaluación de la denegación de accesos no autorizados y validación de tokens de sesión. \\ \hline
+		MR-02: Organizar la estructura territorial jerárquica para la localización administrativa de las incidencias. & 
+		MD-02: Modelo relacional normalizado en PostgreSQL con integridad referencial en cascada para departamentos, municipios y sectores. & 
+		HU-05, HU-06, HU-07 \newline \textbf{Sprint 1} & 
+		Verificación de la consistencia referencial en la cascada de la estructura territorial. \\ \hline
+		MR-03: Mecanismo interactivo para el levantamiento de incidencias con ubicación geográfica y evidencia multimedia. & 
+		MD-03: Interfaz reactiva en Angular con mapa Leaflet sobre OpenStreetMap, geolocalización y carga asíncrona hacia Cloudinary. & 
+		HU-08, HU-09, HU-10 \newline \textbf{Sprint 2} & 
+		Validación del éxito en reportes con georreferencia y pruebas de usabilidad del sistema. \\ \hline
+		MR-04: Clasificar incidencias por tipología y canalizarlas automáticamente a entidades públicas competentes. & 
+		MD-04: Esquema de parametrización para problemáticas, prioridades e instituciones responsables con validadores estrictos. & 
+		HU-11, HU-12, HU-13 \newline \textbf{Sprint 2} & 
+		Verificación de la exactitud en la asignación automática entre problemática e institución competente. \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsection{Matriz de Trazabilidad e Indicadores de Evaluación (Sprints 3 y 4)}
+
+Se completa la matriz con el seguimiento institucional, análisis y rendimiento del sistema:
+
+\begin{table}[htbp]
+	\centering
+	\caption{Matriz de trazabilidad y evaluación del diseño (Sprints 3 y 4).}
+	\label{tab:trazabilidad_parte2}
+	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+		\hline
+		\textbf{Meta-requisito (MR)} \newline \textit{(DSRM Fase 2)} & 
+		\textbf{Meta-diseño Asociado (MD)} \newline \textit{(DSRM Fase 3)} & 
+		\textbf{Historia / Sprint} \newline \textit{(SCRUM / XP)} & 
+		\textbf{Indicador de Evaluación} \newline \textit{(DSRM Fase 5)} \\ \hline
+		MR-05: Asegurar la trazabilidad operativa y actualización del ciclo de vida de cada reporte comunitario. & 
+		MD-05: Entidad de seguimiento (DetalleReporte) con transiciones de estado validadas y registro cronológico de actuaciones. & 
+		HU-14, HU-15, HU-16 \newline \textbf{Sprint 3} & 
+		Revisión de la integridad en el historial cronológico de los reportes comunitarios. \\ \hline
+		MR-06: Consolidar métricas operativas y paneles visuales para el seguimiento del desempeño institucional. & 
+		MD-06: Controlador de agregación estadística en AdonisJS y renderizado dinámico de gráficos y KPIs mediante ApexCharts. & 
+		HU-17, HU-18 \newline \textbf{Sprint 3} & 
+		Evaluación del tiempo de respuesta en la generación de consultas analíticas del panel de control. \\ \hline
+		MR-07: Mantener integridad transaccional, seguridad y alto rendimiento en las operaciones del sistema. & 
+		MD-07: API REST en AdonisJS v6, indexación de claves foráneas en PostgreSQL, CORS y OpenAPI/Swagger. & 
+		HU-19, HU-20 \newline \textbf{Sprint 4} & 
+		Verificación del rendimiento en las respuestas de la API y estabilidad transaccional del sistema. \\ \hline
+	\end{tabularx}
+\end{table}
+
+\section{Trazabilidad de Historias de Usuario}
+
+Para garantizar la cobertura funcional del sistema Comunica, el \textit{Product Backlog} se desglosa en el inventario detallado de Historias de Usuario (HU-01 a HU-20), las cuales se vinculan directamente con los meta-requisitos establecidos en la Fase 2 del DSRM:
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Trazabilidad detallada de Historias de Usuarios (Parte I: Sprints 1 y 2)}
+	\label{tab:inventario_hu_parte1}
+	\begin{tabularx}{\textwidth}{p{1.2cm} X p{2.5cm}}
 		\toprule
-		\textbf{Meta-requisito (Fase 2)} & \textbf{Meta-diseño (Fase 3)} & \textbf{Historia / Sprint} & \textbf{Indicador de evaluación (Fase 5)} \\
+		\textbf{Código} & \textbf{Descripción de la Historia de Usuario (Rol, Función y Beneficio)} & \textbf{Meta-requisito} \\ 
 		\midrule
-		
-		\textbf{MR-01:} Registrar solicitudes de soporte indicando categoría, prioridad y descripción detallada de la incidencia. & 
-		\textbf{MD-01:} Arquitectura base en Angular (Frontend) y Node.js / Express (Backend) con formularios reactivos y validaciones. & 
-		US-01 / Sprint 1 & 
-		Porcentaje de formularios validados correctamente sin errores de esquema (meta: 80\%). \\
-		\addlinespace[0.5em]
-		
-		\textbf{MR-02:} Permitir adjuntar evidencia fotográfica (JPG/PNG) para documentar visualmente el problema reportado. & 
-		\textbf{MD-02:} Módulo de carga y gestión de archivos adjuntos con control de tamaño y almacenamiento optimizado. & 
-		US-02 / Sprint 2 & 
-		Porcentaje de imágenes almacenadas y visualizadas correctamente en las pruebas (meta: 85\%). \\
-		\addlinespace[0.5em]
-		
-		\textbf{MR-03:} Consultar en tiempo real el historial de reportes y el estado actual de la atención de los casos. & 
-		\textbf{MD-03:} Vistas de consulta de historial con listados cronológicos y actualización de estados en tiempo real. & 
-		US-03 / Sprint 3 & 
-		Tiempo de respuesta en la consulta de listados menor a 2 segundos en pruebas de carga. \\
+		\multicolumn{3}{l}{\textit{\textbf{Sprint 1: Cimientos, Seguridad y Territorio}}} \\ 
+		\addlinespace
+		HU-01 & Como ciudadano, quiero registrarme con mis datos y sector de residencia, para tener acceso a la plataforma. & MR-01 \\ \addlinespace
+		HU-02 & Como usuario registrado, quiero iniciar y cerrar sesión de manera segura, para acceder a mis funciones autorizadas. & MR-01, MR-07 \\ \addlinespace
+		HU-03 & Como usuario autenticado, quiero consultar y editar los datos de mi perfil, para mantener mi información actualizada. & MR-01, MR-07 \\ \addlinespace
+		HU-04 & Como administrador, quiero gestionar los usuarios del sistema y sus roles de acceso, para controlar los permisos de operación. & MR-07 \\ \addlinespace
+		HU-05 & Como administrador, quiero administrar el catálogo de departamentos, para establecer la división regional del país. & MR-02 \\ \addlinespace
+		HU-06 & Como administrador, quiero gestionar los municipios asociados a cada departamento, para organizar el ámbito municipal. & MR-02 \\ \addlinespace
+		HU-07 & Como administrador, quiero registrar y consultar los sectores o barrios vinculados a cada municipio, para permitir la ubicación barrial. & MR-02 \\ 
+		\midrule
+		\multicolumn{3}{l}{\textit{\textbf{Sprint 2: Levantamiento Ciudadano y Canalización}}} \\ 
+		\addlinespace
+		HU-08 & Como ciudadano, quiero capturar mi ubicación actual mediante GPS o arrastrando un pin sobre un mapa interactivo, para señalar con exactitud el lugar de la falla. & MR-03 \\ \addlinespace
+		HU-09 & Como ciudadano, quiero adjuntar fotografías de evidencia al reporte, para mostrar gráficamente la gravedad del problema. & MR-03 \\ \addlinespace
+		HU-10 & Como ciudadano, quiero enviar un reporte completo con descripción, ubicación, sector y problemática, para solicitar atención pública. & MR-03 \\ \addlinespace
+		HU-11 & Como administrador, quiero gestionar el catálogo de problemáticas (baches, luminarias, cables, tuberías), para estandarizar las denuncias. & MR-04 \\ \addlinespace
+		HU-12 & Como administrador, quiero administrar el catálogo de instituciones públicas responsables, para delegar adecuadamente la atención de los reportes. & MR-04 \\ \addlinespace
+		HU-13 & Como ciudadano, quiero consultar el listado de mis reportes enviados y su estado actual, para verificar si están siendo atendidos. & MR-03, MR-05 \\ 
 		\bottomrule
 	\end{tabularx}
 \end{table}
 
-\vspace{0.5cm}
-
-\begin{table}[htbp]
+\begin{table}[!htbp]
 	\centering
-	\caption{Matriz de trazabilidad e indicadores de evaluación (Parte II)}
-	\label{tab:matriz_trazabilidad_2}
-	\begin{tabularx}{\textwidth}{>{\hsize=0.22\hsize}X >{\hsize=0.28\hsize}X >{\hsize=0.22\hsize}X >{\hsize=0.28\hsize}X}
+	\caption{Trazabilidad detallada de Historias de Usuarios (Parte II: Sprints 3 y 4)}
+	\label{tab:inventario_hu_parte2}
+	\begin{tabularx}{\textwidth}{p{1.2cm} X p{2.5cm}}
 		\toprule
-		\textbf{Meta-requisito (Fase 2)} & \textbf{Meta-diseño (Fase 3)} & \textbf{Historia / Sprint} & \textbf{Indicador de evaluación (Fase 5)} \\
+		\textbf{Código} & \textbf{Descripción de la Historia de Usuario (Rol, Función y Beneficio)} & \textbf{Meta-requisito} \\ 
 		\midrule
-		
-		\textbf{MR-04:} Proveer un panel operativo para que el personal de soporte filtre, asigne y actualice reportes. & 
-		\textbf{MD-04:} Panel de operador y soporte con filtros avanzados por categoría, prioridad, estado y registro de notas internas. & 
-		US-04 / Sprint 3 & 
-		Porcentaje de incidencias gestionadas y actualizadas exitosamente en pruebas funcionales. \\
-		\addlinespace[0.5em]
-		
-		\textbf{MR-05:} Visualizar métricas de rendimiento, volumen de reportes y tiempos de resolución de las entidades. & 
-		\textbf{MD-05:} Paneles administrativos e integración con indicadores de tiempo de respuesta y resolución con gráficos estadísticos. & 
-		US-05 / Sprint 4 & 
-		Diferencia entre los cálculos de tiempo del sistema y los valores reales esperados (meta: 0). \\
+		\multicolumn{3}{l}{\textit{\textbf{Sprint 3: Trazabilidad Institucional y Panel Analítico}}} \\ 
+		\addlinespace
+		HU-14 & Como personal institucional, quiero visualizar los reportes asignados a mi entidad, filtrados por sector y estado, para organizar la atención. & MR-05 \\ \addlinespace
+		HU-15 & Como personal institucional, quiero registrar notas de seguimiento y avances en un reporte, para documentar las acciones realizadas. & MR-05 \\ \addlinespace
+		HU-16 & Como personal institucional, quiero cambiar el estado de un reporte (Pendiente, En Proceso, Resuelto), para informar a la ciudadanía. & MR-05 \\ \addlinespace
+		HU-17 & Como administrador o personal institucional autorizado, quiero visualizar un panel con indicadores clave, para medir el rendimiento institucional. & MR-06 \\ \addlinespace
+		HU-18 & Como administrador o personal institucional autorizado, quiero ver gráficos estadísticos de incidencias por tipo y sector, para priorizar recursos en zonas críticas. & MR-06 \\ 
+		\midrule
+		\multicolumn{3}{l}{\textit{\textbf{Sprint 4: Calidad Técnica, Integración y Pruebas}}} \\ 
+		\addlinespace
+		HU-19 & Como desarrollador o evaluador, quiero consultar la documentación interactiva de la API en Swagger, para verificar entradas y salidas. & MR-07 \\ \addlinespace
+		HU-20 & Como equipo técnico, quiero ejecutar pruebas de integración y verificar índices de base de datos, para certificar rendimiento y consistencia. & MR-07 \\ 
 		\bottomrule
 	\end{tabularx}
 \end{table}
