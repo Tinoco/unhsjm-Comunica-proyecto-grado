@@ -3,55 +3,39 @@
 
 
 \section{Introducción}
-En los entornos urbanos y organizacionales contemporáneos, la interacción constante entre los usuarios y la infraestructura que los rodea genera, inevitablemente, la aparición de diversas incidencias, daños o fallos en los servicios. La comunicación eficiente de estas problemáticas a las entidades correspondientes es fundamental para garantizar su pronta resolución y el mantenimiento adecuado del entorno. Sin embargo, a pesar de que la tecnología está a la disposición para digitalizar la resolución de esa necesidad trayendo consigo múltiples beneficios, los métodos tradicionales con sus limitaciones son los que están accesibles para los ciudadanos del municipio de Rivas, Nicaragua. 
 
-Esta situación genera desmotivación, además los usuarios perciben estos métodos como imprácticos, y en ocasiones, desconocen el procedimiento adecuado para dar a conocer su problemática. El esfuerzo que implica interponer una queja, sumado a la falta de un mecanismo de seguimiento transparente que permita conocer el estado de la solicitud y los motivos de posibles retrasos, provoca que el servicio se considere ineficiente Como consecuencia, algunas de las incidencias no son registradas. 
+"Los sistemas informáticos son usados para la esquematización, agilización y 
+automatización de tareas y procesos dentro de las organizaciones, y con ello ser una 
+herramienta confiable para la toma de decisiones"(\cite{trejo2019sistema},p.22). 
 
-Junto a esto se suma la dificultad de transmisión precisa del contexto real de la incidencia, al no permitir, de manera ágil y estructurada, la adjunción de evidencias fotográficas y coordenadas geográficas exactas. 
+Garantizar una comunicación bidireccional clara entre las entidades prestadoras de servicios y sus usuarios es un factor fundamental para fortalecer la confianza, la transparencia y la credibilidad. En respueta a esta necesidad y con el proposito de mejorar y modernizar la atencion al cliente surge el Proyecto de grado "Comunica"concebido para crear una sola vía de comunicacion  digital que otorgue funcionalidades importantes tanto a usuarios y entidad entorno al envio, recepcion y gestion de incidencias. 
 
-Frente a esta problemática, el presente proyecto plantea el diseño y desarrollo de una plataforma web especializada para la gestión digital, centralizada y rastreable de reportes de incidencias. Esta solución tecnológica busca transformar el proceso tradicional, ofreciendo un medio unificado y accesible que permita a los usuarios reportar problemas proporcionando información estructurada, incluyendo descripción, ubicación geográfica precisa y evidencia fotográfica. 
+La investigación presente evidencia el desarrollo de la plataforma Comunica. Iniciando las bases de la investigación a través del planteamiento del proyecto, los objetivos, antecedentes, justificación, así como su alcance y limitaciones. Posteriormente, se expone un análisis exhaustivo de la viabilidad del proyecto en sus dimensiones económica, técnica, operativa y legal. A continuación, el marco teórico fundamenta las bases conceptuales y tecnológicas de la solución, abordando temas como los sistemas digitales de atención ciudadana, las buenas prácticas de HelpDesk e ITIL(biblioteca de infraestructura de TI) 4.0, el desarrollo de aplicaciones web y la integración de Sistemas de Información Geográfica (SIG). Finalmente, el documento detalla el marco metodológico aplicado, culminando con la matriz de trazabilidad, el cronograma de actividades y las referencias que sustentan el trabajo desarrollado.
 
-La plataforma propuesta no solo simplificará el proceso de reporte para el usuario, brindándole transparencia y seguimiento de sus solicitudes, sino que también dotará a las entidades administradoras de una herramienta para la gestión de incidencias. Mediante la incorporación de funcionalidades. además de un componente de visualización geográfica en un mapa interactivo, capaz de identificar zonas de mayor concentración de problemas (mapas de calor). El sistema se constituirá como un instrumento fundamental para orientar la toma de decisiones, ofreciendo cualidades que ayudarían a la planificación de estrategias, ubicación exacta del problema y gestión fácil de las incidencias por parte de la entidad que la adopte.
-\newpage
 
 \clearpage
+
 
 \section{Planteamiento del proyecto}
-En cualquier entorno urbano, residencial o empresarial, la interacción entre los usuarios y la infraestructura que los rodea es constante. De manera natural, surgen incidencias, daños o fallos en los servicios que requieren ser comunicados a las instancias correspondientes para su resolución. A pesar del avance de las Tecnologías de la Información, los métodos de reporte que los usuarios conocen y a los que tienen acceso suelen depender de canales tradicionales, como el desplazamiento físico a oficinas, llamadas telefónicas o la redacción de correos electrónicos sin una estructura definida. 
+En cualquier entorno urbano, residencial o empresarial, la interacción entre los usuarios y la infraestructura que los rodea es constante. De manera natural, surgen incidencias, daños o fallos en los servicios que requieren ser comunicados a las instancias correspondientes para su pronta resolución.
 
-A causa de esto, desde la experiencia del ciudadano o usuario en el municipio de Rivas, el proceso de reporte de incidencias presenta limitaciones significativas que desmotivan la participación activa. En consecuencia: 
+A pesar de la necesidad de gestionar estas incidencias de forma ágil, al analizar el contexto nacional se observa un vacío significativo: no existe evidencia documentada que respalde el desarrollo o la implementación de soluciones tecnológicas enfocadas en modernizar este proceso y mejorar la atención al cliente. Los métodos de atención que prevalecen visibles y accesibles para los usuarios en la ciudad de Rivas, Nicaragua, suelen ser canales tradicionales como el desplazamiento físico a oficinas, buzones de quejas, llamadas telefónicas o correos electrónicos sin estructura definida. Estos métodos presentan limitaciones importantes: algunos exigen movilización, carecen de la opción para adjuntar evidencia visual o ubicación exacta, y no permiten consultar ágilmente el estado del trámite.
 
-\begin{itemize}
-	\item Existe una brecha considerable entre la identificación de un problema y su reporte formal.
-	\item Los usuarios perciben los canales actuales como poco prácticos o directamente desconocen el medio por el cual presentar su incidencia. 
-	\item La necesidad de invertir tiempo para movilizarse físicamente a un departamento de atención o someterse a procesos tediosos de llenado de formularios físicos genera un 'Abandono del reporte'. Como resultado, muchas incidencias conocidas por el usuario quedan sin ser comunicadas. 
-\end{itemize}
+Si bien la responsabilidad de estas deficiencias no recae en su totalidad sobre dichos métodos, la plataforma web "Comunica" se presenta como la herramienta idónea para solucionar estas carencias. La propuesta unifica la comunicación y gestión en un solo canal, colaborando directamente con la entidad proveedora para transformar el proceso tradicional en un flujo de información digital, centralizado y rastreable.
 
-Además, cuando un usuario logra interponer un reporte, se enfrenta a un modelo de atención opaco. Al no contar con un mecanismo de seguimiento visible, el usuario desconoce en qué etapa de revisión o resolución se encuentra su solicitud. Esta falta de transparencia genera la percepción de que la información se pierde o es ignorada, mermando la confianza en el proceso de gestión. 
+Esta solución elimina fricciones(malos entendidos) al exigir desde el origen información estructurada (descripción, ubicación geográfica y evidencia fotográfica). Además, integra un registro histórico que facilita la consulta de actualización de estados y permite a la entidad gestora comunicar formalmente los motivos de cualquier retraso, mitigando la incertidumbre del usuario. Como elemento diferenciador para la gestión en las entidades, el sistema incorpora visualización geográfica interactiva (mapas de calor), permitiendo identificar zonas con mayor concentración y recurrencia de incidencias.
 
-Al igual, los métodos de reporte actuales (según lo proyectado por los usuarios) no facilitan una retroalimentación bidireccional ágil. Ante el retraso o la falta de acción sobre una incidencia, el usuario no recibe justificaciones técnicas ni motivos exactos de la tardanza, lo que incrementa el nivel de insatisfacción y frustración al sentirse excluido del estado de su propia solicitud. 
-
-Por otro lado, los canales conocidos limitan la capacidad del usuario para comunicar con precisión la magnitud del problema. La imposibilidad de adjuntar de manera estructurada evidencias fotográficas y coordenadas geográficas exactas (GPS) desde el momento cero, dificulta que el usuario pueda transmitir el contexto real de la incidencia de forma eficiente. 
-
-Esto provoca que el usuario asuma una postura pasiva frente a las problemáticas de su entorno. La falta de comodidad, accesibilidad y retroalimentación resulta en un subregistro de incidencias, donde el afectado prefiere convivir con el problema de infraestructura o servicio antes que someterse a un proceso de reporte que le genera incertidumbre e insatisfacción. Al carecer de una herramienta digital, estandarizada y disponible, la experiencia del usuario se mantiene fragmentada y deficiente 
-
-Frente a esta problemática, surge la necesidad de transformar el proceso tradicional en un flujo de información digital, centralizado y rastreable. Para ello, se propone el diseño y desarrollo de una plataforma web especializada orientada a digitalizar y sistematizar el proceso de recepción y seguimiento de incidencias. 
-
-Esta solución permitirá que los usuarios envíen sus problemáticas mediante un medio digital unificado, solucionando las limitaciones de evidencia al exigir desde el origen información estructurada que incluya descripción, ubicación geográfica y evidencia fotográfica. 
-
-Para resolver la brecha de información y seguimiento, la plataforma integrará un registro histórico centralizado, facilitando la consulta y actualización de estados a lo largo del tiempo junto con un apartado en donde la entidad gestora pueda comunicar los motivos de tardanzas en la solución de incidencias. Además, como elemento diferenciador y herramienta para la gestión, el sistema incorporará un componente de visualización geográfica en un mapa interactivo. Esto permitirá no solo mostrar la ubicación individual de cada reporte, sino identificar visualmente mediante cambios de intensidad de color las zonas con mayor concentración y recurrencia de incidencias. De esta manera, la plataforma se constituirá no solo como un canal de envió de incidencias cómodo y transparente para el usuario, sino como una herramienta visual y organizada para orientar eficientemente la toma de decisiones y priorización de respuestas por parte de cualquier entidad administradora. 
-
-Ante esta problemática, se plantea el diseño y desarrollo de una plataforma web, "Comunica" que estará orientada a centralizar el envío, clasificación y seguimiento de incidencias comunitarias en la Alcaldía Municipal de Rivas. La plataforma permitiría que los ciudadanos registren sus incidencias mediante información estructurada que incluya una descripción sobre la incidencia, evidencia fotográfica y ubicación geográfica, mientras que el personal municipal dispondría de herramientas para gestionar y actualizar el estado de cada caso. Asimismo, la incorporación de mecanismos de visualización geográfica permitiría representar las incidencias sobre un mapa e identificar sectores con mayor concentración de reportes, complementando la gestión operativa con información que pueda ser utilizada para el análisis y la toma de decisiones municipales.
+ La implementación de este tipo de herramientas reduce los tiempos de recepción y eleva la satisfacción de los usuarios\parencite{parrales2025desarrollo}. asi mismo hacen evolucionar el modelo de atención hacia un sistema verdaderamente interactivo y transparente. gracias a datos precisos y organizados visualmente, que encaminan a la entidad administradora a optimizar recursos, mejorar su comunicacion y tomar mejores decisiones, fortaleciendo así la confianza de sus usuarios.
 
 \clearpage
 
-\section{Objetivos}
+\subsection{Objetivos}
 
-\textbf{Objetivo General}
+\subsection{Objetivo General}
 
-Desarrollo de una plataforma web para el registro, almacenamiento, clasificación y seguimiento de reportes de incidencias con el propósito de optimizar los procesos de respuesta y recepción de peticiones por medio digital.
+Desarrollo de una plataforma web para el registro, almacenamiento, clasificación y seguimiento de reportes de incidencias de los usuarios con el propósito de optimizar los procesos de respuesta y recepción de peticiones.
 
-\textbf{Objetivos Específicos}
+\subsection{Objetivos Específicos}
 \begin{itemize}
 	\item Analizar y definir los requerimientos funcionales y no funcionales de una plataforma para la gestión digital de reportes de incidencias. 
 	\item Diseñar el modelo de base de datos y las interfaces de usuario, estructurando una plataforma que permita el registro de incidencias con evidencias fotográfica y ubicación geográfica de manera digital. 
@@ -60,254 +44,283 @@ Desarrollo de una plataforma web para el registro, almacenamiento, clasificació
 
 \newpage
 
-\section{Antecedentes}
+\subsection{Antecedentes}
+La incorporación de herramientas tecnológicas en los procesos de gestión pública y privada ha impulsado el desarrollo de soluciones digitales orientadas a mejorar el registro, la organización y el seguimiento de solicitudes e incidencias. En este contexto, la digitalización de dichos procesos representa una alternativa para facilitar la comunicación entre los usuarios y las entidades responsables de su atención. A continuación, se presentan investigaciones previas relacionadas con el desarrollo e implementación de estos sistemas, considerando sus principales características, resultados y aportes a la presente investigación.
 
-A nivel global, la adopción de herramientas tecnológicas ha mejorado la gestión pública y privada con la resolución de problemáticas, agilizando procesos con precisión. En este contexto, la sistematización del registro y seguimiento de incidencias representa una oportunidad para mejorar la atención y la comunicación digital entre usuarios y entidad. A continuación, se presentan investigaciones previas que fundamentan el desarrollo de este trabajo.
-\textbf{Ámbito Internacional}
-En el ámbito internacional(\cite{parrales2025desarrollo}) desarrolló la investigación titulada “Desarrollo de un sistema web para el reporte de daños en la infraestructura urbana de la parroquia Anconcito integrando Google Cloud Vision API”, presentada en la Universidad Estatal Península de Santa Elena (Ecuador). 
-El estudio abordó las deficiencias en la gestión y atención de fallas urbanas en el barrio Luis Celleri.
-Para mitigar esta problemática, el autor diseñó e implementó una plataforma web responsiva bajo una arquitectura cliente-servidor, empleando Angular en el frontend, Laravel en el backend y MySQL como base de datos.
+\subsection*{Ámbito internacional}
 
-El sistema permite a los ciudadanos registrar reportes detallados incorporando coordenadas de geolocalización precisa e imágenes descriptivas. 
-Según esta investigación la Implementación del sistema digital con geolocalización y mapas interactivos para el reporte ciudadano de infraestructura urbana dio beneficios sólidos sustentados con evidencia los cuales son: 
+\textcite{parrales2025desarrollo}, en su trabajo titulado \textit{Desarrollo de un sistema web para el reporte de daños en la infraestructura urbana de la parroquia Anconcito integrando Google Cloud Vision API}, desarrolló una plataforma web responsiva para mejorar el registro de daños en la infraestructura urbana del barrio Luis Celleri, Ecuador. La solución incorporó geolocalización, mapas interactivos, evidencia fotográfica y validación de imágenes mediante Google Cloud Vision API. Durante las pruebas realizadas, el 86,7\,\% de los participantes completó sus reportes en menos de diez minutos, registrándose una reducción del 89\,\% en el tiempo requerido respecto a los métodos tradicionales. Los resultados y las funcionalidades implementadas ofrecen a Comunica una referencia para integrar coordenadas geográficas y evidencias visuales en el registro digital de incidencias ciudadanas.
 
-Reducción del tiempo en la creación de reporte: El 86.7\% de los usuarios completó sus reportes en menos de diez minutos, lo que representa una reducción del 89\% en el tiempo necesario en comparación con los métodos tradicionales. 
-Eliminación de barreras del sistema tradicional: La plataforma eliminó la necesidad de realizar desplazamientos físicos (identificado como una traba prioritaria por el 60\% de los participantes) y redujo el papeleo excesivo (señalado por el 53.3\%).
+Por su parte, \textcite{trejo2019sistema} desarrolló el proyecto \textit{Sistema integral para el reporte y seguimiento de deficiencias del servicio público del municipio de Othón P. Blanco, Quintana Roo (072 Reportes)}, orientado a modernizar la recepción y gestión de incidencias en los servicios públicos municipales de México. El sistema integró una aplicación móvil para el registro ciudadano de reportes con ubicación GPS, descripciones y fotografías, junto con una plataforma web administrativa para su clasificación, asignación y seguimiento. Asimismo, incorporó notificaciones sobre el avance de las solicitudes y herramientas de visualización geográfica y estadística para el personal municipal. Su principal aporte al desarrollo de Comunica radica en la organización funcional de un sistema que conecta los reportes ciudadanos con los procesos administrativos de atención.
 
-Este trabajo aporta a la presente investigación un precedente del uso de coordenadas geográficas en plataformas de monitoreo ciudadano, sirviendo de referencia en nuestro proyecto. Además, el conocimiento de funcionalidades tales como: herramientas de geolocalización, mapas interactivos y que la implementación de estados de seguimiento en los reportes es crucial en la bidireccionalidad confiable entre las autoridades locales y la ciudadanía fomentando un modelo de gestión colaborativa.
+\textcite{murillo2025aplicacion}, mediante el estudio \textit{Aplicación Mi Queja en el municipio del Litoral del San Juan-Chocó}, propusieron una solución digital orientada a mejorar la gestión de quejas ciudadanas en Colombia. El trabajo abordó las limitaciones de los procedimientos tradicionales basados en buzones físicos y documentos en papel, los cuales dificultaban la presentación y el seguimiento de solicitudes, especialmente en comunidades geográficamente dispersas. La propuesta contempló una plataforma web y móvil que permite registrar quejas, generar números de radicado, consultar el estado de las solicitudes y recibir notificaciones automáticas. Asimismo, incorporó un tablero administrativo para facilitar la gestión institucional de los casos. Para Comunica, este planteamiento resulta relevante por los mecanismos de comunicación y seguimiento que mantienen informados a los ciudadanos durante la atención de sus reportes.
 
-En el Municipio de Othón P. Blanco, en el estado de Quintana Roo, México se diseñó e implemento una plataforma que sustituyo al antiguo sistema de atención formado únicamente por llamadas telefónicas. " 072 Reportes”(\cite{trejo2019sistema}) surgió
+En relación con la gestión institucional, \textcite{moreno2026diseno} desarrollaron el trabajo \textit{Diseño, desarrollo y despliegue de una aplicación web para la gestión de PQRSD (Peticiones, Quejas, Reclamos, Sugerencias y Denuncias) para la Secretaría de Tránsito y Transporte de Girardot, Cundinamarca}, enfocado en centralizar y digitalizar las solicitudes ciudadanas en Colombia. Los autores identificaron limitaciones en el procedimiento anterior, donde el registro inicial se realizaba mediante Microsoft Access, mientras que la asignación, respuesta y archivo continuaban dependiendo de procesos manuales. La solución integró funcionalidades para el registro, clasificación, asignación, consulta y seguimiento de solicitudes, conservando información sobre su estado, fecha de recepción y funcionario responsable. Además, contempló el acceso al historial de solicitudes y la consulta de respuestas. Este modelo proporciona elementos aplicables a Comunica para estructurar el flujo administrativo de atención, mantener la trazabilidad de las incidencias y organizar su información en un registro centralizado.
 
-con el objetivo principal de optimizar, agilizar y transparentar la recepción, canalización, monitoreo y solución de las fallas en los servicios públicos municipales (como baches, alumbrado público deficiente, coladeras tapadas o mantenimiento de parques). Está conformada por:
+En el ámbito de la gestión de residuos sólidos, \textcite{rodriguezdesarrollo} presentaron el trabajo \textit{Desarrollo de un prototipo móvil para la optimización de rutas de recolección y el reporte ciudadano de acumulación de residuos sólidos en la ciudad de Latacunga, implementado para la Empresa Pública EPAGAL}, orientado a mejorar la identificación y atención de incidencias relacionadas con la acumulación de residuos en Ecuador. El prototipo contempla una aplicación móvil mediante la cual los ciudadanos pueden registrar reportes asociados a coordenadas geográficas y categorías de incidencias. Asimismo, incorpora un módulo administrativo para validar los reportes, gestionar operadores y asignar rutas de recolección, complementado con una plataforma web para el seguimiento de las operaciones. La relación con Comunica se establece mediante el aprovechamiento de información georreferenciada para vincular los reportes ciudadanos con la organización operativa de su atención.
 
-Aplicación móvil (Android) para la ciudadanía: Permite a los habitantes levantar reportes capturando la ubicación geográfica exacta vía GPS, agregando una descripción y adjuntando hasta tres fotografías del desperfecto. También permite a los usuarios recibir notificaciones del avance de su reporte, consultar avisos oficiales y responder encuestas de satisfacción de servicio.
-Y un Sistema web de administración (Intranet) para el ayuntamiento: Utilizado exclusivamente por el personal municipal (administradores, gestores y áreas operativas responsables) para clasificar las incidencias, asignar tareas de atención, registrar avances, visualizar mapas de localización de reportes y consultar gráficas estadísticas en tiempo real.
+Desde una perspectiva colaborativa, \textcite{izurieta2026desarrollo} abordaron el desarrollo de una plataforma web geoespacial para el registro anónimo y el análisis territorial de incidentes urbanos en Guayaquil, Ecuador, bajo el título \textit{Desarrollo de una plataforma web geoespacial colaborativa para el registro anónimo y el análisis territorial de incidentes urbanos mediante reportes ciudadanos en Guayaquil}. La propuesta permite relacionar los reportes proporcionados por la ciudadanía con su ubicación geográfica, incorporando el anonimato como una característica del sistema. Además, contempla el análisis territorial de la información recopilada para examinar la distribución de las problemáticas urbanas. Su contribución al planteamiento de Comunica se encuentra en la combinación del registro colaborativo con herramientas de representación espacial, que permiten identificar zonas con mayor concentración de incidencias.
 
-La implementación de este sistema app y web aporto al municipio la modernización de sus procedimientos de recepción, seguimiento y solución de reportes de servicios públicos mediante la integración de las TIC, y la computación móvil por medio de esta plataforma digital, el ayuntamiento logra optimizar sus procesos de atención y coordinación entre áreas, resolver los errores de precisión en la ubicación geográfica de los problemas y evitar el desperdicio de recursos humanos, tiempo y combustible por motivo de reportes falsos, proyectando de este modo una imagen institucional moderna y confiable ante la población.
+En cuanto a la gestión de incidencias informáticas, \textcite{noriegasistema} desarrolló el trabajo \textit{Sistema Help Desk para la gestión de incidencias de la Municipalidad Distrital de San Juan Bautista (MDSJB)}, orientado a mejorar el registro, control y seguimiento de problemas de hardware y software en una institución municipal de Perú. El autor identificó limitaciones en los procedimientos manuales basados en cuadernos y fichas técnicas, proponiendo una solución que integra el registro de solicitudes, asignación de personal técnico, documentación de las atenciones y verificación de conformidad del usuario antes del cierre de cada caso. El sistema fue desarrollado siguiendo buenas prácticas de ITIL, la metodología RUP y el modelado UML. Según los resultados presentados, el tiempo promedio de registro disminuyó de 9 minutos y 3 segundos a 1 minuto y 2 segundos, mientras que los errores por información incompleta se redujeron de 11 casos a ninguno en una muestra de 20 registros. Estos hallazgos aportan elementos para definir en Comunica un ciclo de atención estructurado, con responsables, estados y documentación de las acciones realizadas.
 
-Esta investigación aporta un catálogo estructurado de requerimientos funcionales y el diseño de diagramas entidad-relación para bases de datos los cuales serán útiles al reconocer la estructura que llevan este tipo de sistemas.
+De manera similar, \textcite{soel2024aplicacion} implementó una solución tecnológica descrita en \textit{Aplicación de un sistema web Help Desk basado en ITIL para el registro y control de requerimientos e incidencias al personal de la Corte Superior de Justicia de Apurímac, año 2020--2023}, orientada a mejorar la gestión de solicitudes de soporte informático en una institución judicial de Perú. El estudio abordó las dificultades asociadas al registro mediante llamadas telefónicas, correos electrónicos y archivos de Excel, utilizando el software libre GLPI 10 y las buenas prácticas de ITIL (Biblioteca de Infraestructura de Tecnologías de la Información) para centralizar la recepción, clasificación, priorización y seguimiento de incidencias. La plataforma incorporó módulos de administración de usuarios, asignación de responsables, control de estados y generación de reportes estadísticos. Mediante una evaluación preexperimental, se identificó un incremento en el promedio mensual de atenciones solucionadas, de 25 a 72 registros, y una disminución del tiempo promedio de resolución, de 62 a 15 minutos. Los resultados de este estudio respaldan la importancia de incorporar indicadores de desempeño que permitan evaluar la gestión de incidencias, aspecto considerado en el desarrollo de Comunica.
 
+Finalmente, \textcite{moreno2026desarrollo} examinó el desarrollo de una solución tecnológica en su trabajo \textit{Desarrollo de una plataforma web colaborativa para el reporte y análisis espacial de factores de riesgo urbano en la localidad de Engativá, orientada a fortalecer la seguridad ciudadana preventiva}, enfocado en el registro colaborativo de situaciones de riesgo urbano en Bogotá, Colombia. La propuesta integra los reportes de problemáticas identificadas por la ciudadanía con herramientas de análisis espacial, buscando proporcionar información que contribuya a la prevención y a la identificación de sectores que requieren mayor atención. Su enfoque aprovecha la distribución territorial de los factores de riesgo para estudiar las condiciones del entorno urbano. Este planteamiento se relaciona con el componente de análisis geográfico de Comunica, particularmente por la posibilidad de identificar zonas de concentración de reportes que sirvan como apoyo para establecer prioridades de atención y orientar la toma de decisiones institucionales.
 
-En la Municipalidad Distrital de San Juan Bautista, ubicada en Iquitos, Perú, se implementó un sistema orientado a sustituir el control manual de las incidencias informáticas que se registraba en cuadernos y fichas técnicas. “Sistema Help Desk para la Gestión de Incidencias de la Municipalidad Distrital de San Juan Bautista” (\cite{noriegasistema}) surgió con el objetivo principal de mejorar el registro, seguimiento, control y solución de las incidencias de hardware y software que ocurrían diariamente en las distintas áreas de la institución.
+En conjunto, las investigaciones revisadas evidencian el desarrollo de soluciones digitales orientadas a mejorar el registro, clasificación y seguimiento de incidencias mediante plataformas web y aplicaciones móviles. Entre las funcionalidades identificadas destacan la incorporación de evidencias fotográficas, geolocalización, actualización de estados, gestión administrativa y herramientas de análisis de información para apoyar la toma de decisiones. Asimismo, los estudios que presentan resultados de evaluación muestran mejoras en los tiempos de registro y atención de solicitudes. Sin embargo, durante la búsqueda bibliográfica realizada no se identificaron investigaciones desarrolladas en a nivel nacional que abordaran directamente esta problemática o que presentaran soluciones tecnológicas similares. Esta ausencia de antecedentes nacionales identificados resalta la pertinencia de estudiar el desarrollo de Comunica en el municipio de Rivas, considerando las necesidades particulares de la atención y gestión de incidencias ciudadanas.
 
-El sistema está conformado por un módulo de gestión de incidencias, que permite registrar las solicitudes de soporte, consultarlas, actualizarlas y darles seguimiento hasta su cierre. También incluye la asignación de personal técnico, mediante la cual el supervisor selecciona al técnico disponible para atender una incidencia; la generación de fichas de atención, donde el técnico documenta el diagnóstico y la solución aplicada; y la verificación de conformidad del usuario, requisito previo para cerrar el caso. Además, contempla la administración de usuarios, áreas y bienes tecnológicos, así como la generación de reportes estadísticos sobre atenciones por técnico, incidencias por usuario y incidencias por área en un rango de fechas.
+\subsection{Justificación}
+El desarrollo de Comunica surge de la necesidad de facilitar la comunicación de incidencias relacionadas con los servicios y la infraestructura del municipio de Rivas, debido a que estas situaciones pueden representar riesgos para las personas o generar inconformidad respecto a las condiciones en que se mantienen dichos servicios. Aunque algunos ciudadanos comunican estas problemáticas a las entidades correspondientes, existen factores que pueden dificultar la participación de quienes las identifican, como el desconocimiento de los mecanismos disponibles para reportarlas, la imposibilidad de asistir a reuniones comunitarias o el tiempo requerido para trasladarse a las oficinas responsables. Ante estas circunstancias, se considera importante disponer de una alternativa que facilite el proceso de reporte y amplíe las posibilidades de comunicar las incidencias identificadas a las entidades encargadas de su atención.
 
-La solución fue desarrollada aplicando las buenas prácticas de ITIL, la metodología RUP y la notación UML para el análisis y modelado del sistema. Se empleó una arquitectura de programación por tres capas, utilizando Visual C\#.NET como lenguaje de desarrollo y SQL Server 2008 como gestor de base de datos.
+En este sentido, Comunica se propone como una alternativa digital orientada a facilitar el registro y seguimiento de incidencias mediante una plataforma web que complemente los mecanismos tradicionales de reporte a través de un proceso de información centralizado, organizado y rastreable. Por medio de esta plataforma, los usuarios podrán registrar sus reportes de manera estructurada, incorporando descripciones, evidencias fotográficas y ubicaciones geográficas, sin depender exclusivamente de mecanismos presenciales. Asimismo, podrán consultar el estado de sus solicitudes y conocer las actualizaciones realizadas durante su atención, favoreciendo una comunicación más transparente entre los usuarios y las entidades responsables.
 
-La implementación de este sistema aportó a la institución una mejora en el control de las incidencias, al centralizar la información que antes se manejaba de forma manual y facilitar la consulta del estado de cada atención. Según la evaluación realizada por el autor, el tiempo promedio de registro de una incidencia disminuyó de 9 minutos y 3 segundos en el procedimiento manual a 1 minuto y 2 segundos con el sistema informático; asimismo, en una muestra de 20 registros, los errores por datos incompletos pasaron de 11 casos con el método manual a ninguno con el sistema.
+Desde la perspectiva institucional, el desarrollo de Comunica se justifica por la posibilidad de organizar y aprovechar la información generada a partir de los reportes recibidos. En este sentido, \textcite{moreno2026diseno} destacan la importancia de las plataformas digitales para la organización de la información y la gestión de solicitudes dentro de los procesos administrativos. Bajo esta perspectiva, el almacenamiento histórico y la representación geográfica de las incidencias permitirán identificar sectores con mayor concentración de reportes, reconocer problemáticas recurrentes y disponer de información que contribuya a establecer prioridades de atención. De esta manera, Comunica no se limitará a recibir y almacenar incidencias, sino que también podrá constituirse como una herramienta de apoyo para la toma de decisiones, facilitando la planificación y organización de las respuestas por parte de las entidades responsables.
 
-Esta investigación aporta a la presente propuesta un precedente sobre la organización de los procesos propios de un Help Desk: recepción de la incidencia, asignación del responsable, seguimiento, documentación de la atención, conformidad del usuario y cierre del caso. También resulta útil como referencia para definir reportes que permitan conocer el desempeño del área de soporte. Sin embargo, el sistema analizado fue diseñado para atender exclusivamente las incidencias informáticas de una municipalidad, mientras que la presente investigación busca desarrollar una plataforma Help Desk con un alcance más general, de modo que pueda ser adoptada por distintas instituciones y adaptada a sus necesidades de atención y soporte.
-
-En la Corte Superior de Justicia de Apurímac, ubicada en el departamento de Apurímac, Perú, se implementó un sistema web orientado a sustituir el registro manual de las incidencias y requerimientos informáticos, que se realizaba mediante llamadas telefónicas, correos electrónicos, visitas presenciales y archivos de Excel. “Aplicación de un sistema web Help Desk basado en ITIL para el registro y control de requerimientos e incidencias al personal de la Corte S	uperior de Justicia de Apurímac, año 2020 - 2023”, (\cite{soel2024aplicacion}), surgió con el objetivo principal de determinar en qué medida la aplicación de un sistema web Help Desk basado en ITIL mejoraba el registro y control de los requerimientos e incidencias reportados por el personal administrativo y jurisdiccional de la institución, ya que el procedimiento anterior dificultaba el seguimiento de las atenciones, la medición de los tiempos de solución y la obtención de reportes actualizados para la toma de decisiones.
-
-El sistema está conformado por módulos para la administración de usuarios y perfiles, la gestión de entidades y sedes, la definición de categorías de servicio y la administración de acuerdos de nivel de servicio, conocidos como SLA. Asimismo, incorpora funcionalidades para el registro de incidencias y requerimientos, la asignación de prioridades, la atención por parte del personal técnico, el seguimiento del caso hasta su cierre y la generación de reportes en tiempo real. También contempla una base de conocimientos destinada a documentar las soluciones aplicadas y facilitar la resolución de situaciones similares en el futuro.
-
-La solución fue desarrollada mediante la configuración y adecuación del software libre GLPI en su versión 10, utilizando como marco de referencia las buenas prácticas de ITIL v3. Para el análisis y modelado del sistema se emplearon diagramas UML, mientras que la evaluación se realizó mediante un enfoque cuantitativo, un diseño preexperimental, el cuestionario QUIS para valorar la satisfacción de la interfaz y la comparación estadística de los registros previos y posteriores a la implementación con el software IBM SPSS.
-
-La implementación de este sistema aportó a la institución una mejora en el registro y control de las atenciones, al centralizar la información que antes se manejaba de forma manual y permitir consultar el estado de cada requerimiento o incidencia. Según los resultados obtenidos, el promedio mensual de atenciones solucionadas aumentó de 25 a 72 registros, mientras que el tiempo promedio de resolución disminuyó de 62 a 15 minutos. Esta investigación aporta a la presente propuesta un referente sobre la organización del ciclo de atención, la priorización de casos, el seguimiento de solicitudes y la evaluación del servicio mediante indicadores. No obstante, se diferencia de la presente investigación porque se enfocó en adaptar una herramienta existente a los procesos y necesidades de una institución judicial específica, mientras que la presente propuesta busca desarrollar un sistema Help Desk general y adaptable a distintas instituciones, con configuraciones que permitan responder a diferentes estructuras organizativas y necesidades de gestión.
-
-
-
-\section{Justificación}
-El presente proyecto propone el diseño y desarrollo de una plataforma web especializada para la gestión de incidencias reportadas, orientada a digitalizar y sistematizar el proceso de recepción de reportes y atención institucional o empresarial. La propuesta permitirá que los usuarios puedan enviar sus problemáticas mediante un medio digital, proporcionando información estructurada como ubicación geográfica, descripción y evidencia fotográfica. De esta manera, se busca transformar el proceso tradicional en un flujo de información digital, centralizado y rastreable, en el que los datos puedan ser registrados desde su origen bajo una estructura uniforme y posteriormente gestionados por el personal asignado de la entidad correspondiente.
-
-Uno de los principales elementos diferenciadores de la propuesta será la incorporación de un componente de visualización geográfica que permitirá representar las incidencias directamente sobre un mapa interactivo. Además de mostrar la ubicación individual de los reportes, el sistema podrá identificar zonas donde exista una mayor concentración de incidencias mediante agrupaciones o áreas de influencia representadas visualmente por cambios de intensidad de color. A medida que aumente la cantidad de reportes en determinados sectores, el sistema podrá generar una mayor concentración visual sobre dichas áreas, permitiendo identificar de forma rápida los puntos que presentan una mayor recurrencia de situaciones reportadas. Esta funcionalidad busca convertir los datos recopilados en información visualmente comprensible y útil para la gestión administrativa de cualquier institución o empresa receptora. La centralización de estos datos también permitirá construir un registro histórico de las incidencias, facilitando su consulta, clasificación y seguimiento a lo largo del tiempo.
-
-La información acumulada podrá servir como base para identificar patrones de comportamiento, áreas con mayor recurrencia de incidencias de determinados problemas, tipos de incidencias más frecuentes y zonas que requieren una atención prioritaria. De esta manera, la plataforma no se limitará únicamente a recibir y almacenar reportes, sino que podrá constituirse como una herramienta de apoyo para la toma de decisiones, permitiendo que los administradores dispongan de información organizada y representada geográficamente para orientar de manera más eficiente la planificación y priorización de la respuesta por parte de la entidad. 
+Desde el ámbito académico y tecnológico, la investigación permitirá aplicar conocimientos relacionados con el análisis de requerimientos, el diseño de sistemas de información y el desarrollo de aplicaciones web mediante la construcción y evaluación de una solución orientada a la gestión de incidencias. Asimismo, el proyecto permitirá documentar el proceso de diseño, desarrollo y evaluación de una plataforma tecnológica contextualizada en el municipio de Rivas, cuyos resultados podrán servir como referencia para futuras investigaciones e iniciativas de digitalización de procesos de atención y seguimiento de solicitudes.
 
 \section{Alcance}
-Comunica se pensó para ser una plataforma web que ayude a la mejora de comunicación entre los usuarios y la entidad responsable para el levantamiento, clasificación y revisión de incidencias que se puedan presentar en el área del servicio. 
+Comunica se desarrollará como una plataforma web bajo el modelo SaaS, orientada a mejorar la comunicación entre el ciudadano y la entidad responsable para el levantamiento, clasificación y revisión de incidencias que se puedan presentar en el área de servicio. En esta primera etapa se contempla:
 
 \begin{itemize}
-	\item Registros de usuarios: El usuario se registrará en el sistema para la realización del levantamiento de incidencias. 
+	\item Registro de usuarios en el sistema para habilitar la gestión y el levantamiento de incidencias.
 	
-	\item Realización de levantamiento de una incidencia: Interfaz amigable la cual permitirá hacer su levantamiento de incidencia con mucha facilidad, se podrá colocar una pequeña descripción, evidencia fotográfica, y recopilación de ubicación exacta.  
+	\item Interfaz intuitiva para el reporte de incidencias con descripción breve, evidencia fotográfica y geolocalización mediante mapa interactivo.
 	
-	\item Transparencia con el usuario: El usuario podrá ver cómo va el proceso de su resolución al problema del cual realizo levantamiento.  
+	\item Seguimiento en tiempo real del estado y proceso de resolución de las incidencias reportadas.
 	
-	\item División de apartado según el rol: El usuario cuenta con su propio apartado en el cual podrá ver su historial de incidencias. 
+	\item Panel personal de historial para la consulta de todas las incidencias registradas por cada usuario.
 	
-	\item Gestión administrativa: Panel administrativo que cuenta con un dashboard en el cual se muestra total de reportes.  así mismo la administración cuenta con poder de bloquear permanentemente o temporalmente a usuarios que hagan mal uso de la plataforma. 
+	\item Módulo de administración con facultades para la suspensión temporal o el bloqueo permanente de cuentas en casos de uso indebido de la plataforma.
 	
-	\item Mapa geográfico: Cuenta con un mapa donde se representarán los reportes en donde se observan representadas las áreas con mayor reporte de incidencias.
+	\item Visualización geoespacial exclusiva para la administración, mediante un mapa interactivo de distribución y concentración de reportes.
 \end{itemize}
+
+Estas funcionalidades solo son el alcance inicial de Comunica, el proyecto contempla delimitar los aspectos que quedarán fuera de esta fase. Esto resulta indispensable para mantener el desarrollo dentro de los plazos establecidos y asegurar la viabilidad técnica y académica.
 
 \section{Limitaciones}
-El tipo de limitaciones que se llegan a tener son debido al alcance temporal y técnico del proyecto académico, son los siguientes:
+Como Comunica se desarrollará en el marco de este proyecto académico y se concentrará en sus funciones principales, ha sido necesario establecer algunos límites para mantener el trabajo enfocado y realizable:
+
 \begin{itemize}
-	\item El rango geográfico por el momento solo está enfocado en Rivas.
-	\item Para este estudio solo está decantada una aplicación web responsiva y no una app Mobile nativa.
-	\item Al ser un proyecto académico el uso de servicios gratuitos es una limitante.
-	\item Las funciones de la administración son manuales y se necesita que esté presente un miembro del equipo para gestionarlo
+	\item El rango geográfico de cobertura por el momento solo está enfocado en el municipio de Rivas, limitando la expansión a otras zonas por ahora.
+	
+	\item La solución se desarrollará como una aplicación web responsiva; en esta etapa no se contempla el diseño ni despliegue de una aplicación móvil nativa.
+
+	\item Las funciones de administración y mantenimiento operan de manera manual, requiriendo la presencia de un miembro del equipo para su gestión.
+	\item El envío de reportes depende de la estabilidad de la conexión a internet y de la precisión de las coordenadas del dispositivo desde donde se mande la incidencia.
+	
+	\item El servicio de almacenamiento de imágenes utilizado cuenta con restricciones en su capa gratuita, limitando la cantidad y el tamaño de las fotos por cada reporte.
+	
+	\item Las evidencias permitidas para el registro de las incidencias se limitan exclusivamente a archivos fotográficos y de video.
 \end{itemize}
 
-\section{Viabilidad del Proyecto}
+\subsection{Viabilidad del Proyecto}
 En esta sección se evaluara la viabilidad del sistema propuesto a partir de las cuatro dimensiones fundamentales: económica, técnica, operativa y legal. La definición de cada una de ellas ayudara a respaldar la capacidad de poder ejecutar, mantener y escalar el sistema con el fin de volverlo una solución efectiva.
+
 \subsection{Viabilidad Económica}
+La viabilidad económica del proyecto se plantea como una estimación académica a cinco años con el propósito de evaluar la sostenibilidad financiera de la plataforma bajo un modelo de suscripción. Los montos calculados se expresan en córdobas nicaragüenses (C\$), utilizando como referencia un tipo de cambio oficial de \$36.62 por USD 1.00, establecido por el Banco Central de Nicaragua (\cite{BancoCentraldeNicaragua2026}).
 
+\subsection{Inversión Inicial(Costo Desarrollo)}
+Para iniciar con el diseño, desarrollo y puesta en marcha del proyecto Comunica, se determina una estimación cuantitativa de la inversión inicial requerida, la que abarca la valoración del talento humano del equipo de desarrollo y las herramientas tecnológicas necesarias durante la fase preliminar. 
 
-\subsubsection{1. Costos de desarrollo}
-Para comenzar con el diseño y desarrollo del proyecto Comunica, es necesario realizar una estimación cuantitativa de la inversión inicial requerida, contemplada en tres puntos principales y los gastos operativos básicos:
+La inversión inicial se calcula en un total de C\$110,918.00 (equivalentes a aproximadamente \$3,028.54 USD). Este monto contempla la retribución estimada para el equipo de desarrollo compuesto por tres integrantes (un desarrollador backend, un desarrollador frontend y un diseñador/gestor de proyectos), se contempla que durante la etapa de construcción del sistema, herramientas como Leaflet, Render, Netlify, DBeaver, Visual Studio Code y GitHub operan bajo sus planes o niveles gratuitos disponibles, de modo que no generan un costo directo inicial de infraestructura en esta primera fase.
 
-Costos de talento humano: Se muestra la remuneración correspondiente al equipo de desarrollo conformado por tres integrantes que se encargarán del diseño, programación y testing del sistema.
-
-Herramientas y servicios externos: Se aplican las licencias y suscripciones necesarias para herramientas de desarrollo, incluyendo bibliotecas, mapa geográfico y servicios de almacenamiento de imágenes en la nube.
-
-Infraestructura tecnológica: Incluye el alojamiento del sistema, bases de datos, servicios en la nube y demás recursos técnicos indispensables para el desarrollo, despliegue y prueba de la aplicación web.
-
-\begin{table}[H]
+\begin{table}[htbp]
 	\centering
-	\caption{Costos estimados de desarrollo del sistema}
-	\label{tab:costos_desarrollo}
-	\begin{tabularx}{\textwidth}{X X X X}
+	\caption{\emph{Costos estimados de desarrollo del sistema}}
+	\label{tab:costos_desarrollo_comunica}
+	\begin{tabularx}{\textwidth}{l X c X}
 		\toprule
-		\textbf{Categoría} & \textbf{Elemento} & \textbf{Costo estimado} & \textbf{Explicación} \\ 
+		\textbf{Categoría} & \textbf{Elemento} & \textbf{Costo Estimado (C\$)} & \textbf{Explicación} \\
 		\midrule
-		
-		\textbf{Talento Humano} & Desarrollador backend & C\$ 38,471 & Salario estimado de C\$620 por día. \\ 
-		
-		\addlinespace
-		
-		& Desarrollador frontend & C\$ 38,471 & Salario estimado de C\$620 por día. \\ 
-		
-		\addlinespace
-		
-		& Diseñador / PM & C\$ 33,976 & Salario estimado de C\$548 por día. \\ 
-		
-		\addlinespace
+		Talento Humano & Desarrollador Backend & 38,471.00 & Salario estimado de C\$620 por día de desarrollo. \\
+		Talento Humano & Desarrollador Frontend & 38,471.00 & Salario estimado de C\$620 por día de desarrollo. \\
+		Talento Humano & Diseñador / Project Manager & 33,976.00 & Salario estimado de C\$548 por día de desarrollo. \\
+		Servicios e Infraestructura & Leaflet, Render, Netlify, DBeaver, VS Code, GitHub, Cloudinary & 0.00 & Durante la etapa de desarrollo se emplean los planes y capas gratuitas de estos servicios. \\
 		\midrule
-		
-		\textbf{Servicios e infraestructura} & 
-		Leaflet \newline
-		Render \newline
-		Netlify \newline
-		DBeaver \newline
-		Visual Studio Code \newline
-		GitHub \newline
-		Cloudinary & C\$ 0 & Durante el desarrollo se emplearán los planes gratuitos disponibles para estos servicios y herramientas. \\ 
-		
-		\addlinespace
-		\midrule
-		
-		\textbf{Total} & 
-		& \textbf{C\$ 110,918.00} & Equivalente aproximado en dólares: \$3,028.54. \\ 
-		
+		\textbf{Total} & — & \textbf{110,918.00} & \textbf{Equivalente aproximado a \$3,028.54 USD.} \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
 
-\subsubsection{2. Costos de operación, mantenimiento y modelo comercial (SaaS)}
-El proyecto fue pensado como una herramienta de uso con alta duración. Para determinar el valor comercial de la plataforma web, se adopta un modelo de suscripción mensual (SaaS) diseñado para evitar una alta inversión inicial y facilitar la adopción del sistema por parte de cualquier institución, empresa u organización interesada.
+\subsection{Costos de Operación, Mantenimiento y Modelo Comercial}
 
-Tomando como base los costos operativos mensuales de infraestructura y mantenimiento, los cuales integran los servicios fijos de Render (\$25.00), Netlify (\$20.00), Cloudflare (\$20.00) y el servicio de cartografía digital Geoapify Plan API 10 (\$59.00) por un total de \$124.00 mensuales, sumados a los gastos anuales independientes, como lo son el almacenamiento de imágenes en Cloudinary (\$99.00 anuales) y el dominio en NameCheap (\$6.79 anuales).
+Con el fin de asegurar la sostenibilidad a largo plazo y evitar una alta inversión inicial que dificulte la adopción del sistema por parte de cualquier organizacion, el proyecto ha sido concebido bajo un modelo de suscripción basado en Software como Servicio (SaaS)
 
-Para asegurar la sostenibilidad financiera del proyecto, cubrir de forma inmediata los compromisos anuales en la nube y garantizar una retribución justa por el soporte técnico y mantenimiento continuo del equipo de desarrollo, se implementa el esquema comercial detallado a continuación.
+Los costos operativos mensuales fijos para mantener la plataforma funcionando en la nube ascienden a (\$124.00 USD mensuales), los cuales comprenden el alojamiento de la API y base de datos en Render (\$25.00)(\cite{render2026}), el alojamiento de la interfaz web en Netlify (\$20.00)(\cite{netlify2026}), la seguridad y certificados SSL en Cloudflare (\$20.00)(\cite{cloudflare2026}), y el servicio de cartografía digital Geoapify Plan API 10 (\$59.00) (\cite{ geoapify2026}). Adicionalmente, se contemplan gastos anuales independientes para asegurar la operatividad continua, tales como el almacenamiento de evidencias visuales en Cloudinary \$99.00 anuales(\cite{cloudinary2026}) y la adquisición del dominio institucional en NameCheap (\$6.79 anuales)(\cite{, namecheap2026}).
 
-\begin{table}[H]
+\begin{table}[htbp]
 	\centering
-	\caption{Estructura de costos operativos y esquema comercial de la plataforma}
-	\label{tab:costos_operacion_comercial}
-	\begin{tabularx}{\textwidth}{X X X}
+	\caption{\emph{Estructura de costos operativos y esquema comercial de la plataforma}}
+	\label{tab:estructura_costos_comunica}
+	\small % Reduce ligeramente la letra para que la tabla luzca limpia y profesional
+	\renewcommand{\arraystretch}{1.3} % Añade espacio vertical entre las filas para que no se vea pegado
+	\begin{tabularx}{\textwidth}{p{3.5cm} X p{2.8cm}}
 		\toprule
-		\textbf{Componente} & \textbf{Detalle / Proveedor} & \textbf{Costo / Tarifa} \\ 
+		\textbf{Componente} & \textbf{Detalle / Proveedor} & \textbf{Costo / Tarifa} \\
 		\midrule
-		
-		\textbf{Costos Operativos Mensuales (Infraestructura)} & 
-		Render (Host de API y BD) \newline
-		Netlify (Host de la plataforma) \newline
-		Cloudflare (Seguridad SSL) \newline
-		Geoapify (Plan API 10 - Mapas) & 
-		\$25.00 / mes \newline
-		\$20.00 / mes \newline
-		\$20.00 / mes \newline
-		\$59.00 / mes \\
-		
+		Costos Operativos Mensuales (Infraestructura) & Render (\$25.00), Netlify (\$20.00), Cloudflare (\$20.00) y Geoapify (\$59.00) & \$124.00 USD / mes \\
+		\addlinespace % Espacio extra opcional entre filas clave
+		Gastos Anuales Independientes & Cloudinary (\$99.00 / año) y NameCheap (\$6.79 / año) & \$105.79 USD / año \\
 		\addlinespace
-		\midrule
-		
-		\textbf{Gastos Anuales Independientes} & 
-		Cloudinary (Almacenamiento de imágenes) \newline
-		NameCheap (Dominio institucional) & 
-		\$99.00 / año \newline
-		\$6.79 / año \\
-		
+		Esquema Comercial: Mes de Enero (Arranque) & Tarifa que cubre infraestructura del mes, totalidad de servicios anuales y ganancia inicial & \$330.00 USD \\
 		\addlinespace
-		\midrule
-		
-		\textbf{Esquema Comercial: Primer Mes (Arranque)} & 
-		Tarifa única de instalación que cubre costos operativos del mes (\$124.00), totalidad de servicios anuales (\$105.79) y genera una ganancia neta inicial de \$100.21 USD ($\approx$\$33.40 netos para cada uno de los 3 ingenieros). & 
-		\textbf{\$330.00 USD} \\
-		
-		\addlinespace
-		\midrule
-		
-		\textbf{Esquema Comercial: A partir del 2do Mes} & 
-		Cuota de suscripción recurrente para cubrir infraestructura y asegurar un flujo constante por mantenimiento, monitoreo y soporte evolutivo continuo ($\approx$\$32.00 mensuales netos para cada ingeniero). & 
-		\textbf{\$220.00 USD / mes} \\
-		
+		Esquema Comercial: A partir del 2do mes & Cuota de suscripción recurrente para cubrir infraestructura y soporte técnico continuo & \$220.00 USD / mes \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
 
-\subsubsection{3. Escenario de proyección financiera}
-En un escenario de proyección donde cuatro instituciones u organizaciones contraten simultáneamente la plataforma, los ingresos brutos alcanzarían los \$880.00 USD mensuales a partir del segundo mes. Al escalar el servicio, los costos operativos en la nube se multiplican de forma proporcional por cada cliente activo, sumando un total de \$496.00 USD mensuales en infraestructura (servidores y mapas de Geoapify).
+\subsection{3. Escenario de Proyección Financiera (VAN, TIR y PRI a 5 Años)}
+Para evaluar la rentabilidad del proyecto a lo largo del tiempo, se ha formulado un escenario de proyección financiera a cinco años considerando la adopción simultánea de la plataforma por parte de cuatro organizaciones.
 
-Tras cubrir estos gastos, la ganancia neta total resultante asciende a \$384.00 USD mensuales, permitiendo distribuir un flujo constante de \$128.00 USD mensuales netos para cada uno de los tres ingenieros, tal como se resume en la Tabla siguiente. Esto demuestra que el proyecto mantiene una rentabilidad atractiva y sostenible a medida que se expande en el mercado.
+Bajo el escenario ya mencionado, los ingresos brutos generados por cuatro instituciones suscritas ascienden a un total de \$880.00 USD mensuales a partir del segundo mes, lo que se traduce en flujos estables y predecibles. Al aplicar la tasa de descuento académica estándar del 12\%.
 
-\begin{table}[H]
+\begin{table}[htbp]
 	\centering
-	\caption{Proyección financiera escalada con cuatro instituciones contratantes}
-	\label{tab:proyeccion_financiera}
-	\begin{tabularx}{\textwidth}{X X X}
+	\caption{\emph{Proyección del flujo de caja a cinco años (en C\$)}}
+	\label{tab:flujo_caja_comunica}
+	\small
+	\begin{tabularx}{\textwidth}{X c c c c c c}
 		\toprule
-		\textbf{Indicador Financiero} & \textbf{Descripción del Escenario (4 Clientes)} & \textbf{Monto (USD)} \\ 
+		\textbf{Concepto} & \textbf{Año 0} & \textbf{Año 1} & \textbf{Año 2} & \textbf{Año 3} & \textbf{Año 4} & \textbf{Año 5} \\
 		\midrule
-		
-		Ingresos Brutos Mensuales & 
-		Cuatro instituciones suscritas a \$220.00 USD mensuales cada una a partir del segundo mes. & 
-		\textbf{\$880.00 / mes} \\
-		
-		\addlinespace
-		
-		Costos Operativos Proporcionales & 
-		Infraestructura en la nube escalada proporcionalmente por cada cliente activo (servidores y mapas Geoapify). & 
-		\textbf{\$496.00 / mes} \\
-		
-		\addlinespace
-		
-		Ganancia Neta Total & 
-		Excedente resultante tras cubrir los gastos operativos de infraestructura escalada. & 
-		\textbf{\$384.00 / mes} \\
-		
-		\addlinespace
-		
-		Distribución por Ingeniero (3 Integrantes) & 
-		Flujo constante neto asignado equitativamente a cada uno de los tres ingenieros desarrolladores en concepto de soporte técnico y mantenimiento evolutivo. & 
-		\textbf{\$128.00 / mes c/u} \\
-		
+		Instituciones Suscritas & 0 & 4 & 4 & 4 & 4 & 4 \\
+		Ingresos Totales (C\$) & — & 402,820 & 402,820 & 402,820 & 402,820 & 402,820 \\
+		Costos Operativos (C\$) & — & 233,458 & 233,458 & 233,458 & 233,458 & 233,458 \\
+		Inversión Inicial (C\$) & -110,918 & — & — & — & — & — \\
+		\textbf{Flujo Neto (C\$)} & \textbf{-110,918} & \textbf{169,362} & \textbf{169,362} & \textbf{169,362} & \textbf{169,362} & \textbf{169,362} \\
+		\textbf{Flujo Acumulado (C\$)} & -110,918 & 58,444 & 227,805 & 397,167 & 566,529 & 735,890 \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
+
+\vspace{1em}
+
+\begin{table}[!htbp]
+	\centering
+	\caption{\emph{Indicadores financieros del modelo (VAN, TIR y PRI)}}
+	\label{tab:indicadores_financieros_comunica}
+	\small
+	\begin{tabularx}{\textwidth}{l c c X}
+		\toprule
+		\textbf{Indicador} & \textbf{Resultado} & \textbf{Unidad} & \textbf{Descripción del Concepto} \\
+		\midrule
+		VAN (Valor Actual Neto) & 572,854.11 & C\$ & Representa el valor actual de todos los flujos futuros de caja menos la inversión inicial, descontados a una tasa del 12\%. \\
+		TIR (Tasa Interna de Retorno) & 151.16 & \% & Mide la rentabilidad intrínseca del proyecto, demostrando solidez frente a la inversión inicial requerida. \\
+		PRI (Período de Recuperación) & 0.655 & Años & Tiempo estimado (aprox. 8 meses) en que se recupera en su totalidad la inversión inicial de desarrollo. \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+
+\subsection{Fórmulas}
+
+\subsection{Fórmulas Financieras}
+
+Para el análisis de la viabilidad económica, se definen las siguientes expresiones matemáticas estándar de evaluación financiera:
+
+\vspace{0.5em}
+
+\noindent
+\begin{minipage}{\linewidth}
+	\textbf{1.) Valor Actual Neto (VAN):}
+	\begin{equation}
+		VAN = -I_0 + \sum_{t=1}^{n} \frac{FC_t}{(1 + k)^t}
+	\end{equation}
+	\noindent \textit{Donde:}
+	\begin{itemize}
+		\item[] $I_0$ = Inversión inicial ($110,918.00\mbox{ C\$}$).
+		\item[] $FC_t$ = Flujo de caja neto en el período $t$ ($169,361.64\mbox{ C\$}$).
+		\item[] $k$ = Tasa de descuento o costo de oportunidad ($12\% = 0.12$).
+		\item[] $n$ = Horizonte de evaluación en años ($5$ años).
+	\end{itemize}
+\end{minipage}
+
+\vspace{1em}
+
+\noindent
+\begin{minipage}{\linewidth}
+	\textbf{2.) Tasa Interna de Retorno (TIR):}
+	\begin{equation}
+		0 = -I_0 + \sum_{t=1}^{n} \frac{FC_t}{(1 + TIR)^t}
+	\end{equation}
+	\noindent \textit{Donde:}
+	\begin{itemize}
+		\item[] $I_0$ = Inversión inicial ($110,918.00\mbox{ C\$}$).
+		\item[] $FC_t$ = Flujo neto constante ($169,361.64\mbox{ C\$}$).
+		\item[] $TIR$ = Tasa de rendimiento que iguala el VAN a cero ($151.16\%$).
+	\end{itemize}
+\end{minipage}
+
+\vspace{1em}
+
+\noindent
+\begin{minipage}{\linewidth}
+	\textbf{3.) Período de Recuperación de la Inversión (PRI):}
+	\begin{equation}
+		PRI = \frac{\mbox{Inversión Inicial}}{\mbox{Flujo Neto Anual Promedio}} = \frac{110,918.00}{169,361.64}
+	\end{equation}
+	\noindent \textit{Donde:}
+	\begin{itemize}
+		\item[] $\mbox{Inversión Inicial}$ = Costo total de desarrollo ($110,918.00\mbox{ C\$}$).
+		\item[] $\mbox{Flujo Neto Anual}$ = Retorno constante por año ($169,361.64\mbox{ C\$}$).
+		\item[] $\mbox{Resultado}$ = $0.655$ años ($\approx 8$ meses).
+	\end{itemize}
+\end{minipage}
 
 \subsection{Viabilidad Técnica}
-	\textbf{Infraestructura tecnológica}\\
-	\textbf{Servidores y hosting: }\\
-	El sistema utiliza la siguiente infraestructura:\\
-	- Render para el alojamiento de la API y la base de datos.\\
-	- Cloudinary para el almacenamiento de evidencias visuales.\\
-	- Netlify para el hosting de la aplicación web y Namecheap para el dominio.\\
-	- Openstreetmap: para la generación del mapa.\\
-	- GitHub como repositorio centralizado para el control de versiones y gestión del código fuente. 
+ El desarrollo de la plataforma web para la gestión de incidencias “Comunica” es técnicamente viable debido a que se fundamenta en una arquitectura de software estandarizada, herramientas de código abierto de amplia adopción y servicios en la nube. La viabilidad de este modelo de Cloud Computing se respalda en investigaciones recientes que demuestran que su uso genera beneficios directos, tales como la reducción de hasta un 40 en costos operativos de infraestructura física y la garantía de una alta disponibilidad mediante el escalamiento automático de recursos bajo demanda \parencite{perez2023cloud}. El equipo investigador cuenta con los conocimientos necesarios en desarrollo Full-Stack(trabajar en Backend y Frontend) para implementar las siguientes tecnologías:
+ 
+ \vspace{0.3cm}
+ \textbf{Arquitectura de Software y Framework (AdonisJS)}
+ 
+ El proyecto adopta una arquitectura Cliente-Servidor desacoplada mediante el patrón MVC adaptado a una API REST, utilizando el framework AdonisJS. La adopción de estos patrones resulta viable y justificable por los beneficios evidenciados en la literatura académica reciente:
+ 
+ - Desacoplamiento y escalabilidad: Investigaciones en arquitecturas web concluyen que la separación de responsabilidades estructurales del modelo MVC genera beneficios significativos en la mantenibilidad del software, reduciendo notablemente los tiempos de corrección de errores \parencite{lopez2022mvc}. Asimismo, al no existir vistas renderizadas en el servidor, el uso de una API REST genera el beneficio directo de incrementar la interoperabilidad del sistema(capacidad para comunicarse e intercambiar datos sin problemas con cualquier otro sistema, dispositivo o aplicación, sin importar en qué lenguaje o tecnología estén programados.), permitiendo que el backend sirva como base para futuras usos sin necesidad de reescribir la lógica de negocio \parencite{martinez2023rest}.
+ 
+ - Integridad y Seguridad de Datos: La implementación de la librería \cite{vinejs2024} para la validación de datos de entrada y transformadores para la serialización de respuestas asegura que la información (como coordenadas geográficas y detalles del reporte) ingrese al sistema de forma estructurada y libre de inyecciones maliciosas.
+ 
+ -  Gestión de Base de Datos eficiente: El uso de Lucid ORM \cite{adonisjs2024} genera la ventaja de agilizar las consultas a la base de datos y la definición de relaciones, lo cual es crucial para vincular las incidencias con usuarios, categorías y municipios sin escribir consultas complejas de forma manual.
+ 
+ - Seguridad y Control de Acceso: La plataforma requiere jerarquías. El uso de autenticación por tokens y un middleware personalizado hace viable la implementación del Control de Acceso Basado en Roles (RBAC). El uso de este modelo es fuertemente respaldado por investigaciones de seguridad web, las cuales determinan que el RBAC genera como beneficio principal la mitigación de vulnerabilidades por escalamiento de privilegios, garantizando la integridad de los procesos al asegurar que solo el personal autorizado gestione los estados de los reportes \parencite{garcia2022rbac}.
+ 
+ - JavaScript y Node.js: El desarrollo del backend apoyado en JavaScript y TypeScript resulta  viable operativamente. Investigaciones enfocadas en el rendimiento de servidores web destacan que el modelo asíncrono y orientado a eventos propio de JavaScript en entornos Node.js ayuda a la escalabilidad, reduciendo tiempos de respuesta y optimizando el consumo de recursos del servidor al manejar múltiples peticiones de los usuarios \parencite{torres2023javascript}.
+ 
+ - Motor de Base de Datos (PostgreSQL): La elección de PostgreSQL como sistema de gestión relacional se justifica por su capacidad para manejar datos estructurados de forma rigurosa. Estudios recientes en persistencia de datos evidencian que el uso de PostgreSQL proporciona beneficios en la integridad transaccional (garantía de que la base de datos ejecuta operaciones agrupadas, asegurando que si ocurre un error en medio de un proceso, la acción se cancele por completo) y ofrece una alta robustez en el procesamiento de información, garantizando un almacenamiento seguro, libre de corrupción de datos y  escalable para el volumen de registros esperados \parencite{vargas2022postgresql}.
+ 
+ • Desarrollo Frontend (Angular): Para la construcción de la interfaz de usuario  y el panel administrativo se emplea el framework Angular. La viabilidad de su implementación se sustenta en investigaciones sobre el desarrollo de Aplicaciones de Página Única(Se refiere a que el sistema carga su estructura visual una sola vez y actualiza la información dinámicamente sin recargar la pantalla, lo que garantiza una navegación rápida y un consumo mínimo de datos de internet.) El uso de Angular, al estar fundamentado en una arquitectura modular de componentes y utilizar TypeScript de forma nativa, genera el aumentar la mantenibilidad del código y reducir los errores en tiempo de ejecución al compartir el mismo tipado estricto que el backend \parencite{navarro2023angular}. Adicionalmente, su motor de programación reactiva(capacidad que tiene el frontend para 'reaccionar' y actualizar automáticamente la pantalla en tiempo real.), sin necesidad de que el usuario tenga que recargar la página del navegado, optimiza el consumo de la API REST y el manejo de estados asíncronos, garantizando un renderizado fluido y sin recargas de página al interactuar con elementos como la cartografía interactiva de incidencias \parencite{salinas2022reactiva}.
+ \vspace{0.3cm}
+ \textbf{Infraestructura y Servicios en la Nube}
+ 
+ Para garantizar la disponibilidad ininterrumpida de la plataforma, se ha estructurado una infraestructura distribuida basada en servicios especializados(cada uno es experto en resolver una única tarea específica):
+ 
+ - Render y Netlify: Render actúa como una plataforma como servicio (PaaS) para el backend \parencite{render2024}, y Netlify proporciona el alojamiento del frontend mediante una red global de distribución de contenido (CDN) \parencite{netlify2024}. Su implementación conjunta genera el beneficio de eliminar la carga administrativa del mantenimiento de servidores locales, optimizando los tiempos de carga y respuesta para el usuario final.
+ 
+ - Cloudinary (Gestión de Evidencias Visuales): Esta plataforma permite procesar y optimizar automáticamente las imágenes en la nube \parencite{cloudinary2024}. Su uso genera la ventaja técnica de evitar la saturación de la base de datos y del servidor principal, conservando únicamente las URL de acceso a dichos recursos y garantizando una carga rápida de la interfaz gráfica.
+ 
+ - OpenStreetMap (Visualización geográfica): El uso de esta plataforma de cartografía colaborativa se justifica por los beneficios evidenciados en implementaciones geoespaciales recientes, donde se demuestra que la integración de OpenStreetMap en entornos web participativos genera un ahorro total en licencias comerciales (frente a alternativas privativas) manteniendo una alta precisión y rendimiento en la generación de mapas de calor y agrupación de reportes ciudadanos \parencite{fernandez2023osm}.
+ 
+ - GitHub (Control de Versiones): La centralización del proyecto en GitHub es viable técnica y operativamente, ya que estudios sobre metodologías de desarrollo demuestran que la integración de flujos de trabajo con Git genera beneficios cuantificables al minimizar los conflictos de código, asegurar una trazabilidad histórica completa de los cambios y agilizar los ciclos de despliegue continuo hacia producción \parencite{rodriguez2022git}.
+ 
+ - Namecheap (Dominio): Proporciona la identidad digital de la plataforma, permitiendo configurar los registros DNS necesarios para conectar de forma segura el entorno web y la API.
 	
+	Desde la perspectiva técnica, el proyecto es viable. La combinación de un backend robusto con AdonisJS, una arquitectura basada en API REST y una infraestructura distribuida en servicios en la nube (Render, Netlify, Cloudinary) proporciona un entorno de desarrollo moderno, seguro y escalable. Estas herramientas cubren las necesidades descritas en los objetivos (geolocalización, evidencias fotográficas, panel de administración y métricas) garantizando que el producto final sea funcional, rápido y capaz de optimizar la atención de incidencias.
+	
+
+	
+	
+\textbf{Especificaciones Técnicas de Equipos y Red}
+
+Este apartado menciona las capacidades que deben tener los equipos para el uso de la plataforma.
+
 	\vspace{0.5cm}
-	\textbf{• requisitos de conectividad (Internet) en la Alcaldía y ciudadanía: }\\
-	\textbf{Alcaldía:}\\
+	\textbf{ Requisitos de conectividad (Internet) entidad y usuarios: }\\
+	\textbf{entidad:}\\
 	Requisito mínimo: servicio de internet de 10 mb\\
 	Requisito optimo: servicio de internet de 15 mb
 	
 	\vspace{0.3cm}
-	\textbf{Ciudadanía:}\\
-	En el caso de la ciudadanía de Rivas al ser un sector urbano en el cual se utilizaría, se aprovechará la disponibilidad de la cobertura de red de los proveedores de internet ya sea claro o tigo. \\
+	\textbf{usuarios:}\\
+	
+	En el caso de los usuarios se aprovechará la disponibilidad de la cobertura de red de los proveedores de internet, ya sea claro o tigo. \\
 	Requisitos mínimos: internet 3G\\
 	Requisitos óptimos: internet 4G
 	
@@ -321,14 +334,14 @@ Tras cubrir estos gastos, la ganancia neta total resultante asciende a \$384.00 
 	\textbf{Especificaciones computadora:}\\
 	\textbf{Mínima:}\\
 	Procesador: Intel Core i5‑6200U @ 2.30 GHz\\
-	Memoria RAM: 8 GB DDR4\\
+	Memoria RAM: 4GB DDR4\\
 	Almacenamiento: 256 GB SSD\\
 	Gráficos: Integrados Intel HD Graphics 520
 	
 	\vspace{0.3cm}
 	\textbf{Optima:}\\
 	Procesador: Intel(R) Core(TM) i7-6600U CPU @ 2.60GHz\\
-	Memoria Ram: 16Gb\\
+	Memoria Ram: 8Gb\\
 	Almacenamiento: 512 GB SSd.\\
 	Gráficos: Integrados Intel HD Graphics 520
 	
@@ -341,38 +354,44 @@ Tras cubrir estos gastos, la ganancia neta total resultante asciende a \$384.00 
 	
 	\vspace{0.3cm}
 	\textbf{Optimo:}\\
-	Procesador (SoC): Samsung Exynos 1380 (5 nm, 8 núcleos: 4x 2.4 GHz Cortex-A78 y 4x 2.0 GHz Cortex-A55) o equivalente \\
-	Memoria RAM: 6 GB u 8 GB \\
-	Almacenamiento interno: 128 GB o 256 
+	Procesador MediaTek Helio G85 Octa-Core 2.0GHz \\
+	Memoria RAM: 4Gb\\
+	Almacenamiento interno: 64Gb
 
 
 \subsection{Viabilidad Operativa}
 
-\textbf{Capacitación del personal municipal}\\
-\textbf{• formación a las entidades que serán participes del uso de la plataforma:} Se contempla una fase de capacitación dirigida a los administradores de la institución en la cual se tratarán temas como configuración de perfiles. Autenticación, y las diferentes funcionalidades del sistema todo esto a través de videos entregables.\\
-\textbf{• Manuales de usuario y guías técnicas:} El proyecto incluye como entregable documentación técnica y manuales de usuario, diseñados para orientar tanto al personal institucional como a los ciudadanos en el uso correcto de la plataforma
+La viabilidad operativa constituye un componente fundamental en la formulación de proyectos tecnológicos, ya que permite evaluar si la solución propuesta se alinea con las condiciones, capacidades y procesos cotidianos del entorno donde será desplegada. Desde una perspectiva sistémica, la viabilidad de implementación u operativa se entiende como la probabilidad de que la integración de un nuevo sistema de software se pueda llevar a cabo con éxito dentro de su ámbito de aplicación objetivo, garantizando la aceptación y el aprovechamiento por parte de los usuarios \parencite{ReyesGarcia2024}). En el contexto del presente proyecto, analizar esta dimensión es indispensable para comprobar que la plataforma web de incidencias no solo es funcionalmente robusta, sino que realmente puede ser adoptada sin fricciones por la ciudadanía de Rivas y asimilada eficientemente en los flujos de trabajo del personal institucional, mitigando la resistencia al cambio y asegurando la sostenibilidad del sistema a largo plazo
 
-\vspace{0.5cm}
-\textbf{Adopción ciudadana}\\
-\textbf{• Estrategias para que los ciudadanos usen la plataforma (campañas, tutoriales):} Se incluye un Plan de Comunicación en el cual se compartirán videos de talleres de capacitación comunitaria para enseñar a los ciudadanos a presentar su problema en su sector. A revisar el estado del problema y realizar distintas gestiones en su perfil.\\
+\textbf{Capacitación del personal entidad}\\
+\textbf{• formación a las entidades que serán participes del uso de la plataforma:} Se contempla una fase de capacitación dirigida a los administradores de la entidad en la cual se tratarán temas como configuración de perfiles. Autenticación, y las diferentes funcionalidades del sistema todo esto a través de videos entregables.\\
+\textbf{• Manuales de usuario y guías técnicas:} El proyecto incluye como entregable documentación técnica y manuales de usuario, diseñados para orientar tanto al personal de la entidad como a los usuarios en el uso correcto de la plataforma
+
 \textbf{• Diseño de interfaz intuitiva y amigable:} \\
-El diseño de la interfaz fue creado con colores amigables a la vista e intuitiva para que él envió de la incidencia sea fácil y por parte de la municipalidad fácil de gestionar.
+El diseño de la interfaz fue creado con colores amigables a la vista e intuitiva para que él envió de la incidencia sea fácil y por parte de la entidad fácil de gestionar.
 
 \vspace{0.5cm}
 \textbf{Procesos organizativos}\\
-\textbf{• Cómo funcionará el sistema de atención ciudadana:} El sistema funcionará como un canal que vincula a los ciudadanos con las autoridades municipales, permitiendo dar seguimiento a incidencias de infraestructura. A través del panel administrativo, los responsables institucionales podrán visualizar los casos en tiempo real, actualizar su estado y, en caso de retraso, comunicar las razones de la demora.
+
+\textbf{• Cómo funcionará el sistema de atención al cliente:} El sistema funcionará como un canal que vincula a los usuarios con la entidad correspondiente, permitiendo dar seguimiento a incidencias. A través del panel administrativo, los responsables  podrán visualizar los casos en tiempo real, actualizar su estado y, en caso de retraso, comunicar las razones de la demora.
 
 \vspace{0.5cm}
 \textbf{Monitoreo:}\\
-\textbf{• Uso del registro histórico para análisis y planificación:} La plataforma integra la función de Historial del Ciudadano para consultar reportes previos y un dashboard de datos estadísticos que apoya el análisis y la planificación pública.\\
-\textbf{• Indicadores de eficiencia (tiempo de respuesta, número de incidencias atendidas):} El sistema "Comunica" podrá evaluar la eficiencia debido los tiempos de respuesta según datos como fechas de creación y fecha de solución, así como el estado del reporte para contabilizar los casos gestionados. Toda esta información se consolida en un dashboard estadístico institucional en la aplicación web administrativa, lo que permite a las autoridades visualizar en tiempo real el volumen de incidencias atendidas y darles seguimiento.
+\textbf{• Uso del registro histórico para análisis y planificación:} La plataforma integra la función de Historial del usuario para consultar reportes previos y un dashboard de datos estadísticos que apoya el análisis y la planificación.\\
+
+\textbf{• Indicadores de eficiencia (tiempo de respuesta, número de incidencias atendidas):} El sistema "Comunica" podrá evaluar la eficiencia debido los tiempos de respuesta según datos como fechas de creación y fecha de solución, así como el estado del reporte para contabilizar los casos gestionados. Toda esta información se consolida en un dashboard estadístico institucional en la aplicación web administrativa, lo que permite a las entidades visualizar en tiempo real el volumen de incidencias atendidas y darles seguimiento.
 
 \subsection{Viabilidad Legal}
-El desarrollo del sistema se ajusta de manera estricta al marco jurídico y normativo de la República de Nicaragua. 
 
-Desde la perspectiva constitucional, el proyecto respeta las garantías ciudadanas establecidas en el Artículo 27 de la Constitución Política, salvaguardando la seguridad (Inciso 2), la vida privada de los usuarios (Inciso 5) y su derecho a conocer la información registrada en entidades públicas o privadas (Inciso 7). Asimismo, la arquitectura del software se alinea con los mecanismos de protección de entornos digitales y bases de datos contemplados en el Artículo 176 (Recurso de Hábeas Data), el cual tutela el manejo transparente y seguro de los datos personales.  
+El desarrollo del sistema se orienta al cumplimiento del marco jurídico y normativo de la República de Nicaragua, particularmente en lo relativo a la privacidad y la protección de los datos personales de los usuarios.
 
-En concordancia con lo anterior, y tomando en cuenta la Ley de Protección de Datos Personales (Ley No. 787), aprobada el 21 de marzo de 2012 y publicada en La Gaceta, Diario Oficial No. 61 del 29 de marzo del mismo año, la plataforma cumple cabalmente con dicha normativa. Dado que el software recolecta únicamente los datos de identificación personal necesarios para el reporte de incidencias específicamente nombre completo, número de cédula, fecha de nacimiento y dirección, su funcionamiento se rige bajo los principios de Legalidad y proporcionalidad consagrados en los Artículos 1 y 5 de dicha ley, asegurando que sean los estrictamente indispensables para la gestión y trazabilidad de los reportes ciudadanos.  
+Desde la perspectiva constitucional, el proyecto toma como fundamento las garantías ciudadanas establecidas en el artículo 27 de la Constitución Política de la República de Nicaragua, específicamente el derecho a la seguridad (inciso 2), a la vida privada y a la privacidad de la familia (inciso 5), así como a conocer toda información que sobre la persona se haya registrado en entidades de naturaleza privada y pública (inciso 7). Asimismo, el artículo 41 reconoce la posibilidad de interponer el recurso de hábeas data cuando los derechos constitucionales hayan sido violados o estén en peligro de serlo, de acuerdo con la Ley de Justicia Constitucional (\cite{asamblea2026norma}).
 
-Finalmente, en estricto cumplimiento de los Artículos 9 y 11 de la Ley No. 787, la plataforma incorpora mecanismos tecnológicos de autenticación, control de accesos y cifrado, garantizando la confidencialidad e integridad de la base de datos municipal y previniendo accesos no autorizados o alteraciones de la información recopilada. 
+En concordancia con lo anterior, el proyecto toma como referencia la Ley No. 787, Ley de Protección de Datos Personales, aprobada el 21 de marzo de 2012 y publicada en La Gaceta, Diario Oficial No. 61 del 29 de marzo del mismo año. Su artículo 1 establece como objeto la protección frente al tratamiento de datos personales en ficheros públicos y privados, a fin de garantizar la privacidad personal y familiar y la autodeterminación informativa (\cite{asamblea2012ley787}).
+
+La plataforma contempla recopilar datos de identificación personal, como nombre completo, número de cédula, fecha de nacimiento y dirección. No obstante, la inclusión y obligatoriedad de cada campo deberá justificarse en función de las necesidades del registro y seguimiento de incidencias, evitando solicitar información que no resulte adecuada, proporcional y necesaria para dicha finalidad, conforme a los artículos 5 y 9 de la Ley No. 787 (\cite{asamblea2012ley787}).
+
+Asimismo, se prevé informar previamente a los usuarios sobre la finalidad del tratamiento de sus datos, la identidad del responsable y los derechos que les asisten, así como obtener su consentimiento cuando corresponda, de conformidad con los artículos 6, 7 y 9 de la Ley No. 787 (\cite{asamblea2012ley787}). 
+Finalmente, en atención a los artículos 9 y 11 de la Ley No. 787, se contempla implementar mecanismos tecnológicos de autenticación, control de accesos y cifrado, como medidas orientadas a proteger la integridad, confidencialidad y seguridad de los datos personales y a prevenir accesos, alteraciones o divulgaciones no autorizadas. La implementación y eficacia de estas medidas deberán verificarse mediante las pruebas y controles correspondientes (\cite{asamblea2012ley787}).
+
 

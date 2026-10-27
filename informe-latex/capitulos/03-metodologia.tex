@@ -1,6 +1,7 @@
 % Capítulo 3: Metodología
 % Propósito: Detallar el enfoque metodológico, diseño de investigación, técnicas e instrumentos de recolección de información y la metodología de desarrollo de software seleccionada.
 \section{Marco Metodológico}
+
 \subsection{Arquitectura Metodológica e Integración de Enfoques}
 Durante el desarrollo de la presente investigación, se busco adoptar una arquitectura metodológica organizada en tres niveles complementarios, con el objetivo de articular el proceso de investigación científica, la construcción del sustento teórico y el desarrollo técnico de la solución propuesta. Esta estructura permite establecer una relación coherente entre la identificación del problema, el análisis del conocimiento existente y la construcción del artefacto tecnológico, Los niveles se mostraran continuación:
 
@@ -76,67 +77,78 @@ De acuerdo con la clasificación utilizada en DSR, el resultado principal del pr
 
 \newpage
 \subsection{Nivel Diagnóstico}
-Antes de iniciar con el desarrollo de nuestro sistema para la creación categorización y seguimiento hasta la resolución de incidencias. Se opto por utilizar una guía de Estudios de Mapeo sistemático \cite{petersen2008systematic} la cual nos permitió clasificar, agrupar y mapear el estado del arte con respecto a la resolución de problemáticas de comunicación entre entidades que ofertan algún servicio y usuarios que les remiten sus incidencias con el fin de que sean resueltas.\newline 
 
-Aplicando los pasos de la guía \cite{petersen2008systematic} nos condujo a la creación de Preguntas de investigación con el objetivo de establecer los alcances del estudio y estructurar la construcción de cadenas de búsqueda que serán creadas posteriormente. 
+Para completar con la fase Identificacion del Problema y motivasion  de la metodologia DSMR desde la perspectiva cientifica. Se opto por utilizar una guía de Estudios de Mapeo sistemático \cite{petersen2008systematic} la cual nos permitió clasificar, agrupar y mapear el estado del arte con respecto a la resolución de problemáticas de comunicación entre entidades que ofertan algún servicio y usuarios que les remiten sus incidencias con el fin de que sean resueltas.\newline 
 
--	¿Qué soluciones Digitales se han aplicado para la resolución de este tipo de problemáticas?
+1- Con el objetivo de establecer los alcances del estudio y estructurar las cadenas de búsqueda, se definieron las siguientes Preguntas de Investigación:
 
--	¿Cuáles son las funcionalidades que se han incorporado en esas soluciones para suplir la necesidad?
+-	¿Qué soluciones digitales se han aplicado para la resolución de reportes de incidencias ciudadanas?
 
--	¿Qué funcionalidades se adaptan mejor al contexto de nuestro proyecto?
+-	¿Cuáles son las funcionalidades tecnológicas que se han incorporado en estas soluciones para suplir dicha necesidad?
 
--	¿Cuáles son las funcionalidades que faltan para la resolución de la necesidad especifica en nuestro contexto?
+-	¿Qué funcionalidades documentadas se adaptan mejor al contexto geográfico y operativo del presente proyecto?
 
-Para la continuidad del Estudio de mapeo Sistemático se realizaron cadenas de búsqueda con el fin de encontrar estudios, artículos y publicaciones relevantes que nos permitan encontrar respuestas para nuestras preguntas.
+-  ¿Cuáles son las brechas o funcionalidades carentes en la literatura actual respecto a la resolución de esta necesidad en nuestro contexto específico?
 
-Para la construcción de las cadenas se utilizan palabras claves en combinación de operadores booleanos como OR y AND en nuestro caso:
+2- Para la continuidad del Estudio de mapeo Sistemático se realizaron cadenas de búsqueda utlizando palabras de enlace(operadores booleanos) con el fin de encontrar estudios, artículos y publicaciones relevantes que nos permitan encontrar respuestas para nuestras preguntas.
 
 ("sistema de reportes" OR "sistema de incidencias ciudadanas" OR "sistema de quejas ") AND (municipalidad) 
 
 ("plataforma web" OR "sistema de información" OR ("incidencias " OR "participación ciudadana" OR "gestión municipal") AND ("Nicaragua")
 
-Se continuo con el filtrado de información útil para nuestra causa aplicando inclusión o exclusión.
+Se continuo con el filtrado de información útil para nuestra causa aplicando inclusión y exclusión.
 
-La cual tubo distintas fases comenzando con la elección de criterios de inclusión en nuestro caso fueron Plataforma web que resolvieran incidencias en distintos ámbitos. Información que fue validada a través de Títulos, lectura de resúmenes y año de publicación (del 2022 en adelante) lo que dio como consecuencia el encuentro de los siguientes sistemas:\newline 
+La cual tubo distintas fases comenzando con la elección de criterios de inclusión en nuestro caso fueron Plataforma web que resolvieran incidencias en distintos ámbitos. Información que fue validada a través de Títulos, lectura de resúmenes y año de publicación lo que dio como resultado la seleccion de los siguientes estudios primarios:\newline 
 
-1-	SISTEMA INTEGRAL PARA EL REPORTE Y SEGUIMIENTO DE DEFICIENCIAS DEL SERVICIO PÚBLICO DEL MUNICIPIO DE OTHÓN P. BLANCO, QUINTANA ROO (072 REPORTES)\newline 
+-	Sistema integral para el reporte y seguimiento de deficiencias del servicio público del municipio de othón p. blanco, quintana roo (072 REPORTES)\newline 
 
-2-	Desarrollo de un sistema web para el reporte de daños en la infraestructura urbana de la parroquia Anconcito integrando Google Cloud Vision API\newline 
+-	Desarrollo de un sistema web para el reporte de daños en la infraestructura urbana de la parroquia Anconcito integrando Google Cloud Vision API\newline 
 
-3-	Sistema help desk para la gestión de incidencias de la municipalidad distrital de San Juan Bautista (mdsjb)\newline 
+-	Sistema help desk para la gestión de incidencias de la municipalidad distrital de San Juan Bautista (mdsjb)\newline 
 
-4-	Aplicación de un sistema web Help Desk basado en ITIL para el registro y control de requerimientos e incidencias al personal de la Corte Superior de Justicia de Apurímac, año 2020 - 2023 
+-	Aplicación de un sistema web Help Desk basado en ITIL para el registro y control de requerimientos e incidencias al personal de la Corte Superior de Justicia de Apurímac, año 2020 - 2023 
 
-Siguiendo la metodología de Petersen et al., la clasificación de la literatura se fundamenta en un esquema bidimensional para analizar tanto el aporte técnico como el rigor científico de los antecedentes:\newline 
+3. agrupacion segun tipo de aporte
+ Tipo de Contribución (el artefacto propuesto) como el Tipo de Investigación (el rigor científico utilizado para validarlo).
 
-Para la categorización de los estudios primarios seleccionados, se adoptó un esquema de clasificación de dos facetas. La primera faceta evalúa el Tipo de Contribución (qué tipo de artefacto o solución se propone), mientras que la segunda evalúa el Tipo de Investigación (el enfoque científico utilizado para validar o evaluar dicha solución, según la taxonomía de \cite{petersen2008systematic}).\newline 
+A continuación, se resumen los estudios primarios seleccionados y su respectiva agrupación:
 
-Tipo de Contribución ( Contribution Type ) 
 
-El orden de número se vincula con el orden de la etapa anterior: 
+\vspace{0.4cm}
 
-1-	Tipo de Contribución: Herramienta ( Tool ). Desarrolla una plataforma e-Gobierno compuesta por dos módulos software: un sistema de administración web para la intranet del ayuntamiento y una aplicación móvil nativa en Android para la ciudadanía.\newline 
+\begin{table}[htbp]
+	\centering
+	\caption{Estudios Primarios y agrupacion}
+	\vspace{0.2cm}
+	\renewcommand{\arraystretch}{1.4}
+	\begin{tabularx}{\textwidth}{@{} c >{\raggedright\arraybackslash}p{4cm} l l X @{}}
+		\toprule
+		\textbf{Ref.} & \textbf{Título del Estudio} & \textbf{Contribución} & \textbf{Tipo de Inv.} & \textbf{Descripción de la Solución y Método de Validación} \\
+		\midrule
+		\textbf{[1]} & Sistema integral para el reporte y seguimiento de deficiencias del servicio público (Othón P. Blanco, Quintana Roo). & Herramienta (\textit{Tool}) & \textit{Validation} & Plataforma e-Gobierno (Web + App móvil). Se enfoca en análisis de requerimientos, diseño modular MVC y pruebas funcionales de operatividad técnica. \\
+		\addlinespace
+		\textbf{[2]} & Desarrollo de un sistema web para el reporte de daños urbanos integrando Google Cloud Vision API (Parroquia Anconcito). & Herramienta (\textit{Tool}) & \textit{Validation} & Plataforma web con geolocalización e IA para validar fotografías. Validado mediante prueba piloto controlada (15 usuarios) midiendo usabilidad, sin integración real. \\
+		\addlinespace
+		\textbf{[3]} & Sistema \textit{help desk} para la gestión de incidencias de la municipalidad distrital de San Juan Bautista. & Herramienta (\textit{Tool}) & \textit{Validation} & Sistema en .NET y SQL Server basado en ITIL y RUP. Levantamiento de requisitos y medición de usabilidad esperada mediante el estándar SUS. \\
+		\addlinespace
+		\textbf{[4]} & Aplicación de un sistema web \textit{Help Desk} basado en ITIL para la Corte Superior de Justicia de Apurímac (2020-2023). & Herramienta (\textit{Tool}) & \textit{Evaluation} & Sistema web (GLPI v.10). Evaluado en un entorno real mediante diseño pre-experimental, demostrando reducción de tiempos (de 62 a 15 min) y satisfacción de interfaz (QUIS). \\
+		\bottomrule
+	\end{tabularx}
+	\vspace{0.2cm}\\
+	\raggedright \footnotesize{\textit{Nota: Validation Research corresponde a herramientas novedosas probadas en entornos controlados; Evaluation Research corresponde a herramientas implementadas y evaluadas formalmente en la práctica real.}}
+\end{table}  
 
-2-	Tipo de Contribución: Herramienta ( Tool ) (con integración de método/algoritmo de IA). Diseña y desarrolla una plataforma web responsiva con geolocalización y mapas para reporte de infraestructura dañada, integrando la API de Google Cloud Vision para la validación automática de fotografías\newline 
+4. Análisis de Brechas (Gaps) y Motivación del Proyecto
+La ejecución del Estudio de Mapeo Sistemático permitió dar respuesta a las preguntas de investigación iniciales. Se determinó que las soluciones digitales estándar en este ámbito son plataformas web con módulos móviles que incorporan geolocalización, seguimiento de tickets, evidencia fotográfica y en algunos casos, marcos de trabajo ITIL o IA.
 
-3-	 Tipo de Contribución: Herramienta ( Tool ). Desarrolla un sistema de software Help Desk en Visual Studio .NET y SQL Server siguiendo la metodología RUP, notación UML y buenas prácticas de ITIL2].\newline 
+Sin embargo, el mapeo revela brechas significativas (nichos no explorados) que fundamentan la necesidad del presente proyecto:
 
-4-	Tipo de Contribución: Herramienta ( Tool ). Desarrolla y adapta un sistema web Help Desk basado en el software libre GLPI v.10 configurado bajo las recomendaciones de ITIL v \newline 
+Enfoque limitado: existie una escasez de estudios que analicen cómo la visibilidad del estado de los reportes y la justificación de tiempos de respuesta impactan la percepción del usuario final.
 
-Basandose en la taxonomia de Wieringa las definiciones de tipos de investigaciones que se van a mencionar son las siguientes: 
+Vacío Literario en el Contexto Nacional: La aplicación de las cadenas de búsqueda arrojó una ausencia absoluta de antecedentes documentados para el contexto nicaragüense. Existe un vacío total de literatura científica sobre la implementación o evaluación de plataformas de gestión de incidencias desarrolladas específicamente para la infraestructura tecnológica de Nicaragua.
 
-Validation Research: Corresponde a estudios donde las técnicas o herramientas investigadas son novedosas y todavía no han sido implementadas en la práctica real.\newline 
-
-Evaluation Research: Corresponde a estudios donde las técnicas o herramientas ya han sido implementadas en la práctica real y se lleva a cabo una evaluación formal de dicha aplicación.\newline 
-
-Según su tipo de investigación:\newline 
-
-1-	Tipo de Investigación: Investigación de Validación ( Validation Research ). Comprende la fase de análisis de requerimientos, diseño modular (MVC) y realización de pruebas funcionales para sustituir el sistema previo (072 Ayuntatel), demostrando la operatividad técnica del flujo de recepción y seguimiento de reportes.\newline 
-
-2-	Tipo de Investigación: Investigación de Validación ( Validation Research ). La solución se prueba dentro de un entorno controlado mediante un estudio piloto con 15 colaboradores (10 residentes y 5 líderes comunitarios) del barrio Luis Celleri. En esta fase se efectúan pruebas de usabilidad y de percepción de tiempos, pero sin estar integrado todavía a los sistemas informáticos formales del GAD municipal.\newline 
-
-3-	Tipo de Investigación: Investigación de Validación ( Validation Research ). Se centra en el levantamiento de requisitos, modelado de procesos e implantación del sistema en el servidor de la Oficina de Informática y Telecomunicaciones de la Municipalidad de San Juan Bautista. Mide la usabilidad esperada del prototipo mediante la escala estandarizada SUS (System Usability Scale)\newline 
+Motivación de la Solución:
+En este sentido, el desarrollo de la plataforma web encuentra su justificación científica y técnica bajo el marco de la metodología DSRM. El proyecto no solo se va acorde con la tendencia tecnológica de sistematizar reportes, sino que aborda un nicho geográfico inexplorado. Su creacion aportará el primer precedente académico evaluable en el contexto nicaragüense, cubriendo el vacío identificado en el estado del arte y sentando las bases tecnológicas y documentales para futuras investigaciones en el pais.
 
 4-	Tipo de Investigación: Investigación de Evaluación ( Evaluation Research ). El estudio implementa la solución en una organización real (Corte Superior de Apurímac) y evalúa su impacto en producción mediante un diseño pre-experimental. Compara el estado inicial sin el sistema (registros en Excel de 2020-2021) frente al estado final (reportes exportados del sistema entre 2022-2023), demostrando una reducción en el tiempo promedio de atención (de 62 a 15 minutos) y aplicando la prueba estadística t-Student junto con encuestas de satisfacción de interfaz (QUIS)\newline 
 
@@ -154,61 +166,137 @@ Si bien estas funcionalidades suplen las necesidades de reporte, el mapa visual 
 
 En este sentido, el desarrollo de la plataforma web Comunica encuentra su justificación científica y técnica. El proyecto no solo se inserta en la tendencia de aportar herramientas con reportes estructurados, sino que lo hace abordando un nicho geográfico inexplorado. El desarrollo de la plataforma en la ciudad de Rivas aportará el primer precedente evaluable en el contexto nicaragüense, cubriendo el vacío identificado en el estado del arte y sentando las bases para futuras investigaciones de evaluación en la región.
 
+\newpage
 \section{Nivel Tactico}
 
-\section{Matriz de trazabilidad e indicadores de evaluación}
-Se establece una matriz de trazabilidad que conecta cada necesidad o meta-requisito de la solución con la decisión de diseño que la resuelve, la unidad de desarrollo (historias de usuario y sprints) que la construye y el indicador cuantitativo o cualitativo con el que se evaluará su cumplimiento. Las Tablas 5 y 6 presentan dicha correspondencia de manera fraccionada para su análisis detallado.
+\subsection {Metodología (SCRUM / XP)}
+
+El desarrollo del software en la Fase 3 del marco DSRM se realiza utilizando una combinación de metodologías ágiles. Este enfoque une el marco Scrum (\cite{schwaber2020guia}), que ayuda a organizar el trabajo por entregas y ciclos cortos, con prácticas de Extreme Programming (XP) (\cite{beck2000extreme}), enfocadas en mantener una buena calidad, orden y solidez en el código del sistema.
+
+\subsection{Gestión de Producto y Sprints (SCRUM)}
+
+Para conectar las necesidades de los usuarios con el desarrollo del sistema, el trabajo se divide en periodos cortos llamados \textit{Sprints} de dos a tres semanas. Durante este proceso, los requisitos de la Fase 2 se convierten en tareas organizadas en el \textit{Product Backlog}, redactadas como Historias de Usuario con el formato básico: \textit{Como [Rol], quiero [Función], para [Beneficio]}, lo que facilita que tanto el equipo como los involucrados entiendan claramente cada función. Cada ciclo incluye reuniones prácticas como la planificación, el desarrollo de avances, la revisión del software y las retrospectivas para mejorar constantemente el trabajo en equipo (\cite{schwaber2020guia}).
+
+\subsection{Prácticas XP de Calidad Técnica}
+
+Para asegurar un buen nivel técnico y evitar acumular problemas en el código, se utilizan prácticas esenciales de Extreme Programming (\cite{beck2000extreme}). Entre ellas se encuentra el desarrollo guiado por pruebas (TDD), que consiste en escribir pequeñas pruebas automáticas antes de programar la función para asegurar que cumpla con lo esperado. También se aplica la refactorización continua, que es el hábito de limpiar y ordenar el código de forma constante para evitar duplicados y mantenerlo sencillo. Por último, se utiliza la integración automática (CI), que revisa y prueba cada nuevo cambio para garantizar que el sistema funcione de manera estable antes de cada actualización (\cite{beck2000extreme}).
+
+
+\subsection{Matriz de Trazabilidad e Indicadores de Evaluación (Sprints 1 y 2)}
+Se establece la primera sección de la matriz de trazabilidad conectando los meta-requisitos iniciales, decisiones de diseño, las unidades de desarrollo técnico y la evaluación final:
 
 \begin{table}[htbp]
 	\centering
-	\caption{Matriz de trazabilidad e indicadores de evaluación (Parte I)}
-	\label{tab:matriz_trazabilidad_1}
-	\begin{tabularx}{\textwidth}{>{\hsize=0.22\hsize}X >{\hsize=0.28\hsize}X >{\hsize=0.22\hsize}X >{\hsize=0.28\hsize}X}
+	\caption{Matriz de trazabilidad y evaluación del diseño (Parte I: Sprints 1 y 2).}
+	\label{tab:trazabilidad_parte1}
+	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+		\hline
+		\textbf{Meta-requisito (MR)} \newline \textit{(DSRM Fase 2)} & 
+		\textbf{Meta-diseño Asociado (MD)} \newline \textit{(DSRM Fase 3)} & 
+		\textbf{Historia / Sprint} \newline \textit{(SCRUM / XP)} & 
+		\textbf{Indicador de Evaluación} \newline \textit{(DSRM Fase 5)} \\ \hline
+		MR-01: Garantizar la autenticación, control de accesos y diferenciación de permisos según el perfil del usuario. & 
+		MD-01: Implementación de autenticación mediante tokens de acceso (Access Tokens), cifrado seguro y middleware guardián de roles. & 
+		HU-01, HU-02, HU-03, HU-04 \newline \textbf{Sprint 1} & 
+		Evaluación de la denegación de accesos no autorizados y validación de tokens de sesión. \\ \hline
+		MR-02: Organizar la estructura territorial jerárquica para la localización administrativa de las incidencias. & 
+		MD-02: Modelo relacional normalizado en PostgreSQL con integridad referencial en cascada para departamentos, municipios y sectores. & 
+		HU-05, HU-06, HU-07 \newline \textbf{Sprint 1} & 
+		Verificación de la consistencia referencial en la cascada de la estructura territorial. \\ \hline
+		MR-03: Mecanismo interactivo para el levantamiento de incidencias con ubicación geográfica y evidencia multimedia. & 
+		MD-03: Interfaz reactiva en Angular con mapa Leaflet sobre OpenStreetMap, geolocalización y carga asíncrona hacia Cloudinary. & 
+		HU-08, HU-09, HU-10 \newline \textbf{Sprint 2} & 
+		Validación del éxito en reportes con georreferencia y pruebas de usabilidad del sistema. \\ \hline
+		MR-04: Clasificar incidencias por tipología y canalizarlas automáticamente a entidades públicas competentes. & 
+		MD-04: Esquema de parametrización para problemáticas, prioridades e instituciones responsables con validadores estrictos. & 
+		HU-11, HU-12, HU-13 \newline \textbf{Sprint 2} & 
+		Verificación de la exactitud en la asignación automática entre problemática e institución competente. \\ \hline
+	\end{tabularx}
+\end{table}
+
+\subsection{Matriz de Trazabilidad e Indicadores de Evaluación (Sprints 3 y 4)}
+
+Se completa la matriz con el seguimiento institucional, análisis y rendimiento del sistema:
+
+\begin{table}[htbp]
+	\centering
+	\caption{Matriz de trazabilidad y evaluación del diseño (Sprints 3 y 4).}
+	\label{tab:trazabilidad_parte2}
+	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+		\hline
+		\textbf{Meta-requisito (MR)} \newline \textit{(DSRM Fase 2)} & 
+		\textbf{Meta-diseño Asociado (MD)} \newline \textit{(DSRM Fase 3)} & 
+		\textbf{Historia / Sprint} \newline \textit{(SCRUM / XP)} & 
+		\textbf{Indicador de Evaluación} \newline \textit{(DSRM Fase 5)} \\ \hline
+		MR-05: Asegurar la trazabilidad operativa y actualización del ciclo de vida de cada reporte comunitario. & 
+		MD-05: Entidad de seguimiento (DetalleReporte) con transiciones de estado validadas y registro cronológico de actuaciones. & 
+		HU-14, HU-15, HU-16 \newline \textbf{Sprint 3} & 
+		Revisión de la integridad en el historial cronológico de los reportes comunitarios. \\ \hline
+		MR-06: Consolidar métricas operativas y paneles visuales para el seguimiento del desempeño institucional. & 
+		MD-06: Controlador de agregación estadística en AdonisJS y renderizado dinámico de gráficos y KPIs mediante ApexCharts. & 
+		HU-17, HU-18 \newline \textbf{Sprint 3} & 
+		Evaluación del tiempo de respuesta en la generación de consultas analíticas del panel de control. \\ \hline
+		MR-07: Mantener integridad transaccional, seguridad y alto rendimiento en las operaciones del sistema. & 
+		MD-07: API REST en AdonisJS v6, indexación de claves foráneas en PostgreSQL, CORS y OpenAPI/Swagger. & 
+		HU-19, HU-20 \newline \textbf{Sprint 4} & 
+		Verificación del rendimiento en las respuestas de la API y estabilidad transaccional del sistema. \\ \hline
+	\end{tabularx}
+\end{table}
+
+\section{Trazabilidad de Historias de Usuario}
+
+Para garantizar la cobertura funcional del sistema Comunica, el \textit{Product Backlog} se desglosa en el inventario detallado de Historias de Usuario (HU-01 a HU-20), las cuales se vinculan directamente con los meta-requisitos establecidos en la Fase 2 del DSRM:
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Trazabilidad detallada de Historias de Usuarios (Parte I: Sprints 1 y 2)}
+	\label{tab:inventario_hu_parte1}
+	\begin{tabularx}{\textwidth}{p{1.2cm} X p{2.5cm}}
 		\toprule
-		\textbf{Meta-requisito (Fase 2)} & \textbf{Meta-diseño (Fase 3)} & \textbf{Historia / Sprint} & \textbf{Indicador de evaluación (Fase 5)} \\
+		\textbf{Código} & \textbf{Descripción de la Historia de Usuario (Rol, Función y Beneficio)} & \textbf{Meta-requisito} \\ 
 		\midrule
-		
-		\textbf{MR-01:} Registrar solicitudes de soporte indicando categoría, prioridad y descripción detallada de la incidencia. & 
-		\textbf{MD-01:} Arquitectura base en Angular (Frontend) y Node.js / Express (Backend) con formularios reactivos y validaciones. & 
-		US-01 / Sprint 1 & 
-		Porcentaje de formularios validados correctamente sin errores de esquema (meta: 80\%). \\
-		\addlinespace[0.5em]
-		
-		\textbf{MR-02:} Permitir adjuntar evidencia fotográfica (JPG/PNG) para documentar visualmente el problema reportado. & 
-		\textbf{MD-02:} Módulo de carga y gestión de archivos adjuntos con control de tamaño y almacenamiento optimizado. & 
-		US-02 / Sprint 2 & 
-		Porcentaje de imágenes almacenadas y visualizadas correctamente en las pruebas (meta: 85\%). \\
-		\addlinespace[0.5em]
-		
-		\textbf{MR-03:} Consultar en tiempo real el historial de reportes y el estado actual de la atención de los casos. & 
-		\textbf{MD-03:} Vistas de consulta de historial con listados cronológicos y actualización de estados en tiempo real. & 
-		US-03 / Sprint 3 & 
-		Tiempo de respuesta en la consulta de listados menor a 2 segundos en pruebas de carga. \\
+		\multicolumn{3}{l}{\textit{\textbf{Sprint 1: Cimientos, Seguridad y Territorio}}} \\ 
+		\addlinespace
+		HU-01 & Como ciudadano, quiero registrarme con mis datos y sector de residencia, para tener acceso a la plataforma. & MR-01 \\ \addlinespace
+		HU-02 & Como usuario registrado, quiero iniciar y cerrar sesión de manera segura, para acceder a mis funciones autorizadas. & MR-01, MR-07 \\ \addlinespace
+		HU-03 & Como usuario autenticado, quiero consultar y editar los datos de mi perfil, para mantener mi información actualizada. & MR-01, MR-07 \\ \addlinespace
+		HU-04 & Como administrador, quiero gestionar los usuarios del sistema y sus roles de acceso, para controlar los permisos de operación. & MR-07 \\ \addlinespace
+		HU-05 & Como administrador, quiero administrar el catálogo de departamentos, para establecer la división regional del país. & MR-02 \\ \addlinespace
+		HU-06 & Como administrador, quiero gestionar los municipios asociados a cada departamento, para organizar el ámbito municipal. & MR-02 \\ \addlinespace
+		HU-07 & Como administrador, quiero registrar y consultar los sectores o barrios vinculados a cada municipio, para permitir la ubicación barrial. & MR-02 \\ 
+		\midrule
+		\multicolumn{3}{l}{\textit{\textbf{Sprint 2: Levantamiento Ciudadano y Canalización}}} \\ 
+		\addlinespace
+		HU-08 & Como ciudadano, quiero capturar mi ubicación actual mediante GPS o arrastrando un pin sobre un mapa interactivo, para señalar con exactitud el lugar de la falla. & MR-03 \\ \addlinespace
+		HU-09 & Como ciudadano, quiero adjuntar fotografías de evidencia al reporte, para mostrar gráficamente la gravedad del problema. & MR-03 \\ \addlinespace
+		HU-10 & Como ciudadano, quiero enviar un reporte completo con descripción, ubicación, sector y problemática, para solicitar atención pública. & MR-03 \\ \addlinespace
+		HU-11 & Como administrador, quiero gestionar el catálogo de problemáticas (baches, luminarias, cables, tuberías), para estandarizar las denuncias. & MR-04 \\ \addlinespace
+		HU-12 & Como administrador, quiero administrar el catálogo de instituciones públicas responsables, para delegar adecuadamente la atención de los reportes. & MR-04 \\ \addlinespace
+		HU-13 & Como ciudadano, quiero consultar el listado de mis reportes enviados y su estado actual, para verificar si están siendo atendidos. & MR-03, MR-05 \\ 
 		\bottomrule
 	\end{tabularx}
 \end{table}
 
-\vspace{0.5cm}
-
-\begin{table}[htbp]
+\begin{table}[!htbp]
 	\centering
-	\caption{Matriz de trazabilidad e indicadores de evaluación (Parte II)}
-	\label{tab:matriz_trazabilidad_2}
-	\begin{tabularx}{\textwidth}{>{\hsize=0.22\hsize}X >{\hsize=0.28\hsize}X >{\hsize=0.22\hsize}X >{\hsize=0.28\hsize}X}
+	\caption{Trazabilidad detallada de Historias de Usuarios (Parte II: Sprints 3 y 4)}
+	\label{tab:inventario_hu_parte2}
+	\begin{tabularx}{\textwidth}{p{1.2cm} X p{2.5cm}}
 		\toprule
-		\textbf{Meta-requisito (Fase 2)} & \textbf{Meta-diseño (Fase 3)} & \textbf{Historia / Sprint} & \textbf{Indicador de evaluación (Fase 5)} \\
+		\textbf{Código} & \textbf{Descripción de la Historia de Usuario (Rol, Función y Beneficio)} & \textbf{Meta-requisito} \\ 
 		\midrule
-		
-		\textbf{MR-04:} Proveer un panel operativo para que el personal de soporte filtre, asigne y actualice reportes. & 
-		\textbf{MD-04:} Panel de operador y soporte con filtros avanzados por categoría, prioridad, estado y registro de notas internas. & 
-		US-04 / Sprint 3 & 
-		Porcentaje de incidencias gestionadas y actualizadas exitosamente en pruebas funcionales. \\
-		\addlinespace[0.5em]
-		
-		\textbf{MR-05:} Visualizar métricas de rendimiento, volumen de reportes y tiempos de resolución de las entidades. & 
-		\textbf{MD-05:} Paneles administrativos e integración con indicadores de tiempo de respuesta y resolución con gráficos estadísticos. & 
-		US-05 / Sprint 4 & 
-		Diferencia entre los cálculos de tiempo del sistema y los valores reales esperados (meta: 0). \\
+		\multicolumn{3}{l}{\textit{\textbf{Sprint 3: Trazabilidad Institucional y Panel Analítico}}} \\ 
+		\addlinespace
+		HU-14 & Como personal institucional, quiero visualizar los reportes asignados a mi entidad, filtrados por sector y estado, para organizar la atención. & MR-05 \\ \addlinespace
+		HU-15 & Como personal institucional, quiero registrar notas de seguimiento y avances en un reporte, para documentar las acciones realizadas. & MR-05 \\ \addlinespace
+		HU-16 & Como personal institucional, quiero cambiar el estado de un reporte (Pendiente, En Proceso, Resuelto), para informar a la ciudadanía. & MR-05 \\ \addlinespace
+		HU-17 & Como administrador o personal institucional autorizado, quiero visualizar un panel con indicadores clave, para medir el rendimiento institucional. & MR-06 \\ \addlinespace
+		HU-18 & Como administrador o personal institucional autorizado, quiero ver gráficos estadísticos de incidencias por tipo y sector, para priorizar recursos en zonas críticas. & MR-06 \\ 
+		\midrule
+		\multicolumn{3}{l}{\textit{\textbf{Sprint 4: Calidad Técnica, Integración y Pruebas}}} \\ 
+		\addlinespace
+		HU-19 & Como desarrollador o evaluador, quiero consultar la documentación interactiva de la API en Swagger, para verificar entradas y salidas. & MR-07 \\ \addlinespace
+		HU-20 & Como equipo técnico, quiero ejecutar pruebas de integración y verificar índices de base de datos, para certificar rendimiento y consistencia. & MR-07 \\ 
 		\bottomrule
 	\end{tabularx}
 \end{table}
@@ -216,8 +304,10 @@ Se establece una matriz de trazabilidad que conecta cada necesidad o meta-requis
 
 \newpage
 \begin{figure}[p]
-	\section{Cronograma de actividades}
-	En esta sección se representan las actividades realizadas para la redacción de la investigación y desarrollo del proyecto de software, representado con diagramas de Grantt.
+	\subsection{Cronograma de actividades}
+	\begin{flushleft}
+		En esta sección se representan las actividades realizadas para la redacción de la investigación y desarrollo del proyecto de software, representado con diagramas de Grantt.
+	\end{flushleft}
 	\centering
 	\begin{ganttchart}[
 		hgrid,
@@ -370,6 +460,11 @@ Se establece una matriz de trazabilidad que conecta cada necesidad o meta-requis
 		\ganttbar{Desarrollo del Marco Metodológico}
 		{3}{4} \\
 		
+		\ganttbar{Matriz de resolución}
+		{4}{4} \\
+		
+		\ganttbar{Desarrollo de Comunica}
+		{5}{5} \\
 	\end{ganttchart}
 	
 	\caption{Cronograma actividades del proyecto (Semana 9 - 16)}
