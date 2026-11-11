@@ -10,13 +10,16 @@ herramienta confiable para la toma de decisiones"(\cite{trejo2019sistema},p.22).
 
 Garantizar una comunicación bidireccional clara entre las entidades prestadoras de servicios y sus usuarios es un factor fundamental para fortalecer la confianza, la transparencia y la credibilidad. En respueta a esta necesidad y con el proposito de mejorar y modernizar la atencion al cliente surge el Proyecto de grado "Comunica"concebido para crear una sola vía de comunicacion  digital que otorgue funcionalidades importantes tanto a usuarios y entidad entorno al envio, recepcion y gestion de incidencias. 
 
-La investigación presente evidencia el desarrollo de la plataforma Comunica. Iniciando las bases de la investigación a través del planteamiento del proyecto, los objetivos, antecedentes, justificación, así como su alcance y limitaciones. Posteriormente, se expone un análisis exhaustivo de la viabilidad del proyecto en sus dimensiones económica, técnica, operativa y legal. A continuación, el marco teórico fundamenta las bases conceptuales y tecnológicas de la solución, abordando temas como los sistemas digitales de atención ciudadana, las buenas prácticas de HelpDesk e ITIL(biblioteca de infraestructura de TI) 4.0, el desarrollo de aplicaciones web y la integración de Sistemas de Información Geográfica (SIG). Finalmente, el documento detalla el marco metodológico aplicado, culminando con la matriz de trazabilidad, el cronograma de actividades y las referencias que sustentan el trabajo desarrollado.
 
+
+
+La investigación presente evidencia el desarrollo de la plataforma Comunica. Iniciando las bases de la investigación a través del \hyperref[subsec:planteamiento]{planteamiento del proyecto}, los \hyperref[subsec:objetivos]{objetivos}, \hyperref[subsec:antecedentes]{antecedentes}, \hyperref[subsec:justificacion]{justificación}, así como su \hyperref[subsec:alcance]{alcance} y \hyperref[subsec:limitaciones]{limitaciones}. Posteriormente, se expone un análisis exhaustivo de la viabilidad del proyecto en sus dimensiones \hyperref[subsec:economica]{económica}, \hyperref[subsec:tecnica]{técnica}, \hyperref[subsec:operativa]{operativa} y \hyperref[subsec:legal]{legal}. A continuación, el \hyperref[subsec:marco_teorico]{marco teórico} fundamenta las bases conceptuales y tecnológicas de la solución, abordando temas como los \hyperref[subsec:sistemas_atencion]{sistemas digitales de atención ciudadana}, las \hyperref[subsec:helpdesk_itil]{buenas prácticas de HelpDesk e ITIL (biblioteca de infraestructura de TI) 4.0}, el \hyperref[subsec:desarrollo_web]{desarrollo de aplicaciones web} y la \hyperref[subsec:sig]{integración de Sistemas de Información Geográfica (SIG)}. Finalmente, el documento detalla el \hyperref[subsec:marco_metodologico]{marco metodológico aplicado}, culminando con la \hyperref[subsec:matriz_trazabilidad]{matriz de trazabilidad}, el \hyperref[subsec:cronograma]{cronograma de actividades}, \hyperref[subsec:cronogramaEjecucion]{cronograma de ejecución}  y las \hyperref[subsec:referencias]{referencias} que sustentan el trabajo desarrollado.
 
 \clearpage
 
 
 \section{Planteamiento del proyecto}
+  \label{subsec:planteamiento}
 En cualquier entorno urbano, residencial o empresarial, la interacción entre los usuarios y la infraestructura que los rodea es constante. De manera natural, surgen incidencias, daños o fallos en los servicios que requieren ser comunicados a las instancias correspondientes para su pronta resolución.
 
 A pesar de la necesidad de gestionar estas incidencias de forma ágil, al analizar el contexto nacional se observa un vacío significativo: no existe evidencia documentada que respalde el desarrollo o la implementación de soluciones tecnológicas enfocadas en modernizar este proceso y mejorar la atención al cliente. Los métodos de atención que prevalecen visibles y accesibles para los usuarios en la ciudad de Rivas, Nicaragua, suelen ser canales tradicionales como el desplazamiento físico a oficinas, buzones de quejas, llamadas telefónicas o correos electrónicos sin estructura definida. Estos métodos presentan limitaciones importantes: algunos exigen movilización, carecen de la opción para adjuntar evidencia visual o ubicación exacta, y no permiten consultar ágilmente el estado del trámite.
@@ -30,7 +33,7 @@ Esta solución elimina fricciones(malos entendidos) al exigir desde el origen in
 \clearpage
 
 \subsection{Objetivos}
-
+\label{subsec:objetivos}
 \subsection{Objetivo General}
 
 Desarrollo de una plataforma web para el registro, almacenamiento, clasificación y seguimiento de reportes de incidencias de los usuarios con el propósito de optimizar los procesos de respuesta y recepción de peticiones.
@@ -45,6 +48,7 @@ Desarrollo de una plataforma web para el registro, almacenamiento, clasificació
 \newpage
 
 \subsection{Antecedentes}
+\label{subsec:antecedentes}
 La incorporación de herramientas tecnológicas en los procesos de gestión pública y privada ha impulsado el desarrollo de soluciones digitales orientadas a mejorar el registro, la organización y el seguimiento de solicitudes e incidencias. En este contexto, la digitalización de dichos procesos representa una alternativa para facilitar la comunicación entre los usuarios y las entidades responsables de su atención. A continuación, se presentan investigaciones previas relacionadas con el desarrollo e implementación de estos sistemas, considerando sus principales características, resultados y aportes a la presente investigación.
 
 \subsection*{Ámbito internacional}
@@ -70,6 +74,7 @@ Finalmente, \textcite{moreno2026desarrollo} examinó el desarrollo de una soluci
 En conjunto, las investigaciones revisadas evidencian el desarrollo de soluciones digitales orientadas a mejorar el registro, clasificación y seguimiento de incidencias mediante plataformas web y aplicaciones móviles. Entre las funcionalidades identificadas destacan la incorporación de evidencias fotográficas, geolocalización, actualización de estados, gestión administrativa y herramientas de análisis de información para apoyar la toma de decisiones. Asimismo, los estudios que presentan resultados de evaluación muestran mejoras en los tiempos de registro y atención de solicitudes. Sin embargo, durante la búsqueda bibliográfica realizada no se identificaron investigaciones desarrolladas en a nivel nacional que abordaran directamente esta problemática o que presentaran soluciones tecnológicas similares. Esta ausencia de antecedentes nacionales identificados resalta la pertinencia de estudiar el desarrollo de Comunica en el municipio de Rivas, considerando las necesidades particulares de la atención y gestión de incidencias ciudadanas.
 
 \subsection{Justificación}
+\label{subsec:justificacion}
 El desarrollo de Comunica surge de la necesidad de facilitar la comunicación de incidencias relacionadas con los servicios y la infraestructura del municipio de Rivas, debido a que estas situaciones pueden representar riesgos para las personas o generar inconformidad respecto a las condiciones en que se mantienen dichos servicios. Aunque algunos ciudadanos comunican estas problemáticas a las entidades correspondientes, existen factores que pueden dificultar la participación de quienes las identifican, como el desconocimiento de los mecanismos disponibles para reportarlas, la imposibilidad de asistir a reuniones comunitarias o el tiempo requerido para trasladarse a las oficinas responsables. Ante estas circunstancias, se considera importante disponer de una alternativa que facilite el proceso de reporte y amplíe las posibilidades de comunicar las incidencias identificadas a las entidades encargadas de su atención.
 
 En este sentido, Comunica se propone como una alternativa digital orientada a facilitar el registro y seguimiento de incidencias mediante una plataforma web que complemente los mecanismos tradicionales de reporte a través de un proceso de información centralizado, organizado y rastreable. Por medio de esta plataforma, los usuarios podrán registrar sus reportes de manera estructurada, incorporando descripciones, evidencias fotográficas y ubicaciones geográficas, sin depender exclusivamente de mecanismos presenciales. Asimismo, podrán consultar el estado de sus solicitudes y conocer las actualizaciones realizadas durante su atención, favoreciendo una comunicación más transparente entre los usuarios y las entidades responsables.
@@ -79,6 +84,7 @@ Desde la perspectiva institucional, el desarrollo de Comunica se justifica por l
 Desde el ámbito académico y tecnológico, la investigación permitirá aplicar conocimientos relacionados con el análisis de requerimientos, el diseño de sistemas de información y el desarrollo de aplicaciones web mediante la construcción y evaluación de una solución orientada a la gestión de incidencias. Asimismo, el proyecto permitirá documentar el proceso de diseño, desarrollo y evaluación de una plataforma tecnológica contextualizada en el municipio de Rivas, cuyos resultados podrán servir como referencia para futuras investigaciones e iniciativas de digitalización de procesos de atención y seguimiento de solicitudes.
 
 \section{Alcance}
+\label{subsec:alcance}
 Comunica se desarrollará como una plataforma web bajo el modelo SaaS, orientada a mejorar la comunicación entre el ciudadano y la entidad responsable para el levantamiento, clasificación y revisión de incidencias que se puedan presentar en el área de servicio. En esta primera etapa se contempla:
 
 \begin{itemize}
@@ -98,6 +104,7 @@ Comunica se desarrollará como una plataforma web bajo el modelo SaaS, orientada
 Estas funcionalidades solo son el alcance inicial de Comunica, el proyecto contempla delimitar los aspectos que quedarán fuera de esta fase. Esto resulta indispensable para mantener el desarrollo dentro de los plazos establecidos y asegurar la viabilidad técnica y académica.
 
 \section{Limitaciones}
+\label{subsec:limitaciones}
 Como Comunica se desarrollará en el marco de este proyecto académico y se concentrará en sus funciones principales, ha sido necesario establecer algunos límites para mantener el trabajo enfocado y realizable:
 
 \begin{itemize}
@@ -117,6 +124,7 @@ Como Comunica se desarrollará en el marco de este proyecto académico y se conc
 En esta sección se evaluara la viabilidad del sistema propuesto a partir de las cuatro dimensiones fundamentales: económica, técnica, operativa y legal. La definición de cada una de ellas ayudara a respaldar la capacidad de poder ejecutar, mantener y escalar el sistema con el fin de volverlo una solución efectiva.
 
 \subsection{Viabilidad Económica}
+\label{subsec:economica}
 La viabilidad económica del proyecto se plantea como una estimación académica a cinco años con el propósito de evaluar la sostenibilidad financiera de la plataforma bajo un modelo de suscripción. Los montos calculados se expresan en córdobas nicaragüenses (C\$), utilizando como referencia un tipo de cambio oficial de \$36.62 por USD 1.00, establecido por el Banco Central de Nicaragua (\cite{BancoCentraldeNicaragua2026}).
 
 \subsection{Inversión Inicial(Costo Desarrollo)}
@@ -267,6 +275,7 @@ Para el análisis de la viabilidad económica, se definen las siguientes expresi
 \end{minipage}
 
 \subsection{Viabilidad Técnica}
+\label{subsec:tecnica}
  El desarrollo de la plataforma web para la gestión de incidencias “Comunica” es técnicamente viable debido a que se fundamenta en una arquitectura de software estandarizada, herramientas de código abierto de amplia adopción y servicios en la nube. La viabilidad de este modelo de Cloud Computing se respalda en investigaciones recientes que demuestran que su uso genera beneficios directos, tales como la reducción de hasta un 40 en costos operativos de infraestructura física y la garantía de una alta disponibilidad mediante el escalamiento automático de recursos bajo demanda \parencite{perez2023cloud}. El equipo investigador cuenta con los conocimientos necesarios en desarrollo Full-Stack(trabajar en Backend y Frontend) para implementar las siguientes tecnologías:
  
  \vspace{0.3cm}
@@ -360,6 +369,7 @@ Este apartado menciona las capacidades que deben tener los equipos para el uso d
 
 
 \subsection{Viabilidad Operativa}
+\label{subsec:operativa}
 
 La viabilidad operativa constituye un componente fundamental en la formulación de proyectos tecnológicos, ya que permite evaluar si la solución propuesta se alinea con las condiciones, capacidades y procesos cotidianos del entorno donde será desplegada. Desde una perspectiva sistémica, la viabilidad de implementación u operativa se entiende como la probabilidad de que la integración de un nuevo sistema de software se pueda llevar a cabo con éxito dentro de su ámbito de aplicación objetivo, garantizando la aceptación y el aprovechamiento por parte de los usuarios \parencite{ReyesGarcia2024}). En el contexto del presente proyecto, analizar esta dimensión es indispensable para comprobar que la plataforma web de incidencias no solo es funcionalmente robusta, sino que realmente puede ser adoptada sin fricciones por la ciudadanía de Rivas y asimilada eficientemente en los flujos de trabajo del personal institucional, mitigando la resistencia al cambio y asegurando la sostenibilidad del sistema a largo plazo
 
@@ -382,6 +392,7 @@ El diseño de la interfaz fue creado con colores amigables a la vista e intuitiv
 \textbf{• Indicadores de eficiencia (tiempo de respuesta, número de incidencias atendidas):} El sistema "Comunica" podrá evaluar la eficiencia debido los tiempos de respuesta según datos como fechas de creación y fecha de solución, así como el estado del reporte para contabilizar los casos gestionados. Toda esta información se consolida en un dashboard estadístico institucional en la aplicación web administrativa, lo que permite a las entidades visualizar en tiempo real el volumen de incidencias atendidas y darles seguimiento.
 
 \subsection{Viabilidad Legal}
+\label{subsec:legal}
 
 El desarrollo del sistema se orienta al cumplimiento del marco jurídico y normativo de la República de Nicaragua, particularmente en lo relativo a la privacidad y la protección de los datos personales de los usuarios.
 

@@ -1,6 +1,7 @@
 % Capítulo 3: Metodología
 % Propósito: Detallar el enfoque metodológico, diseño de investigación, técnicas e instrumentos de recolección de información y la metodología de desarrollo de software seleccionada.
 \section{Marco Metodológico}
+\label{subsec:marco_metodologico}
 
 \subsection{Arquitectura Metodológica e Integración de Enfoques}
 Durante el desarrollo de la presente investigación, se busco adoptar una arquitectura metodológica organizada en tres niveles complementarios, con el objetivo de articular el proceso de investigación científica, la construcción del sustento teórico y el desarrollo técnico de la solución propuesta. Esta estructura permite establecer una relación coherente entre la identificación del problema, el análisis del conocimiento existente y la construcción del artefacto tecnológico, Los niveles se mostraran continuación:
@@ -17,7 +18,7 @@ Para operacionalizar el enfoque DSR se adopta la Design Science Research Methodo
 \end{enumerate} 
 Estas actividades permiten vincular de forma sistemática la problemática estudiada con la construcción del artefacto y su posterior valoración. En el ámbito de los sistemas de información, DSR se orienta a la creación y evaluación de artefactos capaces de ampliar o mejorar las capacidades humanas y organizacionales, generando conocimiento a partir de su construcción y aplicación \parencite{hevner2004design}.
 
-En este proyecto, el artefacto principal corresponde a una plataforma web para el registro, almacenamiento, clasificación y seguimiento de reportes de incidencias, concebida como una solución abierta y adaptable a diferentes contextos institucionales o empresariales. La plataforma busca transformar los procesos de recepción y gestión de reportes en un flujo digital, centralizado y rastreable, incorporando además evidencia fotográfica, ubicación geográfica, actualización de estados, métricas y visualización espacial.
+En este proyecto, el artefacto principal corresponde a una plataforma web para el registro, almacenamiento, clasificación y seguimiento de reportes de incidencias, concebida como una solución abierta y adaptable a diferentes contextos institucionales o empresariales. La plataforma busca transformar los procesos de recepción y gestión de reportes en un flujo digital, centralizado y rastreable, incorporando además evidencia fotográfica, ubicación geográfica, actualización de estados, métricas y visualización espacial con el fin de mejorar la atención al usuario.
 
 Asimismo, \textcite{de2021design} plantea que DSR comprende conceptos, actividades y técnicas vinculadas con las distintas fases de desarrollo de una investigación basada en artefactos, incluyendo tanto su construcción como la producción de conocimiento derivada del proceso de diseño. Esto permite considerar que la contribución de la investigación no se limita al sistema desarrollado, sino que también abarca las decisiones, modelos y procedimientos utilizados para construirlo.
 Tipología del artefacto
@@ -39,7 +40,7 @@ De acuerdo con la clasificación utilizada en DSR, el resultado principal del pr
 		\midrule
 		
 		1. Identificación del problema y motivación &
-		Se analiza la problemática asociada a los procesos de registro, clasificación y seguimiento de reportes de incidencias, considerando aspectos como la dispersión de información, falta de trazabilidad, dependencia de mecanismos no integrados y dificultades para aprovechar los datos históricos. En esta fase se incorpora el estudio de mapeo sistemático (SMS) como apoyo para identificar antecedentes y soluciones existentes. \\
+		Se analiza la problemática asociada a la atencion al usuario en los procesos de registro, clasificación y seguimiento de reportes de incidencias, considerando aspectos como la dispersión de información, falta de transparencia, dependencia de mecanismos no integrados y dificultades para aprovechar los datos históricos. En esta fase se incorpora el estudio de mapeo sistemático (SMS) como apoyo para identificar antecedentes y soluciones existentes. \\
 		
 		\addlinespace
 		\midrule
@@ -90,81 +91,179 @@ Para completar con la fase Identificacion del Problema y motivasion  de la metod
 
 -  ¿Cuáles son las brechas o funcionalidades carentes en la literatura actual respecto a la resolución de esta necesidad en nuestro contexto específico?
 
+
 2- Para la continuidad del Estudio de mapeo Sistemático se realizaron cadenas de búsqueda utlizando palabras de enlace(operadores booleanos) con el fin de encontrar estudios, artículos y publicaciones relevantes que nos permitan encontrar respuestas para nuestras preguntas.
 
 ("sistema de reportes" OR "sistema de incidencias ciudadanas" OR "sistema de quejas ") AND (municipalidad) 
 
-("plataforma web" OR "sistema de información" OR ("incidencias " OR "participación ciudadana" OR "gestión municipal") AND ("Nicaragua")
+("plataforma web" OR "sistema de información" OR ("incidencias " OR "participación ciudadana" OR "gestión municipal") AND ("Nicaragua").
 
-Se continuo con el filtrado de información útil para nuestra causa aplicando inclusión y exclusión.
+("atención al cliente" OR "servicio al cliente") AND ("registro de incidencias" OR "gestión de incidencias") AND ("seguimiento de incidencias" OR monitoreo) AND (clasificación OR categorización)
 
-La cual tubo distintas fases comenzando con la elección de criterios de inclusión en nuestro caso fueron Plataforma web que resolvieran incidencias en distintos ámbitos. Información que fue validada a través de Títulos, lectura de resúmenes y año de publicación lo que dio como resultado la seleccion de los siguientes estudios primarios:\newline 
+("atención al cliente") AND ("sistema de gestión de incidencias" OR "ticketing system") AND (seguimiento OR trazabilidad) AND (clasificación OR priorización)(nicaragua)
 
--	Sistema integral para el reporte y seguimiento de deficiencias del servicio público del municipio de othón p. blanco, quintana roo (072 REPORTES)\newline 
-
--	Desarrollo de un sistema web para el reporte de daños en la infraestructura urbana de la parroquia Anconcito integrando Google Cloud Vision API\newline 
-
--	Sistema help desk para la gestión de incidencias de la municipalidad distrital de San Juan Bautista (mdsjb)\newline 
-
--	Aplicación de un sistema web Help Desk basado en ITIL para el registro y control de requerimientos e incidencias al personal de la Corte Superior de Justicia de Apurímac, año 2020 - 2023 
-
-3. agrupacion segun tipo de aporte
- Tipo de Contribución (el artefacto propuesto) como el Tipo de Investigación (el rigor científico utilizado para validarlo).
-
-A continuación, se resumen los estudios primarios seleccionados y su respectiva agrupación:
+("atención al cliente") AND ("gestión de incidencias") AND ("sistemas de información" OR software) AND (mejora OR optimización OR automatización)(nicaragua)
 
 
-\vspace{0.4cm}
+\textbf{3. Filtrado de artículos para inclusión y exclusión (Artículos relevantes)}
 
-\begin{table}[htbp]
+En esta tercera etapa del Estudio de Mapeo Sistemático aplicamos criterios de inclusión y exclusión directamente alineados con las preguntas de investigación, con el propósito de descartar aquellos estudios que no aportan evidencia relevante. \cite{petersen2008systematic}. Siguiendo los guia de \textcite{petersen2008systematic}, el proceso de filtrado se realiza inspeccionando  los títulos y resúmenes de las publicaciones, excluyendo aquellos trabajos que se encuentran fuera nuestro interes. decartando tambien investigaciones con resumenes carentes de claridad. En la presente investigación, este proceso se estructuró estableciendo como criterios de inclusión el desarrollo o implementación de plataformas web y móviles orientadas a la recepción, seguimiento y resolución de incidencias en ámbitos municipales o institucionales, validando el título, año de publicación y análisis del resumen, lo que dio como resultado la selección final de los siguientes nueve estudios primarios:
+
+\begin{itemize}
+	\item Sistema integral para el reporte y seguimiento de deficiencias del servicio público del municipio de Othón P. Blanco, Quintana Roo (072 REPORTES).
+	\item Desarrollo de un sistema web para el reporte de daños en la infraestructura urbana de la parroquia Anconcito integrando Google Cloud Vision API.
+	\item Sistema \textit{help desk} para la gestión de incidencias de la Municipalidad Distrital de San Juan Bautista (MDSJB).
+	\item Aplicación de un sistema web \textit{Help Desk} basado en ITIL para el registro y control de requerimientos e incidencias al personal de la Corte Superior de Justicia de Apurímac, año 2020--2023.
+	\item Aplicación Mi Queja en el municipio del Litoral del San Juan-Chocó.
+	\item Diseño, desarrollo y despliegue de una aplicación web para la gestión de PQRSD (Peticiones, Quejas, Reclamos, Sugerencias y Denuncias) para la Secretaría de Tránsito y Transporte de Girardot, Cundinamarca.
+	\item Desarrollo de un prototipo móvil para la optimización de rutas de recolección y el reporte ciudadano de acumulación de residuos sólidos en la ciudad de Latacunga, implementado para la Empresa Pública EPAGAL.
+	\item Desarrollo de una plataforma web geoespacial colaborativa para el registro anónimo y el análisis territorial de incidentes urbanos mediante reportes ciudadanos en Guayaquil.
+	\item Desarrollo de una plataforma web colaborativa para el reporte y análisis espacial de factores de riesgo urbano en la localidad de Engativá, orientada a fortalecer la seguridad ciudadana preventiva.
+\end{itemize}
+
+
+\textbf{4. Agrupación según tipo de aporte}
+
+Para estructurar el mapeo de la literatura, los estudios se clasifican considerando dos facetas principales: el \textbf{Tipo de Contribución} (el artefacto tecnológico propuesto) y el \textbf{Tipo de Investigación} (el rigor científico utilizado para validarlo).
+
+Para determinar el tipo de investigación, se adoptó el esquema de clasificación propuesto por \cite{wieringa2014design}. Este modelo permite categorizar el nivel de evidencia y novedad de los artículos, distinguiendo principalmente entre:
+\begin{itemize}
+	\item \textbf{Investigación de Validación (\textit{Validation Research}):} Técnicas o herramientas novedosas que aún no se han implementado en la práctica real, sino que se prueban en entornos de laboratorio, experimentales o controlados.
+	\item \textbf{Investigación de Evaluación (\textit{Evaluation Research}):} Soluciones que ya han sido implementadas en la práctica real (entornos institucionales o industriales) y cuya evaluación mide empíricamente sus beneficios y consecuencias en dicho contexto.
+\end{itemize}
+
+A continuación, se resumen los estudios primarios seleccionados y su respectiva agrupación bajo estos criterios:
+
+\renewcommand{\arraystretch}{1.4}
+\begin{longtable}{@{} c >{\raggedright\arraybackslash}p{4cm} l l >{\raggedright\arraybackslash}p{5.5cm} @{}}
+	\caption{Estudios Primarios y agrupación} \\
+	\toprule
+	\textbf{Ref.} & \textbf{Título del Estudio} & \textbf{Contribución} & \textbf{Tipo de Inv.} & \textbf{Descripción de la Solución y Método de Validación} \\
+	\midrule
+	\endfirsthead
+	
+	\multicolumn{5}{c}{\textbf{\tablename\ \thetable\ -- Continuación}} \\
+	\toprule
+	\textbf{Ref.} & \textbf{Título del Estudio} & \textbf{Contribución} & \textbf{Tipo de Inv.} & \textbf{Descripción de la Solución y Método de Validación} \\
+	\midrule
+	\endhead
+	
+	\midrule
+	\multicolumn{5}{r}{\textit{Continúa en la siguiente página...}} \\
+	\endfoot
+	
+	\bottomrule
+	\endlastfoot
+	
+	\textbf{[1]} & Sistema integral para el reporte y seguimiento de deficiencias del servicio público (Othón P. Blanco, Quintana Roo). & Herramienta (\textit{Tool}) & \textit{Validation} & Plataforma e-Gobierno (Web + App móvil). Se enfoca en análisis de requerimientos, diseño modular MVC y pruebas funcionales de operatividad técnica. \\
+	\addlinespace
+	\textbf{[2]} & Desarrollo de un sistema web para el reporte de daños urbanos integrando Google Cloud Vision API (Parroquia Anconcito). & Herramienta (\textit{Tool}) & \textit{Validation} & Plataforma web con geolocalización e IA para validar fotografías. Validado mediante prueba piloto controlada (15 usuarios) midiendo usabilidad, sin integración real. \\
+	\addlinespace
+	\textbf{[3]} & Sistema \textit{help desk} para la gestión de incidencias de la municipalidad distrital de San Juan Bautista. & Herramienta (\textit{Tool}) & \textit{Validation} & Sistema en .NET y SQL Server basado en ITIL y RUP. Levantamiento de requisitos y medición de usabilidad esperada mediante el estándar SUS. \\
+	\addlinespace
+	\textbf{[4]} & Aplicación de un sistema web \textit{Help Desk} basado en ITIL para la Corte Superior de Justicia de Apurímac (2020-2023). & Herramienta (\textit{Tool}) & \textit{Evaluation} & Sistema web (GLPI v.10). Evaluado en un entorno real mediante diseño pre-experimental, demostrando reducción de tiempos (de 62 a 15 min) y satisfacción de interfaz (QUIS). \\
+	\addlinespace
+	\textbf{[5]} & Aplicación Mi Queja en el municipio del Litoral del San Juan-Chocó. & Herramienta (\textit{Tool}) & \textit{Validation} & Plataforma web y móvil para el registro de quejas con número de radicado, notificaciones automáticas y tablero administrativo. Validada a nivel funcional para comunidades dispersas. \\
+	\addlinespace
+	\textbf{[6]} & Diseño, desarrollo y despliegue de una aplicación web para la gestión de PQRSD (Secretaría de Tránsito de Girardot). & Herramienta (\textit{Tool}) & \textit{Validation} & Aplicación web que centraliza solicitudes ciudadanas sustituyendo registros manuales y en Access. Integra asignación de responsables, trazabilidad de estados y validación funcional del flujo administrativo. \\
+	\addlinespace
+	\textbf{[7]} & Desarrollo de un prototipo móvil para la optimización de rutas de recolección y reporte de residuos sólidos (Latacunga, EPAGAL). & Herramienta (\textit{Tool}) & \textit{Validation} & Prototipo móvil georreferenciado con categorización de incidencias y plataforma web administrativa para asignar rutas operativas. Validado a nivel de prototipo funcional en entorno controlado. \\
+	\addlinespace
+	\textbf{[8]} & Desarrollo de una plataforma web geoespacial colaborativa para el registro anónimo y análisis territorial de incidentes (Guayaquil). & Herramienta (\textit{Tool}) & \textit{Validation} & Plataforma web colaborativa con geolocalización y anonimato orientada al análisis territorial. Validada mediante pruebas funcionales de representación espacial y concentración de reportes. \\
+	\addlinespace
+	\textbf{[9]} & Desarrollo de una plataforma web colaborativa para el reporte y análisis espacial de factores de riesgo urbano (Engativá). & Herramienta (\textit{Tool}) & \textit{Validation} & Sistema web enfocado en seguridad ciudadana preventiva que vincula reportes colaborativos con herramientas de análisis espacial. Validado en su operatividad para focalizar sectores de atención. \\
+\end{longtable}
+
+	ademas para definir la faceta de enfoque temático, se aplicó la técnica de extracción de palabras clave de los resúmenes (\textit{keywording using abstracts}) propuesta por \textcite{petersen2008systematic}. Mediante la lectura e identificación de palabras centrales en los nueve estudios primarios, se agruparon sus aportes en tres categorías temáticas: (1) reporte urbano georreferenciado, (2) gestión de quejas y PQRSD(Peticiones, Quejas, Reclamos, Sugerencias y Denuncias), y (3) sistemas \textit{Help Desk} e incidencias institucionales basados en ITIL. Las cuales serán útiles para la visualización de los datos que posteriormente se representaran en un grafico de burbujas.
+
+
+
+\textbf{5. Visualización de datos, análisis del mapa sistemático e identificación de brechas}
+
+En cumplimiento con las directrices de \textcite{petersen2008systematic} para estudios de mapeo sistemático, los resultados de la clasificación se visualizan a través de un gráfico de burbujas (\textit{bubble plot}). Como se observa en la Figura~\ref{fig:bubble_plot}, esta visualización cruza la faceta del tipo de contribución tecnológica con el rigor científico utilizado para validarla según el esquema de \textcite{wieringa2014design}, articulándolas además con el enfoque temático de los nueve estudios primarios seleccionados.
+
+\begin{figure}[htbp]
+	\shorthandoff{<>}
 	\centering
-	\caption{Estudios Primarios y agrupacion}
-	\vspace{0.2cm}
-	\renewcommand{\arraystretch}{1.4}
-	\begin{tabularx}{\textwidth}{@{} c >{\raggedright\arraybackslash}p{4cm} l l X @{}}
-		\toprule
-		\textbf{Ref.} & \textbf{Título del Estudio} & \textbf{Contribución} & \textbf{Tipo de Inv.} & \textbf{Descripción de la Solución y Método de Validación} \\
-		\midrule
-		\textbf{[1]} & Sistema integral para el reporte y seguimiento de deficiencias del servicio público (Othón P. Blanco, Quintana Roo). & Herramienta (\textit{Tool}) & \textit{Validation} & Plataforma e-Gobierno (Web + App móvil). Se enfoca en análisis de requerimientos, diseño modular MVC y pruebas funcionales de operatividad técnica. \\
-		\addlinespace
-		\textbf{[2]} & Desarrollo de un sistema web para el reporte de daños urbanos integrando Google Cloud Vision API (Parroquia Anconcito). & Herramienta (\textit{Tool}) & \textit{Validation} & Plataforma web con geolocalización e IA para validar fotografías. Validado mediante prueba piloto controlada (15 usuarios) midiendo usabilidad, sin integración real. \\
-		\addlinespace
-		\textbf{[3]} & Sistema \textit{help desk} para la gestión de incidencias de la municipalidad distrital de San Juan Bautista. & Herramienta (\textit{Tool}) & \textit{Validation} & Sistema en .NET y SQL Server basado en ITIL y RUP. Levantamiento de requisitos y medición de usabilidad esperada mediante el estándar SUS. \\
-		\addlinespace
-		\textbf{[4]} & Aplicación de un sistema web \textit{Help Desk} basado en ITIL para la Corte Superior de Justicia de Apurímac (2020-2023). & Herramienta (\textit{Tool}) & \textit{Evaluation} & Sistema web (GLPI v.10). Evaluado en un entorno real mediante diseño pre-experimental, demostrando reducción de tiempos (de 62 a 15 min) y satisfacción de interfaz (QUIS). \\
-		\bottomrule
-	\end{tabularx}
-	\vspace{0.2cm}\\
-	\raggedright \footnotesize{\textit{Nota: Validation Research corresponde a herramientas novedosas probadas en entornos controlados; Evaluation Research corresponde a herramientas implementadas y evaluadas formalmente en la práctica real.}}
-\end{table}  
+	\shorthandoff{<>}
+	\begin{tikzpicture}[scale=0.92, every node/.style={transform shape}]
+		% Ejes principales
+		\draw[thick, <->] (-5.5,0) -- (6.5,0);
+		\draw[thick, -] (0,0) -- (0,5.5);
+		
+		% Líneas de cuadrícula punteadas verticales
+		\draw[dashed, gray!60] (-3.3,0) -- (-3.3,5.2);
+		\draw[dashed, gray!60] (2.6,0) -- (2.6,5.2);
+		\draw[dashed, gray!60] (5.0,0) -- (5.0,5.2);
+		
+		% Líneas de cuadrícula punteadas horizontales
+		\draw[dashed, gray!60] (-5.2,1.5) -- (6.2,1.5);
+		\draw[dashed, gray!60] (-5.2,3.0) -- (6.2,3.0);
+		\draw[dashed, gray!60] (-5.2,4.5) -- (6.2,4.5);
+		
+		% Etiquetas del eje vertical central (Faceta Temática / Enfoque)
+		\node[align=center, font=\bfseries\small] at (0,5.8) {Faceta de Enfoque Temático};
+		\node[align=center, fill=white, inner sep=3pt, font=\footnotesize] at (0,4.5) {Reporte urbano\\georreferenciado};
+		\node[align=center, fill=white, inner sep=3pt, font=\footnotesize] at (0,3.0) {Gestión de quejas\\y PQRSD};
+		\node[align=center, fill=white, inner sep=3pt, font=\footnotesize] at (0,1.5) {\textit{Help Desk} e incidencias\\institucionales (ITIL)};
+		
+		% Categorías del eje horizontal izquierdo
+		\node[anchor=north, align=center, font=\footnotesize] at (-3.3,-0.15) {Herramienta (\textit{Tool})\\9 (100\,\%)};
+		\node[anchor=north, align=center, font=\bfseries\small] at (-3.3,-1.25) {Faceta de Contribución\\100\,\% (9)};
+		
+		% Categorías del eje horizontal derecho
+		\node[anchor=north, align=center, font=\footnotesize] at (2.6,-0.15) {\textit{Validation}\\\textit{Research}\\8 (88,9\,\%)};
+		\node[anchor=north, align=center, font=\footnotesize] at (5.0,-0.15) {\textit{Evaluation}\\\textit{Research}\\1 (11,1\,\%)};
+		\node[anchor=north, align=center, font=\bfseries\small] at (3.8,-1.55) {Faceta de Investigación\\100\,\% (9)};
+		
+		% Burbujas cuadrante izquierdo (Contribución vs Enfoque)
+		\filldraw[fill=blue!15, draw=blue!70!black, thick] (-3.3,4.5) circle (0.68cm);
+		\node[font=\bfseries\small] at (-3.3,4.5) {5};
+		\node[font=\scriptsize, below right] at (-2.7,4.1) {55,6\,\%};
+		
+		\filldraw[fill=blue!15, draw=blue!70!black, thick] (-3.3,3.0) circle (0.43cm);
+		\node[font=\bfseries\small] at (-3.3,3.0) {2};
+		\node[font=\scriptsize, below right] at (-2.9,2.7) {22,2\,\%};
+		
+		\filldraw[fill=blue!15, draw=blue!70!black, thick] (-3.3,1.5) circle (0.43cm);
+		\node[font=\bfseries\small] at (-3.3,1.5) {2};
+		\node[font=\scriptsize, below right] at (-2.9,1.2) {22,2\,\%};
+		
+		% Burbujas cuadrante derecho (Investigación vs Enfoque)
+		\filldraw[fill=teal!15, draw=teal!70!black, thick] (2.6,4.5) circle (0.68cm);
+		\node[font=\bfseries\small] at (2.6,4.5) {5};
+		\node[font=\scriptsize, below right] at (3.2,4.1) {55,6\,\%};
+		
+		\filldraw[fill=teal!15, draw=teal!70!black, thick] (2.6,3.0) circle (0.43cm);
+		\node[font=\bfseries\small] at (2.6,3.0) {2};
+		\node[font=\scriptsize, below right] at (3.0,2.7) {22,2\,\%};
+		
+		\filldraw[fill=teal!15, draw=teal!70!black, thick] (2.6,1.5) circle (0.30cm);
+		\node[font=\bfseries\small] at (2.6,1.5) {1};
+		\node[font=\scriptsize, below right] at (2.9,1.3) {11,1\,\%};
+		
+		\filldraw[fill=orange!20, draw=orange!80!black, thick] (5.0,1.5) circle (0.30cm);
+		\node[font=\bfseries\small] at (5.0,1.5) {1};
+		\node[font=\scriptsize, below right] at (5.3,1.3) {11,1\,\%};
+	\end{tikzpicture}
+	\caption{Visualización del mapa sistemático mediante gráfico de burbujas (\textit{bubble plot}).}
+	\label{fig:bubble_plot}
+\end{figure}
 
-4. Análisis de Brechas (Gaps) y Motivación del Proyecto
-La ejecución del Estudio de Mapeo Sistemático permitió dar respuesta a las preguntas de investigación iniciales. Se determinó que las soluciones digitales estándar en este ámbito son plataformas web con módulos móviles que incorporan geolocalización, seguimiento de tickets, evidencia fotográfica y en algunos casos, marcos de trabajo ITIL o IA.
+La ejecución de este Estudio de Mapeo Sistemático permitió dar respuesta a las preguntas de investigación iniciales, determinando que el 100\,\% de los estudios primarios analizados (9 de 9) tienen como contribución principal el desarrollo de una herramienta tecnológica (\textit{Tool}). Dichas soluciones digitales corresponden a plataformas web y aplicaciones móviles que incorporan como funcionalidades: geolocalización, seguimiento de solicitudes o tickets, evidencia fotográfica, análisis espacial y, en casos específicos, validación de imágenes mediante inteligencia artificial o buenas prácticas del marco de trabajo ITIL.
 
-Sin embargo, el mapeo revela brechas significativas (nichos no explorados) que fundamentan la necesidad del presente proyecto:
+Sin embargo, el mapa visual pone en evidencia brechas significativas (nichos no explorados) en el estado del arte:
 
-Enfoque limitado: existie una escasez de estudios que analicen cómo la visibilidad del estado de los reportes y la justificación de tiempos de respuesta impactan la percepción del usuario final.
+\begin{itemize}
+	\item \textbf {Al examinar la faceta del tipo de investigación}, se concluye que la frecuencia de publicaciones se inclina hacia la Investigación de Validación (\textit{Validation Research}), concentrando 8 de los 9 estudios primarios, frente a un único estudio catalogado como Investigación de Evaluación (\textit{Evaluation Research}). Más aún, el único antecedente con evaluación en un entorno real corresponde al ámbito de soporte informático interno (\textit{Help Desk}), mientras que la totalidad de las plataformas orientadas al reporte ciudadano urbano (5 estudios) y a la atención de quejas municipales (2 estudios) permanecen en fases de prototipo o validación funcional controlada, sin evaluar su impacto operativo real tras su despliegue institucional.
+	
+	\item \textbf{Enfoque limitado en la retroalimentación al ciudadano:} Existe una escasez de investigaciones que analicen cómo la visibilidad continua del estado de los reportes y la comunicación de los motivos de demora en la resolución de incidencias impactan en la percepción y satisfacción del usuario final frente a las entidades de servicio.
+	
+	\item \textbf{Vacío literario en el contexto nacional:} La aplicación de las cadenas de búsqueda arrojó cero estudios o publicaciones científicas dentro de los criterios de inclusión para el ámbito nicaragüense. Esto demuestra una ausencia de literatura académica documentada sobre el diseño, implementación, validación o evaluación de plataformas tecnológicas de gestión de incidencias de ususarios adaptable a las condiciones operativas y de infraestructura de Nicaragua.
+\end{itemize}
 
-Vacío Literario en el Contexto Nacional: La aplicación de las cadenas de búsqueda arrojó una ausencia absoluta de antecedentes documentados para el contexto nicaragüense. Existe un vacío total de literatura científica sobre la implementación o evaluación de plataformas de gestión de incidencias desarrolladas específicamente para la infraestructura tecnológica de Nicaragua.
+\textbf{Motivación de la solución:} En este sentido, el desarrollo de la plataforma web \textit{Comunica} encuentra su justificación científica y técnica bajo el marco de la metodología DSRM. El proyecto no solo se alinea con la tendencia internacional de sistematizar y georreferenciar el flujo de atención de insidencias ciudadanas, sino que aborda un nicho geográfico y metodológico inexplorado. Su creación en el municipio de Rivas aportará el primer precedente académico y tecnológico en el contexto nicaragüense, dado que las soluciones internacionales identificadas en los antecedentes están diseñadas a la medida de sus propios entornos y no pueden transferirse directamente sin una reestructuración profunda que responda a las necesidades locales.la motivación de esta propuesta radica en resolver las ineficiencias de la gestión tradicional actual mediante la construcción de un artefacto viable, su valor científico y práctico no consiste en reinventar el concepto de reporte de insidencias, sino en diseñar una arquitectura propia que supere las limitantes de adaptabilidad de los sistemas extranjeros, aplique mejoras con funcionalidades practicas en la comunicacion entidad usuario y siente las bases documentales para futuras investigaciones en Nicaragua.
 
-Motivación de la Solución:
-En este sentido, el desarrollo de la plataforma web encuentra su justificación científica y técnica bajo el marco de la metodología DSRM. El proyecto no solo se va acorde con la tendencia tecnológica de sistematizar reportes, sino que aborda un nicho geográfico inexplorado. Su creacion aportará el primer precedente académico evaluable en el contexto nicaragüense, cubriendo el vacío identificado en el estado del arte y sentando las bases tecnológicas y documentales para futuras investigaciones en el pais.
-
-4-	Tipo de Investigación: Investigación de Evaluación ( Evaluation Research ). El estudio implementa la solución en una organización real (Corte Superior de Apurímac) y evalúa su impacto en producción mediante un diseño pre-experimental. Compara el estado inicial sin el sistema (registros en Excel de 2020-2021) frente al estado final (reportes exportados del sistema entre 2022-2023), demostrando una reducción en el tiempo promedio de atención (de 62 a 15 minutos) y aplicando la prueba estadística t-Student junto con encuestas de satisfacción de interfaz (QUIS)\newline 
-
-Para cerrar con el SMS la identificaion de nichos no explorados se concluye que entre la búsqueda que se realizo la frecuencia de estudios se inclinan hacia Validation Research de los cuales 3 de este tipo fueron encontrados y 1 sobre Evaluation Research.  
-
-El mapeo sistemático revela cosas claras sobre el estado del arte en la resolución de incidencias entre usuarios y entidades de servicio, resaltando áreas que aún no han sido investigadas y es que:
-
-Se encuentra los escases sobre el cómo la vista del estado de los reportes y la forma en que las entidades dan a conocer los motivos de su tardanza en su solución de las incidencias generan un impacto significativo en como son evaluadas por sus usuarios. 
-
-Además, se encontró una Ausencia absoluta de antecedentes documentados en el contexto nacional: Al aplicar distintas cadenas de búsqueda los resultados arrojaron cero estudios o publicaciones científicas dentro de los criterios de inclusión. Esto evidencia un vacío total de literatura académica documentada sobre la implementación, validación o evaluación de plataformas de gestión de incidencias generales o institucionales desarrolladas específicamente en el contexto tecnológico de Nicaragua.
-
-La ejecución de este Estudio de Mapeo Sistemático responde a las preguntas de investigación iniciales, determinando que las soluciones digitales aplicadas suelen ser plataformas web con módulos móviles, incorporando geolocalización, seguimiento de tickets, evidencia fotográfica y en casos aislados, validación por IA o marcos de trabajo ITIL.
-
-Si bien estas funcionalidades suplen las necesidades de reporte, el mapa visual destaca brechas significativas: las soluciones existentes raramente trascienden la fase de validación técnica para medir su impacto operativo real. De manera aún más crítica, el mapeo confirma la inexistencia de investigaciones previas sobre este tipo de soluciones tecnológicas en Nicaragua. 
-
-En este sentido, el desarrollo de la plataforma web Comunica encuentra su justificación científica y técnica. El proyecto no solo se inserta en la tendencia de aportar herramientas con reportes estructurados, sino que lo hace abordando un nicho geográfico inexplorado. El desarrollo de la plataforma en la ciudad de Rivas aportará el primer precedente evaluable en el contexto nicaragüense, cubriendo el vacío identificado en el estado del arte y sentando las bases para futuras investigaciones de evaluación en la región.
 
 \newpage
 \section{Nivel Tactico}
@@ -183,6 +282,7 @@ Para asegurar un buen nivel técnico y evitar acumular problemas en el código, 
 
 
 \subsection{Matriz de Trazabilidad e Indicadores de Evaluación (Sprints 1 y 2)}
+\label{subsec:matriz_trazabilidad}
 Se establece la primera sección de la matriz de trazabilidad conectando los meta-requisitos iniciales, decisiones de diseño, las unidades de desarrollo técnico y la evaluación final:
 
 \begin{table}[htbp]
@@ -306,6 +406,7 @@ Para garantizar la cobertura funcional del sistema Comunica, el \textit{Product 
 \newpage
 
 \subsection{Cronograma de actividades}
+\label{subsec:cronograma}
 En esta sección se presenta el cronograma de actividades correspondiente a la documentación y al desarrollo de la plataforma web Comunica. Las actividades se organizan en dos grupos principales, permitiendo visualizar su distribución temporal durante el período comprendido entre el 27 de julio y el 16 de noviembre del año 2026.
 \begin{landscape}
 	\begin{figure}[p]
