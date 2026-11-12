@@ -127,10 +127,12 @@ En esta sección se evaluara la viabilidad del sistema propuesto a partir de las
 \label{subsec:economica}
 La viabilidad económica del proyecto se plantea como una estimación académica a cinco años con el propósito de evaluar la sostenibilidad financiera de la plataforma bajo un modelo de suscripción. Los montos calculados se expresan en córdobas nicaragüenses (C\$), utilizando como referencia un tipo de cambio oficial de \$36.62 por USD 1.00, establecido por el Banco Central de Nicaragua (\cite{BancoCentraldeNicaragua2026}).
 
-\subsection{Inversión Inicial(Costo Desarrollo)}
-Para iniciar con el diseño, desarrollo y puesta en marcha del proyecto Comunica, se determina una estimación cuantitativa de la inversión inicial requerida, la que abarca la valoración del talento humano del equipo de desarrollo y las herramientas tecnológicas necesarias durante la fase preliminar. 
+\subsection{Inversión Inicial (Costo Desarrollo)}
+Para iniciar con el diseño, desarrollo y puesta en marcha del proyecto Comunica, se determina una estimación cuantitativa de la inversión inicial requerida, la que abarca la valoración del talento humano del equipo de desarrollo y las herramientas tecnológicas necesarias durante la fase preliminar.
 
-La inversión inicial se calcula en un total de C\$110,918.00 (equivalentes a aproximadamente \$3,028.54 USD). Este monto contempla la retribución estimada para el equipo de desarrollo compuesto por tres integrantes (un desarrollador backend, un desarrollador frontend y un diseñador/gestor de proyectos), se contempla que durante la etapa de construcción del sistema, herramientas como Leaflet, Render, Netlify, DBeaver, Visual Studio Code y GitHub operan bajo sus planes o niveles gratuitos disponibles, de modo que no generan un costo directo inicial de infraestructura en esta primera fase.
+El costo de desarrollo se calcula en un total de C\$93,672.00, equivalente aproximadamente a USD 2,557.95. Este monto contempla la valoración académica del trabajo de tres desarrolladores de software durante un periodo aproximado de 62 días calendario, considerado para efectos presupuestarios como dos meses de remuneración por integrante. Se utiliza una referencia mensual de C\$15,612.00 por desarrollador, correspondiente al límite inferior del rango salarial neto inicial reportado por WageIndicator Foundation (\cite{wageindicator2026nicaragua}) para desarrolladores de software en Nicaragua.
+
+Asimismo, durante la etapa de construcción del sistema, se contempla el uso de Geoapify, Render, Netlify, DBeaver, Visual Studio Code y GitHub bajo sus versiones, planes o niveles gratuitos disponibles, dentro de sus respectivos límites y condiciones de uso, de modo que no generan un costo directo inicial de infraestructura en esta primera fase.
 
 \begin{table}[htbp]
 	\centering
@@ -138,141 +140,137 @@ La inversión inicial se calcula en un total de C\$110,918.00 (equivalentes a ap
 	\label{tab:costos_desarrollo_comunica}
 	\begin{tabularx}{\textwidth}{l X c X}
 		\toprule
-		\textbf{Categoría} & \textbf{Elemento} & \textbf{Costo Estimado (C\$)} & \textbf{Explicación} \\
+		\textbf{Categoría} & \textbf{Elemento} & \textbf{Costo estimado (C\$)} & \textbf{Explicación} \\
 		\midrule
-		Talento Humano & Desarrollador Backend & 38,471.00 & Salario estimado de C\$620 por día de desarrollo. \\
-		Talento Humano & Desarrollador Frontend & 38,471.00 & Salario estimado de C\$620 por día de desarrollo. \\
-		Talento Humano & Diseñador / Project Manager & 33,976.00 & Salario estimado de C\$548 por día de desarrollo. \\
-		Servicios e Infraestructura & Leaflet, Render, Netlify, DBeaver, VS Code, GitHub, Cloudinary & 0.00 & Durante la etapa de desarrollo se emplean los planes y capas gratuitas de estos servicios. \\
+		Talento humano & Tres desarrolladores de software & 93,672.00 & Tres integrantes $\times$ C\$15,612.00 mensuales $\times$ dos meses. \\
+		Herramientas y servicios & Geoapify, Render, Netlify, DBeaver, Visual Studio Code, GitHub y Cloudinary & 0.00 & Se consideran modalidades gratuitas durante el desarrollo, sujetas a sus límites de uso. \\
 		\midrule
-		\textbf{Total} & — & \textbf{110,918.00} & \textbf{Equivalente aproximado a \$3,028.54 USD.} \\
+		\textbf{Total} & — & \textbf{93,672.00} & \textbf{Equivalente aproximado a USD 2,557.95.} \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
 
+\subsection{Mercado Objetivo y Estudio de Mercado Pendiente}
+El mercado inicial de estudio estaría integrado por empresas privadas del municipio de Rivas que necesiten registrar, asignar y dar seguimiento a incidencias o solicitudes de sus usuarios. Se considerarán organizaciones para las cuales resulten útiles las funciones de evidencias fotográficas, ubicación de incidencias, consulta de estados e informes estadísticos.
+
+Para identificar posibles compradores, se verificará que las empresas tengan un proceso de atención compatible con Comunica y personal responsable de gestionar los reportes. La disponibilidad de presupuesto y la disposición de adquisición se consultarán mediante el estudio de mercado; no se asumirán únicamente por tratarse de empresas privadas.
+
+El estudio de mercado no se ha realizado debido a las limitaciones de tiempo del periodo académico. Su ejecución está prevista para completar la evaluación comercial del proyecto. El estudio permitirá identificar las empresas que cumplen con el perfil definido, conocer sus procedimientos actuales, comparar las alternativas que utilizan y evaluar su interés en adquirir Comunica y su aceptación del precio propuesto.
+
+El estudio también evaluará la aceptación del precio propuesto de C\$10,000.00 por licencia. El listado de empresas elegibles se elaborará antes de determinar la cantidad de participantes. Si la población identificada es pequeña y accesible, se procurará consultar a todas las empresas que la integren, registrando las respuestas y las limitaciones de participación.
+
+Como posibilidad de expansión comercial, se contempla ofrecer Comunica a empresas de otros municipios que presenten necesidades similares. Esta alternativa no modifica el territorio inicial del estudio ni se incorpora como una previsión de compradores confirmados.
+
 \subsection{Costos de Operación, Mantenimiento y Modelo Comercial}
+Se propone la venta de licencias de uso no exclusivas, de manera que la plataforma pueda ofrecerse a distintas empresas y el costo de desarrollo se recupere mediante varias ventas. Cada empresa contaría con una instalación independiente para mantener separada su información.
 
-Con el fin de asegurar la sostenibilidad a largo plazo y evitar una alta inversión inicial que dificulte la adopción del sistema por parte de cualquier organizacion, el proyecto ha sido concebido bajo un modelo de suscripción basado en Software como Servicio (SaaS)
+Se propone un precio inicial de C\$10,000 por licencia de uso no exclusiva de Comunica, sujeto a revisión mediante el estudio de mercado y la estimación de los costos de instalación, configuración y capacitación. La recuperación del desarrollo se distribuiría entre varias ventas, en lugar de trasladar su costo completo a una sola empresa.
 
-Los costos operativos mensuales fijos para mantener la plataforma funcionando en la nube ascienden a (\$124.00 USD mensuales), los cuales comprenden el alojamiento de la API y base de datos en Render (\$25.00)(\cite{render2026}), el alojamiento de la interfaz web en Netlify (\$20.00)(\cite{netlify2026}), la seguridad y certificados SSL en Cloudflare (\$20.00)(\cite{cloudflare2026}), y el servicio de cartografía digital Geoapify Plan API 10 (\$59.00) (\cite{ geoapify2026}). Adicionalmente, se contemplan gastos anuales independientes para asegurar la operatividad continua, tales como el almacenamiento de evidencias visuales en Cloudinary \$99.00 anuales(\cite{cloudinary2026}) y la adquisición del dominio institucional en NameCheap (\$6.79 anuales)(\cite{, namecheap2026}).
+La empresa realizaría un pago único por la licencia de uso de Comunica. En el contrato se establecería que los gastos de alojamiento, base de datos, almacenamiento y dominio necesarios para el funcionamiento de la plataforma serían asumidos por la empresa adquirente.
+
+La Tabla 2 presenta una configuración de referencia para presupuestar la operación. No representa un monto obligatorio para todas las empresas ni implica que deban contratarse todos los planes de pago desde el inicio. La selección se ajustaría a las necesidades de cada instalación y a las capacidades comprobadas mediante pruebas. Las tarifas deberán actualizarse antes de contratar los servicios.
 
 \begin{table}[htbp]
 	\centering
 	\caption{\emph{Estructura de costos operativos y esquema comercial de la plataforma}}
 	\label{tab:estructura_costos_comunica}
-	\small % Reduce ligeramente la letra para que la tabla luzca limpia y profesional
-	\renewcommand{\arraystretch}{1.3} % Añade espacio vertical entre las filas para que no se vea pegado
+	\small 
+	\renewcommand{\arraystretch}{1.3} 
 	\begin{tabularx}{\textwidth}{p{3.5cm} X p{2.8cm}}
 		\toprule
 		\textbf{Componente} & \textbf{Detalle / Proveedor} & \textbf{Costo / Tarifa} \\
 		\midrule
 		Costos Operativos Mensuales (Infraestructura) & Render (\$25.00), Netlify (\$20.00), Cloudflare (\$20.00) y Geoapify (\$59.00) & \$124.00 USD / mes \\
-		\addlinespace % Espacio extra opcional entre filas clave
+		\addlinespace 
 		Gastos Anuales Independientes & Cloudinary (\$99.00 / año) y NameCheap (\$6.79 / año) & \$105.79 USD / año \\
-		\addlinespace
-		Esquema Comercial: Mes de Enero (Arranque) & Tarifa que cubre infraestructura del mes, totalidad de servicios anuales y ganancia inicial & \$330.00 USD \\
-		\addlinespace
-		Esquema Comercial: A partir del 2do mes & Cuota de suscripción recurrente para cubrir infraestructura y soporte técnico continuo & \$220.00 USD / mes \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
 
-\subsection{3. Escenario de Proyección Financiera (VAN, TIR y PRI a 5 Años)}
-Para evaluar la rentabilidad del proyecto a lo largo del tiempo, se ha formulado un escenario de proyección financiera a cinco años considerando la adopción simultánea de la plataforma por parte de cuatro organizaciones.
+\textit{Información de precios y planes de los proveedores consultados para la tabla 2:} por Render \cite{render2026}, Netlify \cite{netlify2026}, Cloudflare \cite{cloudflare2026}, Geoapify \cite{geoapify2026}, Cloudinary \cite{cloudinary2026} y Namecheap \cite{namecheap2026}. Los costos dependen de los planes seleccionados y de las necesidades de cada entidad.
 
-Bajo el escenario ya mencionado, los ingresos brutos generados por cuatro instituciones suscritas ascienden a un total de \$880.00 USD mensuales a partir del segundo mes, lo que se traduce en flujos estables y predecibles. Al aplicar la tasa de descuento académica estándar del 12\%.
+\subsection{Beneficios Económicos Potenciales para la Empresa}
+Comunica podría reducir algunos recursos utilizados en el registro y seguimiento de incidencias. Los beneficios dependerían del procedimiento actual de cada empresa: una organización que ya trabaja con medios digitales podría obtener mejoras de seguimiento y consulta, sin que necesariamente disminuya su consumo de papel.
+
+La Tabla 3 identifica los aspectos que se evaluarán durante el estudio de mercado y las pruebas de uso. No se asignan montos de ahorro porque todavía no se dispone de mediciones que permitan justificarlos.
 
 \begin{table}[htbp]
 	\centering
-	\caption{\emph{Proyección del flujo de caja a cinco años (en C\$)}}
-	\label{tab:flujo_caja_comunica}
+	\caption{\emph{Recursos y actividades con posibilidad de reducción}}
+	\label{tab:beneficios_potenciales}
 	\small
-	\begin{tabularx}{\textwidth}{X c c c c c c}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabularx}{\textwidth}{p{3cm} X X}
 		\toprule
-		\textbf{Concepto} & \textbf{Año 0} & \textbf{Año 1} & \textbf{Año 2} & \textbf{Año 3} & \textbf{Año 4} & \textbf{Año 5} \\
+		\textbf{Recurso o actividad} & \textbf{Beneficio potencial} & \textbf{Información necesaria para estimarlo} \\
 		\midrule
-		Instituciones Suscritas & 0 & 4 & 4 & 4 & 4 & 4 \\
-		Ingresos Totales (C\$) & — & 402,820 & 402,820 & 402,820 & 402,820 & 402,820 \\
-		Costos Operativos (C\$) & — & 233,458 & 233,458 & 233,458 & 233,458 & 233,458 \\
-		Inversión Inicial (C\$) & -110,918 & — & — & — & — & — \\
-		\textbf{Flujo Neto (C\$)} & \textbf{-110,918} & \textbf{169,362} & \textbf{169,362} & \textbf{169,362} & \textbf{169,362} & \textbf{169,362} \\
-		\textbf{Flujo Acumulado (C\$)} & -110,918 & 58,444 & 227,805 & 397,167 & 566,529 & 735,890 \\
+		Papel, formularios e impresiones & Menor utilización de formatos físicos para registrar incidencias y reducción de reportes impresos. & Cantidad de formularios que podrían sustituirse e impresiones evitadas junto con su costo unitario. \\
+		\addlinespace
+		Carpetas y otros materiales & Menor necesidad de organizar expedientes físicos. & Consumo actual y consumo previsto después de adoptar el sistema. \\
+		\addlinespace
+		Registro y seguimiento de incidencias & Menor transcripción al ingresar directamente la información y consulta del historial desde la plataforma. & Tiempo actual y tiempo medido con Comunica por reporte. \\
+		\addlinespace
+		Elaboración de informes & Menor procesamiento manual de información mediante estadísticas disponibles. & Horas actuales y horas requeridas con el sistema. \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
 
-\vspace{1em}
+\subsection{Estrategia de Comercialización y Presupuesto de Marketing}
+La promoción inicial se realizaría mediante contacto directo con las empresas que cumplan el perfil definido. Se solicitarían reuniones con responsables administrativos o de atención al usuario para presentar una demostración de Comunica y explicar sus funciones, precio y condiciones de adquisición.
 
-\begin{table}[!htbp]
+Como apoyo se prepararía una presentación digital y una ficha del producto con las funciones principales, los servicios incluidos y los costos que asumiría la empresa. El seguimiento permitiría registrar las dudas, objeciones y solicitudes de información. En esta etapa no se contempla publicidad pagada en redes sociales, su incorporación se evaluaría después de conocer los resultados del estudio de mercado.
+
+Para una primera ronda de hasta cuatro visitas se propone el presupuesto de desembolsos de la Tabla 4. Esta cantidad de visitas sirve únicamente para dimensionar la actividad inicial y no representa el tamaño definitivo del mercado ni una previsión de ventas.
+
+\begin{table}[htbp]
 	\centering
-	\caption{\emph{Indicadores financieros del modelo (VAN, TIR y PRI)}}
-	\label{tab:indicadores_financieros_comunica}
+	\caption{\emph{Presupuesto propuesto de desembolsos para la promoción inicial}}
+	\label{tab:presupuesto_promocion}
 	\small
-	\begin{tabularx}{\textwidth}{l c c X}
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabularx}{\textwidth}{X X c}
 		\toprule
-		\textbf{Indicador} & \textbf{Resultado} & \textbf{Unidad} & \textbf{Descripción del Concepto} \\
+		\textbf{Actividad} & \textbf{Base del presupuesto} & \textbf{Monto estimado (C\$)} \\
 		\midrule
-		VAN (Valor Actual Neto) & 572,854.11 & C\$ & Representa el valor actual de todos los flujos futuros de caja menos la inversión inicial, descontados a una tasa del 12\%. \\
-		TIR (Tasa Interna de Retorno) & 151.16 & \% & Mide la rentabilidad intrínseca del proyecto, demostrando solidez frente a la inversión inicial requerida. \\
-		PRI (Período de Recuperación) & 0.655 & Años & Tiempo estimado (aprox. 8 meses) en que se recupera en su totalidad la inversión inicial de desarrollo. \\
+		Transporte para visitas comerciales & Hasta cuatro visitas, con una asignación de C\$250.00 por visita & 1,000.00 \\
+		\addlinespace
+		Material de presentación & Límite para impresión de fichas y propuestas & 300.00 \\
+		\addlinespace
+		Comunicaciones adicionales & Límite para llamadas o datos atribuibles a la promoción & 200.00 \\
+		\midrule
+		\textbf{Total} & — & \textbf{1,500.00} \\
 		\bottomrule
 	\end{tabularx}
 \end{table}
 
-\subsection{Fórmulas}
+\newpage
+\subsection{Análisis Económico}
+El análisis considera C\$93,672.00 como costo estimado de desarrollo y C\$1,500.00 como presupuesto inicial de desembolsos de promoción. La suma asciende a C\$95,172.00. Este monto constituye una base parcial, porque todavía deben valorarse el tiempo comercial, el trabajo de atención a cada cliente y los demás gastos aplicables.
 
-\subsection{Fórmulas Financieras}
+Se utiliza el precio propuesto de C\$10,000.00 por licencia para comparar los ingresos brutos de distintas cantidades de ventas. Este precio deberá revisarse con los resultados del estudio de mercado y los costos completos de comercialización. No se presupone que todas las empresas consultadas adquirirán el sistema.
 
-Para el análisis de la viabilidad económica, se definen las siguientes expresiones matemáticas estándar de evaluación financiera:
-
-\vspace{0.5em}
-
-\noindent
-\begin{minipage}{\linewidth}
-	\textbf{1.) Valor Actual Neto (VAN):}
-	\begin{equation}
-		VAN = -I_0 + \sum_{t=1}^{n} \frac{FC_t}{(1 + k)^t}
-	\end{equation}
-	\noindent \textit{Donde:}
-	\begin{itemize}
-		\item[] $I_0$ = Inversión inicial ($110,918.00\mbox{ C\$}$).
-		\item[] $FC_t$ = Flujo de caja neto en el período $t$ ($169,361.64\mbox{ C\$}$).
-		\item[] $k$ = Tasa de descuento o costo de oportunidad ($12\% = 0.12$).
-		\item[] $n$ = Horizonte de evaluación en años ($5$ años).
-	\end{itemize}
-\end{minipage}
-
-\vspace{1em}
-
-\noindent
-\begin{minipage}{\linewidth}
-	\textbf{2.) Tasa Interna de Retorno (TIR):}
-	\begin{equation}
-		0 = -I_0 + \sum_{t=1}^{n} \frac{FC_t}{(1 + TIR)^t}
-	\end{equation}
-	\noindent \textit{Donde:}
-	\begin{itemize}
-		\item[] $I_0$ = Inversión inicial ($110,918.00\mbox{ C\$}$).
-		\item[] $FC_t$ = Flujo neto constante ($169,361.64\mbox{ C\$}$).
-		\item[] $TIR$ = Tasa de rendimiento que iguala el VAN a cero ($151.16\%$).
-	\end{itemize}
-\end{minipage}
-
-\vspace{1em}
-
-\noindent
-\begin{minipage}{\linewidth}
-	\textbf{3.) Período de Recuperación de la Inversión (PRI):}
-	\begin{equation}
-		PRI = \frac{\mbox{Inversión Inicial}}{\mbox{Flujo Neto Anual Promedio}} = \frac{110,918.00}{169,361.64}
-	\end{equation}
-	\noindent \textit{Donde:}
-	\begin{itemize}
-		\item[] $\mbox{Inversión Inicial}$ = Costo total de desarrollo ($110,918.00\mbox{ C\$}$).
-		\item[] $\mbox{Flujo Neto Anual}$ = Retorno constante por año ($169,361.64\mbox{ C\$}$).
-		\item[] $\mbox{Resultado}$ = $0.655$ años ($\approx 8$ meses).
-	\end{itemize}
-\end{minipage}
+\begin{table}[htbp]
+	\centering
+	\caption{\emph{Base del análisis económico preliminar}}
+	\label{tab:base_analisis_economico}
+	\small 
+	\renewcommand{\arraystretch}{1.3} 
+	\begin{tabularx}{\textwidth}{X c}
+		\toprule
+		\textbf{Concepto} & \textbf{Monto o condición} \\
+		\midrule
+		Costo estimado de desarrollo & C\$93,672.00 \\
+		\addlinespace 
+		Desembolsos propuestos de promoción inicial & C\$1,500.00 \\
+		\addlinespace 
+		Base parcial considerada & C\$95,172.00 \\
+		\addlinespace 
+		Precio propuesto por licencia & C\$10,000.00[cite: 6] \\
+		\addlinespace 
+		Atención de cada cliente, tiempo comercial y estudio de mercado & Pendientes de valoración. \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
 
 \subsection{Viabilidad Técnica}
 \label{subsec:tecnica}
@@ -360,5 +358,27 @@ La plataforma contempla recopilar datos de identificación personal, como nombre
 
 Asimismo, se prevé informar previamente a los usuarios sobre la finalidad del tratamiento de sus datos, la identidad del responsable y los derechos que les asisten, así como obtener su consentimiento cuando corresponda, de conformidad con los artículos 6, 7 y 9 de la Ley No. 787 (\cite{asamblea2012ley787}). 
 Finalmente, en atención a los artículos 9 y 11 de la Ley No. 787, se contempla implementar mecanismos tecnológicos de autenticación, control de accesos y cifrado, como medidas orientadas a proteger la integridad, confidencialidad y seguridad de los datos personales y a prevenir accesos, alteraciones o divulgaciones no autorizadas. La implementación y eficacia de estas medidas deberán verificarse mediante las pruebas y controles correspondientes (\cite{asamblea2012ley787}).
+
+%%lol
+\subsection{Aspectos Socioculturales}
+El desarrollo de la plataforma web \textit{Comunica} contempla factores socioculturales relacionados con las formas de comunicación entre los usuarios y las entidades responsables de atender incidencias. En el contexto del municipio de Rivas, resulta importante considerar los mecanismos tradicionales de reporte, las diferencias en el acceso y manejo de herramientas tecnológicas y la confianza de los usuarios en los procesos de atención. Estos elementos pueden influir en la aceptación y utilización de la plataforma.
+
+\subsection{Contexto social y mecanismos de comunicación}
+La comunicación de incidencias relacionadas con servicios e infraestructura puede realizarse mediante visitas presenciales, llamadas telefónicas y otros canales tradicionales. Aunque estos mecanismos permiten establecer contacto con las entidades responsables, pueden presentar dificultades relacionadas con el tiempo de desplazamiento, la organización de la información y la consulta del estado de las solicitudes.
+
+Ante esta situación, \textit{Comunica} se plantea como una alternativa digital que complementa los canales existentes, facilitando el registro estructurado de incidencias y el acceso a información sobre su seguimiento. Su propuesta busca contribuir a una comunicación más organizada entre los usuarios y las entidades encargadas de atender los reportes.
+
+\subsection{Accesibilidad y adaptación tecnológica}
+La utilización de una plataforma web requiere considerar las diferentes capacidades y condiciones tecnológicas de sus posibles usuarios. Factores como la disponibilidad de conexión a internet, el acceso a dispositivos electrónicos y la familiaridad con herramientas digitales pueden influir en la facilidad con que las personas interactúan con el sistema.
+
+Por esta razón, el diseño de \textit{Comunica} contempla una interfaz intuitiva que facilite el registro y seguimiento de incidencias. Se busca que las funcionalidades principales sean comprensibles y permitan realizar las operaciones necesarias sin exigir conocimientos técnicos especializados.
+
+\subsection{Participación y confianza en la atención de incidencias}
+La confianza en los mecanismos de atención constituye un elemento importante para promover la participación de los usuarios en la comunicación de incidencias. La falta de información sobre el estado de una solicitud puede generar incertidumbre respecto al proceso de atención.
+
+En este sentido, \textit{Comunica} propone incorporar funcionalidades de seguimiento, actualización de estados y consulta del historial de reportes. Estas características buscan proporcionar mayor visibilidad sobre la gestión de las incidencias y favorecer una comunicación transparente entre los usuarios y las entidades responsables.
+
+No obstante, la confianza y aceptación de la plataforma dependerán tanto de su funcionamiento como de la capacidad de las entidades para gestionar adecuadamente los reportes recibidos.
+
 
 
