@@ -34,15 +34,15 @@ El plan de ejecución organiza las acciones previstas para alcanzar los tres obj
 		
 		\endlastfoot
 		
-		OE1 & Revisión documental y SMS & Revisar estudios sobre registro, clasificación y seguimiento de incidencias mediante el estudio de mapeo sistemático previsto en el nivel diagnóstico. Identificar aportes útiles para Comunica. & Protocolo y matriz del SMS; registro de estudios seleccionados. & Equipo de investigación. & Referentes y funcionalidades utilizadas. \\
+        \hyperlink{subsec:SMS}{OE1}&Revisión documental y SMS & Revisar estudios sobre registro, clasificación y seguimiento de incidencias mediante el estudio de mapeo sistemático previsto en el nivel diagnóstico. Identificar aportes útiles para Comunica. & Protocolo y matriz del SMS; registro de estudios seleccionados. & Equipo de investigación. & Referentes y funcionalidades utilizadas. \\
 		\hline
-		OE1 & Fase 1 Encuesta: Diseño y estructuración & Elaborar un cuestionario dirigido a los ciudadanos de Rivas para evaluar las limitaciones de los métodos tradicionales de reporte y definir qué funcionalidades son necesarias en una nueva plataforma. & Cuestionario de encuesta estructurado y validado. & Equipo de investigación. & Instrumento de recolección de datos primarios diseñado y listo para su aplicación. \\
+		\hyperlink{subsec:instrumento}{OE1} & Crear Encuesta Fase 1 : Diseño y estructuración & Elaborar un cuestionario dirigido a ciudadanos de Rivas para evaluar las limitaciones de los métodos tradicionales de reporte y definir qué funcionalidades son necesarias en una nueva plataforma. & Cuestionario de encuesta estructurado y validado. & Equipo de investigación. & Instrumento de recolección de datos primarios diseñado y listo para su aplicación. \\
 		\hline
-		OE1 & Fase 2 Encuesta: Aplicación y tabulación de datos & Distribuir la encuesta en la población objetivo, recopilar las respuestas y tabular los datos para cuantificar de forma real la necesidad del sistema digital en el municipio. & Informe de resultados tabulados con gráficos estadísticos y análisis de respuestas. & Equipo de investigación y usuarios. & Datos cuantitativos que demuestran las fricciones actuales y las preferencias de los ciudadanos con respecto a funcionalidades necesarias en un sistema. \\
+    	\hyperlink{subsec:instrumento2}{OE1} & Implementacion de encuesta Fase 2: Aplicación y tabulación de datos & Distribuir la encuesta en la población objetivo, recopilar las respuestas y tabular los datos para cuantificar de forma real la necesidad del sistema digital en el municipio. & Informe de resultados tabulados con gráficos estadísticos y análisis de respuestas. & Equipo de investigación y usuarios. & Datos cuantitativos que demuestran las limitaciones actuales y las preferencias de los ciudadanos con respecto a funcionalidades necesarias en un sistema. \\
 		\hline
-		OE1 & Identificación de requerimientos & Precisar los requerimientos funcionales y no funcionales a partir del alcance, la documentación y los meta-requisitos definidos en la investigación y los datos primarios obtenidos en la encuesta ciudadana. & Documento de requerimientos; matriz de trazabilidad. & Equipo de investigación y desarrollo. & Requerimientos de Comunica definidos. \\
+	    \hyperlink{subsec:requerimentos}{OE1}& Identificación de requerimientos & Precisar los requerimientos funcionales y no funcionales a partir de la documentación y los datos primarios obtenidos en la encuesta ciudadana. & Matriz de trazabilidad. & Equipo de investigación y desarrollo. & Requerimientos de Comunica definidos. \\
 		\hline
-		OE1 & Historias de usuario y Product Backlog & Transformar los requerimientos en historias de usuario priorizadas, con criterios de aceptación y su vínculo con las funcionalidades previstas. Organización por sprints (sujeto a cambios). & Inventario de historias de usuario; Product Backlog; criterios de aceptación. & Equipo de desarrollo; responsable de planificación. & Backlog inicial coherente con los requerimientos. \\
+	    \hyperlink{subsec:backlog}{OE1} & Creacion de historias de usuario y Product Backlog & Transformar los requerimientos en historias de usuario priorizadas, con criterios de aceptación y su vínculo con las funcionalidades previstas. Organización por sprints (sujeto a cambios). & Inventario de historias de usuario; Product Backlog; criterios de aceptación. & Equipo de desarrollo; responsable de planificación. & Backlog inicial coherente con los requerimientos. \\
 		\hline
 	\end{xltabular}
 }
@@ -134,29 +134,52 @@ El plan de ejecución organiza las acciones previstas para alcanzar los tres obj
 	
    El apartado de los Resultados esperados dentro del cronogrma de ejecución describe los productos, entregables o estados concretos que se alcanzarán tras completar cada acción propuesta. Su propósito  es establecer un criterio de éxito medible para cada actividad, traduciendo las tareas de investigación, diseño y desarrollo en evidencias tangibles tales como documentos de análisis, prototipos de interfaz, bases de datos estructuradas o módulos de código funcional, En conjunto, la union de estos resultados permite evaluar el avance real del proyecto Comunica, garantizando que cada paso realizado contribuya de manera verificable al cumplimiento progresivo de sus tres objetivos específicos.
    
-1. Referentes tecnológicos y funcionales identificados.
+  \textbf{Resultados Cronograma de ejecución}  
+   
+\textbf{1. \hypertarget{subsec:SMS}{OE1}: Referentes tecnológicos y funcionales identificados.}
 
-El análisis de herramientas internacionales previas (\cite{parrales2025desarrollo}; \cite{trejo2019sistema}; \cite{moreno2026diseno}; entre otros) ha permitido definir un estándar funcional base para el desarrollo de Comunica. Se documenta que los sistemas modernos de gestión de incidencias requieren integrar:
+El análisis de herramientas internacionales previas (\cite{parrales2025desarrollo}; \cite{trejo2019sistema}; \cite{moreno2026diseno}, entre otros) ha permitido definir un estándar funcional base para el desarrollo de «Comunica». La evidencia documental establece que los sistemas modernos de gestión de incidencias requieren integrar las siguientes capacidades:
 
-Uso de geolocalización (coordenadas espaciales) y carga de evidencia fotográfica para dar precisión a los reportes ciudadanos, reduciendo tiempos de validación.
+\begin{itemize}
+	\item \textbf{Geolocalización y evidencia multimedia:} Uso de coordenadas espaciales y carga de evidencia fotográfica para otorgar precisión a los reportes ciudadanos, reduciendo los tiempos de validación en campo.
+	
+	\item \textbf{Gestión de estados y notificaciones:} Implementación de flujos de estado basados en buenas prácticas (ITIL) y notificaciones automáticas (números de radicado o historial), garantizando que el ciudadano conozca el avance de su reporte y reduciendo la incertidumbre.
+	
+	\item \textbf{Paneles de control y analítica geoespacial:} Incorporación de \textit{dashboards} centralizados que agrupen la información mediante análisis geoespacial y estadístico, permitiendo a las entidades priorizar rutas y tomar decisiones operativas basadas en mapas de concentración de incidencias.
+	
+	\item \textbf{Clasificación y priorización estructurada:} Segmentación de los reportes por categorías (tipos de incidencia) para organizar la recepción de datos y facilitar su canalización hacia el área competente.
+	
+	\item \textbf{Asignación de responsables y trazabilidad integral:} Capacidad de registrar qué funcionario asume cada caso, conservando un historial inmutable de las fechas, respuestas y acciones técnicas documentadas durante todo el ciclo de atención.
+	
+	\item \textbf{Mecanismos de verificación y cierre:} Inclusión de procesos de validación que aseguren la resolución real del problema antes de dar por finalizada o cerrada la incidencia en el sistema.
+	
+	\item \textbf{Accesibilidad:} Diseño web responsivo para facilitar el acceso desde cualquier dispositivo móvil o de escritorio y, según lo requiera el contexto institucional, la posibilidad de realizar reportes anónimos.
+\end{itemize}
 
-Implementación de flujos de estado (ITIL) y notificaciones automáticas (números de radicado o historial), garantizando que el ciudadano conozca el avance de su reporte y reduciendo la incertidumbre.
 
-Incorporación de paneles de control centralizados que agrupen la información mediante análisis geoespacial y estadístico, permitiendo a las entidades priorizar rutas y tomar decisiones operativas basadas en mapas de concentración de incidencias.
+\textbf{2.\hypertarget{subsec:instrumento}{OE1} Instrumento de recolección de datos primarios diseñado y listo para su aplicación} 
 
-Clasificación y priorización estructurada: Segmentación de los reportes por categorías (tipos de incidencia) para organizar la recepción de datos y facilitar su canalización al área correspondiente.
+Como resultado del plan 2 se obtuvo una encuesta la cual recopila datos demográficos y examina los obstáculos y frustraciones que enfrentan las personas al utilizar canales tradicionales de comunicación. Asimismo, valora la percepción pública sobre la falta de transparencia y seguimiento por parte de las entidades proveedoras tras emitir un aviso. Se indaga también en el grado de aceptación hacia el uso de herramientas tecnológicas y plataformas web centralizadas que faciliten la gestión y reduzcan la incertidumbre ciudadana. Finalmente, el formulario busca determinar si la creacion de sistemas digitales en tiempo real lograría fortalecer la confianza y fomentar una mejor atencion al usuario en la resolución de incidencias.
 
-Asignación de responsables y trazabilidad integral: Capacidad de registrar qué funcionario asume cada caso, conservando un historial inmutable de las fechas, respuestas y acciones técnicas documentadas durante todo el ciclo de atención.
+\textbf{link de encuesta:}
+\textcolor{blue}{https://forms.gle/mccAsdU9PHPXU5QcA}
 
-Mecanismos de verificación y cierre: Inclusión de procesos que aseguren la resolución real del problema antes de dar por finalizada o cerrada la incidencia en el sistema.
+\textbf{3.\hypertarget{subsec:requerimentos}{OE1} Identificación de requerimientos}
 
-Accesibilidad: Diseño web responsivo para facilitar el acceso desde cualquier dispositivo móvil o de escritorio y, según lo requiera el contexto, la posibilidad de realizar reportes anónimos.
+A partir del análisis documental y de campo, se definieron siete requerimientos (\textbf{MR-01} al \textbf{MR-07}) que delimitan el alcance funcional y técnico de la plataforma «Comunica». En conjunto, estos requerimientos cubren cuatro dimensiones esenciales del sistema:
 
- Instrumento de recolección de datos primarios diseñado y listo para su aplicación:
+\begin{itemize}
+	\item \textbf{Seguridad y control de acceso (MR-01):} Garantiza la autenticación de usuarios y la diferenciación de permisos según su rol operativo (ciudadanía, personal institucional y administradores).
+	\item \textbf{Captura y organización territorial (MR-02 y MR-03):} Estructura la división geográfica administrativa para ubicar cada reporte y provee un mecanismo interactivo con geolocalización y evidencia multimedia.
+	\item \textbf{Enrutamiento y seguimiento operativo (MR-04 y MR-05):} Automatiza la clasificación por tipología hacia la entidad competente y asegura la trazabilidad completa durante todo el ciclo de vida de la incidencia.
+	\item \textbf{Analítica y calidad del sistema (MR-06 y MR-07):} Consolida indicadores de desempeño en paneles visuales, respaldados por una arquitectura que garantiza integridad transaccional, seguridad y alto rendimiento.
+\end{itemize}
+ Para una vista especifica de los requerimentos del proyecto revise los Metarequisitos plasmados en la \textbf{\hyperlink{subsec:matriz}{Matriz de Trazabilidad}} 
  
-Como resultado del plan2 se obtuvo una encuesta la cual recopila datos demográficos y examina los obstáculos y frustraciones que enfrentan las personas al utilizar canales tradicionales de comunicación. Asimismo, valora la percepción pública sobre la falta de transparencia y seguimiento por parte de las entidades proveedoras tras emitir un aviso. Se indaga también en el grado de aceptación hacia el uso de herramientas tecnológicas y plataformas web centralizadas que faciliten la gestión y reduzcan la incertidumbre ciudadana. Finalmente, el formulario busca determinar si la creacion de sistemas digitales en tiempo real lograría fortalecer la confianza y fomentar una mejor atencion al usuario en la resolución de incidencias.
-
-link de encuesta:
-https://forms.gle/mccAsdU9PHPXU5QcA
+ \textbf{4.\hypertarget{subsec:backlog}{OE1} \hyperlink{subsec:backlog1}{Cómo resultado del plan de historias usuarios se concreto el Backlog, este se encuentra en la página 60, toque para visualizar}}
  
+
+
+ 
+
 }
