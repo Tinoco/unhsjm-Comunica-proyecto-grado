@@ -1,0 +1,30 @@
+export interface IReporte {
+  id: number;
+  descripcion: string;
+  estado: 'Pendiente' | 'En Proceso' | 'Finalizado';
+  nvlPrioridad: number;
+  fechaGen: string;
+  ubicacion: string;
+  formato: string | string[] | { url?: string; secure_url?: string }[] | null;
+  problematica?: {
+    problema?: string;
+    problematica?: string;
+  };
+  sector?: { id?: number; nomSector?: string };
+  institucion?: {
+    id?: number;
+    nombreInstitucion: string;
+  };
+  usuario?: {
+    id?: number;
+    nombres: string;
+    apellidos: string;
+    numeroCedula?: string;
+    correo?: string;
+    sexo?: string | null;
+  };
+}
+
+export interface IRespuestaReportes {
+  lista_Reportes: IReporte[];
+}
