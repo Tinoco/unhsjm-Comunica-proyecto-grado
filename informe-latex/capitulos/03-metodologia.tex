@@ -6,18 +6,156 @@
 El marco metodológico constituye la estructura que orienta el desarrollo de una investigación, estableciendo los enfoques, métodos, técnicas y procedimientos necesarios para alcanzar los objetivos planteados. Su propósito es organizar de manera sistemática las actividades de investigación, garantizando la coherencia entre el problema identificado, la obtención y análisis de información y la evaluación de los resultados. De esta manera, proporciona una base organizada para el desarrollo del estudio y la fundamentación de las decisiones tomadas durante el proceso.
 
 \subsection{Arquitectura Metodológica e Integración de Enfoques}
-Durante el desarrollo de la presente investigación, se busco adoptar una arquitectura metodológica que facilitara el desarrollo del documento y la creación de Comunica, esta pensada en organizar tres niveles complementarios entre si, con el objetivo de articular el proceso de investigación científica, la construcción del sustento teórico y el desarrollo técnico de la solución propuesta. Esta estructura permite establecer una relación coherente entre la identificación del problema, el análisis del conocimiento existente y la construcción del artefacto tecnológico, Los niveles se mostraran continuación:
+Durante el desarrollo de la presente investigación, se busco adoptar una arquitectura metodológica que facilitara el desarrollo del documento y la creación de Comunica, esta pensada en organizar tres niveles complementarios entre si, con el objetivo de articular el proceso de investigación científica, la construcción del sustento teórico y el desarrollo técnico de la solución propuesta. Esta estructura permite establecer una relación coherente entre la identificación del problema, el análisis del conocimiento existente y la construcción del artefacto tecnológico, Los niveles se mostraran en los siguientes puntos.
+
+% Paquetes necesarios en el preámbulo:
+% \usepackage{graphicx}
+% \usepackage{float}
+% \usepackage{tikz}
+% \usetikzlibrary{arrows.meta, positioning, calc}
 
 \subsection{Nivel Macro}
-Para operacionalizar el enfoque DSR se adopta la Design Science Research Methodology (DSRM) propuesta por \cite{peffers2007design}, la cual organiza el proceso de investigación en seis fases:
-\begin{enumerate}
-	\item Identificación del problema y motivación
-	\item Definición de los objetivos de la solución
-	\item Diseño y desarrollo
-	\item Demostración
-	\item Evaluación
-	\item Comunicación
-\end{enumerate} 
+
+Para operacionalizar el enfoque DSR se adopta la
+Design Science Research Methodology (DSRM)
+propuesta por \cite{peffers2007design},
+la cual organiza el proceso de investigación
+en seis fases:
+
+\shorthandoff{<>}
+\begin{figure}[H]
+	\centering
+	\resizebox{\linewidth}{!}{%
+		\begin{tikzpicture}[
+			>=Latex,
+			every node/.style={font=\small},
+			fase/.style={
+				rectangle,
+				rounded corners=3pt,
+				draw=blue!65!black,
+				thick,
+				fill=blue!10,
+				align=center,
+				text width=4.1cm,
+				minimum height=1.05cm,
+				inner sep=5pt
+			},
+			apoyo/.style={
+				rectangle,
+				rounded corners=3pt,
+				draw=green!50!black,
+				thick,
+				fill=green!10,
+				align=center,
+				text width=3.3cm,
+				minimum height=1cm,
+				inner sep=5pt
+			},
+			artefacto/.style={
+				rectangle,
+				rounded corners=3pt,
+				draw=orange!75!black,
+				thick,
+				fill=orange!15,
+				align=center,
+				text width=3.3cm,
+				minimum height=1cm,
+				inner sep=5pt
+			},
+			flecha/.style={
+				->,
+				thick,
+				>=Latex
+			},
+			relacion/.style={
+				->,
+				thick,
+				dashed,
+				>=Latex
+			}
+			]
+			% ==========================================
+			% FASES PRINCIPALES DSRM
+			% ==========================================
+			\node[fase] (f1) {
+				\textbf{Fase 1}\\
+				Identificación del problema\\
+				y motivación
+			};
+			\node[fase, below=1cm of f1] (f2) {
+				\textbf{Fase 2}\\
+				Definición de los objetivos\\
+				de la solución
+			};
+			\node[fase, below=1cm of f2] (f3) {
+				\textbf{Fase 3}\\
+				Diseño y desarrollo
+			};
+			\node[fase, below=1cm of f3] (f4) {
+				\textbf{Fase 4}\\
+				Demostración
+			};
+			\node[fase, below=1cm of f4] (f5) {
+				\textbf{Fase 5}\\
+				Evaluación
+			};
+			\node[fase, below=1cm of f5] (f6) {
+				\textbf{Fase 6}\\
+				Comunicación
+			};
+			% ==========================================
+			% CONEXIONES DSRM
+			% ==========================================
+			\draw[flecha] (f1.south) -- (f2.north);
+			\draw[flecha] (f2.south) -- (f3.north);
+			\draw[flecha] (f3.south) -- (f4.north);
+			\draw[flecha] (f4.south) -- (f5.north);
+			\draw[flecha] (f5.south) -- (f6.north);
+			% ==========================================
+			% SMS - NIVEL DIAGNOSTICO
+			% ==========================================
+			\node[apoyo, left=1.8cm of f1] (sms) {
+				\textbf{SMS}\\
+				Estudio de Mapeo Sistemático
+			};
+			\node[apoyo, below=0.5cm of sms] (sms2) {
+				Preguntas de investigación\\
+				Búsqueda y selección\\
+				Clasificación y análisis\\
+				de investigaciones
+			};
+			\draw[relacion] (sms.east) -- (f1.west);
+			\draw[relacion] (sms2.east) -- (f2.west);
+			\draw[flecha] (sms.south) -- (sms2.north);
+			% ==========================================
+			% SCRUM Y XP - NIVEL TACTICO
+			% ==========================================
+			\node[apoyo, right=1.8cm of f3] (scrum) {
+				\textbf{SCRUM}\\
+				Product Backlog\\
+				Planificación y Sprints\\
+				Revisión y retrospectiva
+			};
+			\node[apoyo, below=0.6cm of scrum] (xp) {
+				\textbf{XP}\\
+				Refactorización continua\\
+				Integración continua
+			};
+			\node[artefacto, below=0.6cm of xp] (software) {
+				\textbf{Desarrollo del artefacto}\\
+				Plataforma web Comunica
+			};
+			\draw[relacion] (f3.east) -- (scrum.west);
+			\draw[flecha] (scrum.south) -- (xp.north);
+			\draw[flecha] (xp.south) -- (software.north);
+		\end{tikzpicture}%
+	}
+	\caption{Integración de las fases de DSRM con
+		SMS, Scrum y XP en el desarrollo de Comunica. Creación propia}
+	\label{fig:integracion_metodologica}
+\end{figure}
+\shorthandon{<>}
+
 Estas actividades permiten vincular de forma sistemática la problemática estudiada con la construcción del artefacto y su posterior valoración. En el ámbito de los sistemas de información, DSR se orienta a la creación y evaluación de artefactos capaces de ampliar o mejorar las capacidades humanas y organizacionales, generando conocimiento a partir de su construcción y aplicación \parencite{hevner2004design}.
 
 En este proyecto, el artefacto principal corresponde a una plataforma web para el registro, almacenamiento, clasificación y seguimiento de reportes de incidencias, concebida como una solución abierta y adaptable a diferentes contextos institucionales o empresariales. La plataforma busca transformar los procesos de recepción y gestión de reportes en un flujo digital, centralizado y rastreable, incorporando además evidencia fotográfica, ubicación geográfica, actualización de estados, métricas y visualización espacial con el fin de mejorar la atención al usuario.
@@ -248,7 +386,7 @@ En cumplimiento con las directrices de \textcite{petersen2008systematic} para es
 		\node[font=\bfseries\small] at (5.0,1.5) {1};
 		\node[font=\scriptsize, below right] at (5.3,1.3) {11,1\,\%};
 	\end{tikzpicture}
-	\caption{Visualización del mapa sistemático mediante gráfico de burbujas (\textit{bubble plot}).}
+	\caption{Visualización del mapa sistemático mediante gráfico de burbujas (\textit{bubble plot}). Creación propia}
 	\label{fig:bubble_plot}
 \end{figure}
 
@@ -600,7 +738,7 @@ En esta sección se presenta el cronograma de actividades correspondiente a la d
 		\end{ganttchart}
 		
 		\caption{Cronograma general de documentación
-			y desarrollo de la plataforma Comunica}
+			y desarrollo de la plataforma Comunica, Creación propia}
 		\label{fig:cronograma_comunica}
 		
 	\end{figure}
