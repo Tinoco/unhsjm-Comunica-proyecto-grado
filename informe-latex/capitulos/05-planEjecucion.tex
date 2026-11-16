@@ -38,7 +38,7 @@ El plan de ejecución organiza las acciones previstas para alcanzar los tres obj
 		\hline
 		\hyperlink{subsec:instrumento}{OE1} & Crear Encuesta Fase 1 : Diseño y estructuración & Elaborar un cuestionario dirigido a ciudadanos de Rivas para evaluar las limitaciones de los métodos tradicionales de reporte y definir qué funcionalidades son necesarias en una nueva plataforma. & Cuestionario de encuesta estructurado y validado. & Equipo de investigación. & Instrumento de recolección de datos primarios diseñado y listo para su aplicación. \\
 		\hline
-    	\hyperlink{subsec:instrumento2}{OE1} & Implementacion de encuesta Fase 2: Aplicación y tabulación de datos & Distribuir la encuesta en la población objetivo, recopilar las respuestas y tabular los datos para cuantificar de forma real la necesidad del sistema digital en el municipio. & Informe de resultados tabulados con gráficos estadísticos y análisis de respuestas. & Equipo de investigación y usuarios. & Datos cuantitativos que demuestran las limitaciones actuales y las preferencias de los ciudadanos con respecto a funcionalidades necesarias en un sistema. \\
+    	\hyperlink{subsec:instrumento2}{OE1} & Implementacion de encuesta Fase 2: Aplicación y tabulación de datos & Distribuir la encuesta en la población objetivo, recopilar las respuestas y tabular los datos para cuantificar de forma real la necesidad del sistema digital en el municipio. & Informe de resultados tabulados con gráficos estadísticos y análisis de respuestas. & Equipo de investigación y usuarios. & Datos cuantitativos que demuestran las limitaciones actuales y descontentos por parte de los usuarios ademas de las preferencias con respecto a funcionalidades necesarias en un sistema. \\
 		\hline
 	    \hyperlink{subsec:requerimentos}{OE1}& Identificación de requerimientos & Precisar los requerimientos funcionales y no funcionales a partir de la documentación y los datos primarios obtenidos en la encuesta ciudadana. & Matriz de trazabilidad. & Equipo de investigación y desarrollo. & Requerimientos de Comunica definidos. \\
 		\hline
@@ -164,7 +164,252 @@ Como resultado del plan 2 se obtuvo una encuesta la cual recopila datos demográ
 \textbf{link de encuesta:}
 \textcolor{blue}{https://forms.gle/mccAsdU9PHPXU5QcA}
 
-\textbf{3.\hypertarget{subsec:requerimentos}{OE1} Identificación de requerimientos}
+\textbf{3.\hypertarget{subsec:instrumento2}{OE1} Implementacion de encuesta: Aplicación y tabulación de datos}
+
+En correspondencia con el plan de ejecución establecido para el primer objetivo específico de la investigación, se aplicó el instrumento de recolección de datos primarios dirigido a los usuarios del municipio de Rivas. El propósito central de la encuesta es evaluar las limitaciones de los métodos tradicionales de atención y cuantificar la necesidad real de implementar un sistema digital en el municipio. A continuación, se presentan los resultados cuantitativos obtenidos tras la tabulación de los datos. Estos hallazgos exponen deficiencias comunicativas vigentes, el impacto de la falta de seguimiento en la confianza del usuario y la alta disposición ciudadana frente a la adopción de un canal centralizado; proporcionando así la base necesaria para justificar los requerimientos funcionales y respaldar la viabilidad operativa de la plataforma Comunica.
+ 
+ \noindent
+ \begin{minipage}{\textwidth}
+\textbf{Pregunta.1}
+ \begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figuras/pregunta1.png}
+	\caption{Distribución por rango de edad de los encuestados.}
+	\label{fig:rango_edad}
+\end{figure}
+Resultados: El 65.7\% de los encuestados tiene entre 18 y 25 años, seguido por el grupo de 36 a 50 años (14.3\%), 26 a 35 años (11.4\%) y mayores de 50 años (8.6\%).
+
+Análisis: La muestra refleja una población predominantemente joven y con alta probabilidad de ser nativa o activa digitalmente. Esto sugiere que la curva de aprendizaje para utilizar la interfaz de usuario en será mínima, favoreciendo una adopción rápida del sistema.
+\end{minipage}
+
+\vspace{1cm}
+
+
+\noindent
+\begin{minipage}{\textwidth}
+	\textbf{Pregunta.2}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figuras/pregunta2.png}
+		\caption{Distribución de encuestados por barrio de residencia en la ciudad de Rivas.}
+		\label{fig:barrio_residencia}
+	\end{figure}
+	Resultados: Se registró participación de múltiples sectores, destacando barrios como Gaspar García Laviana, San Francisco, Popoyuapa y Eduardo Alvarado, abarcando tanto zonas céntricas como retiradas del municipio.
+	
+	Análisis: La diversidad de ubicaciones de las cuales se reportarian insidencias confirma la necesidad de estructurar un modelo relacional normalizado (MR-02) que gestione catálogos de departamentos, municipios y sectores, asegurando que las incidencias puedan agruparse y visualizarse correctamente en los mapas de calor para la administración.
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent
+\begin{minipage}{\textwidth}
+	\textbf{Pregunta.3}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figuras/pregunta3.png}
+		\caption{Métodos tradicionales conocidos o utilizados por la ciudadanía para reportar incidencias.}
+		\label{fig:metodos_tradicionales}
+	\end{figure}
+	Resultados: Las llamadas telefónicas son el medio predominante (presente con el 77\% ). Las visitas presenciales a oficinas de atención ocupan el segundo lugar (presentes en el 28.6\% de las respuestas), mientras que otros metodos tienen menos relevancia.
+	
+	Análisis: Existe una fuerte dependencia de métodos que requieren atención inmediata de un operador o desplazamiento físico. Esto podria generar cuellos de botella para las entidades, de esa forma un sistema asíncrono y digital que reciba incidencias 24/7 sin saturar mitigaria este problema .
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent
+\begin{minipage}{\textwidth}
+	\textbf{Pregunta.4}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figuras/pregunta4.png}
+		\caption{Principales motivos por los cuales los ciudadanos han desistido de reportar una incidencia.}
+		\label{fig:razones_abandono}
+	\end{figure}
+	Resultados: La percepción de que "el problema no será resuelto" es el factor de desmotivación más fuerte (presente con el 51.4\% de las respuestas totales). La "falta de tiempo para dirigirse a las oficinas" le sigue de cerca (presente en el 40\% de las respuestas).
+	
+	Análisis: La apatía por falta de resultado es una barrera crítica. La plataforma Comunica eliminará la barrera del tiempo mediante el acceso remoto y mitigará la percepción de inacción al mostrar el avance real de cada caso.
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent
+\begin{minipage}{\textwidth}
+	\textbf{Pregunta.5}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figuras/pregunta5.png}
+		\caption{Visibilidad del estado y etapas de resolución a través de los medios de reporte actuales.}
+		\label{fig:visibilidad_estado}
+	\end{figure}
+	Resultados: El 82.9\% de los encuestados indicó que "No".
+	
+	Análisis: Queda en evidencia una severa carencia de seguimiento visible en los procesos actuales. Este vacío justifica el desarrollo del módulo de seguimiento (MR-05) para que los usuarios visualicen transiciones de estado estructuradas (Pendiente, En Proceso, Resuelto).
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent
+\begin{minipage}{\textwidth}
+	\textbf{Pregunta.6}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figuras/pregunta6.png}
+		\caption{Impacto de la visualización del estado del reporte en tiempo real sobre la confianza ciudadana.}
+		\label{fig:confianza_tiempo_real}
+	\end{figure}
+	Resultados: El 100\% de los encuestados respondió afirmativamente.
+	
+	Análisis: Este es el indicador más contundente del estudio. Demuestra que la transparencia digital tiene relación directa con respecto a la confianza ciudadana, validando el impacto social y la  propuesta de un frontend informativo.
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent
+\begin{minipage}{\textwidth}
+	\textbf{Pregunta.7}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figuras/pregunta7.png}
+		\caption{Frecuencia percibida con la que las entidades justifican las demoras en la resolución de incidencias.}
+		\label{fig:justificacion_demoras}
+	\end{figure}
+	Resultados: El 54.3\% afirma que las entidades no justifican las demoras, frente a un 40\% que indica que sí lo hacen.
+	
+	Análisis: Existe una deficiencia en la comunicación bidireccional. La falta de justificaciones eleva la percepción de negligencia por parte de las entidades.
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent
+\begin{minipage}{\textwidth}
+	\textbf{Pregunta.8}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figuras/pregunta8.png}
+		\caption{Nivel de insatisfacción frente a la falta de resolución y ausencia de comunicación institucional.}
+		\label{fig:insatisfaccion_retrasos}
+	\end{figure}
+	Resultados: Al 94.3\% de los usuarios le genera insatisfacción esta falta de comunicación.
+	
+	Análisis: Se valida la necesidad de que el personal autorizado cuente con herramientas en su panel administrativo para registrar notas de seguimiento y avances (Historia de Usuario HU-15), documentando las razones técnicas de cualquier retraso.
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent
+\begin{minipage}{\textwidth}
+	\textbf{Pregunta.9}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figuras/pregunta9.png}
+		\caption{Importancia ciudadana de recibir respuestas directas y justificaciones técnicas por retrasos.}
+		\label{fig:respuesta_directa}
+	\end{figure}
+	Resultados: El 91.4\% considera esta función como indispensable.
+	
+	Análisis: Refuerza el punto anterior. El sistema no solo debe ser un buzón digital de entrada, sino un canal de comunicación donde se refleje las actuaciones de la entidad proveedora.
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent
+\begin{minipage}{\textwidth}
+	\textbf{Pregunta.10}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figuras/pregunta10.png}
+		\caption{Percepción ciudadana sobre la practicidad y el fomento de participación de un canal digital centralizado.}
+		\label{fig:canal_centralizado}
+	\end{figure}
+	Resultados: Se mostró una postura favorable del (45.7\% "De acuerdo" y 17.1\% "Totalmente de acuerdo").
+	
+	Análisis: La unificación de canales dispersos (teléfono, correo, visitas) en una sola plataforma web es percibida como una mejora práctica, lo cual sustenta la viabilidad operativa de centralizar la gestión.
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent
+\begin{minipage}{\textwidth}
+	\textbf{Pregunta.11}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figuras/pregunta11.png}
+		\caption{Aumento en la disposición de participación ciudadana gracias al uso de plataformas en dispositivos móviles y computadoras.}
+		\label{fig:disposicion_movil}
+	\end{figure}
+	Resultados: El 77.2\% respaldó esta afirmación (42.9\% "De acuerdo", 34.3\% "Totalmente de acuerdo").
+	
+	Análisis: El que la plataforma pueda adaptarse a multiples dispositivos móviles es un factor necesario para la adopción. Esto confirma que el diseño (adaptable a diferentes resoluciones de pantalla en dispositivos móviles y de escritorio).
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent
+\begin{minipage}{\textwidth}
+	\textbf{Pregunta.12}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figuras/pregunta12.png}
+		\caption{Nivel de incertidumbre y desconfianza generada por el desconocimiento de las etapas del reporte.}
+		\label{fig:incertidumbre_estado}
+	\end{figure}
+	Resultados: El 77.1\% de la muestra experimenta incertidumbre post-reporte (51.4\% "De acuerdo", 25.7\% "Totalmente de acuerdo").
+	
+	Análisis: Este sentimiento es el producto directo de usar canales que carecen de seguimiento. El historial interactivo de Comunica resolverá directamente esta necesidad.
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent
+\begin{minipage}{\textwidth}
+	\textbf{Pregunta.13}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figuras/pregunta13.png}
+		\caption{Percepción ciudadana respecto a las limitaciones descriptivas y de contexto en la comunicación verbal o escrita.}
+		\label{fig:limitacion_contexto}
+	\end{figure}
+	Resultados: Un abrumador 97.1\% indicó que "Sí".
+	
+	Análisis: Justificación para el meta-requisito MR-03. La integración de captura con respecto a coordenadas exactas y la gestión de evidencias visuales que son necesidades técnicas  para superar las limitaciones del modelo tradicional.
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent
+\begin{minipage}{\textwidth}
+	\textbf{Pregunta.14}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figuras/pregunta14.png}
+		\caption{Nivel de frustración experimentado al utilizar canales tradicionales carentes de soporte visual y descriptivo.}
+		\label{fig:frustracion_tradicional}
+	\end{figure}
+	Resultados: El 82.9\% ha sentido esta frustración.
+	
+	Análisis: Relacionado directamente con la pregunta anterior, demuestra que las descripciones textuales o telefónicas son insuficientes para reportes de infraestructura, requiriendo el apoyo de otras funcionalidades.
+\end{minipage}
+
+\vspace{1cm}
+
+\noindent
+\begin{minipage}{\textwidth}
+	\textbf{Pregunta.15}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figuras/pregunta15.png}
+		\caption{Nivel de importancia general atribuido a la implementación de una plataforma web para la gestión de incidencias.}
+		\label{fig:importancia_plataforma}
+	\end{figure}
+   Resultados: El 88.5\% lo califica como altamente relevante (51.4\% "Muy importante", 37.1\% "Indispensable"). El 11.4\% restante se mantuvo neutral. \
+   Análisis: Representa la validación final del proyecto. Existe un consenso ciudadano sobre la urgencia y el valor de modernizar la atención de servicios mediante soluciones informáticas estructuradas, respaldando la ejecución completa del desarrollo.
+\end{minipage}
+\vspace{1cm}
+
+Los resultados obtenidos a través de este instrumento aplicado para la recolección de datos primarios evidencian de manera contundente las deficiencias comunicativas y operativas de los métodos tradicionales de atención en el municipio de Rivas. La dependencia de canales que carecen de trazabilidad genera un ciclo de incertidumbre, frustración y desconfianza ciudadana. Frente a esta problemática, la encuesta demuestra una aceptación y disposición casi unánime hacia la adopción de un canal digital centralizado. La exigencia ciudadana por contar con seguimiento en tiempo real, georreferenciación exacta, soporte de evidencia multimedia y retroalimentación con la entidad, no solo reafirma las problemáticas planteadas en la fase diagnóstica, sino que justifica empíricamente los meta-requisitos técnicos y funcionales definidos para Comunica. De este modo, se consolida la viabilidad operativa y el impacto social del proyecto, sentando las bases definitivas para la etapa de diseño y desarrollo de la plataforma.
+
+\textbf{4.\hypertarget{subsec:requerimentos}{OE1} Identificación de requerimientos}
 
 A partir del análisis documental y de campo, se definieron siete requerimientos (\textbf{MR-01} al \textbf{MR-07}) que delimitan el alcance funcional y técnico de la plataforma «Comunica». En conjunto, estos requerimientos cubren cuatro dimensiones esenciales del sistema:
 
@@ -176,10 +421,6 @@ A partir del análisis documental y de campo, se definieron siete requerimientos
 \end{itemize}
  Para una vista especifica de los requerimentos del proyecto revise los Metarequisitos plasmados en la \textbf{\hyperlink{subsec:matriz}{Matriz de Trazabilidad}} 
  
- \textbf{4.\hypertarget{subsec:backlog}{OE1} \hyperlink{subsec:backlog1}{Cómo resultado del plan de historias usuarios se concreto el Backlog, este se encuentra en la página 60, toque para visualizar}}
+ \textbf{5.\hypertarget{subsec:backlog}{OE1} \hyperlink{subsec:backlog1}{Cómo resultado del plan de historias usuarios se concreto el Backlog, este se encuentra en la página 60, toque para visualizar}}
  
-
-
- 
-
 }
