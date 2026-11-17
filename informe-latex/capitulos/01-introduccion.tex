@@ -176,6 +176,8 @@ Ahora se mostrará la tabla de costo de Herramientas y Servicios mediante el des
 	\end{tabularx}
 \end{table}
 
+\newpage
+
 Ahora los costos de la infraestructura en donde se trabajó, en los costos solo se muestran pagos de servicios como lo son energía eléctrica e internet ya que los desarrolladores trabajan en la casa de uno de los integrantes del grupo, y cada integrante posee su computadora por el cual tampoco se hizo gasto de equipos.
 
 \begin{table}[htbp]
@@ -193,7 +195,7 @@ Ahora los costos de la infraestructura en donde se trabajó, en los costos solo 
 		\bottomrule
 	\end{tabularx}
 \end{table}
-
+\newpage
 Haciendo el cálculo total de los gastos de desarrollo queda un total de C\$99,472 córdobas en costo de desarrollo de la aplicación web.
 
 \subsubsection{Costos de Operación, Mantenimiento y Modelo Comercial}
@@ -202,6 +204,8 @@ La venta de la aplicación web se basa en la venta de licencias de uso no exclus
 El precio que se propone es de C\$10,000.00 por licencia de uso no exclusiva. Este pago es único, lo que incluye el pago es el desplieque inicial (instalación y configuración del sistema), capacitación técnica y operativa para el personal de la empresa que se encarga de administrar los reportes.
 
 Una vez entregada y configurada, los gastos de infraestructura necesarios para mantenerla en línea pasan a ser responsabilidad de la empresa que lo adquiera. Como se estableció previamente, los gastos de servicios en la nube serán asumidos en su totalidad por la empresa que adopte la aplicación, ajustando los planes a la capacidad que requieran.
+
+\newpage
 
 A continuación, se muestran los gastos que harán mensualmente.
 
@@ -243,10 +247,12 @@ Como no todos los planes tienen una manera de pago mensual solo tienen versión 
 	\end{tabularx}
 \end{table}
 
+\newpage
+
 \subsubsection{Beneficios Económicos y Operativos (Propuesta de Valor)}
 Para justificar la adquisición de la licencia, Comunica se presenta como una solución integral que genera un gran valor para ambas partes. La implementación de comunica ofrece beneficios directos tanto para la empresa que presta el servicio como para los usuarios finales que reportan sus distintas incidencias.
 
-\textbf{Beneficios para la Empresa:}
+\textbf{Beneficios para la Entidad:}
 \begin{itemize}
 	\item \textbf{Optimización de logística y combustible:} Gracias a la geolocalización exacta y la evidencia fotográfica, las cuadrillas técnicas conocen la ubicación precisa y la magnitud del daño antes de movilizarse, eliminando viajes en falso y reduciendo el gasto de combustible.
 	\item \textbf{Reducción de costos administrativos:} La digitalización del flujo de trabajo elimina la dependencia de formularios impresos, carpetas físicas y reduce el tiempo invertido en la transcripción manual de datos.
@@ -380,8 +386,8 @@ La distribución se realizará al cierre de cada año, después de verificar los
  
  - Motor de Base de Datos (PostgreSQL): La elección de PostgreSQL como sistema de gestión relacional se justifica por su capacidad para manejar datos estructurados de forma rigurosa. Estudios recientes en persistencia de datos evidencian que el uso de PostgreSQL proporciona beneficios en la integridad transaccional (garantía de que la base asegura que si ocurre un error en medio de un proceso, la acción se cancele por completo) y ofrece una alta robustez en el procesamiento de información, garantizando un almacenamiento seguro, libre de corrupción de datos y  escalable para el volumen de registros esperados \parencite{vargas2022postgresql}.
  
- • Desarrollo Frontend (Angular): Para la construcción de la interfaz de usuario  y el panel administrativo se emplea el framework Angular. La viabilidad de su implementación se sustenta en investigaciones sobre el desarrollo de Aplicaciones de Página Única(Se refiere a que el sistema carga su estructura visual una sola vez y actualiza la información dinámicamente sin recargar la pantalla, lo que garantiza una navegación rápida y un consumo mínimo de datos de internet.) El uso de Angular, al estar fundamentado en una arquitectura modular de componentes y utilizar TypeScript de forma nativa, genera el aumentar la mantenibilidad del código y reducir los errores en tiempo de ejecución al compartir el mismo tipado estricto que el backend \parencite{navarro2023angular}. Adicionalmente, su motor de programación reactiva(capacidad que tiene el frontend para 'reaccionar' y actualizar automáticamente la pantalla en tiempo real.), sin necesidad de que el usuario tenga que recargar la página del navegado, optimiza el consumo de la API REST y el manejo de estados asíncronos, garantizando un renderizado fluido y sin recargas de página al interactuar con elementos como la cartografía interactiva de incidencias \parencite{salinas2022reactiva}.
- \vspace{0.3cm}
+ - Desarrollo Frontend (Angular): Para la construcción de la interfaz de usuario  y el panel administrativo se emplea el framework Angular. La viabilidad de su implementación se sustenta en investigaciones sobre el desarrollo de Aplicaciones de Página Única(Se refiere a que el sistema carga su estructura visual una sola vez y actualiza la información dinámicamente sin recargar la pantalla, lo que garantiza una navegación rápida y un consumo mínimo de datos de internet.) El uso de Angular, al estar fundamentado en una arquitectura modular de componentes y utilizar TypeScript de forma nativa, genera el aumentar la mantenibilidad del código y reducir los errores en tiempo de ejecución al compartir el mismo tipado estricto que el backend \parencite{navarro2023angular}. Adicionalmente, su motor de programación reactiva(capacidad que tiene el frontend para 'reaccionar' y actualizar automáticamente la pantalla en tiempo real.), sin necesidad de que el usuario tenga que recargar la página del navegado, optimiza el consumo de la API REST y el manejo de estados asíncronos, garantizando un renderizado fluido y sin recargas de página al interactuar con elementos como la cartografía interactiva de incidencias \parencite{salinas2022reactiva}.
+
  \textbf{Infraestructura y Servicios en la Nube}
  
  Para garantizar la disponibilidad ininterrumpida de la plataforma, se ha estructurado una infraestructura distribuida basada en servicios especializados(cada uno es experto en resolver una única tarea específica):
