@@ -77,14 +77,14 @@ El plan de ejecución organiza las acciones previstas para alcanzar los tres obj
 		
 		\endlastfoot
 		
-		OE2 & Arquitectura de software & Definir la separación entre frontend Angular, API REST en AdonisJS y persistencia de datos en PostgreSQL, así como los componentes de autenticación y acceso. & Documento o diagrama de arquitectura; especificación de componentes. & Equipo de desarrollo (frontend y backend). & Arquitectura técnica y responsabilidades de componentes definidas. \\
-		\hline
-		OE2 & Modelo de base de datos & Diseñar entidades y relaciones para usuarios, incidencias, categorías, evidencias, ubicaciones, estados e historial, considerando integridad referencial y permisos. & Diagrama entidad-relación; esquema relacional; diccionario de datos. & Responsable backend y equipo de desarrollo. & Modelo de datos preparado para respaldar el registro y seguimiento. \\
-		\hline
-		OE2 & Diseño de interfaces UI/UX & Diseñar la interfaz de reporte, historial, consulta de estados y panel administrativo, incluyendo la selección de ubicación mediante un mapa interactivo. & Prototipos de interfaz; flujos de navegación; revisión de usabilidad. & Responsable frontend/diseño. & Interfaces y navegación definidas para usuarios y administradores. \\
-		\hline
-		OE2 & Modelado del flujo de incidencias & Representar el proceso de registro, clasificación, consulta, actualización de estado y trazabilidad de las incidencias, así como la información visible según el rol. & Diagramas de flujo o casos de uso; reglas funcionales documentadas. & Equipo de análisis y desarrollo. & Flujo funcional y responsabilidades de acceso delimitados. \\
-		\hline
+     \hyperlink{subsec:arquitecturaSoftware}{OE2} & Arquitectura de software & Definir la separación entre frontend Angular, API REST en AdonisJS y persistencia de datos en PostgreSQL, así como los componentes de autenticación y acceso. & Apartado de Viabilidad Técnica con la fundamentación teórica y especificación de las tecnologías a utilizar. & Equipo de desarrollo (frontend y backend). & Arquitectura técnica y responsabilidades de los componentes definidas y justificadas teóricamente dentro del documento. \\
+     \hline
+     \hyperlink{subsec:modeloBaseDatos}{OE2} & Modelo de base de datos & Diseñar entidades y relaciones para usuarios, incidencias, categorías, evidencias, ubicaciones, estados e historial, considerando integridad referencial y permisos. & Diagrama entidad-relación; esquema relacional. & Responsable backend y equipo de desarrollo. & Modelo de datos preparado para respaldar el registro y seguimiento. \\
+    \hline
+    \hyperlink{subsec:disenoInterfaces}{OE2} & Diseño de interfaces UI/UX & Diseñar la interfaz de reporte, historial, consulta de estados y panel administrativo, incluyendo la selección de ubicación mediante un mapa interactivo. & Prototipos de interfaz; flujos de navegación; revisión de usabilidad. & Responsable frontend/diseño. & Interfaces y navegación definidas para usuarios y administradores. \\
+    \hline
+    \hyperlink{subsec:modeladoFlujo}{OE2} & Modelado del flujo de incidencias & Representar el proceso de registro, clasificación, consulta, actualización de estado y trazabilidad de las incidencias, así como la información visible según el rol. & Diagramas de flujo o casos de uso; reglas funcionales documentadas. & Equipo de análisis y desarrollo. & Flujo funcional y responsabilidades de acceso delimitados. \\
+    \hline
 	\end{xltabular}
 }
 
@@ -134,7 +134,9 @@ El plan de ejecución organiza las acciones previstas para alcanzar los tres obj
 	
    El apartado de los Resultados esperados dentro del cronogrma de ejecución describe los productos, entregables o estados concretos que se alcanzarán tras completar cada acción propuesta. Su propósito  es establecer un criterio de éxito medible para cada actividad, traduciendo las tareas de investigación, diseño y desarrollo en evidencias tangibles tales como documentos de análisis, prototipos de interfaz, bases de datos estructuradas o módulos de código funcional, En conjunto, la union de estos resultados permite evaluar el avance real del proyecto Comunica, garantizando que cada paso realizado contribuya de manera verificable al cumplimiento progresivo de sus tres objetivos específicos.
    
-  \textbf{Resultados Cronograma de ejecución}  
+  \textbf{Resultados Cronograma de ejecución.} 
+   
+  \textbf{Resultados objetivo 1.}
    
 \textbf{1. \hypertarget{subsec:SMS}{OE1}: Referentes tecnológicos y funcionales identificados.}
 
@@ -422,5 +424,121 @@ A partir del análisis documental y de campo, se definieron siete requerimientos
  Para una vista especifica de los requerimentos del proyecto revise los Metarequisitos plasmados en la \textbf{\hyperlink{subsec:matriz}{Matriz de Trazabilidad}} 
  
  \textbf{5.\hypertarget{subsec:backlog}{OE1} \hyperlink{subsec:backlog1}{Cómo resultado del plan de historias usuarios se concreto el Backlog, este se encuentra en la página 60, toque para visualizar}}
+ 
+ \textbf{Resultados del objetivo 2}
+
+ \textbf{1.\hypertarget{subsec:arquitecturaSoftware}{OE2.Arquitectura de software}} \textbf{\hyperlink{subsec:viabiTec}{El resultado de esta acción, se consolida en la definición y justificación teórica de la arquitectura del software, documentada a detalle en el apartado de Viabilidad Técnica.}} Este resultado establece una separación clara de responsabilidades bajo un modelo cliente-servidor, designando a Angular para la interfaz interactiva de usuario (frontend), a AdonisJS para la API REST y la lógica de negocio, y a PostgreSQL para la persistencia de datos. Además, define los lineamientos para la autenticación, el control de acceso basado en roles (RBAC) y la distribución de la infraestructura apoyada en servicios en la nube como Render, Netlify y Cloudinary. Con esta fundamentación, el equipo de desarrollo cuenta con los requerimientos técnicos y las responsabilidades operativas de cada componente completamente delimitados, asegurando la base estructural necesaria para guiar la etapa de construcción del sistema.
+ 
+  \vspace{1cm}
+ 
+ \noindent
+ \begin{minipage}{\textwidth}
+ \textbf{2.OE2 \hypertarget{subsec:modeloBaseDatos}{Modelo de base de datos}} 
+ , En esta sección se define la estructura lógica y física de la base de datos relacional del sistema Comunica, implementada en PostgreSQL.se muestra la organización de las tablas principales como usuarios, incidencias, categorías, ubicaciones con el resultado de Modelo de
+ datos preparado para respaldar el registro y seguimiento de las incidencias:
+ 
+ 	  \begin{figure}[H]
+ 		\centering
+ 		\includegraphics[width=0.8\textwidth]{figuras/diagramaEntidadR.jpg}
+ 		
+ 		\caption{Diagrama entidad relación.}
+ 		\label{fig:Entidad relacion}
+ 		\end{figure}
+ 		El Diagrama Entidad-Relación estructura la base de datos de la plataforma Comunica en trece tablas distribuidas en cuatro bloques funcionales que garantizan la integridad referencial del sistema. La organización geográfica se establece de forma jerárquica mediante las entidades Departamento, Municipios y Sectores, mientras que la gestión de cuentas, los privilegios operativos basados en roles y las sanciones por uso indebido se controlan a través de las tablas Usuarios, Operadores, Permisos, operador permiso y Vetados. Por su parte, el ciclo de vida de los reportes se concentra en la entidad Incidencia —la cual almacena la descripción, ubicación, nivel de prioridad, estado y metadatos en formato JSON clasificados según su Problematica—, vinculándose con Detalle Incidencia, detalle mensaje y mensajes para conservar el historial cronológico de seguimiento y las respuestas institucionales dirigidas al ciudadano.
+ \end{minipage}
+ \vspace{1cm}
+ 
+ 
+ \textbf{3.OE3 \hypertarget{subsec:disenoInterfaces}{Diseño de interfaces UI/UX}}
+ 
+ En esta sección se definen los prototipos de interfaz, los flujos de navegación y la revisión de usabilidad de la plataforma Comunica, diferenciados según el rol operativo del usuario. El diseño contempla vistas web responsivas para el registro de incidencias por parte del usuario con selección geográfica mediante un mapa interactivo junto con la carga de evidencia fotográfica, un módulo para la consulta del historial y estados de seguimiento, y un panel administrativo para el monitoreo de indicadores y distribución espacial de los reportes en el municipio de Rivas.
+ 
+ \vspace{0.3cm}
+ \noindent\textbf{1. Prototipos de interfaz del sistema}
+ \vspace{0.2cm}
+ 
+
+ 	\textbf{Interfaz 1. Formulario de Registro de Incidencia}
+ 	\begin{figure}[H]
+ 		\centering
+ 		\includegraphics[width=0.55\textwidth]{figuras/reporte.png}
+ 		\caption{Formulario interactivo para el registro de incidencias con geolocalización GPS y carga de evidencia multimedia.}
+ 		\label{fig:interfaz_reporte}
+ 	\end{figure}
+ 	Descripción: Vista orientada al usuario que estructura la captura del reporte en cinco bloques secuenciales: selección del catálogo de problemáticas, descripción detallada del suceso, asignación del barrio o sector correspondiente, selección de coordenadas exactas mediante un visor cartográfico (con botón de captura automática de ubicación GPS) y un contenedor para adjuntar hasta 6 imágenes de evidencia (formatos JPG o PNG, máximo 20 MB).
+ 	
+ 	Análisis: Cumple con el requerimiento de recolección estructurada y georreferenciada del objetivo OE2, reduciendo la ambigüedad en la ubicación de los daños reportados por la comunidad.
+ 
+ 
+ \vspace{0.5cm}
+ 
+ \begin{minipage}{\textwidth}
+ 	\textbf{Interfaz 2. Historial de Reportes y Consulta de Estados}
+ 	\begin{figure}[H]
+ 		\centering
+ 		\includegraphics[width=0.8\textwidth]{figuras/historialUser.png}
+ 		\caption{Vista de historial de reportes enviados y panel de consulta detallada de estado.}
+ 		\label{fig:interfaz_historial}
+ 	\end{figure}
+ 	Descripción: Interfaz de seguimiento para el rol usuario que emplea un diseño de vista dividida. En el panel izquierdo se listan cronológicamente las incidencias registradas con su etiqueta de estado actual (Pendiente, En Proceso, Resuelto), mientras que en la parte derecha se despliega el detalle completo del caso seleccionado (fecha, tipo de problema, sector como el Barrio Popoyuapa y descripción), incorporando además un selector superior para filtrar reportes.
+ 	
+ 	Análisis: Garantiza la trazabilidad y transparencia hacia el usuario, permitiéndole verificar en tiempo real el progreso de atención de sus solicitudes sin necesidad de acudir presencialmente a la municipalidad o realizar llamadas.
+ \end{minipage}
+ 
+ \vspace{0.5cm}
+ 
+ \begin{minipage}{\textwidth}
+ 	\textbf{Interfaz 3. Panel de Control Administrativo de la entidad}
+ 	\begin{figure}[H]
+ 		\centering
+ 		\includegraphics[width=0.8\textwidth]{figuras/panelAdministrativo.png}
+ 		\caption{Panel administrativo con indicadores clave de rendimiento y distribución analítica de incidencias.}
+ 		\label{fig:interfaz_panel_admin}
+ 	\end{figure}
+ 	Descripción: Entorno principal de trabajo para el rol de Operador y Administrador. Incorpora una barra lateral de navegación hacia los módulos del sistema (\textit{Panel de control, Incidencias, Historial, Mapa, Problemáticas, Ubicaciones, Usuarios y Baneados}) y un área central con cuatro tarjetas de métricas importantes (reportes activos, índice de resolución porcentual, tiempo promedio en días e incidencias de alta prioridad), complementadas por paneles analíticos para graficar reportes por problema, seguimiento reciente, distribución por sector y problemas frecuentes.
+ 	
+ 	Análisis: Centraliza la supervisión operativa, facilitando la toma de decisiones basada en datos sobre las zonas y tipologías de fallo con mayor demanda de atención.
+ \end{minipage}
+ 
+ \vspace{0.5cm}
+ 
+ \begin{minipage}{\textwidth}
+ 	\textbf{Interfaz 4. Mapa General de Reportes para Operadores}
+ 	\begin{figure}[H]
+ 		\centering
+ 		\includegraphics[width=0.8\textwidth]{figuras/mapaInteractivo.png}
+ 		\caption{Visor cartográfico general con filtros multicriterio para el monitoreo espacial de incidencias en Rivas.}
+ 		\label{fig:interfaz_mapa_general}
+ 	\end{figure}
+ 	Descripción: Herramienta de visualización geoespacial para operadores que proyecta la distribución global de incidencias sobre el mapa del municipio de Rivas. Dispone de una barra de filtrado avanzado por estado, categoría de problemática y rango de fechas (desde/hasta), junto con tres contadores dinámicos (\textit{Total filtrado, Con ubicación y Sin ubicación}) que actualizan en tiempo real los marcadores desplegados en el mapa cartográfico.
+ 	
+ 	Análisis: Permite identificar visualmente focos críticos de incidencias por barrio o sector, optimizando la planificación territorial de las cuadrillas de respuesta de la entidad.
+ \end{minipage}
+ 
+ \vspace{0.5cm}
+ \noindent\textbf{2. Flujos de navegación del sistema}
+ \vspace{0.2cm}
+ 
+ La arquitectura de navegación se divide en dos flujos operativos:
+ \begin{itemize}
+ 	\item \textbf{Flujo de navegación del Ciudadano:} Inicia en la vista de autenticación o registro de cuenta $\rightarrow$ accede al panel principal ciudadano $\rightarrow$ selecciona \textit{Crear Reporte} (completando categoría, sector, punto GPS en el mapa interactivo y fotografías) $\rightarrow$ envía el formulario $\rightarrow$ es redirigido a la vista \textit{Historial de Reportes}, donde puede consultar el estado y las notas de seguimiento de cada caso.
+ 	\item \textbf{Flujo de navegación del Operador / Administrador:} Inicia en la pantalla de autenticación $\rightarrow$ ingresa al \textit{Panel de Control} (visualización de métricas generales) $\rightarrow$ navega mediante el menú lateral hacia \textit{Incidencias} \textit{Mapa} (filtrado geoespacial de reportes), \textit{Problemáticas y Ubicaciones} (gestión de catálogos) o \textit{Usuarios y Baneados} (administración de permisos y aplicación de sanciones por uso indebido).
+ \end{itemize}
+ 
+ \vspace{0.3cm}
+ \noindent\textbf{3. Revisión de criterios de usabilidad (UI/UX)}
+ \vspace{0.2cm}
+ 
+ El diseño de las interfaces fue validado bajo principios de usabilidad y diseño centrado en el usuario para asegurar su adopción técnica y comunitaria:
+ 
+ \begin{itemize}
+ 	\item \textbf{Claridad visual y jerarquía tipográfica:} Uso de una paleta cromática de alto contraste (azul marino oscuro en navegación lateral sobre lienzos blancos y grises claros) que facilita la lectura de formularios y métricas.
+ 	\item \textbf{Retroalimentación visual de estados:} Implementación de etiquetas semánticas codificadas por color (como el indicador amarillo para el estado \textit{PENDIENTE}) y contadores numéricos claros que informan de inmediato la situación de cada reporte.
+ 	\item \textbf{Prevención de errores y asistencia al usuario:} Inclusión de textos de ayuda contextuales (\textit{placeholders}), selectores desplegables vinculados a los catálogos de informacion, límites explícitos de carga multimedia (máximo 6 archivos y 20 MB) y geolocalización asistida por un solo clic.
+ 	\item \textbf{Diseño responsivo y adaptabilidad:} Estructura modular basada en tarjetas y contenedores flexibles que se ajustan tanto a pantallas móviles para el reporte ciudadano en campo como a monitores de escritorio para la gestión administrativa.
+ \end{itemize}
+
+ 
+ \hypertarget{subsec:modeladoFlujo}{Modelado del flujo de incidencias}
  
 }
