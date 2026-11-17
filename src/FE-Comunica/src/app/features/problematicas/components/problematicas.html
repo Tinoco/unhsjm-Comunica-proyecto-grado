@@ -1,0 +1,221 @@
+<div class="contenedor-vista">
+  <div class="cabecera-vista">
+    <div>
+      <h1 class="titulo-vista">Gestión de Problemáticas</h1>
+      <p class="subtitulo-vista">Administra las problemáticas registradas en la plataforma.</p>
+    </div>
+    <button class="btn-primario" (click)="cambiarFiltroInhabilitados()">
+      <i class="fa-solid fa-filter"></i>
+      {{ mostrarInhabilitados() ? 'Mostrar Activas' : 'Mostrar Inhabilitadas' }}
+    </button>
+    <button class="btn-primario" (click)="abrirModalCrear()">
+      <i class="fa-solid fa-plus"></i> Nueva Problemática
+    </button>
+  </div>
+
+  @if (error()) {
+    <div class="alerta-error">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      {{ error() }}
+    </div>
+  }
+
+  <div class="tarjeta-tabla">
+    <table class="tabla-moderna">
+      <thead>
+        <tr>
+          <th>Problema</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        @if (cargando() && problematicas().length === 0) {
+          <tr>
+            <td colspan="2" class="texto-centro py-4">
+              <div class="spinner"></div>
+              Cargando...
+            </td>
+          </tr>
+        } @else if (problematicas().length === 0) {
+          <tr>
+            <td colspan="2" class="texto-centro py-4 text-muted">
+              No hay problemáticas registradas.
+            </td>
+          </tr>
+        } @else {
+          @for (prob of problematicas(); track prob.id) {
+            <tr [style.background-color]="prob.isDeleted ? '#fee2e2' : ''">
+              <td class="font-medium">{{ prob.problema }}</td>
+              <td>
+                <div
+                  style="
+                    display: flex;
+                    gap: 8px;
+                    justify-content: flex-start;
+                    align-items: center;
+                    white-space: nowrap;
+                  "
+                >
+                  @if (prob.isDeleted) {
+                    <button
+                      class="btn-icono restaurar"
+                      (click)="abrirModalRestaurar(prob)"
+                      title="Restaurar"
+                      style="color: #10b981"
+                    >
+                      <i class="fa-solid fa-rotate-left"></i>
+                    </button>
+                  } @else {
+                    <button
+                      class="btn-icono editar"
+                      (click)="abrirModalEditar(prob)"
+                      title="Editar"
+                    >
+                      <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button
+                      class="btn-icono eliminar"
+                      (click)="abrirModalEliminar(prob)"
+                      title="Eliminar"
+                      style="color: #ef4444"
+                    >
+                      <i class="fa-solid fa-trash"></i>
+                    </button>
+                  }
+                </div>
+              </td>
+            </tr>
+          }
+        }
+      </tbody>
+    </table>
+  </div>
+
+  @if (paginacion(); as p) {
+    <div class="paginacion">
+      <span class="paginacion-info">
+        Mostrando página {{ p.currentPage }} de {{ p.lastPage }} ({{ p.total }} registros)
+      </span>
+      <div class="paginacion-botones">
+        <button
+          class="btn-pagina"
+          [disabled]="!p.previousPageUrl"
+          (click)="irPagina(p.firstPage)"
+          title="Primera página"
+        >
+          <i class="fa-solid fa-angles-left"></i>
+        </button>
+        <button
+          class="btn-pagina"
+          [disabled]="!p.previousPageUrl"
+          (click)="irPagina(p.currentPage - 1)"
+          title="Anterior"
+        >
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+        @for (pag of paginas(); track pag) {
+          <button
+            class="btn-pagina"
+            [class.activa]="pag === p.currentPage"
+            (click)="irPagina(pag)"
+          >
+            {{ pag }}
+          </button>
+        }
+        <button
+          class="btn-pagina"
+          [disabled]="!p.nextPageUrl"
+          (click)="irPagina(p.currentPage + 1)"
+          title="Siguiente"
+        >
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+        <button
+          class="btn-pagina"
+          [disabled]="!p.nextPageUrl"
+          (click)="irPagina(p.lastPage)"
+          title="Última página"
+        >
+          <i class="fa-solid fa-angles-right"></i>
+        </button>
+      </div>
+    </div>
+  }
+</div>
+
+<!-- Modal Principal (Crear/Editar/Eliminar/Restaurar) -->
+@if (mostrarModal()) {
+  <div class="modal-backdrop">
+    <div class="modal-contenedor">
+      <div class="modal-cabecera">
+        <h2 class="modal-titulo">
+          {{
+            modalModo() === 'crear'
+              ? 'Nueva'
+              : modalModo() === 'editar'
+                ? 'Editar'
+                : modalModo() === 'eliminar'
+                  ? 'Eliminar'
+                  : 'Restaurar'
+          }}
+          Problemática
+        </h2>
+        <button class="btn-cerrar" (click)="cerrarModal()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-cuerpo">
+        @if (modalModo() === 'eliminar' || modalModo() === 'restaurar') {
+          <p class="texto-centro" style="font-size: 1.1rem; padding: 20px 0">
+            ¿Está seguro de que desea
+            <strong>{{ modalModo() === 'eliminar' ? 'eliminar' : 'restaurar' }}</strong> la
+            problemática seleccionada?
+          </p>
+        } @else {
+          <div class="form-grupo">
+            <label for="problema">Nombre de la Problemática</label>
+            <input
+              type="text"
+              id="problema"
+              class="form-input"
+              [(ngModel)]="problematicaActual().problema"
+              placeholder="Ej. Baches en la calle"
+            />
+          </div>
+        }
+      </div>
+      <div class="modal-pie">
+        <button class="btn-secundario" (click)="cerrarModal()" [disabled]="cargando()">
+          Cancelar
+        </button>
+        <button
+          class="btn-primario"
+          [style.background-color]="
+            modalModo() === 'eliminar' ? '#ef4444' : modalModo() === 'restaurar' ? '#10b981' : ''
+          "
+          (click)="guardarProblematica()"
+          [disabled]="cargando()"
+        >
+          @if (cargando()) {
+            <i class="fa-solid fa-spinner fa-spin mr-2"></i>
+            {{
+              modalModo() === 'eliminar'
+                ? 'Eliminando...'
+                : modalModo() === 'restaurar'
+                  ? 'Restaurando...'
+                  : 'Guardando...'
+            }}
+          } @else {
+            {{
+              modalModo() === 'eliminar'
+                ? 'Eliminar'
+                : modalModo() === 'restaurar'
+                  ? 'Restaurar'
+                  : 'Guardar'
+            }}
+          }
+        </button>
+      </div>
+    </div>
+  </div>
+}

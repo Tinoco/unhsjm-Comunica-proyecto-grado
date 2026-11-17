@@ -7,6 +7,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[spanish, es-tabla]{babel}
 \usepackage{csquotes}
+\usepackage{mathptmx}
 
 % ==========================================
 % Paquetes Gráficos y Ruta de Imágenes
@@ -16,11 +17,26 @@
 \usepackage{hyperref}
 \usepackage{tabularx} % Necesario para columnas de ancho automático tablas
 \usepackage{booktabs} % Para líneas horizontales profesionales estilo APA tablas
-
-\usepackage{pgfgantt}
+\usepackage{pdflscape}
 \usepackage{geometry}
 
+\usepackage{pdflscape}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{
+	arrows.meta,
+	positioning,
+	calc,
+	shapes.geometric
+}
+\usepackage{pgfgantt}
+
+
 \geometry{margin=2cm}
+\usepackage{xltabular}
+
 % ==========================================
 % Configuración Bibliográfica (APA 7 - BibLaTeX + Biber)
 % ==========================================
@@ -54,10 +70,9 @@
 % Autores (Trabajo Grupal o Individual)
 % Para agregar múltiples integrantes, separe las líneas con \\
 \autores{
-  Kevin Reynaldo Tinoco Baldelomar (Carnet: 2240355) \\
-  Deykert Aladier Guido Valle (Carnet: 2240238) \\
-  Norman Eduardo Hernández Ruiz (Carnet: 2240355)
-  
+  Kevin Reynaldo Tinoco Baldelomar (Carnet: 2240203) \\
+  Norman Eduardo Hernández Ruiz (Carnet: 2240355)  \\
+  Deykert Aladier Guido Valle (Carnet: 2240238)
 }
 
 % Tutor / Asesor del Trabajo
@@ -65,7 +80,15 @@
 
 % Ubicación y Fecha
 \ciudad{Managua, Nicaragua}
-\fecha{Septiembre, 2026}
+\fecha{Noviembre, 2026}
+
+
+% ==========================================
+% Forzar numeración de secciones en estilo APA
+% ==========================================
+\setcounter{secnumdepth}{3} % Activa la numeración hasta 3 niveles
+\setcounter{tocdepth}{3}    % Obliga al índice a mostrar la numeración
+
 
 \begin{document}
 
@@ -75,6 +98,7 @@
 % Tabla de Contenidos / Índice
 \tableofcontents
 \listoftables
+\listoffigures
 \newpage
 
 % ==========================================
@@ -84,12 +108,13 @@
 \include{capitulos/02-marco-teorico}
 \include{capitulos/03-metodologia}
 \include{capitulos/04-desarrollo}
-\include{capitulos/05-conclusiones}
+\include{capitulos/05-planEjecucion}
+\include{capitulos/06-conclusiones}
 
 % ==========================================
 % Referencias Bibliográficas
 % ==========================================
-\printbibliography[heading=bibintoc, title={Referencias}]
+\printbibliography[heading=bibintoc, title={Referencias}, label={subsec:referencias}]
 
 
 \end{document}
